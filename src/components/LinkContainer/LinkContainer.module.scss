@@ -1,0 +1,30 @@
+.Logo {
+  text-align: center;
+}
+
+.logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+.headerLight {
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+.headerDark {
+  background-color: #282c34;
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
