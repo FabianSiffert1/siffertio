@@ -2,6 +2,7 @@ import React from 'react';
 
 import {NavLink, Outlet} from "react-router-dom";
 import LinkContainer from '../../components/LinkContainer/LinkContainer';
+import NavBar from '../../components/NavBar/NavBar';
 
 //import whiteLogo from '../../resources/images/logoW.svg'
 import Logo from '../../resources/images/logo.svg'
@@ -14,39 +15,7 @@ function Home() {
         <div>
           <Outlet/>
           <LinkContainer imageSource={Logo} link ='/index'/>
-          <nav
-            style={{
-              borderTop: "solid 6px",
-              paddingBottom: "1rem",
-            }}
-          >
-          <NavLink
-            style={({ isActive }) => {
-              return {
-                display: "block",
-                margin: "1rem 0",
-                color: isActive ? "red" : "",
-              };
-            }}
-            to={`/biography`}
-            key="biography"
-          >
-            Biography
-          </NavLink>
-          <NavLink
-            style={({ isActive }) => {
-              return {
-                display: "block",
-                margin: "1rem 0",
-                color: isActive ? "red" : "",
-              };
-            }}
-            to={`/contact`}
-            key="Contact"
-          >
-            Contact
-          </NavLink>
-          </nav>
+          <NavBar/>
 
         </div>
   );
