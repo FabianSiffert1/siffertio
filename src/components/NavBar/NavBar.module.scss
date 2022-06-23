@@ -11,4 +11,20 @@
   /*border-top: 1px solid rgb(230, 230, 230);*/
 .nav {
 }
+  .NavLink{
+    color:black;
+
+  }
+  a{
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+  }
+
+  a:active{
+    background-color: lightslategrey;
+  }
+  a:visited{
+    color:black;
+  }
 }

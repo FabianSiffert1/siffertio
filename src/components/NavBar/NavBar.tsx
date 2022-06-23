@@ -10,12 +10,15 @@ function NavBar(props: any) {
             className={styles.nav}
         >
             <NavLink
+                className={styles.NavLink}
                 style={({isActive}) => {
                     return {
                         display: "inline-block",
                         margin: "1rem 0",
                         padding: "1rem",
-                        color: isActive ? "red" : "",
+                        color: isActive ? "black" : "",
+                        border: isActive? "solid black" : "",
+
                     };
                 }}
                 to={`/biography`}
@@ -29,7 +32,8 @@ function NavBar(props: any) {
                         display: "inline-block",
                         margin: "1rem 0",
                         padding: "1rem",
-                        color: isActive ? "red" : "",
+                        color: isActive ? "black" : "",
+                        border: isActive? "solid black" : "",
                     };
                 }}
                 to={`/contact`}
