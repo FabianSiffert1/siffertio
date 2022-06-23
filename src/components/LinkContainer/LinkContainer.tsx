@@ -3,7 +3,6 @@ import language from "../../resources/language/language";
 import styles from "./LinkContainer.module.scss";
 
 
-//TODO: styles.header:dark -> CSS Subclass
 function LinkContainer(props: any) {
 	return (
 		<div className={styles.LinkContainer}>

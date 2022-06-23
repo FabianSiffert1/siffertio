@@ -4,19 +4,22 @@
 	height: 5vmin;
 	pointer-events: none;
 }
-
+	/* MOVING CSS INTO NAVIGATION PARENT STRUCTURE
 .header {
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
 	bottom: 8vh;
-	padding: 1rem;
 	color: white;
-	width: 100%;
+	width: 100vw;
+
 }
 
 .dark {
 	background-color: #282c34;
 }
+
+ */
 }

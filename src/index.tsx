@@ -25,7 +25,7 @@ root.render(<React.StrictMode>
         <Route
         index
         element={
-          <main style={{ padding: "1rem" }}>
+          <main style={{ padding: "0rem" }}>
             <p>Select an invoice</p>
           </main>
         }
@@ -35,7 +35,7 @@ root.render(<React.StrictMode>
       <Route
       path="*"
       element={
-        <main style={{ padding: "1rem" }}>
+        <main style={{ padding: "0rem" }}>
           <p>There's nothing here!</p>
         </main>
       }

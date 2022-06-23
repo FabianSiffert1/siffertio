@@ -1,24 +1,18 @@
 import React from 'react';
 
-import {NavLink, Outlet} from "react-router-dom";
-import LinkContainer from '../../components/LinkContainer/LinkContainer';
-import NavBar from '../../components/NavBar/NavBar';
-
-//import whiteLogo from '../../resources/images/logoW.svg'
-import Logo from '../../resources/images/logo.svg'
-import './Home.css';
+import { Outlet} from "react-router-dom";
+import styles from "./Home.module.scss";
+import Navigation from "../Navigation/Navigation";
+import Header from "../Header/Header";
 
 //TODO: EXPORT NAVBAR TO COMPONENT
-
 function Home() {
     return (
-        <div>
+        <>
+            <Header/>
             <Outlet/>
-            <div className={"NavigationContainer"}>
-                <LinkContainer imageSource={Logo} link='/index'/>
-                <NavBar/>
-            </div>
-        </div>
+            <Navigation/>
+        </>
     );
 }
 
