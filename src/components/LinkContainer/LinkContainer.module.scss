@@ -1,6 +1,4 @@
-.Logo {
-	text-align: center;
-}
+.LinkContainer{
 
 .logo {
 	height: 5vmin;
@@ -9,13 +7,16 @@
 
 .header {
 	display: flex;
-	min-height: 10vh;
-	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
+	align-items: center;
+	position: absolute;
+	bottom: 8vh;
+	padding: 1rem;
 	color: white;
+	width: 100%;
 }
 
 .dark {
 	background-color: #282c34;
+}
 }

@@ -11,14 +11,15 @@ import './Home.css';
 //TODO: EXPORT NAVBAR TO COMPONENT
 
 function Home() {
-  return (
+    return (
         <div>
-          <Outlet/>
-          <LinkContainer imageSource={Logo} link ='/index'/>
-          <NavBar/>
-
+            <Outlet/>
+            <div className={"NavigationContainer"}>
+                <LinkContainer imageSource={Logo} link='/index'/>
+                <NavBar/>
+            </div>
         </div>
-  );
+    );
 }
 
 export default Home;
