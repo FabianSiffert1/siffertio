@@ -2,6 +2,8 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import styles from "./NavBar.module.scss";
 
+//TODO: BORDER ON ACTIVE NAVLINK
+
 function NavBar(props: any) {
     return <div className={styles.NavBar}>
         <nav
@@ -10,8 +12,9 @@ function NavBar(props: any) {
             <NavLink
                 style={({isActive}) => {
                     return {
-                        display: "block",
+                        display: "inline-block",
                         margin: "1rem 0",
+                        padding: "1rem",
                         color: isActive ? "red" : "",
                     };
                 }}
@@ -23,8 +26,9 @@ function NavBar(props: any) {
             <NavLink
                 style={({isActive}) => {
                     return {
-                        display: "block",
+                        display: "inline-block",
                         margin: "1rem 0",
+                        padding: "1rem",
                         color: isActive ? "red" : "",
                     };
                 }}
