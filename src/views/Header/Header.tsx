@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import LinkContainer from "../../components/LinkContainer/LinkContainer";
 import Logo from "../../resources/images/logo.svg";
+import ImageRouter from "../../components/ImageRouter/ImageRouter";
 
 
 function Header() {
     return (
-        <>
-           <LinkContainer imageSource={Logo} link='/index'/>
-        </>
+        <div className={styles.Header}>
+            <ImageRouter url={'/'} navLinkKey={'Home'} imagePath={Logo} imageSize={'50'}/>
+        </div>
     );
 }
 

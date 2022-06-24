@@ -11,6 +11,9 @@ import Home from './views/Home/Home';
 import Biography from './views/Biography/Biography';
 import Contact from './views/Contact/Contact';
 import Contacts from './views/Contacts/contacts';
+import ImageRouter from "./components/ImageRouter/ImageRouter";
+import Logo from "./resources/images/logo.svg";
+import Secret from "./resources/images/Buttons/secret.svg"
 
 const container = document.getElementById('root');
 // value! -> TS checks that value is never null
@@ -37,6 +40,7 @@ root.render(<React.StrictMode>
       element={
         <main style={{ padding: "0rem" }}>
           <p>There's nothing here!</p>
+          <ImageRouter url={'/'} navLinkKey={'Home'} imagePath={Secret}/>
         </main>
       }
     />

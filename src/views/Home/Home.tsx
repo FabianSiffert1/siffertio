@@ -1,18 +1,20 @@
 import React from 'react';
 
-import { Outlet} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import styles from "./Home.module.scss";
 import Navigation from "../Navigation/Navigation";
 import Header from "../Header/Header";
 
-//TODO: EXPORT NAVBAR TO COMPONENT
+
 function Home() {
     return (
-        <>
+        <div id={"Home"}>
             <Header/>
+            <div id={"contentContainer"}>
             <Outlet/>
+            </div>
             <Navigation/>
-        </>
+        </div>
     );
 }
 

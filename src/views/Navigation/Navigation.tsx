@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Navigation.module.scss";
-import LinkContainer from "../../components/LinkContainer/LinkContainer";
+import LinkContainer from "../../components/ImageLink/ImageLink";
 import Logo from "../../resources/images/logo.svg";
 import NavBar from "../../components/NavBar/NavBar";
 

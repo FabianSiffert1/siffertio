@@ -1,0 +1,12 @@
+.Header{
+  display: flex;
+  justify-content: space-evenly;
+  height: 18vh;
+  overflow: clip;
+
+  a{
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+  }
+}

@@ -2,8 +2,6 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import styles from "./NavBar.module.scss";
 
-//TODO: BORDER ON ACTIVE NAVLINK
-
 function NavBar(props: any) {
     return <nav
             className={styles.nav}
