@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.20947298612066 124.96166454977953" width="113.20947298612066" height="124.96166454977953">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style>
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <g stroke-linecap="round" transform="translate(10.062273251691863 48.11150382696542) rotate(0 46.5735998672144 33.425080361407055)"><path d="M0 0 C21.83 0, 43.65 0, 93.15 0 M0 0 C21.43 0, 42.86 0, 93.15 0 M93.15 0 C93.15 20.14, 93.15 40.28, 93.15 66.85 M93.15 0 C93.15 15.53, 93.15 31.07, 93.15 66.85 M93.15 66.85 C70.53 66.85, 47.92 66.85, 0 66.85 M93.15 66.85 C64.37 66.85, 35.59 66.85, 0 66.85 M0 66.85 C0 52.07, 0 37.29, 0 0 M0 66.85 C0 47.73, 0 28.62, 0 0" stroke="#000000" stroke-width="1" fill="none"></path></g><g stroke-linecap="round"><g transform="translate(10 47.94905562212756) rotate(0 22.858621676518055 -18.95423539210276)"><path d="M0 0 C17.76 -14.73, 35.53 -29.46, 45.72 -37.91 M0 0 C17.5 -14.51, 35 -29.02, 45.72 -37.91" stroke="#000000" stroke-width="1" fill="none"></path></g></g><g stroke-linecap="round"><g transform="translate(103.08870909017617 48.273406524880784) rotate(0 -23.677615900985586 -19.136703262440392)"><path d="M0 0 C-17.9 -14.47, -35.81 -28.94, -47.36 -38.27 M0 0 C-14.36 -11.61, -28.73 -23.22, -47.36 -38.27" stroke="#000000" stroke-width="1" fill="none"></path></g></g><g stroke-linecap="round" transform="translate(45.85758550353421 80.15204993987231) rotate(0 9.691723252635256 17.146894985431544)"><path d="M0 0 C4.4 0, 8.8 0, 19.38 0 M0 0 C6.65 0, 13.29 0, 19.38 0 M19.38 0 C19.38 13.69, 19.38 27.38, 19.38 34.29 M19.38 0 C19.38 9.5, 19.38 19, 19.38 34.29 M19.38 34.29 C14.01 34.29, 8.64 34.29, 0 34.29 M19.38 34.29 C12.74 34.29, 6.09 34.29, 0 34.29 M0 34.29 C0 22.33, 0 10.37, 0 0 M0 34.29 C0 26.58, 0 18.87, 0 0" stroke="#000000" stroke-width="1" fill="none"></path></g></svg>

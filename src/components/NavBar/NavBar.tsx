@@ -5,8 +5,7 @@ import styles from "./NavBar.module.scss";
 //TODO: BORDER ON ACTIVE NAVLINK
 
 function NavBar(props: any) {
-    return <div className={styles.NavBar}>
-        <nav
+    return <nav
             className={styles.nav}
         >
             <NavLink
@@ -42,7 +41,6 @@ function NavBar(props: any) {
                 Contact
             </NavLink>
         </nav>
-    </div>
 }
 
 export default NavBar;

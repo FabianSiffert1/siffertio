@@ -7,7 +7,6 @@ import NavBar from "../../components/NavBar/NavBar";
 
 function Navigation(props: any) {
     return  <div className={styles.Navigation}>
-        {/*<LinkContainer imageSource={Logo} link='/index'/> */}
         <NavBar/>
     </div>
 }
