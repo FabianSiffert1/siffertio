@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Outlet} from "react-router-dom";
 import styles from "./Home.module.scss";
-import Navigation from "../Navigation/Navigation";
+import NavigationBar from "../Navigation/NavigationBar";
 import Header from "../Header/Header";
 
 
@@ -13,7 +13,7 @@ function Home() {
             <div id={"contentContainer"}>
             <Outlet/>
             </div>
-            <Navigation/>
+            <NavigationBar/>
         </div>
     );
 }

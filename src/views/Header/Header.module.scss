@@ -1,8 +1,9 @@
 .Header{
   display: flex;
   justify-content: space-evenly;
-  height: 18vh;
+  height: 10vh;
   overflow: clip;
+  border-bottom: solid 0.5vh;
 
   a{
     text-decoration: none;
