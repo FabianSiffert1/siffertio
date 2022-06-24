@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Outlet} from "react-router-dom";
 import styles from "./Home.module.scss";
-import NavigationBar from "../Navigation/NavigationBar";
+import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
 
 
