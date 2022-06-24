@@ -6,15 +6,14 @@ import {NavLink} from "react-router-dom";
 
 function ImageRouter(props: any) {
     return (
+        <div className={styles.ImageRouter}>
         <NavLink
-            className={styles.ImageRouter}
             style={({isActive}) => {
                 return {
-                    display: "inline-block",
                     margin: "1rem 0",
                     padding: "1rem",
                     color: isActive ? "black" : "",
-                    border: isActive ? "solid black" : "none",
+                    boxShadow: isActive ? "0 0 0 2px black" : "",
 
                 };
             }}
@@ -28,7 +27,7 @@ function ImageRouter(props: any) {
                     props.navLinkKey : "Missing ImageSource & Key Parameters"
             }
         </NavLink>
-
+        </div>
     );
 }
 

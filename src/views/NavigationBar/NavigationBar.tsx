@@ -1,45 +1,16 @@
 import React from "react";
 import styles from "./NavigationBar.module.scss";
 import {NavLink} from "react-router-dom";
-
+import ImageRouter from "../../components/ImageRouter/ImageRouter";
+import Biography from "../../resources/images/buttons/home2.svg";
+import Contact from "../../resources/images/buttons/mailClosed.svg";
 
 function NavigationBar(props: any) {
-    return <nav
-        className={styles.Navigation}
-    >
-        <NavLink
-            className={styles.NavLink}
-            style={({isActive}) => {
-                return {
-                    display: "inline-block",
-                    margin: "1rem 0",
-                    padding: "1rem",
-                    color: isActive ? "black" : "",
-                    border: isActive ? "solid black" : "",
+    return <div className={styles.NavigationBar}>
 
-                };
-            }}
-            to={`/biography`}
-            key="biography"
-        >
-            Biography
-        </NavLink>
-        <NavLink
-            style={({isActive}) => {
-                return {
-                    display: "inline-block",
-                    margin: "1rem 0",
-                    padding: "1rem",
-                    color: isActive ? "black" : "",
-                    border: isActive ? "solid black" : "",
-                };
-            }}
-            to={`/contact`}
-            key="Contact"
-        >
-            Contact
-        </NavLink>
-    </nav>
+            <ImageRouter url={'/biography'} navLinkKey={'Biography'} imagePath={Biography}/>
+            <ImageRouter url={'/contact'} navLinkKey={'Contact'} imagePath={Contact}/>
+    </div>
 }
 
 export default NavigationBar;

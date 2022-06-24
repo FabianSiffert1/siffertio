@@ -1,10 +1,11 @@
 .Header{
+  border-bottom: solid 0.2vh;
   display: flex;
   justify-content: space-evenly;
-  height: 10vh;
-  overflow: clip;
-  border-bottom: solid 0.5vh;
-
+  height: 15vh;
+  max-height: 20vh;
+  width: 100vw;
+  align-items: center;
   a{
     text-decoration: none;
     border-radius: 50px;

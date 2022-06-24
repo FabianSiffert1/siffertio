@@ -1,25 +1,16 @@
-.Navigation{
+.NavigationBar{
+  border-top: solid 0.2vh;
   display: flex;
-  border-top: solid 0.5vh;
-  height: auto;
-  width: 100vw;
   justify-content: space-evenly;
+  width: 100vw;
+  height: 15vh;
+  max-height: 15vh;
+  align-items: center;
   position: fixed;
   bottom: 0;
-
-    .NavLink{
-      color:black;
-    }
     a{
       text-decoration: none;
       border-radius: 30px;
       border: none;
-    }
-
-    a:hover{
-      border: solid lightgrey;
-    }
-    a:visited{
-      color:black;
     }
   }

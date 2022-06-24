@@ -13,7 +13,7 @@ import Contact from './views/Contact/Contact';
 import Contacts from './views/Contacts/contacts';
 import ImageRouter from "./components/ImageRouter/ImageRouter";
 import Logo from "./resources/images/logo.svg";
-import Secret from "./resources/images/Buttons/secret.svg"
+import Secret from "./resources/images/buttons/secret.svg"
 
 const container = document.getElementById('root');
 // value! -> TS checks that value is never null
@@ -38,7 +38,7 @@ root.render(<React.StrictMode>
       <Route
       path="*"
       element={
-        <main style={{ padding: "0rem" }}>
+        <main style={{ padding: "0rem", alignItems:"center" }}>
           <p>There's nothing here!</p>
           <ImageRouter url={'/'} navLinkKey={'Home'} imagePath={Secret}/>
         </main>
