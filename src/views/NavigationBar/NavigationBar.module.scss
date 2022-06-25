@@ -1,16 +1,15 @@
-.NavigationBar{
+.NavigationBar {
   border-top: solid 0.2vh;
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
-  height: 15vh;
-  max-height: 15vh;
-  align-items: center;
-  position: fixed;
+  align-items: end;
+  position: relative;
   bottom: 0;
-    a{
-      text-decoration: none;
-      border-radius: 30px;
-      border: none;
-    }
+
+  a {
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
   }
+}

@@ -8,10 +8,10 @@ import Header from "../Header/Header";
 
 function Home() {
     return (
-        <div id={"Home"}>
+        <div className={styles.Home}>
             <Header/>
-            <div id={"contentContainer"}>
-            <Outlet/>
+            <div className={styles.contentContainer}>
+                <Outlet/>
             </div>
             <NavigationBar/>
         </div>

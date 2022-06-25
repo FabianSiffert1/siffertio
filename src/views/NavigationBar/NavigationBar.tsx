@@ -7,9 +7,8 @@ import Contact from "../../resources/images/buttons/mailClosed.svg";
 
 function NavigationBar(props: any) {
     return <div className={styles.NavigationBar}>
-
-            <ImageRouter url={'/biography'} navLinkKey={'Biography'} imagePath={Biography}/>
-            <ImageRouter url={'/contact'} navLinkKey={'Contact'} imagePath={Contact}/>
+        <ImageRouter url={'/biography'} navLinkKey={'Biography'} imagePath={Biography}/>
+        <ImageRouter url={'/contact'} navLinkKey={'Contact'} imagePath={Contact}/>
     </div>
 }
 
