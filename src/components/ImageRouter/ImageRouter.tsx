@@ -1,5 +1,4 @@
 import React from "react";
-import language from "../../resources/language/language";
 import styles from "./ImageRouter.module.scss";
 import {NavLink} from "react-router-dom";
 
