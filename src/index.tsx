@@ -13,6 +13,7 @@ import Contact from './views/Contact/Contact';
 import Contacts from './views/Contacts/contacts';
 import ImageRouter from "./components/ImageRouter/ImageRouter";
 import Secret from "./resources/images/buttons/secret.svg"
+import AttractScreen from "./views/AttractScreen/AttractScreen";
 
 const container = document.getElementById('root');
 // value! -> TS checks that value is never null
@@ -22,6 +23,7 @@ root.render(<React.StrictMode>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>}>
+                    <Route path="/" element={<AttractScreen/>}/>
                     <Route path="biography" element={<Biography/>}/>
                     <Route path="contact" element={<Contact/>}>
                         <Route
