@@ -8,16 +8,18 @@ import Header from "../Header/Header";
 
 const Home = () => {
     const location = useLocation();
+    const currentLocation = location.pathname;
+    let attractScreen = undefined;
+    if(currentLocation === "/"){
+        attractScreen = true;
+    }
     return (
         <div className={styles.Home}>
-            <Header/>
-            <div>
-                {location.pathname}
-            </div>
+                {attractScreen ? "" :  <Header/>}
             <div className={styles.contentContainer}>
                 <Outlet/>
             </div>
-            <NavigationBar/>
+            {attractScreen ? "" :  <NavigationBar/>}
         </div>
     );
 }

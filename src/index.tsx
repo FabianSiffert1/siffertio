@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import {
     BrowserRouter,
     Routes,
-    Route,
+    Route, NavLink,
 } from "react-router-dom";
 
 import Home from './views/Home/Home';
