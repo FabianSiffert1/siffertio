@@ -29,7 +29,7 @@ root.render(<React.StrictMode>
                         <Route
                             index
                             element={
-                                <main style={{padding: "0rem"}}>
+                                <main style={{padding: "1rem"}}>
                                     <p>Select an invoice</p>
                                 </main>
                             }

@@ -1,26 +1,26 @@
 .NavigationBar {
-  border-top: solid 0.2vh;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100vw;
-  align-items: flex-end;
-  position: relative;
-  bottom: 0;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom : 0;
+  background-color: #fafafa;
 
-  a {
-    text-decoration: none;
-    border-radius: 30px;
-    border: none;
-  }
+  .NavigationItems {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    a{
+      text-decoration: none;
+    }
+    .settingsButton {
+      background: none;
+      border: none;
+      display: block;
 
-  .settingsButton {
-    background: none;
-    border: none;
-    width: auto;
-    height: auto;
-
-    .settingsButtonImage {
-      height: 4rem;
+      .settingsButtonImage {
+        height: 3rem;
+      }
     }
   }
 }

@@ -11,7 +11,7 @@ function ImageRouter(props: any) {
                 style={({isActive}) => {
                     return {
                         color: isActive ? "black" : "",
-                        boxShadow: isActive ? "0 0 0 2px black" : "",
+                    /*boxShadow: isActive ? "0 0 0 2px black" : "",*/
                     };
                 }}
                 to={props.url}
@@ -23,9 +23,9 @@ function ImageRouter(props: any) {
                     props.navLinkKey !== undefined ?
                         props.navLinkKey : "Missing ImageSource & Key Parameters"
                 }
-                <div className={styles.linkTitle}>
+                {props.showTitle && <div className={styles.linkTitle}>
                     {props.navLinkKey}
-                </div>
+                </div>}
             </NavLink>
         </div>
     );

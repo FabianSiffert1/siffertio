@@ -10,12 +10,14 @@ function NavigationBar(props: any) {
         alert("Toggling Dark/Lightmode");
     }
     return <div className={styles.NavigationBar}>
-        <ImageRouter url={'/biography'} navLinkKey={'Biography'} imagePath={Biography}/>
-        <ImageRouter url={'/contact'} navLinkKey={'Contact'} imagePath={Contact}/>
-        {/*TEMP DARK MODE BUTTON POS*/}
-        <button className={styles.settingsButton}>
-            <img className={styles.settingsButtonImage} src={DarkMode} alt="DarkModeToggle" onClick={toggleDarkMode}/>
-        </button>
+        <div className={styles.NavigationItems}>
+            <ImageRouter url={'/biography'} navLinkKey={'Biography'} imagePath={Biography} showTitle={true}/>
+            <ImageRouter url={'/contact'} navLinkKey={'Contact'} imagePath={Contact} showTitle={true}/>
+            <button className={styles.settingsButton}>
+                <img className={styles.settingsButtonImage} src={DarkMode} alt="DarkModeToggle"
+                     onClick={toggleDarkMode}/>
+            </button>
+        </div>
     </div>
 }
 

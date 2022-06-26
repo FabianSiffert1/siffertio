@@ -1,10 +1,11 @@
 import {NavLink, Outlet} from "react-router-dom";
+import styles from "./Contact.module.scss";
 import { getInvoices } from "../../tmpData/data";
 
 export default function Contact() {
   let invoices = getInvoices();
   return (
-    <div style={{ display: "flex" }}>
+    <div className={styles.Contact}>
       <nav
         style={{
           borderRight: "solid 1px",
@@ -17,7 +18,7 @@ export default function Contact() {
               return {
                 display: "block",
                 margin: "1rem 0",
-                color: isActive ? "red" : "",
+                color: isActive ? "lightblue" : "white",
               };
             }}
             to={`/contact/${invoice.number}`}
