@@ -1,13 +1,18 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import Logo from "../../resources/images/logo.svg";
-import ImageRouter from "../../components/ImageRouter/ImageRouter";
+import {NavLink} from "react-router-dom";
 
 
 function Header() {
     return (
         <div className={styles.Header}>
-            <ImageRouter url={'/'} imagePath={Logo}/>
+            <NavLink to={'/'} key={'AttractScreen'}>
+                <div>Siffert.io</div>
+                <div>
+                    <span>  &#123;a work in progress&#125; </span>
+                </div>
+
+            </NavLink>
         </div>
     );
 }
