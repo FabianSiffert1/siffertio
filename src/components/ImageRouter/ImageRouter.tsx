@@ -4,11 +4,13 @@ import {NavLink} from "react-router-dom";
 
 
 function ImageRouter(props: any) {
+    let linkIsActive = false;
     return (
         <div className={styles.ImageRouter}>
 
             <NavLink
                 style={({isActive}) => {
+                    linkIsActive = true;
                     return {
                         color: isActive ? "black" : "",
                     /*boxShadow: isActive ? "0 0 0 2px black" : "",*/
@@ -19,7 +21,7 @@ function ImageRouter(props: any) {
             >
 
                 {props.imagePath ?
-                    <img className={styles.image} src={props.imagePath} alt="ImagePlaceholder"/> :
+                    <img className={styles.image} src={props.imagePath } alt="ImagePlaceholder"/> :
                     props.navLinkKey !== undefined ?
                         props.navLinkKey : "Missing ImageSource & Key Parameters"
                 }

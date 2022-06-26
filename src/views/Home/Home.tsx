@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "./Home.module.scss";
 import {Outlet, useLocation} from "react-router-dom";
-import NavigationBar from "../NavigationBar/NavigationBar";
-import Header from "../Header/Header";
+import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import Header from "../../components/Header/Header";
 
 
 const Home = () => {
