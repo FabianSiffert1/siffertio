@@ -6,9 +6,7 @@ export default function Biography() {
         <main className={styles.Biography}>
             <h2>Biography</h2>
             <div className={styles.textContent}>
-                <div className={styles.typeWriterText}>
-                    {language.LOREM}
-                </div>
+                {language.LOREM}
             </div>
         </main>
     );

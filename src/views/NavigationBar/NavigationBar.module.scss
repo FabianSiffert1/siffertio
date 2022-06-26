@@ -12,4 +12,15 @@
     border-radius: 30px;
     border: none;
   }
+
+  .settingsButton {
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+
+    .settingsButtonImage {
+      height: 4rem;
+    }
+  }
 }

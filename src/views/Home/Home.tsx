@@ -6,7 +6,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
 
 
-function Home() {
+const Home = () => {
     return (
         <div className={styles.Home}>
             <Header/>
