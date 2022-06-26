@@ -7,11 +7,7 @@ function Header() {
     return (
         <div className={styles.Header}>
             <NavLink to={'/'} key={'AttractScreen'}>
-                <div>Siffert.io</div>
-                <div>
-                    <span>  &#123;a work in progress&#125; </span>
-                </div>
-
+                <div title="siffert.io">siffert.io</div>
             </NavLink>
         </div>
     );

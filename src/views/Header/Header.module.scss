@@ -1,64 +1,74 @@
 .Header {
-
-    text-align:center;
+  a{
+   text-decoration: none;
     color: black;
-    font-family:'Courier New', monospace;
-    font-weight:300;
-    font-size:32px;
-    overflow:hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0,0,0);
-
-  div {
-    display:inline-block;
-    overflow:hidden;
-    white-space:nowrap;
   }
 
-  div:first-of-type {    /* For increasing performance
-                       ID/Class should've been used.
-                       For a small demo
-                       it's okaish for now */
-    animation: showup 7s infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      color: #fff;
+      font-size: 96px;
+      font-family: 'Courier New', monospace;
+      letter-spacing: -7px;
+
+  div{
+    animation: glitch 10s linear infinite;
   }
 
-  div:last-of-type {
-    width:0px;
-    animation: reveal 7s infinite;
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg);
+    }
   }
 
-  div:last-of-type span {
-    margin-left:-355px;
-    animation: slidein 7s infinite;
+  div:before,
+  div:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
   }
 
-  @keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
+  div:before{
+    animation: glitchTop 10s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   }
 
-  @keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg);
+    }
   }
 
-  @keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
+  div:after{
+    animation: glitchBottom 10s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   }
 
-
-  p {
-    font-size:12px;
-    color:#999;
-    margin-top:200px;
+  @keyframes glitchBottom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg);
+    }
   }
 }
