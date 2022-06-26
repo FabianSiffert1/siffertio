@@ -1,11 +1,8 @@
 .Biography {
 
   .textContainer{
-    height: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 
   }
   .title{
@@ -15,10 +12,9 @@
   }
 
   .textContent{
+    font-size: 40px;
     height: 100%;
     width: 100%;
-    overflow: auto;
-    padding-right: 5px;
   }
 
 }

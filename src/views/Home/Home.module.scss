@@ -1,21 +1,21 @@
 .Home {
-  height:100vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  background: #212121;
   overflow: hidden;
 
   .contentContainer {
     height: 100%;
-    padding: 3%;
     font-family: "Courier New", monospace;
-    background: #212121;
     color: #fafafa;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-size: 22px;
-
+    overflow: auto;
+    padding: 3% 15px 3% 3%;
   }
-  .attractScreen{
-    padding : 0;
-    overflow: hidden;
+
+  .attractScreen {
+    padding: 0;
     background: #212121;
     color: #fafafa;
   }
