@@ -8,7 +8,7 @@ export default function AttractScreen() {
             <div className={styles.textContent}>
                 <div className={styles.container}>
                     <div className={styles.glitch} data-text="Siffert.io">
-                        <div className={styles.glow}>Siffert.io</div>
+                        <div className={styles.glow}>siffert.io</div>
                         <p className={styles.subtitle}>Work In Progress</p>
                     </div>
                 </div>

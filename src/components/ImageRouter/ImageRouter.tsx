@@ -1,16 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./ImageRouter.module.scss";
 import {NavLink} from "react-router-dom";
 
+export interface ImageRouterProps {
+    url: string;
+    navLinkKey?: string;
+    imagePath: string;
+    activeImagePath?:string;
+    showTitle?: boolean;
+}
 
-function ImageRouter(props: any) {
-    let linkIsActive = false;
+function ImageRouter(props: ImageRouterProps) {
+    const [linkActive, setLinkActive] = useState(false);
     return (
         <div className={styles.ImageRouter}>
 
             <NavLink
                 style={({isActive}) => {
-                    linkIsActive = true;
+                    setLinkActive(true) ;
                     return {
                         color: isActive ? "black" : "",
                     /*boxShadow: isActive ? "0 0 0 2px black" : "",*/
@@ -19,7 +26,7 @@ function ImageRouter(props: any) {
                 to={props.url}
                 key={props.navLinkKey}
             >
-
+                {/*if linkActive&&activeImagePath -> imageActive*/}
                 {props.imagePath ?
                     <img className={styles.image} src={props.imagePath } alt="ImagePlaceholder"/> :
                     props.navLinkKey !== undefined ?

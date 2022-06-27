@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NavigationBar.module.scss";
 
-import ImageRouter from "../ImageRouter/ImageRouter";
+import ImageRouter from "../../components/ImageRouter/ImageRouter";
 
 import Biography from "../../resources/images/buttons/home2.svg";
 import Contact from "../../resources/images/buttons/mailClosed.svg";
