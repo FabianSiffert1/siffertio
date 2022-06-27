@@ -5,6 +5,8 @@
   position: fixed;
   bottom : 0;
   background-color: #fafafa;
+  max-height: 19vh;
+  min-height: 19vh;
 
   .NavigationItems {
     display: flex;
