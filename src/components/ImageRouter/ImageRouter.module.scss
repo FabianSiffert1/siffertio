@@ -6,11 +6,12 @@
   padding: 1rem;
 
   .image {
+    max-width:3rem;
+    width: auto;
+    height: auto;
   }
 
   .linkTitle {
-    display: flex;
-    justify-content: center;
     font-family: "Courier New", monospace;
   }
 }
