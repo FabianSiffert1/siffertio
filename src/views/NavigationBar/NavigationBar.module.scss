@@ -5,7 +5,7 @@
   overflow: hidden;
   position: fixed;
   bottom : 0;
-  background-color: white;
+  background-color: #fafafa;
   max-height: 19vh;
   min-height: 19vh;
 
@@ -15,7 +15,7 @@
     justify-content: space-evenly;
     align-items: flex-end;
     a{
-      border: solid black;
+      border: none;
     }
     .settingsButton {
       background: none;
