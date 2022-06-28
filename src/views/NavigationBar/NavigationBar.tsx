@@ -5,15 +5,14 @@ import Biography from "../../resources/images/buttons/home2.svg";
 import Contact from "../../resources/images/buttons/mailClosed.svg";
 import AnimatedTextRouter from "../../components/AnimatedTextRouter/AnimatedTextRouter";
 
-const routesInNavigationBar = [
-    'A','B'
-]
+let routesInNavigationBar:{route: string, routeKey: string}[] = [
+    {'route': '/biography', 'routeKey': 'Biography'},
+    {'route': '/Nonsense', 'routeKey': 'Projects'},
+    {'route': '/contact', 'routeKey': 'Contact'}];
 
 function NavigationBar(props: any) {
     return <div className={styles.NavigationBar}>
-        <AnimatedTextRouter route={'/biography'} routeKey={'Biography'} routeArray={routesInNavigationBar}/>
-        <AnimatedTextRouter route={'/NONSENSE'} routeKey={'Projects'}/>
-        <AnimatedTextRouter route={'/contact'} routeKey={'Contact'}/>
+        <AnimatedTextRouter routesArray={routesInNavigationBar}/>
     </div>
 }
 
