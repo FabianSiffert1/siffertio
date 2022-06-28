@@ -15,9 +15,9 @@ function NavigationBar(props: any) {
     }
     return <div className={styles.NavigationBar}>
         <div className={styles.NavigationItems}>
-            <ImageRouter url={'/biography'} navLinkKey={'Biography'} imagePath={Biography} showTitle={true}/>
-            <ImageRouter url={'/contact'} navLinkKey={'Projects'} imagePath={Tool} showTitle={true}/>
-            <ImageRouter url={'/contact'} navLinkKey={'Contact'} imagePath={Contact} activeImagePath={ActiveContact} showTitle={true}/>
+            <ImageRouter route={'/biography'} routeKey={'Biography'} imagePath={Biography} showRouteKeyAsTooltip={true}/>
+            <ImageRouter route={'/contact'} routeKey={'Projects'} imagePath={Tool} showRouteKeyAsTooltip={true}/>
+            <ImageRouter route={'/contact'} routeKey={'Contact'} imagePath={Contact} activeImagePath={ActiveContact} showRouteKeyAsTooltip={true}/>
             <button className={styles.settingsButton}>
                 <img className={styles.settingsButtonImage} src={DarkMode} alt="DarkModeToggle"
                      onClick={toggleDarkMode}/>

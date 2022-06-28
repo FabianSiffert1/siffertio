@@ -3,11 +3,11 @@ import styles from "./ImageRouter.module.scss";
 import {NavLink} from "react-router-dom";
 
 export interface ImageRouterProps {
-    url: string;
-    navLinkKey?: string;
+    route: string;
+    routeKey?: string;
     imagePath: string;
     activeImagePath?:string;
-    showTitle?: boolean;
+    showRouteKeyAsTooltip?: boolean;
 }
 
 function ImageRouter(props: ImageRouterProps) {
@@ -23,17 +23,17 @@ function ImageRouter(props: ImageRouterProps) {
                     /*boxShadow: isActive ? "0 0 0 2px black" : "",*/
                     };
                 }}
-                to={props.url}
-                key={props.navLinkKey}
+                to={props.route}
+                key={props.routeKey}
             >
                 {/*if linkActive&&activeImagePath -> imageActive*/}
                 {props.imagePath ?
                     <img className={styles.image} src={props.imagePath } alt="ImagePlaceholder"/> :
-                    props.navLinkKey !== undefined ?
-                        props.navLinkKey : "Missing ImageSource & Key Parameters"
+                    props.routeKey !== undefined ?
+                        props.routeKey : "Missing ImageSource & Key Parameters"
                 }
-                {props.showTitle && <div className={styles.linkTitle}>
-                    {props.navLinkKey}
+                {props.showRouteKeyAsTooltip && <div className={styles.routeToolTip}>
+                    {props.routeKey}
                 </div>}
             </NavLink>
         </div>

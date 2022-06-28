@@ -41,7 +41,7 @@ root.render(<React.StrictMode>
                         element={
                             <main style={{padding: "0rem", alignItems: "center"}}>
                                 <p>There's nothing here!</p>
-                                <ImageRouter url={'/'} navLinkKey={'Home'} imagePath={Secret}/>
+                                <ImageRouter route={'/'} routeKey={'Home'} imagePath={Secret}/>
                             </main>
                         }
                     />
