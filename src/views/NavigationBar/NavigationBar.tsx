@@ -3,14 +3,17 @@ import styles from "./NavigationBar.module.scss";
 
 import Biography from "../../resources/images/buttons/home2.svg";
 import Contact from "../../resources/images/buttons/mailClosed.svg";
-import {NavLink} from "react-router-dom";
+import AnimatedTextRouter from "../../components/AnimatedTextRouter/AnimatedTextRouter";
+
+const routesInNavigationBar = [
+    'A','B'
+]
 
 function NavigationBar(props: any) {
     return <div className={styles.NavigationBar}>
-        <div className={styles.NavigationItems}>
-                <div className={styles.activeLink}> <NavLink to={'/biography'} key={'Biography'}>Biography</NavLink></div>
-            <div className={styles.inactiveLink}> <NavLink to={'/contact'} key={'Contact'}>Contact</NavLink></div>
-        </div>
+        <AnimatedTextRouter route={'/biography'} routeKey={'Biography'} routeArray={routesInNavigationBar}/>
+        <AnimatedTextRouter route={'/NONSENSE'} routeKey={'Projects'}/>
+        <AnimatedTextRouter route={'/contact'} routeKey={'Contact'}/>
     </div>
 }
 

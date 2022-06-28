@@ -9,7 +9,6 @@
   }
   .contentContainer {
     height: 100%;
-    font-family: "Courier New", monospace;
     color: #fafafa;
     box-sizing: border-box;
     font-size: 22px;
@@ -23,4 +22,6 @@
     color: #fafafa;
   }
 }
-
+.Home * {
+  font-family: "Courier New",monospace;
+}
