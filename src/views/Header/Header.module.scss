@@ -5,19 +5,21 @@
   margin: 0;
   font-size: 96px;
   font-family: 'Courier New', monospace;
-  letter-spacing: -7px;
-  background-color: #fafafa;
+  letter-spacing: 7px;
   height: 11vh;
-  padding: 1vh;
+  padding: 2vh;
   overflow: hidden;
+  background-color: transparent;
 
   a {
     text-decoration: none;
-    color: black;
+    color: white;
+    border-radius: 30px;
+    border: solid white;
   }
 
   div {
-    animation: glitch 10s linear infinite;
+    animation: glitch 1s linear infinite;
   }
 
   @keyframes glitch {

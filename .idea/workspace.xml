@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c71498-ea3b-4ce7-840d-105f90859463" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AnimatedTextRouter/AnimatedTextRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AnimatedTextRouter/AnimatedTextRouter.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageRouter/ImageRouter.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageRouter/ImageRouter.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.tsx" afterDir="false" />
     </list>
@@ -56,7 +56,7 @@
       <workItem from="1656404416936" duration="7847000" />
       <workItem from="1656418518875" duration="5000" />
       <workItem from="1656421237335" duration="21000" />
-      <workItem from="1656425370194" duration="3816000" />
+      <workItem from="1656425370194" duration="5848000" />
     </task>
     <servers />
   </component>
