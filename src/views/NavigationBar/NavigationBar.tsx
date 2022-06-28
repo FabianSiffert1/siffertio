@@ -8,6 +8,7 @@ import Contact from "../../resources/images/buttons/mailClosed.svg";
 import Tool from "../../resources/images/buttons/toolSmall.svg";
 import ActiveContact from "../../resources/images/buttons/mailOpen.svg";
 import DarkMode from "../../resources/images/buttons/darkMode.svg";
+import {NavLink} from "react-router-dom";
 
 function NavigationBar(props: any) {
     const toggleDarkMode = () => {
@@ -16,6 +17,9 @@ function NavigationBar(props: any) {
     return <div className={styles.NavigationBar}>
         <div className={styles.NavigationItems}>
             <ImageRouter route={'/biography'} routeKey={'Biography'} imagePath={Biography} showRouteKeyAsTooltip={true}/>
+            <div className={styles.Temp}>
+                <div className={styles.animateCharacter}> <NavLink to={'/biography'} key={'Biography'}>Biography</NavLink></div>
+            </div>
             <ImageRouter route={'/contact'} routeKey={'Projects'} imagePath={Tool} showRouteKeyAsTooltip={true}/>
             <ImageRouter route={'/contact'} routeKey={'Contact'} imagePath={Contact} activeImagePath={ActiveContact} showRouteKeyAsTooltip={true}/>
             <button className={styles.settingsButton}>
