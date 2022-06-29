@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./AnimatedTextRouter.module.scss";
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 
 export interface AnimatedTextRouterProps {
     routesArray: any;
@@ -9,14 +9,14 @@ export interface AnimatedTextRouterProps {
 
 
 function AnimatedTextRouter(props: AnimatedTextRouterProps) {
-    let itsActive = true;
+    const currentLocation = useLocation().pathname;
     return (<>
             {props.routesArray.map((element: any) => <div className={styles.AnimatedTextRouter}>
                     <NavLink
                         to={element.route}
                         key={element.routeKey}
                     >
-                        <div className={itsActive ? styles.activeLink : styles.inActiveLink}>
+                        <div className={currentLocation === element.route ? styles.activeLink : styles.inActiveLink}>
                             {element.routeKey}
                         </div>
                     </NavLink>
