@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="18c71498-ea3b-4ce7-840d-105f90859463" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AnimatedTextRouter/AnimatedTextRouter.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnimatedTextRouter/AnimatedTextRouter.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnimatedTextRouter/AnimatedTextRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnimatedTextRouter/AnimatedTextRouter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/AttractScreen/AttractScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AttractScreen/AttractScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Biography/Biography.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Biography/Biography.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Biography/Biography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Biography/Biography.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/Home.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Home.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/NavigationBar/NavigationBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
       <workItem from="1656425370194" duration="11732000" />
       <workItem from="1656482780327" duration="1355000" />
       <workItem from="1656492678959" duration="967000" />
-      <workItem from="1656510188349" duration="1825000" />
+      <workItem from="1656510188349" duration="4997000" />
     </task>
     <servers />
   </component>

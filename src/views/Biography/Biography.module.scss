@@ -1,20 +1,10 @@
 .Biography {
-
   .textContainer{
-    justify-content: center;
-    align-items: center;
-
   }
-  .title{
-    padding:0;
-    font-size:30px;
+  .textTitle{
     text-decoration: underline;
-  }
-
-  .textContent{
-    font-size: 24px;
-    height: 100%;
-    width: 100%;
+    font-size:2vw;
+    padding-bottom: 1.5vw;
   }
 
 }

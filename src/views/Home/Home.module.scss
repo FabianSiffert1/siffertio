@@ -5,17 +5,17 @@
   min-height: 100vh;
   background: #212121;
   overflow: hidden;
+  color: #fafafa;
 
   a{
     color: black;
   }
   .contentContainer {
-    max-height: 73%;
     color: #fafafa;
     box-sizing: border-box;
-    font-size: 22px;
-    overflow: auto;
-    padding: 3% 3% 3% 3%;
+    font-size: 1vw;
+    padding: 3% 3% 15% 3%;
+    max-height: 80vh;
   }
 
   .attractScreen {

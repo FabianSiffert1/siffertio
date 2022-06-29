@@ -1,13 +1,13 @@
 .NavigationBar {
   display: flex;
-  overflow: hidden;
+  position: absolute;
+  flex-direction: row;
+  overflow: auto;
   bottom: 0;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
-  max-height: 20vh;
-  min-height: 9vh;
-
+  max-height: 12vh;
   background-color: #fafafa;
 }
 

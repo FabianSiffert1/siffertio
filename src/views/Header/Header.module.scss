@@ -2,23 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  font-size: 96px;
-  letter-spacing: 7px;
+  margin-top: 1vh;
+  padding-top: 1vh;
+  font-size: 5vw;
+  letter-spacing: 1vw;
   height: 11vh;
   padding: 2vh;
-  overflow: hidden;
   background-color: transparent;
 
   a {
     text-decoration: none;
-    color: white;
-    border-radius: 30px;
-    border: solid white;
+    color: #fafafa;
   }
 
   div {
-    animation: glitch 1s linear infinite;
+    animation: glitch 20s linear infinite;
   }
 
   @keyframes glitch {

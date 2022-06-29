@@ -2,35 +2,41 @@
   height:100%;
   display: flex;
   align-items: center;
+  max-font-size: 6rem;
   a{
     text-decoration: none;
   }
+
   .inActiveLink {
+    font-size: 3vw;
+    display: inline-block;
     text-transform: uppercase;
-    font-size: 5rem;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    border: solid transparent;
   }
 
 
   .activeLink {
+    font-size: 3vw;
     border: solid black;
-    padding: 0.3rem;
-    margin: 0.3rem;
-    border-radius: 30px;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    border-radius: 30vh;
     text-transform: uppercase;
     background-image: linear-gradient(
                     -225deg,
                     #000000 0%,
                     #000000 29%,
-                    magenta 67%,
+                    #d91683 67%,
                     black 100%
     );
     background-size: 200% auto;
     color: #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
+    animation: textclip 20s linear infinite;
     display: inline-block;
-    font-size: 5rem;
   }
 
   @keyframes textclip {

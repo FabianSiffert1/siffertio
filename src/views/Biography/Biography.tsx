@@ -5,11 +5,22 @@ export default function Biography() {
     return (
         <div className={styles.Biography}>
             <div className={styles.textContainer}>
-                <div className={styles.title}>
-                    <h2>Biography</h2>
+                <div className={styles.textTitle}>
+                    Biography
                 </div>
                 <div className={styles.textContent}>
                     {language.LOREM}
+                    <br/>
+                    <br/>
+                    <br/>
+                    {language.LOREM}
+                    <br/>
+                    <br/>
+                    <br/>
+                    {language.LOREM}
+                    <br/>
+                    <br/>
+                    <br/>
                     {language.LOREM}
                 </div>
             </div>
