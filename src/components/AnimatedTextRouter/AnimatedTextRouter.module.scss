@@ -3,24 +3,25 @@
   display: flex;
   align-items: center;
   max-font-size: 6rem;
+
   a{
     text-decoration: none;
   }
 
   .inActiveLink {
+    padding: 0.8vw;
     font-size: 3vw;
     display: inline-block;
     text-transform: uppercase;
-    padding: 0.3rem;
     margin: 0.3rem;
     border: solid transparent;
   }
 
 
   .activeLink {
+    padding: 0.8vw;
     font-size: 3vw;
     border: solid black;
-    padding: 0.4rem;
     margin: 0.4rem;
     border-radius: 30vh;
     text-transform: uppercase;
