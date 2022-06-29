@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c71498-ea3b-4ce7-840d-105f90859463" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/Home.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Home.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
