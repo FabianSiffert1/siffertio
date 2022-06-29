@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./ImageRouter.module.scss";
 import {NavLink} from "react-router-dom";
 
@@ -11,13 +11,10 @@ export interface ImageRouterProps {
 }
 
 function ImageRouter(props: ImageRouterProps) {
-    const [linkActive, setLinkActive] = useState(false);
     return (
         <div className={styles.ImageRouter}>
-
             <NavLink
                 style={({isActive}) => {
-                    setLinkActive(true) ;
                     return {
                         color: isActive ? "black" : "",
                     /*boxShadow: isActive ? "0 0 0 2px black" : "",*/
