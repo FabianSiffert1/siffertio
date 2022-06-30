@@ -21,6 +21,15 @@ export default function FadeInAttractScreen() {
                </div>
                </NavLink>
            </div>
+           <a href="" target="_blank">
+               <footer>
+                   <div className="texto">
+        <span>
+            <i className="fab fa-youtube"></i>
+             watch on youtube</span>
+                   </div>
+               </footer>
+           </a>
        </div>
     );
 }
