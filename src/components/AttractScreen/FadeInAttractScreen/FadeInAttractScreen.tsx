@@ -10,7 +10,7 @@ export default function FadeInAttractScreen() {
 
                    <div className={styles.title}>
                        <span className={styles.block}></span>
-                       <h1>siffert.io<span></span></h1>
+                       <h1>siffert&nbsp;<div className={styles.bouncingDot}/></h1><h1>io</h1>
                    </div>
 
                    <div className={styles.role}>
@@ -21,15 +21,6 @@ export default function FadeInAttractScreen() {
                </div>
                </NavLink>
            </div>
-
-           <a href="https://youtu.be/7d2XsPSjjjI" target="_blank"><footer>
-               <div className={styles.texto}>
-        <span>
-            <i className="fab fa-youtube"></i>
-             find me on github</span>
-               </div>
-           </footer>
-           </a>
        </div>
     );
 }
