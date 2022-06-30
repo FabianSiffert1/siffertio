@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18c71498-ea3b-4ce7-840d-105f90859463" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AttractScreen/FadeInAttractScreen/FadeInAttractScreen.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AttractScreen/FadeInAttractScreen/FadeInAttractScreen.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AttractScreen/FadeInAttractScreen/FadeInAttractScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AttractScreen/FadeInAttractScreen/FadeInAttractScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <workItem from="1656510188349" duration="5243000" />
       <workItem from="1656525942993" duration="942000" />
       <workItem from="1656569446409" duration="4095000" />
-      <workItem from="1656579078329" duration="625000" />
+      <workItem from="1656579078329" duration="862000" />
     </task>
     <servers />
   </component>
