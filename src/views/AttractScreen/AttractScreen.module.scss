@@ -107,11 +107,8 @@
   }
 
   .glow {
-    @extend .glitch;
     text-shadow: 0 0 1000px rgb(223, 191, 191);
     color: transparent;
-    position: absolute;
-    top: 0;
   }
 
   .subtitle {

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18c71498-ea3b-4ce7-840d-105f90859463" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AttractScreen/AttractScreen.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AttractScreen/AttractScreen.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
       <workItem from="1656492678959" duration="967000" />
       <workItem from="1656510188349" duration="5243000" />
       <workItem from="1656525942993" duration="942000" />
-      <workItem from="1656569446409" duration="1782000" />
+      <workItem from="1656569446409" duration="1887000" />
     </task>
     <servers />
   </component>
