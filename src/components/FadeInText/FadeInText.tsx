@@ -11,9 +11,8 @@ export default function FadeInText(props: FadeInTextProps) {
         <div className={styles.FadeInTextContainer}>
             <div className={styles.coloredBlock}></div>
             <div className={styles.fadeInText}>
-                FadeInText Test Test Test
+              A work in progress
             </div>
-
         </div>
     );
 }

@@ -14,7 +14,7 @@ const Home = () => {
     }
     return (
         <div className={styles.Home}>
-                {attractScreen ? "" :  [<Header/>,<FadeInText/>]}
+                {attractScreen ? "" :  [<Header/>,<FadeInText/>,<FadeInText/>,<FadeInText/>]}
             <div className={ attractScreen ? styles.attractScreen :styles.contentContainer}>
                 <Outlet/>
             </div>
