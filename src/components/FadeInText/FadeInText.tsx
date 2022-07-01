@@ -9,8 +9,11 @@ export interface FadeInTextProps{
 export default function FadeInText(props: FadeInTextProps) {
     return (
         <div className={styles.FadeInTextContainer}>
-            <span className={styles.FadeInColoredBlock}></span>
-            FADEINMEBRUDI
+            <div className={styles.coloredBlock}></div>
+            <div className={styles.fadeInText}>
+                FadeInText Test Test Test
+            </div>
+
         </div>
     );
 }

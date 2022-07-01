@@ -4,49 +4,54 @@
 
   display: flex;
   justify-content: center;
-  animation: fadeIn $fadeInDuration;
-  -webkit-animation: fadeIn $fadeInDuration;
-  -moz-animation: fadeIn $fadeInDuration;
-  -o-animation: fadeIn $fadeInDuration;
-  -ms-animation: fadeIn $fadeInDuration;
+  align-items: center;
+  height: 5vh;
 
-  span{
-    width:0;
-    height:0;
+  .fadeInText {
+    width: auto;
+    height: 100%;
+    animation: fadeIn $fadeInDuration both;
+    -webkit-animation: fadeIn $fadeInDuration both;
+    -moz-animation: fadeIn $fadeInDuration both;
+    -o-animation: fadeIn $fadeInDuration both;
+    -ms-animation: fadeIn $fadeInDuration both;
+    animation-delay: $fadeInDuration*0.8;
+  }
+
+
+  span {
+
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     background: $defaultBlockColor;
+
     animation: popIn 1.2s cubic-bezier(.74, .06, .4, .92) forwards;
     -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
     animation-delay: 2s;
-    margin-left: 5px;
-    margin-top: -10px;
-    position: absolute;
-    bottom: 13px;
-    right: -12px;
   }
 
-  .block {
-    width: 0;
-    height: inherit;
-    background: #ffb510;
+  .coloredBlock {
     position: absolute;
-    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-    display: flex;
+    height: inherit;
+    width: 0;
+    background: $defaultBlockColor;
+    animation: mainBlock $fadeInDuration cubic-bezier(.74, .06, .4, .92) forwards;
   }
 
 }
 
+
 @keyframes fadeIn {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
-@keyframes popIn{
+
+@keyframes popIn {
   0% {
     width: 0;
     height: 0;
@@ -81,6 +86,7 @@
 
   }
 }
+
 @keyframes mainBlock {
   0% {
     width: 0;
