@@ -1,61 +1,80 @@
 .FadeInTextContainer {
   $fadeInTime: 2s;
   $blockColor: #ffb510;
-  $blockWidth: 100%;
-
+  $blockWidth: 10vw;
+  $blockHeight: 3vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  height: 5vh;
+  .FadeInAnimationContainer {
 
-  .fadeInText {
-    width: auto;
+
+    .fadeInText {
+      justify-content: center;
+      font-weight: bold;
+
+      height: $blockHeight;
+      width:  $blockWidth;
+      animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      animation-delay: 1s;
+    }
+
+
+    .coloredBlock {
+      height: $blockHeight;
+      min-height: 2vh;
+      width: $blockWidth;
+
+      background: $blockColor;
+      opacity: 100%;
+
+      animation: mainBlock $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+      animation-delay: 0s;
+    }
+
+
+  }
+
+  .FadeInPlainTextContainer {
     animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
     -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
     -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
     -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
     -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    animation-delay: $fadeInTime*0.5;
+    animation-delay: 1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      right: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
 
+  @keyframes mainBlock {
+    0% {
+      width: 0;
+      left: 0;
 
-  .coloredBlock {
-    position: absolute;
-    height: inherit;
-    width: 10vh;
-    background: $blockColor;
-    animation-delay: $fadeInTime;
-    opacity: 100%;
-    animation: mainBlock $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+    }
+    50% {
+      width: $blockWidth;
+      left: 0;
+
+    }
+    100% {
+      width: 0;
+      left: $blockWidth;
+    }
   }
 
 }
 
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-@keyframes mainBlock {
-  0% {
-    width: 0;
-    left: 0;
-
-  }
-  50% {
-    width: 100%;
-    left: 0;
-
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}

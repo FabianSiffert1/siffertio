@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div className={styles.Home}>
             {attractScreen ? "" : [<Header/>,
-                <FadeInText blockColor={'pink'} textToDisplay={"A work in progress"} blockHeight={"inherit"} blockWidth={"10vw"}/>]}
+                <FadeInText blockColor={'lightgreen'} textToDisplay={"A work in progress"}/>,<FadeInText blockColor={"lightpink"}></FadeInText> ]}
             <div className={attractScreen ? styles.attractScreen : styles.contentContainer}>
                 <Outlet/>
             </div>
