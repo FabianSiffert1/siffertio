@@ -1,39 +1,33 @@
 .FadeInTextContainer {
-  $fadeInDuration: 2s;
-  $defaultBlockColor: #ffb510;
+  $fadeInTime: 2s;
+  $blockColor: #ffb510;
+  $blockWidth: 100%;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 5vh;
-  width: auto;
 
   .fadeInText {
-    animation: fadeIn $fadeInDuration cubic-bezier(.74, .06, .4, .92) both;
-    -webkit-animation: fadeIn $fadeInDuration cubic-bezier(.74, .06, .4, .92) both;
-    -moz-animation: fadeIn $fadeInDuration cubic-bezier(.74, .06, .4, .92) both;
-    -o-animation: fadeIn $fadeInDuration cubic-bezier(.74, .06, .4, .92) both;
-    -ms-animation: fadeIn $fadeInDuration cubic-bezier(.74, .06, .4, .92) both;
-    animation-delay: $fadeInDuration*0.8;
+    width: auto;
+    animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+    -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+    -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+    -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+    -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+    animation-delay: $fadeInTime*0.5;
   }
 
 
-  span {
-
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background: $defaultBlockColor;
-    animation-delay: 2s;
-  }
 
   .coloredBlock {
     position: absolute;
     height: inherit;
-    width: 0;
-    background: $defaultBlockColor;
-    animation-delay: $fadeInDuration;
+    width: 10vh;
+    background: $blockColor;
+    animation-delay: $fadeInTime;
     opacity: 100%;
-    animation: mainBlock $fadeInDuration cubic-bezier(.74, .06, .4, .92) forwards;
+    animation: mainBlock $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
   }
 
 }

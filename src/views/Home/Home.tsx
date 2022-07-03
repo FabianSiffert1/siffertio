@@ -9,16 +9,17 @@ import FadeInText from "../../components/FadeInText/FadeInText";
 const Home = () => {
     const currentLocation = useLocation().pathname;
     let attractScreen = undefined;
-    if(currentLocation === "/"){
+    if (currentLocation === "/") {
         attractScreen = true;
     }
     return (
         <div className={styles.Home}>
-                {attractScreen ? "" :  [<Header/>,<FadeInText/>,<FadeInText/>,<FadeInText/>]}
-            <div className={ attractScreen ? styles.attractScreen :styles.contentContainer}>
+            {attractScreen ? "" : [<Header/>,
+                <FadeInText blockColor={'pink'} textToDisplay={"A work in progress"} blockHeight={"inherit"} blockWidth={"10vw"}/>]}
+            <div className={attractScreen ? styles.attractScreen : styles.contentContainer}>
                 <Outlet/>
             </div>
-            {attractScreen ? "" :  <NavigationBar routerPosition={currentLocation}/>}
+            {attractScreen ? "" : <NavigationBar routerPosition={currentLocation}/>}
         </div>
     );
 }
