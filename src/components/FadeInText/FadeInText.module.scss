@@ -1,9 +1,12 @@
 .FadeInTextContainer {
   $fadeInTime: 2s;
-  $blockColor: #ffb510;
-  $blockWidth: 100vw;
-  $blockHeight: 10vh;
+  $mainBlockColor: #ffb510;
+  $mainBlockWidth: 100vw;
+  $mainBlockHeight: 10vh;
+  $mainFontSize: 3vh;
   top: 0;
+  display: block;
+  align-items: center;
 
   .FadeInAnimationContainer {
 
@@ -11,10 +14,11 @@
     .fadeInText {
       display: flex;
       justify-content: center;
+      align-items: center;
       font-weight: bold;
       z-index: 1;
-      height: $blockHeight;
-      width:  $blockWidth;
+      height: $mainBlockHeight;
+      width:  $mainBlockWidth;
       animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
       -webkit-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
       -moz-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
@@ -26,9 +30,9 @@
 
     .coloredBlock {
       position: absolute;
-      height: $blockHeight;
-      width: $blockWidth;
-      background: $blockColor;
+      height: $mainBlockHeight;
+      width: $mainBlockWidth;
+      background: $mainBlockColor;
       opacity: 100%;
       z-index: 2;
 
@@ -66,13 +70,13 @@
 
     }
     50% {
-      width: $blockWidth;
+      width: $mainBlockWidth;
       left: 0;
 
     }
     100% {
       width: 0;
-      left: $blockWidth;
+      left: $mainBlockWidth;
     }
   }
 
