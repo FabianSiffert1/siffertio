@@ -12,9 +12,9 @@ import Biography from './views/Biography/Biography';
 import Contact from './views/Contact/Contact';
 import Contacts from './views/Contacts/contacts';
 import ImageRouter from "./components/ImageRouter/ImageRouter";
+import Welcome from "./views/Welcome/Welcome";
+
 import Secret from "./resources/images/buttons/secret.svg"
-import AttractScreen from "./components/AttractScreen/FadeInAttractScreen/FadeInAttractScreen";
-import GlitchAttractScreen from "./components/AttractScreen/GlitchAttractScreen/GlitchAttractScreen";
 
 const container = document.getElementById('root');
 // value! -> TS checks that value is never null
@@ -24,7 +24,7 @@ root.render(<React.StrictMode>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>}>
-                    <Route path="/" element={<AttractScreen/>}/>
+                    <Route path="/" element={<Welcome/>}/>
                     <Route path="biography" element={<Biography/>}/>
                     <Route path="contact" element={<Contact/>}>
                         <Route

@@ -13,10 +13,10 @@ const Home = () => {
     return (
         <div className={styles.Home}>
             {attractScreen ? "" : [<Header/>]}
-            <div className={attractScreen ? styles.attractScreen : styles.contentContainer}>
+            <div className={attractScreen? styles.attractScreen : styles.contentContainer}>
                 <Outlet/>
             </div>
-            {attractScreen ? "" : <NavigationBar routerPosition={currentLocation}/>}
+            <NavigationBar routerPosition={currentLocation}/>
         </div>
     );
 }

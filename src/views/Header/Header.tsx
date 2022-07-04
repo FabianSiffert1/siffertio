@@ -4,15 +4,14 @@ import {NavLink} from "react-router-dom";
 import FadeInText from "../../components/FadeInText/FadeInText";
 
 
-function Header() {
+export default function Header() {
     return (
         <div className={styles.Header}>
-            <NavLink className="Header_NavLink" to={'/'} key={'AttractScreen'}>
+            <a>
+            <NavLink className="Header_NavLink" to={'/'} >
                 <FadeInText textToDisplay={'siffert[.io]'} mainFontSize={"5vh"} mainBlockWidth={"10vw"}/>
                 <FadeInText textToDisplay={'a work in progress'} mainFontSize={"2vh"} leftToRightAnimation={false}/>
-            </NavLink>
+            </NavLink></a>
         </div>
     );
 }
-
-export default Header;
