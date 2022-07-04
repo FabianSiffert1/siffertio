@@ -22,17 +22,21 @@ export default function FadeInText(props: FadeInTextProps) {
                          height: props.mainBlockHeight,
                          width: props.mainBlockWidth,
                      }}></div>
-                {props.textToDisplay && <div className={styles.mainFadeInText} style={{
-                    fontSize: props.mainFontSize,
-                }}>
-                    {props.textToDisplay}
-                </div>}
+                {props.textToDisplay &&
+                    <div className={styles.mainFadeInText} style={{
+                        fontSize: props.mainFontSize,
+                    }}>
+                        {props.textToDisplay}
+                    </div>
+                }
             </div>
-            {props.children && <div className={styles.FadeInPlainTextContainer} style={{
-                fontSize: props.secondaryFontSize,
-            }}>
-                {props.children}
-            </div>}
+            {props.children &&
+                <div className={styles.FadeInPlainTextContainer} style={{
+                    fontSize: props.secondaryFontSize,
+                }}>
+                    {props.children}
+                </div>
+            }
         </div>
 
     );
