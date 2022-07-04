@@ -6,12 +6,9 @@ export interface FadeInTextProps {
     mainBlockColor?: string,
     mainBlockHeight?: string,
     mainBlockWidth?: string,
-    secondaryBlockColor?: string,
-    secondaryBlockHeight?:string,
-    secondaryBlockWidth?: string,
-    fadeInTime?: string,
     mainFontSize?: string,
     secondaryFontSize?: string,
+    leftToRight?: boolean,
     children?: React.ReactNode,
 }
 
@@ -24,20 +21,18 @@ export default function FadeInText(props: FadeInTextProps) {
                          backgroundColor: props.mainBlockColor,
                          height: props.mainBlockHeight,
                          width: props.mainBlockWidth,
-                         fontSize: props.mainFontSize,
                      }}></div>
-                <div className={styles.fadeInText}>
-                    {props.textToDisplay && props.textToDisplay}
-                </div>
+                {props.textToDisplay && <div className={styles.mainFadeInText} style={{
+                    fontSize: props.mainFontSize,
+                }}>
+                    {props.textToDisplay}
+                </div>}
             </div>
-            <div className={styles.FadeInPlainTextContainer} style={{
-                backgroundColor: props.secondaryBlockColor,
-                height: props.secondaryBlockHeight,
-                width: props.secondaryBlockWidth,
-                fontSize: props.mainFontSize,
+            {props.children && <div className={styles.FadeInPlainTextContainer} style={{
+                fontSize: props.secondaryFontSize,
             }}>
                 {props.children}
-            </div>
+            </div>}
         </div>
 
     );

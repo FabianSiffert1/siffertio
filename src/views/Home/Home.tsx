@@ -3,8 +3,6 @@ import styles from "./Home.module.scss";
 import {Outlet, useLocation} from "react-router-dom";
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
-import FadeInText from "../../components/FadeInText/FadeInText";
-
 
 const Home = () => {
     const currentLocation = useLocation().pathname;

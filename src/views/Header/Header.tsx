@@ -8,8 +8,8 @@ function Header() {
     return (
         <div className={styles.Header}>
             <NavLink className="Header_NavLink" to={'/'} key={'AttractScreen'}>
-                <FadeInText textToDisplay={"siffert.io"}>a work in progress</FadeInText>
-            </NavLink>
+                <FadeInText textToDisplay={'siffert.io'} mainBlockColor={'#ff6f69'} mainFontSize={"5vh"}/>
+                <FadeInText textToDisplay={'a work in progress'} mainBlockColor={'#ff6f69'} mainFontSize={"2vh"}/>            </NavLink>
         </div>
     );
 }

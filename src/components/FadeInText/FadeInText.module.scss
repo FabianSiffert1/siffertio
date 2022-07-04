@@ -1,9 +1,13 @@
 .FadeInTextContainer {
-  $fadeInTime: 2s;
-  $mainBlockColor: #ffb510;
-  $mainBlockWidth: 100vw;
-  $mainBlockHeight: 10vh;
-  $mainFontSize: 3vh;
+  $mainFontSize: 5vh !default;
+  $secondaryFontSize: 2vh !default;
+  $mainBlockColor: #ffb510 !default;
+  $mainBlockWidth: 100vw !default;
+  $mainBlockHeight: 5vh !default;
+  $leftToRight: true !default;
+
+  $fadeInTime: 2s !default;
+
   top: 0;
   display: block;
   align-items: center;
@@ -11,12 +15,13 @@
   .FadeInAnimationContainer {
 
 
-    .fadeInText {
+    .mainFadeInText {
       display: flex;
       justify-content: center;
       align-items: center;
       font-weight: bold;
       z-index: 1;
+      font-size: $mainFontSize;
       height: $mainBlockHeight;
       width:  $mainBlockWidth;
       animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
@@ -24,7 +29,7 @@
       -moz-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
       -o-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
       -ms-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
-      animation-delay: 0.5s;
+      animation-delay: 0.4s;
     }
 
 
@@ -44,6 +49,11 @@
   }
 
   .FadeInPlainTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: $secondaryFontSize;
     animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
     -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
     -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
