@@ -1,11 +1,9 @@
 .FadeInTextContainer {
   $mainFontSize: 5vh !default;
   $secondaryFontSize: 2vh !default;
-  $mainBlockColor: #ffb510 !default;
+  $mainBlockColor: #ff6f69 !default;
   $mainBlockWidth: 100vw !default;
   $mainBlockHeight: 5vh !default;
-  $leftToRight: true !default;
-
   $fadeInTime: 2s !default;
 
   top: 0;
@@ -24,16 +22,20 @@
       font-size: $mainFontSize;
       height: $mainBlockHeight;
       width:  $mainBlockWidth;
-      animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
-      -webkit-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
-      -moz-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
-      -o-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
-      -ms-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
+      animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
       animation-delay: 0.4s;
     }
 
 
-    .coloredBlock {
+//   Can be refactored to
+    // coloredBlock{
+    // .leftToRight {
+    // needs another div in Dom i think
+    .coloredBlockLeftToRight {
       position: absolute;
       height: $mainBlockHeight;
       width: $mainBlockWidth;
@@ -41,7 +43,19 @@
       opacity: 100%;
       z-index: 2;
 
-      animation: mainBlock $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+      animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+      animation-delay: 0s;
+    }
+
+    .coloredBlockRightToLeft{
+      position: absolute;
+      height: $mainBlockHeight;
+      width: $mainBlockWidth;
+      background: $mainBlockColor;
+      opacity: 100%;
+      z-index: 2;
+
+      animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
       animation-delay: 0s;
     }
 
@@ -73,7 +87,7 @@
   }
 
 
-  @keyframes mainBlock {
+  @keyframes leftToRight {
     0% {
       width: 0;
       left: 0;
@@ -87,6 +101,24 @@
     100% {
       width: 0;
       left: $mainBlockWidth;
+    }
+  }
+
+  @keyframes rightToLeft {
+    0% {
+      width: 0;
+      right: 0;
+
+    }
+    50% {
+      width: $mainBlockWidth;
+      right: 0;
+
+    }
+    100% {
+      width: 0;
+      right: $mainBlockWidth;
+      display: none;
     }
   }
 

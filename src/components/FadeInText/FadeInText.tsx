@@ -8,7 +8,7 @@ export interface FadeInTextProps {
     mainBlockWidth?: string,
     mainFontSize?: string,
     secondaryFontSize?: string,
-    leftToRight?: boolean,
+    leftToRightAnimation? : boolean,
     children?: React.ReactNode,
 }
 
@@ -16,12 +16,20 @@ export default function FadeInText(props: FadeInTextProps) {
     return (
         <div className={styles.FadeInTextContainer}>
             <div className={styles.FadeInAnimationContainer}>
-                <div className={styles.coloredBlock}
+                {props.leftToRightAnimation ? <div className={styles.coloredBlockLeftToRight}
                      style={{
                          backgroundColor: props.mainBlockColor,
                          height: props.mainBlockHeight,
                          width: props.mainBlockWidth,
-                     }}></div>
+                     }}
+                ></div> :
+                    <div className={styles.coloredBlockRightToLeft}
+                               style={{
+                                   backgroundColor: props.mainBlockColor,
+                                   height: props.mainBlockHeight,
+                                   width: props.mainBlockWidth,
+                               }}
+                ></div>}
                 {props.textToDisplay &&
                     <div className={styles.mainFadeInText} style={{
                         fontSize: props.mainFontSize,
@@ -40,4 +48,7 @@ export default function FadeInText(props: FadeInTextProps) {
         </div>
 
     );
+}
+FadeInText.defaultProps = {
+ leftToRightAnimation: true,
 }
