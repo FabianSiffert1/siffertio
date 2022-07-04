@@ -1,7 +1,7 @@
 import styles from "./GlitchAttractScreen.module.scss";
 import {NavLink} from "react-router-dom";
 
-export default function AttractScreen() {
+export default function GlitchAttractScreen() {
     return (
         <main className={styles.AttractScreen}>
             <NavLink to={"/biography"} key={"Biography"}>

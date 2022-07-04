@@ -1,36 +1,36 @@
 .FadeInTextContainer {
   $fadeInTime: 2s;
   $blockColor: #ffb510;
-  $blockWidth: 10vw;
-  $blockHeight: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  $blockWidth: 100vw;
+  $blockHeight: 10vh;
+  top: 0;
+
   .FadeInAnimationContainer {
 
 
     .fadeInText {
+      display: flex;
       justify-content: center;
       font-weight: bold;
-
+      z-index: 1;
       height: $blockHeight;
       width:  $blockWidth;
-      animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      animation-delay: 1s;
+      animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
+      -webkit-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
+      -moz-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
+      -o-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
+      -ms-animation: fadeIn $fadeInTime/2 cubic-bezier(.74, .06, .4, .92) both;
+      animation-delay: 0.5s;
     }
 
 
     .coloredBlock {
+      position: absolute;
       height: $blockHeight;
-      min-height: 2vh;
       width: $blockWidth;
-
       background: $blockColor;
       opacity: 100%;
+      z-index: 2;
 
       animation: mainBlock $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
       animation-delay: 0s;

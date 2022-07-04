@@ -7,8 +7,8 @@ import FadeInText from "../../components/FadeInText/FadeInText";
 function Header() {
     return (
         <div className={styles.Header}>
-            <NavLink to={'/'} key={'AttractScreen'}>
-                <FadeInText blockColor={"#212121"} textToDisplay={"siffert.io"}></FadeInText>
+            <NavLink className="Header_NavLink" to={'/'} key={'AttractScreen'}>
+                <FadeInText textToDisplay={"siffert.io"}></FadeInText>
             </NavLink>
         </div>
     );
