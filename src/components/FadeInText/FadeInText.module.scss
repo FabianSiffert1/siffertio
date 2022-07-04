@@ -1,126 +1,125 @@
-.FadeInContentContainer{
+.FadeInContentContainer {
   all: initial;
+  $mainBlockWidth: 30vw !default;
 
-.fadeInTextContainer {
-  $mainFontSize: 5vh !default;
-  $mainFontColor: #fafafa;
-  $mainBlockColor: #ff6f69 !default;
-  $mainBlockWidth: 100vw !default;
-  $mainBlockHeight: 5vh !default;
-  $fadeInTime: 2s !default;
-  $secondaryFontSize: 2vh !default;
+  .fadeInTextContainer {
+    $mainFontSize: 5vh !default;
+    $mainFontColor: #fafafa;
+    $mainBlockColor: #ff6f69 !default;
 
-  top: 0;
-  display: block;
-  align-items: center;
-  color: $mainFontColor;
+    $mainBlockHeight: 5vh !default;
+    $fadeInTime: 2s !default;
+    $secondaryFontSize: 2vh !default;
+    top: 0;
+    display: block;
+    align-items: center;
+    color: $mainFontColor;
 
-  .fadeInAnimationContainer {
+    .fadeInAnimationContainer {
+
+      .mainFadeInText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        z-index: 1;
+        font-size: $mainFontSize;
+        height: $mainBlockHeight;
+        width: $mainBlockWidth;
+        animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+        -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+        -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+        -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+        -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+        animation-delay: 0.4s;
+      }
+
+      .coloredBlockLeftToRight {
+        position: fixed;
+        height: $mainBlockHeight;
+        width: $mainBlockWidth;
+        background: $mainBlockColor;
+        opacity: 100%;
+        z-index: 500;
+
+        animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+      }
+
+      .coloredBlockRightToLeft {
+        position: fixed;
+        height: $mainBlockHeight;
+        width: $mainBlockWidth;
+        background: $mainBlockColor;
+        opacity: 100%;
+        z-index: 2;
+
+        animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+      }
 
 
-    .mainFadeInText {
+    }
+
+    .fadeInPlainTextContainer {
       display: flex;
       justify-content: center;
       align-items: center;
       font-weight: bold;
-      z-index: 1;
-      font-size: $mainFontSize;
-      height: $mainBlockHeight;
-      width:  $mainBlockWidth;
+      font-size: $secondaryFontSize;
       animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
       -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
       -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
       -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
       -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      animation-delay: 0.4s;
+      animation-delay: 1s;
     }
 
-    .coloredBlockLeftToRight {
-      position: absolute;
-      height: $mainBlockHeight;
-      width: $mainBlockWidth;
-      background: $mainBlockColor;
-      opacity: 100%;
-      z-index: 2;
-
-      animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
-      animation-delay: 0s;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        right: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
-    .coloredBlockRightToLeft{
-      position: absolute;
-      height: $mainBlockHeight;
-      width: $mainBlockWidth;
-      background: $mainBlockColor;
-      opacity: 100%;
-      z-index: 2;
 
-      animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
-      animation-delay: 0s;
+    @keyframes leftToRight {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      50% {
+        width: $mainBlockWidth;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: $mainBlockWidth;
+      }
     }
 
+    @keyframes rightToLeft {
+      0% {
+        width: 0;
+        right: 0;
+
+      }
+      50% {
+        width: $mainBlockWidth;
+        right: 0;
+
+      }
+      100% {
+        width: 0;
+        right: $mainBlockWidth;
+      }
+    }
 
   }
-
-  .fadeInPlainTextContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: $secondaryFontSize;
-    animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    animation-delay: 1s;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      right: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-
-  @keyframes leftToRight {
-    0% {
-      width: 0;
-      left: 0;
-
-    }
-    50% {
-      width: $mainBlockWidth;
-      left: 0;
-
-    }
-    100% {
-      width: 0;
-      left: $mainBlockWidth;
-    }
-  }
-
-  @keyframes rightToLeft {
-    0% {
-      width: 0;
-      right: 0;
-
-    }
-    50% {
-      width: $mainBlockWidth;
-      right: 0;
-
-    }
-    100% {
-      width: 0;
-      right: $mainBlockWidth;
-    }
-  }
-
-}
 
 }
