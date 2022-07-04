@@ -8,28 +8,23 @@ export interface FadeInTextProps {
     mainBlockWidth?: string,
     mainFontSize?: string,
     secondaryFontSize?: string,
-    leftToRightAnimation? : boolean,
+    leftToRightAnimation?: boolean,
     children?: React.ReactNode,
 }
 
 export default function FadeInText(props: FadeInTextProps) {
     return (
-        <div className={styles.FadeInTextContainer}>
-            <div className={styles.FadeInAnimationContainer}>
-                {props.leftToRightAnimation ? <div className={styles.coloredBlockLeftToRight}
-                     style={{
-                         backgroundColor: props.mainBlockColor,
-                         height: props.mainBlockHeight,
-                         width: props.mainBlockWidth,
-                     }}
-                ></div> :
-                    <div className={styles.coloredBlockRightToLeft}
-                               style={{
-                                   backgroundColor: props.mainBlockColor,
-                                   height: props.mainBlockHeight,
-                                   width: props.mainBlockWidth,
-                               }}
-                ></div>}
+        <div className={styles.FadeInContentContainer}>
+            <div className={styles.fadeInTextContainer}>
+            <div className={styles.fadeInAnimationContainer}>
+                <div
+                    className={props.leftToRightAnimation ? styles.coloredBlockLeftToRight : styles.coloredBlockRightToLeft}
+                    style={{
+                        backgroundColor: props.mainBlockColor,
+                        height: props.mainBlockHeight,
+                        width: props.mainBlockWidth,
+                    }}
+                ></div>
                 {props.textToDisplay &&
                     <div className={styles.mainFadeInText} style={{
                         fontSize: props.mainFontSize,
@@ -39,16 +34,17 @@ export default function FadeInText(props: FadeInTextProps) {
                 }
             </div>
             {props.children &&
-                <div className={styles.FadeInPlainTextContainer} style={{
+                <div className={styles.fadeInPlainTextContainer} style={{
                     fontSize: props.secondaryFontSize,
                 }}>
                     {props.children}
                 </div>
             }
+            </div>
         </div>
 
     );
 }
 FadeInText.defaultProps = {
- leftToRightAnimation: true,
+    leftToRightAnimation: true,
 }

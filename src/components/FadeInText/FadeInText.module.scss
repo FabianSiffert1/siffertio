@@ -1,16 +1,21 @@
-.FadeInTextContainer {
+.FadeInContentContainer{
+  all: initial;
+
+.fadeInTextContainer {
   $mainFontSize: 5vh !default;
-  $secondaryFontSize: 2vh !default;
+  $mainFontColor: #fafafa;
   $mainBlockColor: #ff6f69 !default;
   $mainBlockWidth: 100vw !default;
   $mainBlockHeight: 5vh !default;
   $fadeInTime: 2s !default;
+  $secondaryFontSize: 2vh !default;
 
   top: 0;
   display: block;
   align-items: center;
+  color: $mainFontColor;
 
-  .FadeInAnimationContainer {
+  .fadeInAnimationContainer {
 
 
     .mainFadeInText {
@@ -30,11 +35,6 @@
       animation-delay: 0.4s;
     }
 
-
-//   Can be refactored to
-    // coloredBlock{
-    // .leftToRight {
-    // needs another div in Dom i think
     .coloredBlockLeftToRight {
       position: absolute;
       height: $mainBlockHeight;
@@ -62,7 +62,7 @@
 
   }
 
-  .FadeInPlainTextContainer {
+  .fadeInPlainTextContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,3 +124,4 @@
 
 }
 
+}
