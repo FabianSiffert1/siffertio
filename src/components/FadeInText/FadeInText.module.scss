@@ -1,3 +1,5 @@
+@import "src/resources/__globalVariables.module.scss";
+
 .FadeInTextContainer {
 
   * {
@@ -14,12 +16,10 @@
   }
 
 
-
   .fadeInTitleContainer {
 
     $mainFontSize: 5vh !default;
-    $mainFontColor: #fafafa;
-    color: $mainFontColor;
+    color: $globalLightColor;
     $secondaryFontSize: 2vh !default;
     $mainBlockColor: #ff6f69 !default;
     $fadeInTime: 2s !default;

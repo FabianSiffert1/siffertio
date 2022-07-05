@@ -21,6 +21,21 @@ export default function Biography() {
                     <br/>
                     <br/>
                     <br/>
+                    {language.LOREM} <br/>
+                    <br/>
+                    <br/>
+                    {language.LOREM} <br/>
+                    <br/>
+                    <br/>
+                    {language.LOREM} <br/>
+                    <br/>
+                    <br/>
+                    {language.LOREM} <br/>
+                    <br/>
+                    <br/>
+                    {language.LOREM} <br/>
+                    <br/>
+                    <br/>
                     {language.LOREM}
                 </div>
             </div>

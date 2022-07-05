@@ -1,9 +1,12 @@
+@import "src/resources/__globalVariables.module.scss";
+
 .Biography {
   padding: 2vw;
-  border: solid white;
-  border-radius: 1vw;
-
+  border: $globalLightColor;
+  border-radius: 2vw;
+  background-color: rgba(255,255,255, 0.05);
   .textContainer{
+
   }
   .textTitle{
     text-decoration: underline;

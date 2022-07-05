@@ -6,14 +6,14 @@ import Header from "../Header/Header";
 
 const Home = () => {
     const currentLocation = useLocation().pathname;
-    let attractScreen = undefined;
+    let welcomeScreen = undefined;
     if (currentLocation === "/") {
-        attractScreen = true;
+        welcomeScreen = true;
     }
     return (
         <div className={styles.Home}>
-            {attractScreen ? "" : [<Header/>]}
-            <div className={attractScreen? styles.attractScreen : styles.contentContainer}>
+            {welcomeScreen ? "" : [<Header/>]}
+            <div className={welcomeScreen? styles.welcomeScreen : styles.contentContainer}>
                 <Outlet/>
             </div>
             <NavigationBar routerPosition={currentLocation}/>

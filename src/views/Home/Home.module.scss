@@ -1,39 +1,30 @@
+@import "src/resources/__globalVariables.module.scss";
+
 .Home {
-  width: 100%;
-  height: 100vh;
-  max-height: 100vh;
-  min-height: 100vh;
-  background: #212121;
-  color: #fafafa;
   overflow: hidden;
 
-  html{
-    overflow: scroll;
-  }
+    @include darkTheme;
+
   ::-webkit-scrollbar {
-    width:0;
+    width: 0;
     background: transparent;
   }
 
-  a{
-    color: black;
-  }
   .contentContainer {
-    color: #fafafa;
+    height: 100vh;
     box-sizing: border-box;
-    font-size: 1vw;
-    padding: 1vh 1vw 10vh 1vw;
+    font-size: $globalFontSize;
+    padding: 2vh 3vw 10vh 2vw;
+    margin: 1vw;
     max-height: 80vh;
     overflow: auto;
   }
 
-  .attractScreen {
+  .welcomeScreen {
     overflow: hidden;
-    padding: 0;
-    background: #212121;
-    color: #fafafa;
   }
 }
+
 .Home * {
-  font-family: "Courier New",monospace;
+  font-family: $globalFontFamily;
 }
