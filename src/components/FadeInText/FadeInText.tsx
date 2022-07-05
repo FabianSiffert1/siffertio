@@ -14,32 +14,34 @@ export interface FadeInTextProps {
 
 export default function FadeInText(props: FadeInTextProps) {
     return (
-        <div className={styles.FadeInContentContainer}>
-            <div className={styles.fadeInTextContainer}>
-            <div className={styles.fadeInAnimationContainer}>
-                <div
-                    className={props.leftToRightAnimation ? styles.coloredBlockLeftToRight : styles.coloredBlockRightToLeft}
-                    style={{
-                        backgroundColor: props.mainBlockColor,
-                        height: props.mainBlockHeight,
-                        width: props.mainBlockWidth,
-                    }}
-                ></div>
-                {props.textToDisplay &&
-                    <div className={styles.mainFadeInText} style={{
-                        fontSize: props.mainFontSize,
+        <div className={styles.FadeInTextContainer}>
+            <div className={styles.fadeInTitleContainer}>
+                <div className={styles.fadeInAnimationContainer}>
+                    <div className={styles.fadeinMainTitleContainer}>
+                        <div
+                            className={props.leftToRightAnimation ? styles.coloredBlockLeftToRight : styles.coloredBlockRightToLeft}
+                            style={{
+                                backgroundColor: props.mainBlockColor,
+                                height: props.mainBlockHeight,
+                                width: props.mainBlockWidth,
+                            }}
+                        ></div>
+                        {props.textToDisplay &&
+                            <div className={styles.fadeInMainTitleText} style={{
+                                fontSize: props.mainFontSize,
+                            }}>
+                                {props.textToDisplay}
+                            </div>
+                        }
+                    </div>
+                </div>
+                {props.children &&
+                    <div className={styles.fadeInSubtitleContainer} style={{
+                        fontSize: props.secondaryFontSize,
                     }}>
-                        {props.textToDisplay}
+                        {props.children}
                     </div>
                 }
-            </div>
-            {props.children &&
-                <div className={styles.fadeInPlainTextContainer} style={{
-                    fontSize: props.secondaryFontSize,
-                }}>
-                    {props.children}
-                </div>
-            }
             </div>
         </div>
 

@@ -1,69 +1,92 @@
-.FadeInContentContainer {
-  all: initial;
-  $mainBlockWidth: 30vw !default;
+.FadeInTextContainer {
 
-  .fadeInTextContainer {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body, html {
+    overflow: hidden;
+  }
+
+
+
+  .fadeInTitleContainer {
+
     $mainFontSize: 5vh !default;
     $mainFontColor: #fafafa;
-    $mainBlockColor: #ff6f69 !default;
-
-    $mainBlockHeight: 5vh !default;
-    $fadeInTime: 2s !default;
-    $secondaryFontSize: 2vh !default;
-    top: 0;
-    display: block;
-    align-items: center;
     color: $mainFontColor;
+    $secondaryFontSize: 2vh !default;
+    $mainBlockColor: #ff6f69 !default;
+    $fadeInTime: 2s !default;
+
+    $mainBlockWidth: 30vw !default;
+    $mainBlockHeight: 5vh !default;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .fadeInAnimationContainer {
+      width: 100%;
+      height: auto;
 
-      .mainFadeInText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .fadeinMainTitleContainer {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        position: relative;
         align-items: center;
-        font-weight: bold;
-        z-index: 1;
-        font-size: $mainFontSize;
+        justify-content: center;
         height: $mainBlockHeight;
-        width: $mainBlockWidth;
-        animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-        -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-        -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-        -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-        -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-        animation-delay: 0.4s;
+
+        .fadeInMainTitleText {
+          display: flex;
+          position: relative;
+          align-items: baseline;
+          font-weight: bold;
+          opacity: 0;
+          font-size: $mainFontSize;
+          animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          animation-delay: 1.4s;
+        }
+
+        .coloredBlockLeftToRight {
+          display: flex;
+          position: absolute;
+          width: 0;
+          height: inherit;
+          background: $mainBlockColor;
+          animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+          animation-delay: 0s;
+        }
+
+        .coloredBlockRightToLeft {
+          display: flex;
+          position: absolute;
+          width: 0;
+          height: inherit;
+          background: $mainBlockColor;
+          animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+          animation-delay: 0s;
+        }
       }
-
-      .coloredBlockLeftToRight {
-        position: fixed;
-        height: $mainBlockHeight;
-        width: $mainBlockWidth;
-        background: $mainBlockColor;
-        opacity: 100%;
-        z-index: 500;
-
-        animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-      }
-
-      .coloredBlockRightToLeft {
-        position: fixed;
-        height: $mainBlockHeight;
-        width: $mainBlockWidth;
-        background: $mainBlockColor;
-        opacity: 100%;
-        z-index: 2;
-
-        animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-      }
-
-
     }
 
-    .fadeInPlainTextContainer {
+    .fadeInSubtitleContainer {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -94,12 +117,12 @@
         left: 0;
       }
       50% {
-        width: $mainBlockWidth;
+        width: 100%;
         left: 0;
       }
       100% {
         width: 0;
-        left: $mainBlockWidth;
+        left: 100%;
       }
     }
 
@@ -107,16 +130,14 @@
       0% {
         width: 0;
         right: 0;
-
       }
       50% {
-        width: $mainBlockWidth;
+        width: 100%;
         right: 0;
-
       }
       100% {
         width: 0;
-        right: $mainBlockWidth;
+        right: 100%;
       }
     }
 

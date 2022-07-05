@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <div className={styles.Header}>
             <NavLink to={'/'} >
-                <FadeInText textToDisplay={'siffert[.io]'} mainFontSize={"5vh"} mainBlockWidth={"10vw"}/>
+                <FadeInText textToDisplay={'siffert[.io]'} mainFontSize={"5vh"}/>
                 <FadeInText textToDisplay={'a work in progress'} mainFontSize={"2vh"} leftToRightAnimation={false}/>
             </NavLink>
         </div>
