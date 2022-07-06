@@ -1,9 +1,11 @@
-@import "src/resources/__globalVariables.module.scss";
+@import "src/resources/globalVariables.module";
+
+body{
+@include lightTheme;
+}
 
 .Home {
   overflow: hidden;
-
-    @include darkTheme;
 
   ::-webkit-scrollbar {
     width: 0;
@@ -13,7 +15,6 @@
   .contentContainer {
     height: 100vh;
     box-sizing: border-box;
-    font-size: $globalFontSize;
     padding: 1vh 2vw 10vh 2vw;
     margin: 1vw;
     max-height: 80vh;
@@ -25,6 +26,8 @@
   }
 }
 
+
 .Home * {
   font-family: $globalFontFamily;
+  font-size: $globalFontSize;
 }

@@ -1,3 +1,5 @@
+@import "src/resources/globalVariables.module";
+
 .NavigationBar {
   display: flex;
   position: absolute;
@@ -9,6 +11,6 @@
   width: 100vw;
   height: 12vh;
   max-height: 12vh;
-  background-color: #fafafa;
+  background-color: $globalLightColor;
 }
 

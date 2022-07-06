@@ -1,4 +1,4 @@
-@import "src/resources/__globalVariables.module.scss";
+@import "src/resources/globalVariables.module";
 
 .FadeInTextContainer {
 
@@ -19,13 +19,10 @@
   .fadeInTitleContainer {
 
     $mainFontSize: 5vh !default;
-    color: $globalLightColor;
-    $secondaryFontSize: 2vh !default;
-    $mainBlockColor: #ff6f69 !default;
-    $fadeInTime: 2s !default;
-
     $mainBlockWidth: 30vw !default;
     $mainBlockHeight: 5vh !default;
+    $fadeInTime: 2s !default;
+    $secondaryFontSize: 2vh !default;
 
     width: 100%;
     display: flex;
@@ -69,7 +66,7 @@
           position: absolute;
           width: 0;
           height: inherit;
-          background: $mainBlockColor;
+          background: $globalHighlightColor;
           animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
           animation-delay: 0s;
         }
@@ -79,7 +76,7 @@
           position: absolute;
           width: 0;
           height: inherit;
-          background: $mainBlockColor;
+          background: $globalHighlightColor;
           animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
           animation-delay: 0s;
         }

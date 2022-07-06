@@ -1,6 +1,7 @@
 import {NavLink, Outlet} from "react-router-dom";
 import styles from "./Contact.module.scss";
 import { getInvoices } from "../../tmpData/data";
+import globalStyles from "../../resources/_globalVariables.module.scss";
 
 export default function Contact() {
   let invoices = getInvoices();
@@ -18,7 +19,10 @@ export default function Contact() {
               return {
                 display: "block",
                 margin: "1rem 0",
-                color: isActive ? "lightblue" : "white",
+                color: isActive ? "blue" : globalStyles.$globalDarkColor,
+                 border: "solid black",
+                  borderRadius: "30vw",
+                  padding: "0.5vw",
               };
             }}
             to={`/contact/${invoice.number}`}

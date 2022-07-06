@@ -1,10 +1,10 @@
-@import "src/resources/__globalVariables.module.scss";
+@import "src/resources/globalVariables.module";
 
 .Biography {
   padding: 2vw;
   border: $globalLightColor;
   border-radius: 2vw;
-  background-color: rgba(255,255,255, 0.05);
+  background-color: $globalUnderlayLightRGBAColor;
   .textContainer{
 
   }

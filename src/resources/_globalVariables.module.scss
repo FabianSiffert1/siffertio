@@ -1,0 +1,25 @@
+$globalFontFamily: "Courier New", monospace;
+$globalFontSize: 1vw;
+
+$globalDarkColor: #212121;
+$globalLightColor: #fafafa;
+$globalHighlightColor: #ff6f69;
+$globalUnderlayDarkRGBAColor: rgba(255, 255, 255, 0.05);
+$globalUnderlayLightRGBAColor: rgba(0, 0, 0, 0.05);
+
+
+@mixin darkTheme {
+  background-color: $globalDarkColor;
+  color: $globalLightColor;
+  a {
+    color: $globalDarkColor;
+  }
+}
+
+@mixin lightTheme {
+  background-color: $globalLightColor;
+  color: $globalDarkColor;
+  a {
+    color: $globalDarkColor;
+  }
+}
