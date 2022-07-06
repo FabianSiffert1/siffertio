@@ -58,7 +58,7 @@
           -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
           -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
           -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-          animation-delay: 1.4s;
+          animation-delay: $fadeInTime*0.9;
         }
 
         .coloredBlockLeftToRight {
