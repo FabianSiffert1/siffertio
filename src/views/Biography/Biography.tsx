@@ -11,7 +11,7 @@ export default function Biography() {
                 <div className={styles.textContent}>
                     {language.LOREM}
                     <br/>
-                    <br/>
+                    {language.LOREM}
                     <br/>
                     {language.LOREM}
                     <br/>
@@ -21,19 +21,17 @@ export default function Biography() {
                     <br/>
                     <br/>
                     <br/>
-                    {language.LOREM} <br/>
+                    {language.LOREM}
                     <br/>
                     <br/>
-                    {language.LOREM} <br/>
+                    <br/>
+                    {language.LOREM}
                     <br/>
                     <br/>
-                    {language.LOREM} <br/>
+                    {language.LOREM}
                     <br/>
                     <br/>
-                    {language.LOREM} <br/>
-                    <br/>
-                    <br/>
-                    {language.LOREM} <br/>
+                    {language.LOREM}
                     <br/>
                     <br/>
                     {language.LOREM}

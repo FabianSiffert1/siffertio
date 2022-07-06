@@ -11,7 +11,7 @@ export interface AnimatedTextRouterProps {
 function AnimatedTextRouter(props: AnimatedTextRouterProps) {
     const currentLocation = useLocation().pathname;
     return (<>
-            {props.routesArray.map((element: any) => <div className={styles.AnimatedTextRouter}>
+            {props.routesArray.map((element: any) => <div className={styles.AnimatedTextRouter} key={element.routeKey}>
                     <NavLink
                         to={element.route}
                         key={element.routeKey}
