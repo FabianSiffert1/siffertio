@@ -1,6 +1,10 @@
+@import "src/resources/globalVariables.module";
+
 .Contact{
 display: flex;
 
+  border-radius: 2vw;
+  background-color: $globalUnderlayLightRGBAColor;
 
   a{
     text-decoration: none;

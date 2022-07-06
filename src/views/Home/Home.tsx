@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from "./Home.module.scss";
 import {Outlet, useLocation} from "react-router-dom";
 import NavigationBar from "../NavigationBar/NavigationBar";
@@ -10,9 +10,13 @@ const Home = () => {
     if (currentLocation === "/") {
         welcomeScreen = true;
     }
+
+    const [currentTheme, setCurrentTheme] = useState<string>("darkTheme");
+
     return (
         <div className={styles.Home}>
-            {welcomeScreen ? "" : [<Header/>]}
+            {currentTheme}
+            {welcomeScreen ? "" : [<Header currentThemeSetter = {setCurrentTheme}/>]}
             <div className={welcomeScreen? styles.welcomeScreen : styles.contentContainer}>
                 <Outlet/>
             </div>
