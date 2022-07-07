@@ -5,7 +5,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
 
 const Home = () => {
-    const [currentTheme, setCurrentTheme] = useState<string>("darkTheme");
+    const [currentTheme, setCurrentTheme] = useState<string>(`darkTheme`);
 
     const currentLocation = useLocation().pathname;
     let welcomeScreen = undefined;
@@ -17,23 +17,26 @@ const Home = () => {
     let lightTheme = false;
     let nextTheme = false;
 
-    switch (currentTheme){
-        case("darkTheme"):
-            darkTheme = true;
-            break;
+    switch (currentTheme) {
         case("lightTheme"):
             lightTheme = true;
             break;
+        case("nextTheme"):
+            darkTheme = true;
+            break;
+        default:
+            darkTheme = true;
     }
 
     return (
         <div className={styles.Home}>
-                {currentTheme}
-                {welcomeScreen ? "" : [<Header currentThemeSetter={setCurrentTheme}/>]}
+            <div className={darkTheme ? styles.darkTheme : lightTheme ? styles.lightTheme : styles.nextTheme}>
+                {welcomeScreen ? "" : [<Header currentTheme={currentTheme} currentThemeSetter={setCurrentTheme}/>]}
                 <div className={welcomeScreen ? styles.welcomeScreen : styles.contentContainer}>
                     <Outlet/>
                 </div>
                 <NavigationBar routerPosition={currentLocation}/>
+            </div>
         </div>
     );
 }

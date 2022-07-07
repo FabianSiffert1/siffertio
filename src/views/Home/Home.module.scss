@@ -1,7 +1,7 @@
 @import "src/resources/globalVariables.module";
 
 body {
-  @include lightTheme
+  @include lightTheme;
 }
 
 .Home {
@@ -23,6 +23,16 @@ body {
 
   .welcomeScreen {
     overflow: hidden;
+  }
+
+  .darkTheme{
+    @include darkTheme;
+  }
+  .lightTheme{
+    @include lightTheme;
+  }
+  .nextTheme{
+    @include darkTheme;
   }
 }
 

@@ -4,12 +4,18 @@ import {NavLink} from "react-router-dom";
 import FadeInText from "../../components/FadeInText/FadeInText";
 
 interface headerProps {
+    currentTheme : string,
     currentThemeSetter: (theme: string) => void,
 }
 
 export default function Header(props: headerProps) {
     function changeTheme() {
+        if(props.currentTheme == "darkTheme"){
         props.currentThemeSetter("lightTheme")
+        }
+        else{
+            props.currentThemeSetter("darkTheme")
+        }
     }
 
     return (
