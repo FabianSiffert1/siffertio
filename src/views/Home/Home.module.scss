@@ -1,8 +1,7 @@
 @import "src/resources/globalVariables.module";
 
-body{
-@include lightTheme;
-//@include darkTheme;
+body {
+  @include lightTheme
 }
 
 .Home {
