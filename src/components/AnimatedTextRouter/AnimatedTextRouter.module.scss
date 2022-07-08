@@ -22,7 +22,6 @@
   .activeLink {
     font-size: 6vh;
     text-transform: uppercase;
-    border: solid black;
     border-radius: 30vh;
     margin: 0.4vw;
     padding: 0.8vw;
@@ -38,6 +37,7 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 20s linear infinite;
     display: inline-block;
+    border: solid white;
   }
 
   @keyframes textclip {

@@ -15,14 +15,14 @@ const Home = () => {
 
     let darkTheme = false;
     let lightTheme = false;
-    let nextTheme = false;
+    let colorfulTheme = false;
 
     switch (currentTheme) {
         case("lightTheme"):
             lightTheme = true;
             break;
-        case("nextTheme"):
-            darkTheme = true;
+        case("colorfulTheme"):
+            colorfulTheme = true;
             break;
         default:
             darkTheme = true;
@@ -30,12 +30,13 @@ const Home = () => {
 
     return (
         <div className={styles.Home}>
-            <div className={darkTheme ? styles.darkTheme : lightTheme ? styles.lightTheme : styles.nextTheme}>
+            <div className={darkTheme ? styles.darkTheme : lightTheme ? styles.lightTheme : styles.colorfulTheme}>
+                {currentTheme}
                 {welcomeScreen ? "" : [<Header currentTheme={currentTheme} currentThemeSetter={setCurrentTheme}/>]}
                 <div className={welcomeScreen ? styles.welcomeScreen : styles.contentContainer}>
                     <Outlet/>
                 </div>
-                <NavigationBar routerPosition={currentLocation}/>
+                <NavigationBar routerPosition={currentLocation} />
             </div>
         </div>
     );

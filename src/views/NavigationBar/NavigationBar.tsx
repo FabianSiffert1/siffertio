@@ -5,6 +5,7 @@ import AnimatedTextRouter from "../../components/AnimatedTextRouter/AnimatedText
 
 export interface NavigationBarProps {
     routerPosition?: string;
+    currentTheme?: string;
 }
 
 let routesInNavigationBar: { route: string, routeKey: string }[] = [
@@ -15,8 +16,10 @@ let routesInNavigationBar: { route: string, routeKey: string }[] = [
 
 function NavigationBar(props: NavigationBarProps) {
     return (
-        <div className={styles.NavigationBar}>
-            <AnimatedTextRouter routesArray={routesInNavigationBar}/>
+        <div className={styles.darkTheme}>
+            <div className={styles.NavigationBar}>
+                <AnimatedTextRouter routesArray={routesInNavigationBar}/>
+            </div>
         </div>
     )
 }

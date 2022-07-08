@@ -1,9 +1,4 @@
 @import "src/resources/globalVariables.module";
-
-body {
-  @include lightTheme;
-}
-
 .Home {
   overflow: hidden;
 
@@ -31,13 +26,11 @@ body {
   .lightTheme{
     @include lightTheme;
   }
-  .nextTheme{
-    @include darkTheme;
+  .colorfulTheme{
+    @include colorfulTheme;
   }
 }
 
 
 .Home * {
-  font-family: $globalFontFamily;
-  font-size: $globalFontSize;
 }

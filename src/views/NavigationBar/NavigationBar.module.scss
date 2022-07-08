@@ -1,5 +1,15 @@
 @import "src/resources/globalVariables.module";
+.darkTheme * {
+  @include darkTheme;
+}
 
+.lightTheme * {
+  @include lightTheme;
+}
+
+.colorfulTheme * {
+  @include colorfulTheme;
+}
 .NavigationBar {
   display: flex;
   position: absolute;
@@ -11,6 +21,8 @@
   width: 100vw;
   height: 12vh;
   max-height: 12vh;
-  background-color: $globalLightColor;
+
 }
+
+
 

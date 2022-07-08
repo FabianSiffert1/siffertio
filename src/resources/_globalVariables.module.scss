@@ -6,19 +6,32 @@ $globalLightColor: #fafafa;
 $globalHighlightColor: #ff6f69;
 $globalUnderlayDarkRGBAColor: rgba(255, 255, 255, 0.05);
 $globalUnderlayLightRGBAColor: rgba(0, 0, 0, 0.05);
-
-//TODO: DEFINE and implement $globalFontColor
+$GlobalBackgroundColorNavigationBar : #fff;
 
 
 @mixin darkTheme {
+  font-family: $globalFontFamily;
+  font-size: $globalFontSize;
   background-color: $globalDarkColor;
   color: $globalLightColor;
+  a  {
+    color: white;
+  }
+}
+
+@mixin lightTheme {
+  font-family: $globalFontFamily;
+  font-size: $globalFontSize;
+  background-color: $globalLightColor;
+  color: $globalDarkColor;
   a {
     color: $globalDarkColor;
   }
 }
 
-@mixin lightTheme {
+@mixin colorfulTheme {
+  font-family: $globalFontFamily;
+  font-size: $globalFontSize;
   background-color: $globalLightColor;
   color: $globalDarkColor;
   a {
