@@ -3,6 +3,7 @@ import styles from './Header.module.scss';
 import {NavLink} from "react-router-dom";
 import FadeInText from "../../components/FadeInText/FadeInText";
 import {TextButton} from "../../components/TextButton/TextButton";
+import language from "../../resources/language/language";
 
 interface headerProps {
     currentTheme : string,
@@ -24,14 +25,11 @@ export default function Header(props: headerProps) {
         <div className={styles.Header}>
             <div className={styles.headerElements}>
             <NavLink to={'/'}>
-                <FadeInText textToDisplay={'siffert[.io]'} mainFontSize={"5vh"}/>
-                <FadeInText textToDisplay={'a work in progress'} mainFontSize={"2vh"} leftToRightAnimation={false}/>
+                <FadeInText textToDisplay={language.HEADER_TITLE} mainFontSize={"5vh"}/>
+                <FadeInText textToDisplay={language.HEADER_SUBTITLE} mainFontSize={"2vh"} leftToRightAnimation={false}/>
             </NavLink>
             <div className={styles.buttonContainer}>
-                {/*<TextButton onClickFunction={changeTheme}>Theme</TextButton>*/}
-                <button onClick={changeTheme}>
-                    Theme
-                </button>
+                <TextButton onClickFunction={changeTheme}>{language.SETTINGS_BUTTON}</TextButton>
             </div>
             </div>
         </div>

@@ -1,7 +1,6 @@
 import {NavLink, Outlet} from "react-router-dom";
 import styles from "./Contact.module.scss";
 import { getInvoices } from "../../tmpData/data";
-import globalStyles from "../../resources/_globalVariables.module.scss";
 
 export default function Contact() {
   let invoices = getInvoices();
@@ -9,8 +8,8 @@ export default function Contact() {
     <div className={styles.Contact}>
       <nav
         style={{
-          borderRight: "solid 1px",
-          padding: "1rem",
+          borderRight: "solid 0.1vw",
+          padding: "0.5vw",
         }}
       >
         {invoices.map((invoice) => (
@@ -18,9 +17,8 @@ export default function Contact() {
             style={({ isActive }) => {
               return {
                 display: "block",
-                margin: "1rem 0",
-                color: isActive ? "blue" : globalStyles.$globalDarkColor,
-                 border: "solid black",
+                margin: "1vh 0",
+                border: isActive ? "solid" : "hidden",
                   borderRadius: "30vw",
                   padding: "0.5vw",
               };

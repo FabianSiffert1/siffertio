@@ -1,5 +1,7 @@
 @import "src/resources/globalVariables.module";
 
+$animationSpeed : 20s;
+
 .AnimatedTextRouter {
   height: 100%;
   display: flex;
@@ -35,8 +37,9 @@
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 20s linear infinite;
+    animation: textclip $animationSpeed linear infinite;
     display: inline-block;
+    border: solid $globalDarkColor;
   }
 
   .activeLinkDarkTheme {
@@ -55,9 +58,9 @@
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 20s linear infinite;
+    animation: textclip $animationSpeed linear infinite;
     display: inline-block;
-
+    border: solid $globalLightColor;
   }
 
   .activeLinkColorfulTheme {

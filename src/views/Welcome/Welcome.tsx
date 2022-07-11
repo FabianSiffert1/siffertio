@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Welcome.module.scss';
+import language from "../../resources/language/language";
+
 import {NavLink} from "react-router-dom";
 
 
@@ -8,9 +10,9 @@ export default function Welcome() {
         <main className={styles.Welcome}>
             <NavLink to={"/biography"} key={"Biography"}>
                 <div className={styles.container}>
-                    <div className={styles.glitch} data-text="siffert.io">
-                        <div className={styles.glow}>siffert.io</div>
-                        <p className={styles.subtitle}>a work in progress</p>
+                    <div className={styles.glitch} data-text={language.WELCOME_TITLE}>
+                        <div className={styles.glow}>{language.WELCOME_TITLE}</div>
+                        <p className={styles.subtitle}>{language.WELCOME_SUBTITLE}</p>
                     </div>
                 </div>
                 <div className={styles.scanlines}></div>

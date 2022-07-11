@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./NavigationBar.module.scss";
+import language from "../../resources/language/language";
 
 import AnimatedTextRouter from "../../components/AnimatedTextRouter/AnimatedTextRouter";
+
 
 export interface NavigationBarProps {
     routerPosition?: string;
@@ -9,9 +11,10 @@ export interface NavigationBarProps {
 }
 
 let routesInNavigationBar: { route: string, routeKey: string }[] = [
-    {'route': '/biography', 'routeKey': 'Biography'},
-    {'route': '/Nonsense', 'routeKey': 'Projects'},
-    {'route': '/contact', 'routeKey': 'Contact'}];
+    {'route': '/biography', 'routeKey': language.ROUTE_BIOGRAPHY},
+    {'route': '/Nonsense', 'routeKey': language.ROUTE_PROJECTS},
+    {'route': '/contact', 'routeKey': language.ROUTE_CONTACT}
+];
 
 
 function NavigationBar(props: NavigationBarProps) {
