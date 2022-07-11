@@ -11,6 +11,14 @@ $animationSpeed : 20s;
     text-decoration: none;
   }
 
+  a:hover{
+    /*
+    mix-blend-mode: difference;
+    border: solid transparent;
+    border-radius: 2vw;
+    */
+  }
+
   .inActiveLink {
     font-size: 6vh;
     text-transform: uppercase;

@@ -5,7 +5,8 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
 
 const Home = () => {
-    const [currentTheme, setCurrentTheme] = useState<string>(`darkTheme`);
+    const defaultTheme ='lightTheme';
+    const [currentTheme, setCurrentTheme] = useState<string>(defaultTheme);
 
     const currentLocation = useLocation().pathname;
     let welcomeScreen = undefined;

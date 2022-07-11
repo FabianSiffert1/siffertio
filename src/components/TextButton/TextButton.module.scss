@@ -1,17 +1,16 @@
 @import "src/resources/globalVariables.module";
 .TextButton{
-  border: none;
   background-color: inherit;
   cursor: pointer;
   display: inline-block;
   font-family: $globalFontFamily;
   font-size: $globalFontSize*0.8;
+  color: white;
+  mix-blend-mode: difference;
+  border: solid transparent;
+  border-radius: 0.5vw;
 }
 
 .TextButton:hover{
-
-}
-
-.pink{
-  color:pink;
+border: solid $globalHighlightColor;
 }
