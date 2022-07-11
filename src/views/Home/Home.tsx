@@ -31,12 +31,11 @@ const Home = () => {
     return (
         <div className={styles.Home}>
             <div className={darkTheme ? styles.darkTheme : lightTheme ? styles.lightTheme : styles.colorfulTheme}>
-                {currentTheme}
                 {welcomeScreen ? "" : [<Header currentTheme={currentTheme} currentThemeSetter={setCurrentTheme}/>]}
                 <div className={welcomeScreen ? styles.welcomeScreen : styles.contentContainer}>
                     <Outlet/>
                 </div>
-                <NavigationBar routerPosition={currentLocation} />
+                <NavigationBar currentTheme={currentTheme} routerPosition={currentLocation} />
             </div>
         </div>
     );

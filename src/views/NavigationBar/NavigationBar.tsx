@@ -15,10 +15,25 @@ let routesInNavigationBar: { route: string, routeKey: string }[] = [
 
 
 function NavigationBar(props: NavigationBarProps) {
+    let darkTheme = false;
+    let lightTheme = false;
+    let colorfulTheme = false;
+
+    switch (props.currentTheme) {
+        case("lightTheme"):
+            lightTheme = true;
+            break;
+        case("colorfulTheme"):
+            colorfulTheme = true;
+            break;
+        default:
+            darkTheme = true;
+    }
+
     return (
-        <div className={styles.darkTheme}>
+        <div className={darkTheme ? styles.darkTheme : lightTheme ? styles.lightTheme : styles.colorfulTheme}>
             <div className={styles.NavigationBar}>
-                <AnimatedTextRouter routesArray={routesInNavigationBar}/>
+                <AnimatedTextRouter currentTheme={props.currentTheme} routesArray={routesInNavigationBar}/>
             </div>
         </div>
     )

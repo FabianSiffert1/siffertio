@@ -1,7 +1,6 @@
 import React from "react";
 import language from "../../resources/language/language";
 import styles from "./ImageLink.module.scss";
-import {Link} from "react-router-dom";
 
 export interface LinkRouterProps {
     url: string;

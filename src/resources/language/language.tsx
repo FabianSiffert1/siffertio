@@ -1,4 +1,5 @@
 const language = {
+    SETTINGS_BUTTON: 'Settings',
     TEST: 'Platzhalter_Text',
     GITHUB: 'GITHUB_LOGO',
     LOGO: 'LOGO_TEXT',
