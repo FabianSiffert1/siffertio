@@ -4,7 +4,7 @@ import styles from "./AnimatedTextRouter.module.scss";
 import {NavLink, useLocation} from "react-router-dom";
 
 export interface AnimatedTextRouterProps {
-    routesArray: any;
+    routesArray: { route: string; routeKey: string; }[];
     style?: string;
     currentTheme?: string;
 }

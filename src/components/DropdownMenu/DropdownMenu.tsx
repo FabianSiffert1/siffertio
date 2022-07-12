@@ -2,17 +2,10 @@ import React, {useState} from "react";
 import styles from "./DropdownMenu.module.scss";
 
 export interface DropdownMenuProps {
-    children?: any;
     menuTitle: string;
-}
-
-function Element() {
-    return (
-        <div className={styles.elements}>
-            World
-        </div>
-
-    )
+    menuElements: { elementName: string; elementFunction: string; }[];
+    currentTheme: string;
+    currentThemeSetter: (theme: string) => any;
 }
 
 
@@ -24,8 +17,9 @@ export function DropdownMenu(props: DropdownMenuProps) {
         } else setDisplay('none')
     }
 
-    function emptyHandleClick() {
-        return;
+    function changeTheme(themeToDisplay: string) {
+        props.currentThemeSetter(themeToDisplay);
+        setDisplay('none');
     }
 
     return (
@@ -33,9 +27,11 @@ export function DropdownMenu(props: DropdownMenuProps) {
             <div className={styles.dropdownButton} onClick={handleClick}>
                 {props.menuTitle}
             </div>
-            <div className={styles.dropdownElements} onClick={emptyHandleClick} style={{display: display}}>
-                123
-                {props.children}
+            <div className={styles.dropdownElements} style={{display: display}}>
+                {props.menuElements.map((element:any) =>
+                    <div className={styles.element} onClick={() => changeTheme(element.elementFunction)}>{element.elementName}</div>
+                 )}
+
             </div>
 
         </div>

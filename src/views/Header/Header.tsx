@@ -11,6 +11,12 @@ interface headerProps {
     currentThemeSetter: (theme: string) => void,
 }
 
+let settingsMenuItems: { elementName: string, elementFunction: string }[] = [
+    {'elementName': 'Dark', 'elementFunction': 'darkTheme'},
+    {'elementName': 'Light', 'elementFunction': 'lightTheme'},
+    {'elementName': 'Colorful', 'elementFunction': 'colorfulTheme'}
+];
+
 export default function Header(props: headerProps) {
 
     function changeTheme() {
@@ -30,7 +36,7 @@ export default function Header(props: headerProps) {
                 <FadeInText textToDisplay={language.HEADER_SUBTITLE} mainFontSize={"2vh"} leftToRightAnimation={false}/>
             </NavLink>
             <div className={styles.buttonContainer}>
-                <DropdownMenu menuTitle={language.SETTINGS_BUTTON}></DropdownMenu>
+                <DropdownMenu currentTheme={props.currentTheme} currentThemeSetter={props.currentThemeSetter} menuTitle={language.SETTINGS_BUTTON} menuElements={settingsMenuItems}></DropdownMenu>
                 {/* <TextButton onClickFunction={changeTheme}>{language.SETTINGS_BUTTON}</TextButton>
             */}</div>
             </div>
