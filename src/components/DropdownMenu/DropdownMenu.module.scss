@@ -1,0 +1,29 @@
+@import "src/resources/globalVariables.module";
+
+.DropdownMenu{
+
+  .dropdownButton{
+    border: solid transparent;
+    border-radius: 30vw;
+    font-family: $globalFontFamily;
+    font-size: $globalFontSize*0.8;
+    padding: 0.2vw;
+  }
+  .dropdownButton:hover{
+    border: solid $globalHighlightColor;
+  }
+
+  .dropdownElements{
+    position: absolute;
+    z-index: 1000;
+    border-radius: 30vw;
+    background: #212121;
+    color: white;
+    cursor: pointer;
+  }
+
+  .elements{
+
+  }
+
+}

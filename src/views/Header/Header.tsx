@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 import FadeInText from "../../components/FadeInText/FadeInText";
 import {TextButton} from "../../components/TextButton/TextButton";
 import language from "../../resources/language/language";
+import {DropdownMenu} from "../../components/DropdownMenu/DropdownMenu";
 
 interface headerProps {
     currentTheme : string,
@@ -29,8 +30,9 @@ export default function Header(props: headerProps) {
                 <FadeInText textToDisplay={language.HEADER_SUBTITLE} mainFontSize={"2vh"} leftToRightAnimation={false}/>
             </NavLink>
             <div className={styles.buttonContainer}>
-                <TextButton onClickFunction={changeTheme}>{language.SETTINGS_BUTTON}</TextButton>
-            </div>
+                <DropdownMenu menuTitle={language.SETTINGS_BUTTON}></DropdownMenu>
+                {/* <TextButton onClickFunction={changeTheme}>{language.SETTINGS_BUTTON}</TextButton>
+            */}</div>
             </div>
         </div>
     );
