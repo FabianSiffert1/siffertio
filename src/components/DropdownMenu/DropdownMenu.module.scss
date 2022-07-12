@@ -1,41 +1,98 @@
 @import "src/resources/globalVariables.module";
 
-.DropdownMenu{
+.DropdownMenu {
 
-  .dropdownButton{
+  $dropDownButtonPadding: 0.4vw;
 
+  .dropdownButtonDarkTheme {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
     font-family: $globalFontFamily;
     font-size: $globalFontSize*0.8;
-    padding: 0.2vw;
-    border: solid black;
+    padding: $dropDownButtonPadding;
+    mix-blend-mode: inherit;
+    border-bottom: solid $globalLightColor;
+    border-top: solid transparent;
+    border-top: solid transparent;
+    border-right: solid transparent;
+    border-left: solid transparent;
     border-radius: 30vw;
   }
-  .dropdownButton:hover{
+
+  .dropdownButtonDarkTheme:hover {
     border: solid $globalHighlightColor;
     border-radius: 30vw;
   }
 
-  .dropdownElements{
+  .dropdownButtonLightTheme {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+    font-family: $globalFontFamily;
+    font-size: $globalFontSize*0.8;
+    padding: $dropDownButtonPadding;
+    mix-blend-mode: inherit;
+    border-bottom: solid $globalDarkColor;
+    border-top: solid transparent;
+    border-right: solid transparent;
+    border-left: solid transparent;
+    border-radius: 30vw;
+  }
+
+  .dropdownButtonLightTheme:hover {
+    border: solid $globalHighlightColor;
+    border-radius: 30vw;
+  }
+
+
+  .dropdownElements {
     position: absolute;
     z-index: 1000;
-    left: 1.5vw;
-  }
+    left: 1.4vw;
 
-  .element{
-    border: solid transparent;
-    border-radius: 30vw;
-    background: #212121;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3vh;
-    margin: 0.1vw;
-    font-size: $globalFontSize*0.6;
-    cursor: pointer;
-  }
-  .element:hover{
-    border: solid $globalHighlightColor;
-  }
+    $elementPadding: 0.3vh;
+    $elementMarginTop: 0.8vh;
 
+    .elementDarkTheme {
+      width: 100%;
+      border: solid transparent;
+      border-radius: 30vw;
+      background: $globalLightColor;
+      color: $globalDarkColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $elementPadding;
+      margin-top:  $elementMarginTop;
+      font-size: $globalFontSize*0.8;
+      cursor: pointer;
+    }
+
+    .elementDarkTheme:hover {
+      border: solid $globalHighlightColor;
+    }
+
+    .elementLightTheme {
+      width: 100%;
+      border: solid transparent;
+      border-radius: 30vw;
+      background: $globalDarkColor;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $elementPadding;
+      margin-top:  $elementMarginTop;
+      font-size: $globalFontSize*0.8;
+      cursor: pointer;
+    }
+
+    .elementLightTheme:hover {
+      border: solid $globalHighlightColor;
+    }
+  }
 }
+

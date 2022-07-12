@@ -9,6 +9,7 @@
 
 .colorfulTheme * {
   @include colorfulTheme;
+  background-color: rgba(145, 248, 139, 1);
 }
 .NavigationBar {
   display: flex;

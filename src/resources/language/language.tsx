@@ -8,7 +8,7 @@ const language = {
     ROUTE_BIOGRAPHY: 'Biography',
     ROUTE_PROJECTS: 'Projects',
     ROUTE_CONTACT: 'Contact',
-    SETTINGS_BUTTON: 'Settings',
+    THEME_BUTTON: 'Theme',
     WELCOME_TITLE: 'siffert.io',
     WELCOME_SUBTITLE: 'a work in progress',
 };

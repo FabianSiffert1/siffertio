@@ -24,13 +24,18 @@ export function DropdownMenu(props: DropdownMenuProps) {
 
     return (
         <div className={styles.DropdownMenu}>
-            <div className={styles.dropdownButton} onClick={handleClick}>
-                {props.menuTitle}
+            <div onClick={handleClick}
+                className={props.currentTheme === "lightTheme" ? styles.dropdownButtonLightTheme : props.currentTheme === "darkTheme" ? styles.dropdownButtonDarkTheme : styles.dropdownButtonColorfulTheme}>
+                <div className={styles.dropdownButton} >
+                    {props.menuTitle}
+                </div>
             </div>
             <div className={styles.dropdownElements} style={{display: display}}>
-                {props.menuElements.map((element:any) =>
-                    <div className={styles.element} onClick={() => changeTheme(element.elementFunction)}>{element.elementName}</div>
-                 )}
+                {props.menuElements.map((element: any) =>
+                    <div
+                        className={props.currentTheme === "lightTheme" ? styles.elementLightTheme : props.currentTheme === "darkTheme" ? styles.elementDarkTheme : styles.elementColorfulTheme}
+                         onClick={() => changeTheme(element.elementFunction)}>{element.elementName}</div>
+                )}
 
             </div>
 
