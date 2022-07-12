@@ -3,14 +3,16 @@
 .DropdownMenu{
 
   .dropdownButton{
-    border: solid transparent;
-    border-radius: 30vw;
+
     font-family: $globalFontFamily;
     font-size: $globalFontSize*0.8;
     padding: 0.2vw;
+    border: solid black;
+    border-radius: 30vw;
   }
   .dropdownButton:hover{
     border: solid $globalHighlightColor;
+    border-radius: 30vw;
   }
 
   .dropdownElements{
