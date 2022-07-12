@@ -32,7 +32,7 @@ $GlobalBackgroundColorNavigationBar : #fff;
 @mixin colorfulTheme {
   font-family: $globalFontFamily;
   font-size: $globalFontSize;
-  background-color: $globalLightColor;
+  background-color: rgb(201, 134, 174);
   color: $globalDarkColor;
   a {
     color: $globalDarkColor;

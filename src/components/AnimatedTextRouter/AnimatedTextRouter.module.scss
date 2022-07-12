@@ -1,6 +1,6 @@
 @import "src/resources/globalVariables.module";
 
-$animationSpeed : 20s;
+$animationSpeed: 20s;
 $fontSize: 6vh;
 
 .AnimatedTextRouter {
@@ -23,9 +23,9 @@ $fontSize: 6vh;
     border-radius: 30vh;
   }
 
-  .inActiveLink:hover{
-      border: solid $globalHighlightColor;
-      border-radius: 30vh;
+  .inActiveLink:hover {
+    border: solid $globalHighlightColor;
+    border-radius: 30vh;
   }
 
   .activeLinkLightTheme {
@@ -49,7 +49,7 @@ $fontSize: 6vh;
     border: solid $globalDarkColor;
   }
 
-  .activeLinkDarkTheme {
+  .activeLinkDarkTheme{
     font-size: 6vh;
     text-transform: uppercase;
     border-radius: 30vh;
@@ -70,8 +70,25 @@ $fontSize: 6vh;
     border: solid $globalLightColor;
   }
 
-  .activeLinkColorfulTheme {
-
+  .activeLinkColorfulTheme{
+    font-size: $fontSize;
+    text-transform: uppercase;
+    border-radius: 30vh;
+    padding: 0.8vw;
+    margin: 0.4vw;
+    background-image: linear-gradient(
+                    -225deg,
+                    #000000 0%,
+                    #000000 29%,
+                    #d91683 67%,
+                    black 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip $animationSpeed linear infinite;
+    display: inline-block;
+    border: solid $globalDarkColor;
   }
 
 

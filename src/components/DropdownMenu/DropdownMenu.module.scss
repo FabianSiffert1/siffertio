@@ -16,8 +16,7 @@
   .dropdownElements{
     position: absolute;
     z-index: 1000;
-
-    left: 30%;
+    left: 1.5vw;
   }
 
   .element{
@@ -28,8 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0.5vh;
-    margin: 0.2vw;
+    padding: 0.3vh;
+    margin: 0.1vw;
     font-size: $globalFontSize*0.6;
     cursor: pointer;
   }
