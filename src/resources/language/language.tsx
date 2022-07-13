@@ -9,6 +9,10 @@ const language = {
     ROUTE_PROJECTS: 'Projects',
     ROUTE_CONTACT: 'Contact',
     THEME_BUTTON: 'Theme',
+    THEME_DARK: 'Dark',
+    THEME_DARK_VAR: 'darkTheme',
+    THEME_LIGHT: 'Light',
+    THEME_LIGHT_VAR: 'lightTheme',
     WELCOME_TITLE: 'siffert.io',
     WELCOME_SUBTITLE: 'a work in progress',
 };

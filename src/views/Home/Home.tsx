@@ -4,11 +4,11 @@ import styles from "./Home.module.scss";
 
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
-import {Counter} from "../../components/Counter/Counter";
+import {useSelector} from "react-redux";
 
 const Home = () => {
-    const defaultTheme = 'lightTheme';
-    const [currentTheme, setCurrentTheme] = useState<string>(defaultTheme);
+
+    const currentTheme = useSelector((state: any) => state.theme.value)
 
     let atWelcomeScreen = undefined;
     if (useLocation().pathname === "/") {
@@ -17,10 +17,9 @@ const Home = () => {
 
     return (
         <div className={styles.Home}>
-            <Counter/>
             <div
                 className={currentTheme === "lightTheme" ? styles.lightTheme : currentTheme === "darkTheme" ? styles.darkTheme : styles.colorfulTheme}>
-                {atWelcomeScreen ? "" : [<Header currentTheme={currentTheme} currentThemeSetter={setCurrentTheme}/>]}
+                {atWelcomeScreen ? "" : [<Header/>]}
                 <div className={atWelcomeScreen ? styles.welcomeScreen : styles.contentContainer}>
                     <Outlet/>
                 </div>

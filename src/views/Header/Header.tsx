@@ -3,16 +3,14 @@ import styles from './Header.module.scss';
 import {NavLink} from "react-router-dom";
 import FadeInText from "../../components/FadeInText/FadeInText";
 import language from "../../resources/language/language";
-import {DropdownMenu} from "../../components/DropdownMenu/DropdownMenu";
+import {DropdownMenu} from "../../components/ThemeDropdownMenu/DropdownMenu";
 
 interface headerProps {
-    currentTheme: string,
-    currentThemeSetter: (theme: string) => void,
 }
 
 let settingsMenuItems: { elementName: string, elementFunction: string }[] = [
-    {'elementName': 'Light', 'elementFunction': 'lightTheme'},
-    {'elementName': 'Dark', 'elementFunction': 'darkTheme'},
+    {'elementName': language.THEME_DARK, 'elementFunction': language.THEME_DARK_VAR},
+    {'elementName': language.THEME_LIGHT, 'elementFunction': language.THEME_LIGHT_VAR},
 ];
 
 export default function Header(props: headerProps) {
@@ -25,8 +23,8 @@ export default function Header(props: headerProps) {
                                 leftToRightAnimation={false}/>
                 </NavLink>
                 <div className={styles.buttonContainer}>
-                    <DropdownMenu currentTheme={props.currentTheme} currentThemeSetter={props.currentThemeSetter}
-                                  menuTitle={language.THEME_BUTTON} menuElements={settingsMenuItems}/>
+                    <DropdownMenu
+                        menuTitle={language.THEME_BUTTON} menuElements={settingsMenuItems}/>
                 </div>
             </div>
         </div>
