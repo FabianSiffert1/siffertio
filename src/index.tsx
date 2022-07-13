@@ -14,10 +14,9 @@ import Home from './views/Home/Home';
 import Biography from './views/Biography/Biography';
 import Contact from './views/Contact/Contact';
 import Contacts from './views/Contacts/contacts';
-import ImageRouter from "./components/ImageRouter/ImageRouter";
 import Welcome from "./views/Welcome/Welcome";
+import PageNotFound from "./views/PageNotFound/PageNotFound";
 
-import Secret from "./resources/images/buttons/secret.svg"
 
 const container = document.getElementById('root');
 // value! -> TS checks that value is never null
@@ -34,7 +33,7 @@ root.render(<React.StrictMode>
                         <Route
                             index
                             element={
-                                <main style={{padding: "1rem"}}>
+                                <main style={{padding: "1rem", minWidth: "40vw"}}>
                                     <p>Select an invoice</p>
                                 </main>
                             }
@@ -44,10 +43,7 @@ root.render(<React.StrictMode>
                     <Route
                         path="*"
                         element={
-                            <main style={{padding: "0rem", alignItems: "center"}}>
-                                <p>There's nothing here!</p>
-                                <ImageRouter route={'/'} routeKey={'Home'} imagePath={Secret}/>
-                            </main>
+                            <PageNotFound/>
                         }
                     />
                 </Route>

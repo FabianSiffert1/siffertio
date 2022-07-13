@@ -1,12 +1,30 @@
 @import "src/resources/globalVariables.module";
 
-.Contact{
-display: flex;
-
+.Contact {
+  display: flex;
   border-radius: 2vw;
-  background-color: $globalUnderlayRGBAColorLight;
+  padding: 2vw;
 
-  a{
+
+  .darkTheme {
+    display: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorDark;
+  }
+
+  .lightTheme {
+    display: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorLight;
+  }
+
+  .colorfulTheme {
+    display: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorLight;
+  }
+
+  a {
     text-decoration: none;
   }
 }

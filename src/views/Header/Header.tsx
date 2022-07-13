@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import {NavLink} from "react-router-dom";
 import FadeInText from "../../components/FadeInText/FadeInText";
 import language from "../../resources/language/language";
-import {DropdownMenu} from "../../components/ThemeDropdownMenu/DropdownMenu";
+import {ThemeDropdownMenu} from "../../components/ThemeDropdownMenu/ThemeDropdownMenu";
 
 interface headerProps {
 }
@@ -23,7 +23,7 @@ export default function Header(props: headerProps) {
                                 leftToRightAnimation={false}/>
                 </NavLink>
                 <div className={styles.buttonContainer}>
-                    <DropdownMenu
+                    <ThemeDropdownMenu
                         menuTitle={language.THEME_BUTTON} menuElements={settingsMenuItems}/>
                 </div>
             </div>

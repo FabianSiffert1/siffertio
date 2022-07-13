@@ -1,9 +1,24 @@
 @import "src/resources/globalVariables.module";
-
 .Biography {
   padding: 2vw;
+  margin-bottom: 10vh;
   border-radius: 2vw;
-  background-color: $globalUnderlayRGBAColorLight;
+
+  .darkTheme{
+    padding: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorDark;
+  }
+  .lightTheme{
+    padding: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorLight;
+  }
+  .colorfulTheme{
+    padding: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorLight;
+  }
   .textContainer{
 
   }

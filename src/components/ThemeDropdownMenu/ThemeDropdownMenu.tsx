@@ -1,16 +1,15 @@
 import React, {useState} from "react";
-import styles from "./DropdownMenu.module.scss";
+import styles from "./ThemeDropdownMenu.module.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {changeToTheme} from "../../utils/reduxStore/theme/themeSlice";
+import language from "../../resources/language/language";
 
-export interface DropdownMenuProps {
+export interface ThemeDropdownMenuProps {
     menuTitle: string;
     menuElements: { elementName: string; elementFunction: string; }[];
 }
 
-//TODO: refactor to not be hardcoded to theme selection anymore
-
-export function DropdownMenu(props: DropdownMenuProps) {
+export function ThemeDropdownMenu(props: ThemeDropdownMenuProps) {
     const [display, setDisplay] = useState('none');
     const currentTheme = useSelector((state: any) => state.theme.value)
     const dispatch = useDispatch()
@@ -29,7 +28,7 @@ export function DropdownMenu(props: DropdownMenuProps) {
     return (
         <div className={styles.DropdownMenu}>
             <div onClick={handleClick}
-                 className={currentTheme === "lightTheme" ? styles.dropdownButtonLightTheme : currentTheme === "darkTheme" ? styles.dropdownButtonDarkTheme : styles.dropdownButtonColorfulTheme}>
+                 className={currentTheme === language.THEME_DARK_VAR ? styles.dropdownButtonDarkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.dropdownButtonLightTheme : styles.dropdownButtonColorfulTheme}>
                 <div className={styles.dropdownButton}>
                     {props.menuTitle}
                 </div>
@@ -37,9 +36,10 @@ export function DropdownMenu(props: DropdownMenuProps) {
             <div className={styles.dropdownElements} style={{display: display}}>
                 {props.menuElements.map((element: any) =>
                     <div
-                        className={currentTheme === "lightTheme" ? styles.elementLightTheme : currentTheme === "darkTheme" ? styles.elementDarkTheme : styles.elementColorfulTheme}
+                        className={currentTheme === language.THEME_DARK_VAR ? styles.elementDarkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.elementLightTheme : styles.elementColorfulTheme}
                         onClick={() => changeTheme(element.elementFunction)}>{element.elementName}</div>
-                )}
+                )
+                }
 
             </div>
 
