@@ -7,6 +7,9 @@ import {
     Route,
 } from "react-router-dom";
 
+import { Provider } from 'react-redux'
+import store from './utils/reduxStore/reduxStore'
+
 import Home from './views/Home/Home';
 import Biography from './views/Biography/Biography';
 import Contact from './views/Contact/Contact';
@@ -21,6 +24,7 @@ const container = document.getElementById('root');
 const root = ReactDOMClient.createRoot(container!);
 
 root.render(<React.StrictMode>
+    <Provider store={store}>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>}>
@@ -49,6 +53,7 @@ root.render(<React.StrictMode>
                 </Route>
             </Routes>
         </BrowserRouter>
+    </Provider>
     </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function

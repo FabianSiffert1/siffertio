@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
-import styles from "./Home.module.scss";
 import {Outlet, useLocation} from "react-router-dom";
+import styles from "./Home.module.scss";
+
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
+import {Counter} from "../../components/Counter/Counter";
 
 const Home = () => {
     const defaultTheme = 'lightTheme';
@@ -13,9 +15,9 @@ const Home = () => {
         atWelcomeScreen = true;
     }
 
-
     return (
         <div className={styles.Home}>
+            <Counter/>
             <div
                 className={currentTheme === "lightTheme" ? styles.lightTheme : currentTheme === "darkTheme" ? styles.darkTheme : styles.colorfulTheme}>
                 {atWelcomeScreen ? "" : [<Header currentTheme={currentTheme} currentThemeSetter={setCurrentTheme}/>]}
