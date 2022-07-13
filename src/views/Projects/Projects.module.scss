@@ -1,35 +1,25 @@
 @import "src/resources/globalVariables.module";
-.Biography {
+
+.Projects {
   padding: 2vw;
-  margin-bottom: 10vh;
   border-radius: $globalBorderRadius;
 
-  .darkTheme{
+  .darkTheme {
     padding: inherit;
     border-radius: inherit;
     background-color: $globalUnderlayRGBAColorDark;
   }
-  .lightTheme{
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
-  }
-  .colorfulTheme{
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
-  }
-  .textContainer{
 
+  .lightTheme {
+    padding: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorLight;
   }
-  .textTitle{
-    text-decoration: underline;
-    font-size:2vw;
-  }
-  .textContent{
-    p {
-      padding-bottom: 2vh;
-    }
+
+  .colorfulTheme {
+    padding: inherit;
+    border-radius: inherit;
+    background-color: $globalUnderlayRGBAColorLight;
   }
 
 }

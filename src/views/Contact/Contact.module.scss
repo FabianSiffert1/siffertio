@@ -2,29 +2,45 @@
 
 .Contact {
   display: flex;
-  border-radius: 2vw;
+  border-radius: $globalBorderRadius;
   padding: 2vw;
 
-
-  .darkTheme {
-    display: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorDark;
+  .navigationItem:hover {
+    border: solid $globalHighlightColor;
   }
 
-  .lightTheme {
-    display: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
+  .navigationItem {
+    border: solid transparent;
   }
 
-  .colorfulTheme {
-    display: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
+  .navigationItem:active {
+    display: block;
+    margin: 1vh 0;
+    border: solid;
+    border-radius: $globalBorderRadius;
+    padding: 0.5vw;
   }
 
-  a {
-    text-decoration: none;
-  }
+.darkTheme {
+  display: inherit;
+  border-radius: inherit;
+  background-color: $globalUnderlayRGBAColorDark;
+}
+
+.lightTheme {
+  display: inherit;
+  border-radius: inherit;
+  background-color: $globalUnderlayRGBAColorLight;
+}
+
+.colorfulTheme {
+  display: inherit;
+  border-radius: inherit;
+  background-color: $globalUnderlayRGBAColorLight;
+}
+
+a {
+  text-decoration: none;
+}
+
 }

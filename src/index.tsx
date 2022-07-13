@@ -16,6 +16,7 @@ import Contact from './views/Contact/Contact';
 import Contacts from './views/Contacts/contacts';
 import Welcome from "./views/Welcome/Welcome";
 import PageNotFound from "./views/PageNotFound/PageNotFound";
+import Projects from "./views/Projects/Projects";
 
 
 const container = document.getElementById('root');
@@ -29,6 +30,7 @@ root.render(<React.StrictMode>
                 <Route path="/" element={<Home/>}>
                     <Route path="/" element={<Welcome/>}/>
                     <Route path="biography" element={<Biography/>}/>
+                    <Route path="projects" element={<Projects/>}/>
                     <Route path="contact" element={<Contact/>}>
                         <Route
                             index

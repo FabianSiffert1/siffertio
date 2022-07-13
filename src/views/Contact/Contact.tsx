@@ -13,21 +13,22 @@ export default function Contact() {
                 className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
                 <nav
                     style={{
-                        borderRight: "solid 0.1vw",
+                        borderRight: "solid 0.2vw",
                         padding: "0.5vw",
                     }}
                 >
                     {invoices.map((invoice) => (
-                        <NavLink
+                        <NavLink className={styles.navigationItem}
                             style={({isActive}) => {
                                 return {
                                     display: "block",
                                     margin: "1vh 0",
-                                    border: isActive ? "solid" : "solid transparent",
+                                    border: isActive ? "solid" : "",
                                     borderRadius: "30vw",
                                     padding: "0.5vw",
                                 };
-                            }}
+                            }
+                            }
                             to={`/contact/${invoice.number}`}
                             key={invoice.number}
                         >

@@ -9,10 +9,11 @@
 
 .colorfulTheme * {
   @include colorfulTheme;
-  background-color: rgba(145, 248, 139, 1);
+  background-color: rgba(145, 248, 139, 1) !important;
 }
 .NavigationBar {
   display: flex;
+  padding-top: 0.3vh;
   position: absolute;
   flex-direction: row;
   overflow: hidden;
