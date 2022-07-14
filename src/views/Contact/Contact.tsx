@@ -15,6 +15,7 @@ export default function Contact() {
                     style={{
                         borderRight: "solid 0.2vw",
                         padding: "0.5vw",
+                        minWidth: "12vw",
                     }}
                 >
                     {invoices.map((invoice) => (

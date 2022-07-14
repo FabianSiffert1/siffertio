@@ -5,6 +5,24 @@
   border-radius: $globalBorderRadius;
   padding: 2vw;
 
+  .darkTheme {
+    display: inherit;
+    @include darkThemeContentContainer;
+    padding: 0;
+  }
+
+  .lightTheme {
+    display: inherit;
+    @include lightThemeContentContainer;
+    padding: 0;
+  }
+
+  .colorfulTheme {
+    display: inherit;
+    @include colorfulThemeContentContainer;
+    padding: 0;
+  }
+
   .navigationItem:hover {
     border: solid $globalHighlightColor;
   }
@@ -21,23 +39,7 @@
     padding: 0.5vw;
   }
 
-.darkTheme {
-  display: inherit;
-  border-radius: inherit;
-  background-color: $globalUnderlayRGBAColorDark;
-}
 
-.lightTheme {
-  display: inherit;
-  border-radius: inherit;
-  background-color: $globalUnderlayRGBAColorLight;
-}
-
-.colorfulTheme {
-  display: inherit;
-  border-radius: inherit;
-  background-color: $globalUnderlayRGBAColorLight;
-}
 
 a {
   text-decoration: none;

@@ -5,21 +5,15 @@
   border-radius: $globalBorderRadius;
 
   .darkTheme {
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorDark;
+    @include darkThemeContentContainer;
   }
 
   .lightTheme {
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
+    @include lightThemeContentContainer;
   }
 
   .colorfulTheme {
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
+    @include colorfulThemeContentContainer;
   }
 
 }

@@ -4,20 +4,16 @@
   margin-bottom: 10vh;
   border-radius: $globalBorderRadius;
 
-  .darkTheme{
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorDark;
+  .darkTheme {
+    @include darkThemeContentContainer;
   }
-  .lightTheme{
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
+
+  .lightTheme {
+    @include lightThemeContentContainer;
   }
-  .colorfulTheme{
-    padding: inherit;
-    border-radius: inherit;
-    background-color: $globalUnderlayRGBAColorLight;
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
   }
   .textContainer{
 

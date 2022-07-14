@@ -6,7 +6,7 @@ export default function Contacts() {
     let invoice = getInvoice(parseInt(params.invoiceId!, 10));
     return (
         invoice ?
-        <main style={{ padding: "1vw", minWidth:"40vw"}}>
+        <main style={{ wordWrap: "break-word", padding: "1vw", minWidth:"40vw", maxWidth:"80vw", paddingRight:"2vw" }}>
           <h2>Total Due: {invoice.amount}</h2>
           <p>
             {invoice.name!}: {invoice.number!}

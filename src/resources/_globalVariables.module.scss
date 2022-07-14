@@ -34,6 +34,24 @@ $globalBackgroundColorNavigationBar: #fff;
   }
 }
 
+@mixin darkThemeContentContainer {
+  padding: inherit;
+  border-radius: inherit;
+  background-color: $globalUnderlayRGBAColorDark;
+}
+
+@mixin lightThemeContentContainer {
+  padding: inherit;
+  border-radius: inherit;
+  background-color: $globalUnderlayRGBAColorLight;
+}
+
+@mixin colorfulThemeContentContainer {
+  padding: inherit;
+  border-radius: inherit;
+  background-color: $globalUnderlayRGBAColorLight;
+}
+
 @mixin colorfulTheme {
   font-family: $globalFontFamily;
   font-size: $globalFontSize;
