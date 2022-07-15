@@ -1,48 +1,5 @@
 @import "src/resources/globalVariables.module";
 
 .Contact {
-  display: flex;
-  border-radius: $globalBorderRadius;
-  padding: 2vw;
-
-  .darkTheme {
-    display: inherit;
-    @include darkThemeContentContainer;
-    padding: 0;
-  }
-
-  .lightTheme {
-    display: inherit;
-    @include lightThemeContentContainer;
-    padding: 0;
-  }
-
-  .colorfulTheme {
-    display: inherit;
-    @include colorfulThemeContentContainer;
-    padding: 0;
-  }
-
-  .navigationItem:hover {
-    border: solid $globalHighlightColor;
-  }
-
-  .navigationItem {
-    border: solid transparent;
-  }
-
-  .navigationItem:active {
-    display: block;
-    margin: 1vh 0;
-    border: solid;
-    border-radius: $globalBorderRadius;
-    padding: 0.5vw;
-  }
-
-
-
-a {
-  text-decoration: none;
-}
 
 }
