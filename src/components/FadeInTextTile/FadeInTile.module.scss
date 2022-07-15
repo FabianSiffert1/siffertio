@@ -1,0 +1,34 @@
+@import "src/resources/globalVariables.module";
+
+.FadeInTile{
+  margin-bottom: 10vh;
+
+  border-radius: $globalBorderRadius;
+  $tileFontSize: $globalFontSize;
+  $tilePaddingHeight: 1vh;
+
+  .darkTheme {
+    @include darkThemeContentContainer;
+  }
+
+  .lightTheme {
+    @include lightThemeContentContainer;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+  }
+
+
+  .tileTitle {
+    text-decoration: underline;
+    font-size: $tileFontSize*2;
+    padding: $globalHomeContentContainerPadding $globalHomeContentContainerPadding 0 $globalHomeContentContainerPadding;
+  }
+
+  .tileContent {
+    p {
+      padding: $tilePaddingHeight/2 $globalHomeContentContainerPadding $tilePaddingHeight $globalHomeContentContainerPadding;
+    }
+  }
+}

@@ -1,31 +1,4 @@
 @import "src/resources/globalVariables.module";
 .Biography {
-  padding: 2vw;
-  margin-bottom: 10vh;
-  border-radius: $globalBorderRadius;
-
-  .darkTheme {
-    @include darkThemeContentContainer;
-  }
-
-  .lightTheme {
-    @include lightThemeContentContainer;
-  }
-
-  .colorfulTheme {
-    @include colorfulThemeContentContainer;
-  }
-  .textContainer{
-
-  }
-  .textTitle{
-    text-decoration: underline;
-    font-size:2vw;
-  }
-  .textContent{
-    p {
-      padding-bottom: 2vh;
-    }
-  }
-
+padding: $globalHomeContentContainerPadding;
 }
