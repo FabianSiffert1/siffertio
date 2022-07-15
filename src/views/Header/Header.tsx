@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import {NavLink} from "react-router-dom";
-import FadeInText from "../../components/ColoredBarsAndFadeInText/FadeInText";
+import ColoredBarsAndFadeInText from "../../components/ColoredBarsAndFadeInText/ColoredBarsAndFadeInText";
 import language from "../../resources/language/language";
 import {ThemeDropdownMenu} from "../../components/ThemeDropdownMenu/ThemeDropdownMenu";
 
@@ -18,9 +18,9 @@ export default function Header(props: headerProps) {
         <div className={styles.Header}>
             <div className={styles.headerElements}>
                 <NavLink to={'/'}>
-                    <FadeInText textToDisplay={language.HEADER_TITLE} mainFontSize={"5vh"}/>
-                    <FadeInText textToDisplay={language.HEADER_SUBTITLE} mainFontSize={"2vh"}
-                                leftToRightAnimation={false}/>
+                    <ColoredBarsAndFadeInText textToDisplay={language.HEADER_TITLE} mainFontSize={"5vh"}/>
+                    <ColoredBarsAndFadeInText textToDisplay={language.HEADER_SUBTITLE} mainFontSize={"2vh"}
+                                              leftToRightAnimation={false}/>
                 </NavLink>
                 <div className={styles.buttonContainer}>
                     <ThemeDropdownMenu

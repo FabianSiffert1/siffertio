@@ -1,4 +1,4 @@
-import styles from "./FadeInText.module.scss";
+import styles from "./ColoredBarsAndFadeInText.module.scss";
 import React from "react";
 
 export interface FadeInTextProps {
@@ -12,7 +12,7 @@ export interface FadeInTextProps {
     children?: React.ReactNode,
 }
 
-export default function FadeInText(props: FadeInTextProps) {
+export default function ColoredBarsAndFadeInText(props: FadeInTextProps) {
     return (
         <div className={styles.FadeInTextContainer}>
             <div className={styles.fadeInTitleContainer}>
@@ -47,6 +47,6 @@ export default function FadeInText(props: FadeInTextProps) {
 
     );
 }
-FadeInText.defaultProps = {
+ColoredBarsAndFadeInText.defaultProps = {
     leftToRightAnimation: true,
 }
