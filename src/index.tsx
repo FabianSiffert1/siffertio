@@ -31,7 +31,6 @@ root.render(<React.StrictMode>
                     <Route path="/" element={<Welcome/>}/>
                     <Route path="biography" element={<Biography/>}/>
                     <Route path="projects" element={<Projects/>}>
-
                     </Route>
                     <Route path="contact" element={<Contact/>}>
                         <Route

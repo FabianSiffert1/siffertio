@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./AnimatedTextRouter.module.scss";
 
 import {NavLink, useLocation} from "react-router-dom";
+import language from "../../resources/language/language";
+import {useSelector} from "react-redux";
 
 export interface AnimatedTextRouterProps {
     routesArray: { route: string; routeKey: string; }[];
@@ -11,20 +13,7 @@ export interface AnimatedTextRouterProps {
 
 
 function AnimatedTextRouter(props: AnimatedTextRouterProps) {
-    let darkTheme = false;
-    let lightTheme = false;
-    let colorfulTheme = false;
-
-    switch (props.currentTheme) {
-        case("lightTheme"):
-            lightTheme = true;
-            break;
-        case("colorfulTheme"):
-            colorfulTheme = true;
-            break;
-        default:
-            darkTheme = true;
-    }
+    const currentTheme = useSelector((state: any) => state.theme.value)
     const currentLocation = useLocation().pathname;
     return (<>
             {props.routesArray.map((element: any) => <div className={styles.AnimatedTextRouter} key={element.routeKey}>
@@ -32,7 +21,8 @@ function AnimatedTextRouter(props: AnimatedTextRouterProps) {
                         to={element.route}
                         key={element.routeKey}
                     >
-                        <div className={currentLocation === element.route ? darkTheme ? styles.activeLinkDarkTheme : lightTheme ? styles.activeLinkLightTheme : styles.activeLinkColorfulTheme : styles.inActiveLink}>
+                        <div
+                            className={currentLocation === element.route ? currentTheme === language.THEME_DARK_VAR ? styles.activeLinkDarkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.activeLinkLightTheme : styles.activeLinkColorfulTheme : styles.inActiveLink}>
                             {element.routeKey}
                         </div>
                     </NavLink>
