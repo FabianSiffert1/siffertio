@@ -1,7 +1,7 @@
 @import "src/resources/globalVariables.module";
 
 .Projects {
-  padding: 2vw;
+  padding: $globalHomeContentContainerPadding;
   border-radius: $globalBorderRadius;
 
   .darkTheme {
