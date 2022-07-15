@@ -18,12 +18,12 @@
     border-top: solid transparent;
     border-right: solid transparent;
     border-left: solid transparent;
-    border-radius: 30vw;
+    border-radius: $globalBorderRadius;
   }
 
   .dropdownButtonDarkTheme:hover {
     border: solid $globalHighlightColor;
-    border-radius: 30vw;
+    border-radius: $globalBorderRadius;
   }
 
   .dropdownButtonLightTheme {
@@ -39,12 +39,12 @@
     border-top: solid transparent;
     border-right: solid transparent;
     border-left: solid transparent;
-    border-radius: 30vw;
+    border-radius: $globalBorderRadius;
   }
 
   .dropdownButtonLightTheme:hover {
     border: solid $globalHighlightColor;
-    border-radius: 30vw;
+    border-radius: $globalBorderRadius;
   }
 
 
@@ -59,7 +59,7 @@
     .elementDarkTheme {
       width: 100%;
       border: solid transparent;
-      border-radius: 30vw;
+      border-radius: $globalBorderRadius;
       background: $globalLightColor;
       color: $globalDarkColor;
       display: flex;
@@ -78,7 +78,7 @@
     .elementLightTheme {
       width: 100%;
       border: solid transparent;
-      border-radius: 30vw;
+      border-radius: $globalBorderRadius;
       background: $globalDarkColor;
       color: white;
       display: flex;

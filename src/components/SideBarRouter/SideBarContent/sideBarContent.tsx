@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom";
-import { getInvoice } from "../../tmpData/data";
+import { getInvoice } from "../../../tmpData/data";
 
-export default function Contacts() {
+export default function SideBarContent() {
     let params = useParams();
     let invoice = getInvoice(parseInt(params.invoiceId!, 10));
     return (

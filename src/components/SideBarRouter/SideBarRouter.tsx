@@ -26,7 +26,7 @@ export default function SideBarRouter() {
                                          display: "block",
                                          margin: "1vh 0",
                                          border: isActive ? "solid" : "",
-                                         borderRadius: "30vw",
+                                         borderRadius: "2vw",
                                          padding: "0.5vw",
                                      };
                                  }

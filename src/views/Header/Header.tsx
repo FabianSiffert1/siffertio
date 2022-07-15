@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import {NavLink} from "react-router-dom";
-import FadeInText from "../../components/FadeInText/FadeInText";
+import FadeInText from "../../components/ColoredBarsAndFadeInText/FadeInText";
 import language from "../../resources/language/language";
 import {ThemeDropdownMenu} from "../../components/ThemeDropdownMenu/ThemeDropdownMenu";
 

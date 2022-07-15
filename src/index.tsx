@@ -13,7 +13,7 @@ import store from './utils/reduxStore/reduxStore'
 import Home from './views/Home/Home';
 import Biography from './views/Biography/Biography';
 import Contact from './views/Contact/Contact';
-import Contacts from './views/Contacts/contacts';
+import SideBarContent from './components/SideBarRouter/SideBarContent/sideBarContent';
 import Welcome from "./views/Welcome/Welcome";
 import PageNotFound from "./views/PageNotFound/PageNotFound";
 import Projects from "./views/Projects/Projects";
@@ -31,17 +31,18 @@ root.render(<React.StrictMode>
                     <Route path="/" element={<Welcome/>}/>
                     <Route path="biography" element={<Biography/>}/>
                     <Route path="projects" element={<Projects/>}>
+
                     </Route>
                     <Route path="contact" element={<Contact/>}>
                         <Route
                             index
                             element={
-                                <main style={{padding: "1rem", minWidth: "40vw"}}>
+                                <div style={{padding: "1rem", minWidth: "40vw"}}>
                                     <p>Select an invoice</p>
-                                </main>
+                                </div>
                             }
                         />
-                        <Route path=":invoiceId" element={<Contacts/>}/>
+                        <Route path=":invoiceId" element={<SideBarContent/>}/>
                     </Route>
                     <Route
                         path="*"

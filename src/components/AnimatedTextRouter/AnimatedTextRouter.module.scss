@@ -20,18 +20,18 @@ $fontSize: 6vh;
     padding: 0.8vw;
     margin: 0.4vw;
     border: solid transparent;
-    border-radius: 30vh;
+    border-radius: $globalBorderRadius;
   }
 
   .inActiveLink:hover {
     border: solid $globalHighlightColor;
-    border-radius: 30vh;
+    border-radius: $globalBorderRadius;
   }
 
   .activeLinkLightTheme {
     font-size: $fontSize;
     text-transform: uppercase;
-    border-radius: 30vh;
+    border-radius: $globalBorderRadius;
     padding: 0.8vw;
     margin: 0.4vw;
     background-image: linear-gradient(
@@ -52,7 +52,7 @@ $fontSize: 6vh;
   .activeLinkDarkTheme{
     font-size: 6vh;
     text-transform: uppercase;
-    border-radius: 30vh;
+    border-radius: $globalBorderRadius;
     margin: 0.4vw;
     padding: 0.8vw;
     background-image: linear-gradient(
@@ -73,7 +73,7 @@ $fontSize: 6vh;
   .activeLinkColorfulTheme{
     font-size: $fontSize;
     text-transform: uppercase;
-    border-radius: 30vh;
+    border-radius: $globalBorderRadius;
     padding: 0.8vw;
     margin: 0.4vw;
     background-image: linear-gradient(

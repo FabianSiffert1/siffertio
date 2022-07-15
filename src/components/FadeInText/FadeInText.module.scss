@@ -1,0 +1,31 @@
+@import "src/resources/globalVariables.module";
+
+.FadeInText {
+
+  .darkTheme {
+    @include darkThemeContentContainer;
+  }
+
+  .lightTheme {
+    @include lightThemeContentContainer;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+  }
+
+  .textContainer {
+
+  }
+
+  .textTitle {
+    text-decoration: underline;
+    font-size: 2vw;
+  }
+
+  .textContent {
+    p {
+      padding-bottom: 2vh;
+    }
+  }
+}
