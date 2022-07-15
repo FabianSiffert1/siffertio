@@ -1,0 +1,143 @@
+@import "src/resources/globalVariables.module";
+
+.FadeInTextContainer {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body, html {
+    overflow: hidden;
+  }
+
+
+  .fadeInTitleContainer {
+
+    $mainFontSize: 5vh !default;
+    $mainBlockWidth: 30vw !default;
+    $mainBlockHeight: 5vh !default;
+    $fadeInTime: 2s !default;
+    $secondaryFontSize: 2vh !default;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fadeInAnimationContainer {
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .fadeinMainTitleContainer {
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: $mainBlockHeight;
+
+        .fadeInMainTitleText {
+          display: flex;
+          position: relative;
+          align-items: baseline;
+          font-weight: bold;
+          opacity: 0;
+          font-size: $mainFontSize;
+          animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+          animation-delay: $fadeInTime*0.9;
+        }
+
+        .coloredBlockLeftToRight {
+          display: flex;
+          position: absolute;
+          width: 0;
+          height: inherit;
+          background: $globalHighlightColor;
+          animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+          animation-delay: 0s;
+        }
+
+        .coloredBlockRightToLeft {
+          display: flex;
+          position: absolute;
+          width: 0;
+          height: inherit;
+          background: $globalHighlightColor;
+          animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+          animation-delay: 0s;
+        }
+      }
+    }
+
+    .fadeInSubtitleContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: $secondaryFontSize;
+      animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        right: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+
+    @keyframes leftToRight {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      50% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes rightToLeft {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      50% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+  }
+
+}
