@@ -22,13 +22,13 @@
 
   .tileTitle {
     text-decoration: underline;
-    font-size: $tileFontSize*2;
+    font-size: calc($tileFontSize * 2);
     padding: $globalHomeContentContainerPadding $globalHomeContentContainerPadding 0 $globalHomeContentContainerPadding;
   }
 
   .tileContent {
     p {
-      padding: $tilePaddingHeight/2 $globalHomeContentContainerPadding $tilePaddingHeight $globalHomeContentContainerPadding;
+      padding: calc($tilePaddingHeight / 2) $globalHomeContentContainerPadding $tilePaddingHeight $globalHomeContentContainerPadding;
     }
   }
 }

@@ -29,9 +29,7 @@ export function ThemeDropdownMenu(props: ThemeDropdownMenuProps) {
         <div className={styles.DropdownMenu}>
             <div onClick={handleClick}
                  className={currentTheme === language.THEME_DARK_VAR ? styles.dropdownButtonDarkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.dropdownButtonLightTheme : styles.dropdownButtonColorfulTheme}>
-                <div className={styles.dropdownButton}>
                     {props.menuTitle}
-                </div>
             </div>
             <div className={styles.dropdownElements} style={{display: display}}>
                 {props.menuElements.map((element: any) =>
