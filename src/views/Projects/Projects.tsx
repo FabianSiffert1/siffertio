@@ -1,16 +1,16 @@
-import {useSelector} from "react-redux";
-
 import styles from "./Projects.module.scss";
 import language from "../../assets/language/language";
+import {TableSection} from "../../components/TableSection/TableSection";
 
 export default function Projects() {
-    const currentTheme = useSelector((state: any) => state.theme.value)
+
     return (
         <div className={styles.Projects}>
-            <div
-                className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
-                {language.PROJECTS_TITLE}
-            </div>
+            <TableSection tableTitle={"Things I've done (as a programmer)"}>
+                <div>{language.HEADER_TITLE}</div>
+
+                <div>{language.WELCOME_SUBTITLE}</div>
+            </TableSection>
         </div>
     );
 }
