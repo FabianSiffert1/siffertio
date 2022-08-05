@@ -3,7 +3,7 @@ import {TableSection} from "../../components/TableSection/TableSection";
 import {ImageLink} from "../../components/ImageLink/ImageLink";
 
 import githubLogo from "../../assets/images/github.svg"
-import emailLogo from "../../assets/images/buttons/mailClosed.svg"
+import emailLogo from "../../assets/images/emailLink.svg"
 import language from "../../assets/language/language";
 
 

@@ -17,13 +17,17 @@
   font-size: $tableSectionFontSize;
 
   .image {
+    display: flex;
+    min-height: 15vh;
+    max-height: 15vh;
+    align-items: center;
+    justify-content: center;
     padding: calc( $imageLinkDefaultPadding / 2 );
   }
 
   .imageSubtitle {
     position: absolute;
     bottom:0;
-
   }
 
   .darkTheme {

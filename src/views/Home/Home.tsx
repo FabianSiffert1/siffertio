@@ -14,7 +14,7 @@ const Home = () => {
 
     let atWelcomeScreen = undefined;
     if (useLocation().pathname === "/") {
-        atWelcomeScreen = false;
+        atWelcomeScreen = true;
     }
 
     return (
