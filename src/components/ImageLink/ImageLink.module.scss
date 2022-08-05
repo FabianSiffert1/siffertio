@@ -4,9 +4,6 @@
   //positioning
   display: flex;
   height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
   //padding & border
   border-radius: $globalBorderRadius;
@@ -22,12 +19,15 @@
     max-height: 15vh;
     align-items: center;
     justify-content: center;
+    margin-bottom: calc( $imageLinkDefaultPadding / 1 );
     padding: calc( $imageLinkDefaultPadding / 2 );
+
   }
 
   .imageSubtitle {
     position: absolute;
     bottom:0;
+
   }
 
   .darkTheme {
