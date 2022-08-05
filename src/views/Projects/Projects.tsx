@@ -1,7 +1,7 @@
 import {useSelector} from "react-redux";
 
 import styles from "./Projects.module.scss";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 
 export default function Projects() {
     const currentTheme = useSelector((state: any) => state.theme.value)

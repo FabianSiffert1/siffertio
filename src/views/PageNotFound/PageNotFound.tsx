@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PageNotFound.module.scss';
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 
 import {NavLink} from "react-router-dom";
 

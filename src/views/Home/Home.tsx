@@ -1,7 +1,7 @@
 import React from 'react';
 import {Outlet, useLocation} from "react-router-dom";
 import styles from "./Home.module.scss";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
@@ -14,7 +14,7 @@ const Home = () => {
 
     let atWelcomeScreen = undefined;
     if (useLocation().pathname === "/") {
-        atWelcomeScreen = true;
+        atWelcomeScreen = false;
     }
 
     return (

@@ -1,4 +1,4 @@
-@import "src/resources/globalVariables.module";
+@import "src/assets/globalVariables.module";
 
 .TableSection {
   border-radius: $globalBorderRadius;
@@ -32,6 +32,7 @@
   .tableContent {
     display: flex;
     justify-content: center;
+    padding-bottom: $tableSectionDefaultPadding;
     .tableElement {
       padding: calc( $tableSectionDefaultPadding / 2 );
     }

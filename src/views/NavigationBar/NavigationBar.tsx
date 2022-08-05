@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NavigationBar.module.scss";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 
 import AnimatedTextRouter from "../../components/AnimatedTextRouter/AnimatedTextRouter";
 import {useSelector} from "react-redux";

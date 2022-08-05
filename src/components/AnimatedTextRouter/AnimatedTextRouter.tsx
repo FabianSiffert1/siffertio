@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AnimatedTextRouter.module.scss";
 
 import {NavLink, useLocation} from "react-router-dom";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 import {useSelector} from "react-redux";
 
 export interface AnimatedTextRouterProps {

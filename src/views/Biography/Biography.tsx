@@ -1,5 +1,5 @@
 import styles from "./Biography.module.scss";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 import {TextSection} from "../../components/TextSection/TextSection";
 
 export default function Biography() {

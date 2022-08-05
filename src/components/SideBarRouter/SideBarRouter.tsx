@@ -1,4 +1,4 @@
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 import styles from "./SideBarRouter.module.scss";
 import {getInvoices} from "../../tmpData/data";
 

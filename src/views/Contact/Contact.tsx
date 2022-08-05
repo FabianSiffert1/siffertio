@@ -2,9 +2,9 @@ import styles from "./Contact.module.scss";
 import {TableSection} from "../../components/TableSection/TableSection";
 import {ImageLink} from "../../components/ImageLink/ImageLink";
 
-import githubLogo from "../../resources/images/github.svg"
-import emailLogo from "../../resources/images/buttons/mailClosed.svg"
-import language from "../../resources/language/language";
+import githubLogo from "../../assets/images/github.svg"
+import emailLogo from "../../assets/images/buttons/mailClosed.svg"
+import language from "../../assets/language/language";
 
 
 export default function Contact() {

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import {NavLink} from "react-router-dom";
 import ColoredBarsAndFadeInText from "../../components/ColoredBarsAndFadeInText/ColoredBarsAndFadeInText";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 import {ThemeDropdownMenu} from "../../components/ThemeDropdownMenu/ThemeDropdownMenu";
 
 interface headerProps {

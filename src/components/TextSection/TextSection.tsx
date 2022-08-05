@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TextSection.module.scss";
 
 import {useSelector} from "react-redux";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 
 export interface TextSectionProps {
     textSectionTitle?: string;

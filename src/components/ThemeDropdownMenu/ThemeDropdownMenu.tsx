@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styles from "./ThemeDropdownMenu.module.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {changeToTheme} from "../../utils/reduxStore/theme/themeSlice";
-import language from "../../resources/language/language";
+import language from "../../assets/language/language";
 
 export interface ThemeDropdownMenuProps {
     menuTitle: string;
