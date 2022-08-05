@@ -32,11 +32,11 @@
 
   .darkTheme {
     @include darkThemeContentContainer;
-    height:inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    flex-direction: inherit;
-    display: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     .image {
       filter: invert(1);
     }
