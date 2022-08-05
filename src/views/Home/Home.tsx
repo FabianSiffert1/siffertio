@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Outlet, useLocation} from "react-router-dom";
 import styles from "./Home.module.scss";
+import language from "../../resources/language/language";
 
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
 import {useSelector} from "react-redux";
+
 
 const Home = () => {
 
@@ -18,7 +20,7 @@ const Home = () => {
     return (
         <div className={styles.Home}>
             <div
-                className={currentTheme === "lightTheme" ? styles.lightTheme : currentTheme === "darkTheme" ? styles.darkTheme : styles.colorfulTheme}>
+                className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
                 {atWelcomeScreen ? "" : [<Header/>]}
                 <div className={atWelcomeScreen ? styles.welcomeScreen : styles.contentContainer}>
                     <Outlet/>

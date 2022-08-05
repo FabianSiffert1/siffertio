@@ -11,6 +11,8 @@ interface headerProps {
 let settingsMenuItems: { elementName: string, elementFunction: string }[] = [
     {'elementName': language.THEME_DARK, 'elementFunction': language.THEME_DARK_VAR},
     {'elementName': language.THEME_LIGHT, 'elementFunction': language.THEME_LIGHT_VAR},
+    //COLORFUL ALPHA
+    // {'elementName': language.THEME_COLORFUL, 'elementFunction': language.THEME_COLORFUL_VAR},
 ];
 
 export default function Header(props: headerProps) {
