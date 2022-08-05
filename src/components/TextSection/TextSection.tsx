@@ -1,23 +1,23 @@
 import React from "react";
-import styles from "./FadeInTile.module.scss";
+import styles from "./TextSection.module.scss";
 
 import {useSelector} from "react-redux";
 import language from "../../resources/language/language";
 
-export interface FadeInTileProps {
-    tileTitle?: string;
+export interface TextSectionProps {
+    textSectionTitle?: string;
     children: any;
 }
 
-export function FadeInTile(props: FadeInTileProps) {
+export function TextSection(props: TextSectionProps) {
     const currentTheme = useSelector((state: any) => state.theme.value)
 
     return (
-        <div className={styles.FadeInTile}>
+        <div className={styles.TextSection}>
             <div
                 className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
-                {props.tileTitle && <div className={styles.tileTitle}>{props.tileTitle}</div>}
-                <div className={styles.tileContent}>
+                {props.textSectionTitle && <div className={styles.textSectionTitle}>{props.textSectionTitle}</div>}
+                <div className={styles.textSectionContent}>
                     {props.children}
                 </div>
             </div>

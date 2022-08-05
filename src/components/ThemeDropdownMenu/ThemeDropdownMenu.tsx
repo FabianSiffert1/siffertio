@@ -29,12 +29,13 @@ export function ThemeDropdownMenu(props: ThemeDropdownMenuProps) {
         <div className={styles.DropdownMenu}>
             <div onClick={handleClick}
                  className={currentTheme === language.THEME_DARK_VAR ? styles.dropdownButtonDarkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.dropdownButtonLightTheme : styles.dropdownButtonColorfulTheme}>
-                    {props.menuTitle}
+                {props.menuTitle}
             </div>
             <div className={styles.dropdownElements} style={{display: display}}>
                 {props.menuElements.map((element: any) =>
                     <div
                         className={currentTheme === language.THEME_DARK_VAR ? styles.elementDarkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.elementLightTheme : styles.elementColorfulTheme}
+                        key={element.elementName}
                         onClick={() => changeTheme(element.elementFunction)}>{element.elementName}</div>
                 )
                 }

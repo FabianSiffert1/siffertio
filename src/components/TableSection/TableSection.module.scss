@@ -1,0 +1,39 @@
+@import "src/resources/globalVariables.module";
+
+.TableSection {
+  margin-bottom: 10vh;
+  border-radius: $globalBorderRadius;
+  $tableSectionDefaultPadding: $globalHomeContentContainerPadding;
+
+  $tableSectionFontSize: $globalFontSize;
+  font-size: $tableSectionFontSize;
+
+  .darkTheme {
+    @include darkThemeContentContainer;
+  }
+
+  .lightTheme {
+    @include lightThemeContentContainer;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+  }
+
+
+  .tableTitle {
+    text-decoration: underline;
+    display: flex;
+    padding-top: $tableSectionDefaultPadding;
+    font-size: calc($tableSectionFontSize * 2);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableContent {
+    padding: $tableSectionDefaultPadding;
+    .tableElement {
+    }
+  }
+
+}

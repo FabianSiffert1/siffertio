@@ -27,7 +27,7 @@ root.render(<React.StrictMode>
     <Provider store={store}>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home/>}>
+                <Route path="/" element={<Home/>} >
                     <Route path="/" element={<Welcome/>}/>
                     <Route path="biography" element={<Biography/>}/>
                     <Route path="projects" element={<Projects/>}>

@@ -1,11 +1,11 @@
 @import "src/resources/globalVariables.module";
 
-.FadeInTile{
+.TextSection{
   margin-bottom: 10vh;
 
   border-radius: $globalBorderRadius;
-  $tileFontSize: $globalFontSize;
-  $tilePaddingHeight: 1vh;
+  $sectionFontSize: $globalFontSize;
+  $sectionPaddingHeight: 1vh;
 
   .darkTheme {
     @include darkThemeContentContainer;
@@ -20,15 +20,15 @@
   }
 
 
-  .tileTitle {
+  .textSectionTitle {
     text-decoration: underline;
-    font-size: calc($tileFontSize * 2);
+    font-size: calc($sectionFontSize * 2);
     padding: $globalHomeContentContainerPadding $globalHomeContentContainerPadding 0 $globalHomeContentContainerPadding;
   }
 
-  .tileContent {
+  .textSectionContent {
     p {
-      padding: calc($tilePaddingHeight / 2) $globalHomeContentContainerPadding $tilePaddingHeight $globalHomeContentContainerPadding;
+      padding: calc($sectionPaddingHeight / 2) $globalHomeContentContainerPadding $sectionPaddingHeight $globalHomeContentContainerPadding;
     }
   }
 }

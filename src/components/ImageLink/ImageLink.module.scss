@@ -1,0 +1,30 @@
+@import "src/resources/globalVariables.module";
+
+.ImageLink {
+  border-radius: $globalBorderRadius;
+  $imageLinkDefaultPadding: $globalHomeContentContainerPadding;
+
+  $tableSectionFontSize: $globalFontSize;
+  font-size: $tableSectionFontSize;
+
+  .image {
+    padding: $imageLinkDefaultPadding;
+
+  }
+
+  .imageSubtitle {
+    display: flex;
+  }
+
+  .darkTheme {
+    @include darkThemeContentContainer;
+  }
+
+  .lightTheme {
+    @include lightThemeContentContainer;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+  }
+}
