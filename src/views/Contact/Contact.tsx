@@ -14,7 +14,7 @@ export default function Contact() {
                 <ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
                            imageAltText={"Github"}
                            imageLink={language.LINK_GITHUB}/>
-                <ImageLink imageSource={emailLogo} imageSubtitle={"Email"}
+                <ImageLink imageSource={emailLogo} imageSubtitle={"E-Mail"}
                            imageAltText={"E-Mail"}
                            imageLink={language.LINK_EMAIL}/>
 
