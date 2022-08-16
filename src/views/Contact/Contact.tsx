@@ -17,7 +17,6 @@ export default function Contact() {
                 <ImageLink imageSource={emailLogo} imageSubtitle={"E-Mail"}
                            imageAltText={"E-Mail"}
                            imageLink={language.LINK_EMAIL}/>
-
             </TableSection>
         </div>
     );

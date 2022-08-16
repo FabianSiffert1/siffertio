@@ -50,7 +50,6 @@
           display: flex;
           position: relative;
           align-items: baseline;
-          font-weight: bold;
           opacity: 0;
           font-size: $mainFontSize;
           animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;

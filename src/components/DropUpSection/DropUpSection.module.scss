@@ -1,0 +1,62 @@
+@import "src/assets/globalVariables.module";
+
+.DropUpSection {
+  border-radius: $globalBorderRadius;
+  $dropdownSectionDefaultPadding: $globalHomeContentContainerPadding;
+  padding: $globalHomeContentContainerPadding;
+  display: flex;
+  $bumpAnimationTime: 4s;
+  position: relative;
+
+  .dropUpTitleBar{;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+  }
+
+  .dropUpContent{
+
+  }
+
+  .dropUpIndicator{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -webkit-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -moz-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -o-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -ms-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+  }
+
+  @keyframes bump {
+    0% {
+      bottom: 0;
+    }
+    10% {
+      bottom: 5px;
+    }
+    20% {
+      bottom: 0;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+  .darkTheme {
+    @include darkThemeContentContainer;
+
+  }
+
+  .lightTheme {
+    @include lightThemeContentContainer;
+    width: 100%;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+  }
+
+
+}

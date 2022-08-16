@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from "./ThemeDropdownMenu.module.scss";
+import styles from "./DropdownMenuTheme.module.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {changeToTheme} from "../../utils/reduxStore/theme/themeSlice";
 import language from "../../assets/language/language";
@@ -9,7 +9,7 @@ export interface ThemeDropdownMenuProps {
     menuElements: { elementName: string; elementFunction: string; }[];
 }
 
-export function ThemeDropdownMenu(props: ThemeDropdownMenuProps) {
+export function DropdownMenuTheme(props: ThemeDropdownMenuProps) {
     const [display, setDisplay] = useState('none');
     const currentTheme = useSelector((state: any) => state.theme.value)
     const dispatch = useDispatch()

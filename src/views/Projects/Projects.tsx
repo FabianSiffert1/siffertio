@@ -1,16 +1,17 @@
 import styles from "./Projects.module.scss";
 import language from "../../assets/language/language";
-import {TableSection} from "../../components/TableSection/TableSection";
+import {DropUpSection} from "../../components/DropUpSection/DropUpSection";
 
 export default function Projects() {
 
     return (
         <div className={styles.Projects}>
-            <TableSection tableTitle={"Things I've done (as a programmer)"}>
-                <div>{language.HEADER_TITLE}</div>
-
-                <div>{language.WELCOME_SUBTITLE}</div>
-            </TableSection>
+                <DropUpSection isOpened={true} sectionTitle={language.HEADER_TITLE}>
+                    HEEEEYA
+                </DropUpSection>
+                <DropUpSection sectionTitle={"My Future IOS APP"}>
+                    HEEEEYAAAA
+                </DropUpSection>
         </div>
     );
 }
