@@ -5,6 +5,7 @@ import {TextSection} from "../../components/TextSection/TextSection";
 export default function Biography() {
     return (
         <div className={styles.Biography}>
+            INSERT "BIOGRAPHY" COLOREDSHAPE COMPONENT HERE
             <TextSection textSectionTitle={'Biography'}>
                 <p>
                     {language.LOREM}

@@ -10,6 +10,7 @@ import language from "../../assets/language/language";
 export default function Contact() {
     return (
         <div className={styles.Contact}>
+            INSERT "CONTACT" COLOREDSHAPE COMPONENT HERE
             <TableSection tableTitle={"Find me here"}>
                 <ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
                            imageAltText={"Github"}

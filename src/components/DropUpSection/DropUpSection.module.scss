@@ -2,27 +2,72 @@
 
 .DropUpSection {
   border-radius: $globalBorderRadius;
-  $dropdownSectionDefaultPadding: $globalHomeContentContainerPadding;
-  padding: $globalHomeContentContainerPadding;
   display: flex;
-  $bumpAnimationTime: 4s;
   position: relative;
+  font-size: $globalFontSize;
 
-  .dropUpTitleBar{;
+  $slowBumpAnimationTime: 4s;
+  $bumpAnimationTime: 0.9s;
+  padding: $globalHomeContentContainerPadding;
+
+  $dropdownSectionDefaultPadding: $globalHomeContentContainerPadding;
+  $dropdownSectionDefaultFontSize: $globalFontSize;
+
+  $dropUpIndicatorBorderRadius: 100vw;
+  $dropUpIndicatorBottomPosition: inherit ;
+  $dropUpIndicatorHorizontalPosition: 10vw;
+  $dropUpColoredBarColor: $globalHighlightColor;
+
+  .dropUpColoredBar {
+    //background-color: $dropUpColoredBarColor;
+    width: 95%;
+    border-radius: 90vw;
+    border: solid transparent;
+    //-webkit-transform: skew(70deg);
+    //-moz-transform: skew(70deg);
+    //-o-transform: skew(70deg);
+  }
+
+  .dropUpColoredBar:hover {
+    border: solid $globalHighlightColor;
+  }
+  .dropUpTitle {
+    //-webkit-transform: skew(-70deg);
+    text-decoration: underline;
+    font-size: calc($dropdownSectionDefaultFontSize * 2);
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
+    display: flex;
   }
 
-  .dropUpContent{
-
-  }
-
-  .dropUpIndicator{
+  .dropUpContent {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    //padding: $globalHomeContentContainerPadding;
+    padding-top: calc($dropdownSectionDefaultFontSize / 2);
+  }
+
+  .dropUpIndicator {
+    padding: calc($globalHomeContentContainerPadding / 9  );
+    right: $dropUpIndicatorHorizontalPosition;
+    justify-content: center;
+    transform: rotate(180deg);
     align-items: center;
     position: absolute;
-    bottom: 0;
+    border: solid;
+    font-size: 2vh;
+    border-radius: $dropUpIndicatorBorderRadius;
+    animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -webkit-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -moz-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -o-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    -ms-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+  }
+
+  .dropUpIndicator:hover {
+    border: solid $globalHighlightColor;
+    border-radius: $dropUpIndicatorBorderRadius;
     animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
     -webkit-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
     -moz-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
@@ -30,32 +75,58 @@
     -ms-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
   }
 
-  @keyframes bump {
+  @keyframes slowBump {
     0% {
-      bottom: 0;
+      bottom: $dropUpIndicatorBottomPosition;
     }
     10% {
-      bottom: 5px;
+      bottom: calc($dropUpIndicatorBottomPosition + 5px);
     }
     20% {
-      bottom: 0;
+      bottom: $dropUpIndicatorBottomPosition;
     }
     100% {
-      bottom: 0;
+      bottom: $dropUpIndicatorBottomPosition;
     }
   }
+
+  @keyframes bump {
+    0% {
+      bottom: $dropUpIndicatorBottomPosition;
+    }
+    50% {
+      bottom: calc($dropUpIndicatorBottomPosition + 5px);
+    }
+    100% {
+      bottom: $dropUpIndicatorBottomPosition;
+    }
+  }
+
   .darkTheme {
     @include darkThemeContentContainer;
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .lightTheme {
     @include lightThemeContentContainer;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .colorfulTheme {
     @include colorfulThemeContentContainer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 

@@ -2,17 +2,6 @@
 
 .Projects {
   border-radius: $globalBorderRadius;
-
-  .darkTheme {
-    @include darkThemeContentContainer;
-  }
-
-  .lightTheme {
-    @include lightThemeContentContainer;
-  }
-
-  .colorfulTheme {
-    @include colorfulThemeContentContainer;
-  }
+  padding-bottom: 15vh;
 
 }
