@@ -33,7 +33,7 @@ export function DropUpSection(props: DropUpSectionProps) {
                 <div className={styles.dropUpContent} style={{display: display}}>
                     {props.children && props.children}
                 </div>
-                {display != 'block' ? <div onClick={handleClick} className={styles.dropUpIndicator}>
+                {display !== 'block' ? <div onClick={handleClick} className={styles.dropUpIndicator}>
                     {display === 'block' ? "" : '^' }
                 </div> : "" }
             </div>

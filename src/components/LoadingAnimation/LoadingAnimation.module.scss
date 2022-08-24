@@ -6,20 +6,22 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  place-items: center;
+  place-items: baseline;
   justify-content: center;
+  padding-left: 0.2vw;
 
   $dotBounceAnimationDuration: 4s;
+  $dotBounceStartingHeight: 1vh;
 
   .dotContainer {
     display: flex;
-    gap: 0.5vw;
+    gap: 0.2vw;
   }
 
   .dot {
-    height: 2vh;
-    width: 2vh;
-    background: $globalHighlightColor;
+    height: 0.7vh;
+    width: 0.7vh;
+    background-color: $globalHighlightColor;
     border-radius: 50%;
     animation: bounce $dotBounceAnimationDuration infinite ease-in-out;
   }
@@ -31,22 +33,23 @@
   .dot:nth-child(3) {
     animation-delay: 200ms;
   }
-}
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0vh);
-  }
 
-  5% {
-    transform: translateY(-1.5vh);
-  }
+  @keyframes bounce {
+    0% {
+      transform: translateY($dotBounceStartingHeight);
+    }
 
-  10% {
-    transform: translateY(0vh);
-  }
+    5% {
+      transform: translateY(-1.5vh);
+    }
 
-  100% {
-    transform: translateY(0vh);
+    10% {
+      transform: translateY($dotBounceStartingHeight);
+    }
+
+    100% {
+      transform: translateY($dotBounceStartingHeight);
+    }
   }
 }

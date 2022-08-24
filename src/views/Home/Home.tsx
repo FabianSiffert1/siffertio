@@ -6,6 +6,7 @@ import language from "../../assets/language/language";
 import NavigationBar from "../NavigationBar/NavigationBar";
 import Header from "../Header/Header";
 import {useSelector} from "react-redux";
+import {ThemeComponent} from "../../components/ThemeComponent/ThemeComponent";
 
 
 const Home = () => {
@@ -19,14 +20,13 @@ const Home = () => {
 
     return (
         <div className={styles.Home}>
-            <div
-                className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
+            <ThemeComponent currentTheme={currentTheme}>
                 {atWelcomeScreen ? "" : [<Header/>]}
                 <div className={atWelcomeScreen ? styles.welcomeScreen : styles.contentContainer}>
                     <Outlet/>
                 </div>
                 <NavigationBar currentTheme={currentTheme} routerPosition={"/"}/>
-            </div>
+            </ThemeComponent>
         </div>
     );
 }

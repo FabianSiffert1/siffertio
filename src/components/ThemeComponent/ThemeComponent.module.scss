@@ -1,0 +1,11 @@
+@import "src/assets/globalVariables.module";
+
+.darkTheme{
+  @include darkTheme;
+}
+.lightTheme{
+  @include lightTheme;
+}
+.colorfulTheme{
+  @include colorfulTheme;
+}

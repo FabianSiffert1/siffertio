@@ -25,10 +25,9 @@ export default function Projects() {
                 </ContentSection>
             </DropUpSection>
             <DropUpSection sectionTitle={language.SKILLS_IOS}>
-                <div style={{padding: "1vw"}}>
-                    Soon™
+                <div style={{padding: "1vw", display: "flex" , flexDirection: "row"}}>
+                    Soon                 <LoadingAnimation/>
                 </div>
-                <LoadingAnimation/>
             </DropUpSection>
         </div>
     );
