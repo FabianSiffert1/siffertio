@@ -1,4 +1,8 @@
 @import "src/assets/globalVariables.module";
 .Biography {
-  padding: $globalHomeContentContainerPadding;
+  padding-top: 3vh;
+
+  .content {
+    padding: $globalHomeContentContainerPadding;
+  }
 }

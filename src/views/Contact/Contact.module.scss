@@ -1,5 +1,13 @@
 @import "src/assets/globalVariables.module";
 
 .Contact {
-  padding: $globalHomeContentContainerPadding
+  padding-top: 3vh;
+  .content {
+    display: grid;
+    place-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+  }
 }

@@ -2,20 +2,22 @@
 
 .ColoredShapeContainer{
 
-  width : 100%;
+  width : 100vw;
   height: 7vh;
   display: flex;
   $coloredShapeTitleFontSize : $globalFontSize;
 
-  .coloredShape {
+
+  .coloredShapeContent{
+    width: inherit;
     padding-top: calc ($globalHomeContentContainerPadding * 2);
-    width: 98vw;
-    background-color: $colorsReact;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-right-radius: $globalBorderRadius;
+    border-bottom: solid;
+
   }
+
 
   .coloredShapeTitle {
     display: flex;

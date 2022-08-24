@@ -12,7 +12,7 @@ export function ContentSection(props: ContentSectionProps) {
             { props.sectionText && <div className={styles.contentText}>
                 {props.sectionText}
             </div>}
-            <div className={styles.contentRow}>
+            <div className={styles.content}>
                     {props.children}
             </div>
         </div>

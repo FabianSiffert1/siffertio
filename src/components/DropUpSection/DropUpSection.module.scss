@@ -8,7 +8,8 @@
 
   $slowBumpAnimationTime: 4s;
   $bumpAnimationTime: 0.9s;
-  padding: $globalHomeContentContainerPadding;
+  $dropUpSectionPadding: $globalHomeContentContainerPadding;
+  padding: $dropUpSectionPadding;
 
   $dropdownSectionDefaultPadding: $globalHomeContentContainerPadding;
   $dropdownSectionDefaultFontSize: $globalFontSize;
@@ -23,6 +24,7 @@
     width: 95%;
     border-radius: 90vw;
     border: solid transparent;
+    //border-bottom: solid;
     //-webkit-transform: skew(70deg);
     //-moz-transform: skew(70deg);
     //-o-transform: skew(70deg);
@@ -33,7 +35,7 @@
   }
   .dropUpTitle {
     //-webkit-transform: skew(-70deg);
-    text-decoration: underline;
+    //text-decoration: underline;
     font-size: calc($dropdownSectionDefaultFontSize * 2);
     justify-content: center;
     align-items: center;

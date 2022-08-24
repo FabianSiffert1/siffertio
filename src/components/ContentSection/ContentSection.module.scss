@@ -2,11 +2,11 @@
 
 .ContentSection {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column;;
+  justify-content: space-evenly;
   align-items: center;
   $contentSectionPadding: $globalHomeContentContainerPadding;
-  .contentRow {
+  .content {
     display: inherit;
     padding-top: $contentSectionPadding;
     gap: $contentSectionPadding;

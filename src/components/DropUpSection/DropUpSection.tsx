@@ -13,15 +13,11 @@ export interface DropUpSectionProps {
 export function DropUpSection(props: DropUpSectionProps) {
     const [display, setDisplay] = useState('block');
     const currentTheme = useSelector((state: any) => state.theme.value)
-    let sectionIsOpened = false;
-
     function handleClick() {
         if (display === 'none') {
             setDisplay('block')
-            sectionIsOpened = true;
         } else {
             setDisplay('none')
-            sectionIsOpened = false;
         }
     }
 

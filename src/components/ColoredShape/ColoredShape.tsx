@@ -10,7 +10,7 @@ export interface ColoredShapeProps {
 export function ColoredShape(props: ColoredShapeProps) {
     return (
         <div className={styles.ColoredShapeContainer}>
-            <div className={styles.coloredShape}>
+            <div className={styles.coloredShapeContent}>
                 {props.title && <div className={styles.coloredShapeTitle}> {props.title} </div>}
             </div>
         </div>
