@@ -1,0 +1,41 @@
+@import "src/assets/globalVariables.module";
+
+.ColoredShapeContainer{
+
+  width : 100%;
+  height: 7vh;
+  display: flex;
+  $coloredShapeTitleFontSize : $globalFontSize;
+
+  .coloredShape {
+    padding-top: calc ($globalHomeContentContainerPadding * 2);
+    width: 98vw;
+    background-color: $colorsReact;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: $globalBorderRadius;
+  }
+
+  .coloredShapeTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    padding: 5vh;
+    font-size: calc( $coloredShapeTitleFontSize * 2 );
+  }
+
+  .darkTheme {
+    @include darkTheme;
+  }
+
+  .lightTheme {
+    @include lightTheme;
+  }
+
+  .colorfulTheme {
+    @include colorfulTheme;
+  }
+
+}

@@ -6,11 +6,12 @@ import githubLogo from "../../assets/images/github.svg";
 import deploymentLogo from "../../assets/images/buttons/home2.svg"
 import {LoadingAnimation} from "../../components/LoadingAnimation/LoadingAnimation";
 import {ContentSection} from "../../components/ContentSection/ContentSection";
+import {ColoredShape} from "../../components/ColoredShape/ColoredShape";
 
 export default function Projects() {
     return (
         <div className={styles.Projects}>
-            INSERT "PROJECT" COLOREDSHAPE COMPONENT HERE
+            <ColoredShape title={"Projects"}/>
             <DropUpSection isOpened={false} sectionTitle={language.PROJECTS_SIFFERTIO}>
                 <ContentSection sectionText={"My personal portfolio - you're here"}>
                     <ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
