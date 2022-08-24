@@ -1,12 +1,12 @@
 import styles from "./Biography.module.scss";
 import language from "../../assets/language/language";
 import {TextSection} from "../../components/TextSection/TextSection";
-import {ColoredShape} from "../../components/ColoredShape/ColoredShape";
+import {SectionHeader} from "../../components/sectionHeader/SectionHeader";
 
 export default function Biography() {
     return (
         <div className={styles.Biography}>
-            <ColoredShape title={"Biography"}/>
+            <SectionHeader title={"Biography"}/>
             <div className={styles.content}>
                 <TextSection textSectionTitle={'Biography'}>
                     <p>

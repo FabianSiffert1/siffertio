@@ -1,6 +1,6 @@
 @import "src/assets/globalVariables.module";
 
-.ColoredShapeContainer{
+.SectionHeaderContainer{
 
   width : 100vw;
   height: 7vh;
@@ -8,7 +8,7 @@
   $coloredShapeTitleFontSize : $globalFontSize;
 
 
-  .coloredShapeContent{
+  .sectionHeaderContent{
     width: inherit;
     padding-top: calc ($globalHomeContentContainerPadding * 2);
     display: flex;
@@ -19,7 +19,7 @@
   }
 
 
-  .coloredShapeTitle {
+  .sectionHeaderTitle {
     display: flex;
     justify-content: center;
     align-items: center;
