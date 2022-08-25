@@ -1,12 +1,5 @@
 @import "src/assets/globalVariables.module";
 
 .Contact {
-  .content {
-    display: grid;
-    place-items: center;
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
-  }
+  padding-bottom: 10vh;
 }

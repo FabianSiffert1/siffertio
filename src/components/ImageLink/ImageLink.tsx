@@ -9,7 +9,6 @@ export interface ImageLinkProps {
     imageSource: string;
     imageAltText?: string;
     imageLink: string;
-    size?: string;
 }
 
 export function ImageLink(props: ImageLinkProps) {

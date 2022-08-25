@@ -8,13 +8,12 @@ import {SectionHeader} from "../../components/sectionHeader/SectionHeader";
 import {DropUpSection} from "../../components/DropUpSection/DropUpSection";
 import {ContentSection} from "../../components/ContentSection/ContentSection";
 
-
 export default function Contact() {
     return (
         <div className={styles.Contact}>
             <SectionHeader title={"Contact"}/>
             <div className={styles.content}>
-                <DropUpSection sectionTitle={"Find me here"}>
+                <DropUpSection sectionTitle={"Get in Touch"}>
                     <ContentSection>
                     <ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
                                imageAltText={"Github"}

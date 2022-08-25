@@ -17,7 +17,6 @@ export default function Projects() {
                     <ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
                                          imageAltText={"Github"}
                                          imageLink={language.LINK_GITHUB}
-                               size={"1vh"}
                     />
                     <ImageLink imageSource={deploymentLogo} imageSubtitle={"Deployment"}
                                imageAltText={"Deployment"}
