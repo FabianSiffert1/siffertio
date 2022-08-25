@@ -15,10 +15,6 @@
     overflow: auto;
   }
 
-  .welcomeScreen {
-    overflow: hidden;
-  }
-
   .darkTheme{
     @include darkTheme;
   }

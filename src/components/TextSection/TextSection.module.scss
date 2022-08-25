@@ -2,11 +2,24 @@
 
 .TextSection{
   margin-bottom: 10vh;
-
   border-radius: $globalBorderRadius;
   $sectionFontSize: $globalFontSize;
   $sectionPaddingHeight: 1vh;
 
+
+  .textSectionTitle {
+    text-decoration: underline;
+    font-size: calc($sectionFontSize * 2);
+    padding: $globalHomeContentContainerPadding $globalHomeContentContainerPadding 0 $globalHomeContentContainerPadding;
+  }
+
+  .textSectionContent {
+    padding-top: $globalHomeContentContainerPadding;
+    padding-bottom: $globalHomeContentContainerPadding;
+    p {
+      padding: calc($sectionPaddingHeight / 2) $globalHomeContentContainerPadding $sectionPaddingHeight $globalHomeContentContainerPadding;
+    }
+  }
   .darkTheme {
     @include darkThemeContentContainer;
   }
@@ -17,18 +30,5 @@
 
   .colorfulTheme {
     @include colorfulThemeContentContainer;
-  }
-
-
-  .textSectionTitle {
-    text-decoration: underline;
-    font-size: calc($sectionFontSize * 2);
-    padding: $globalHomeContentContainerPadding $globalHomeContentContainerPadding 0 $globalHomeContentContainerPadding;
-  }
-
-  .textSectionContent {
-    p {
-      padding: calc($sectionPaddingHeight / 2) $globalHomeContentContainerPadding $sectionPaddingHeight $globalHomeContentContainerPadding;
-    }
   }
 }

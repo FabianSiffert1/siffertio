@@ -11,10 +11,9 @@ import { Provider } from 'react-redux'
 import store from './utils/reduxStore/reduxStore'
 
 import Home from './views/Home/Home';
-import Biography from './views/Biography/Biography';
+import About from './views/About/About';
 import Contact from './views/Contact/Contact';
-import SideBarContent from './components/SideBarRouter/SideBarContent/sideBarContent';
-import Welcome from "./views/Welcome/Welcome";
+
 import PageNotFound from "./views/PageNotFound/PageNotFound";
 import Projects from "./views/Projects/Projects";
 
@@ -28,22 +27,9 @@ root.render(<React.StrictMode>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>} >
-                    <Route path="/" element={<Welcome/>}/>
-                    <Route path="biography" element={<Biography/>}/>
-                    <Route path="projects" element={<Projects/>}>
-
-                    </Route>
-                    <Route path="contact" element={<Contact/>}>
-                        <Route
-                            index
-                            element={
-                                <div style={{padding: "1rem", minWidth: "40vw"}}>
-                                    <p>Select an invoice</p>
-                                </div>
-                            }
-                        />
-                        <Route path=":invoiceId" element={<SideBarContent/>}/>
-                    </Route>
+                    <Route path="/" element={<About/>}/>
+                    <Route path="projects" element={<Projects/>}/>
+                    <Route path="contact" element={<Contact/>}/>
                     <Route
                         path="*"
                         element={

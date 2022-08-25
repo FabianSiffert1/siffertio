@@ -1,14 +1,14 @@
-import styles from "./Biography.module.scss";
+import styles from "./About.module.scss";
 import language from "../../assets/language/language";
 import {TextSection} from "../../components/TextSection/TextSection";
 import {SectionHeader} from "../../components/sectionHeader/SectionHeader";
 
-export default function Biography() {
+export default function About() {
     return (
-        <div className={styles.Biography}>
-            <SectionHeader title={"Biography"}/>
+        <div className={styles.About}>
+            <SectionHeader title={"About"}/>
             <div className={styles.content}>
-                <TextSection textSectionTitle={'Biography'}>
+                <TextSection>
                     <p>
                         {language.LOREM}
                     </p>

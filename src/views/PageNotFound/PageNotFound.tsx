@@ -8,7 +8,7 @@ import {NavLink} from "react-router-dom";
 export default function PageNotFound() {
     return (
         <main className={styles.PageNotFound}>
-            <NavLink to={"/biography"} key={"Biography"}>
+            <NavLink to={"/biography"} key={"About"}>
                 <div className={styles.container}>
                     <div className={styles.glitch} data-text={language.PAGE_NOT_FOUND_TITLE}>
                         <div className={styles.glow}>{language.PAGE_NOT_FOUND_TITLE}</div>

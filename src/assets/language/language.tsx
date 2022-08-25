@@ -12,7 +12,7 @@ const language = {
     PROJECTS_TITLE: 'Projects',
     PROJECTS_SIFFERTIO: 'siffert.io',
     PROJECTS_SIFFERTIOS: 'siffert.ios',
-    ROUTE_BIOGRAPHY: 'Biography',
+    ROUTE_ABOUT: 'About',
     ROUTE_PROJECTS: 'Projects',
     ROUTE_CONTACT: 'Contact',
     SKILLS_IOS: 'iOS',

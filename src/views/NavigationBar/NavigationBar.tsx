@@ -12,7 +12,7 @@ export interface NavigationBarProps {
 }
 
 let routesInNavigationBar: { route: string, routeKey: string }[] = [
-    {'route': '/biography', 'routeKey': language.ROUTE_BIOGRAPHY},
+    {'route': '/', 'routeKey': language.ROUTE_ABOUT},
     {'route': '/projects', 'routeKey': language.ROUTE_PROJECTS},
     {'route': '/contact', 'routeKey': language.ROUTE_CONTACT}
 ];
