@@ -11,14 +11,11 @@ export interface DropUpSectionProps {
 }
 
 export function DropUpSection(props: DropUpSectionProps) {
-    const [display, setDisplay] = useState('block');
+    const [visible, setVisible] = useState(true);
     const currentTheme = useSelector((state: any) => state.theme.value)
+
     function handleClick() {
-        if (display === 'none') {
-            setDisplay('block')
-        } else {
-            setDisplay('none')
-        }
+        setVisible(!visible)
     }
 
     return (
@@ -30,12 +27,14 @@ export function DropUpSection(props: DropUpSectionProps) {
                         {props.sectionTitle && props.sectionTitle}
                     </div>
                 </div>
-                <div className={styles.dropUpContent} style={{display: display}}>
-                    {props.children && props.children}
-                </div>
-                {display !== 'block' ? <div onClick={handleClick} className={styles.dropUpIndicator}>
-                    {display === 'block' ? "" : '^' }
-                </div> : "" }
+                {visible &&
+                    <div className={styles.dropUpContent}>
+                        {props.children && props.children}
+                    </div>}
+                {!visible &&
+                    <div onClick={handleClick} className={styles.dropUpIndicator}>
+                        ^
+                    </div>}
             </div>
         </div>
     );

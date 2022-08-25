@@ -20,22 +20,16 @@
   $dropUpColoredBarColor: $globalHighlightColor;
 
   .dropUpColoredBar {
-    //background-color: $dropUpColoredBarColor;
     width: 95%;
     border-radius: 90vw;
     border: solid transparent;
-    //border-bottom: solid;
-    //-webkit-transform: skew(70deg);
-    //-moz-transform: skew(70deg);
-    //-o-transform: skew(70deg);
   }
 
   .dropUpColoredBar:hover {
     border: solid $globalHighlightColor;
   }
+
   .dropUpTitle {
-    //-webkit-transform: skew(-70deg);
-    //text-decoration: underline;
     font-size: calc($dropdownSectionDefaultFontSize * 2);
     justify-content: center;
     align-items: center;
@@ -46,12 +40,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //padding: $globalHomeContentContainerPadding;
     padding-top: calc($dropdownSectionDefaultFontSize / 2);
   }
 
   .dropUpIndicator {
-    padding: calc($globalHomeContentContainerPadding / 9  );
+    padding: calc($globalHomeContentContainerPadding / 9);
     right: $dropUpIndicatorHorizontalPosition;
     justify-content: center;
     transform: rotate(180deg);
@@ -75,33 +68,6 @@
     -moz-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
     -o-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
     -ms-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-  }
-
-  @keyframes slowBump {
-    0% {
-      bottom: $dropUpIndicatorBottomPosition;
-    }
-    10% {
-      bottom: calc($dropUpIndicatorBottomPosition + 5px);
-    }
-    20% {
-      bottom: $dropUpIndicatorBottomPosition;
-    }
-    100% {
-      bottom: $dropUpIndicatorBottomPosition;
-    }
-  }
-
-  @keyframes bump {
-    0% {
-      bottom: $dropUpIndicatorBottomPosition;
-    }
-    50% {
-      bottom: calc($dropUpIndicatorBottomPosition + 5px);
-    }
-    100% {
-      bottom: $dropUpIndicatorBottomPosition;
-    }
   }
 
   .darkTheme {
@@ -131,5 +97,31 @@
     align-items: center;
   }
 
+  @keyframes slowBump {
+    0% {
+      bottom: $dropUpIndicatorBottomPosition + 30vh;
+    }
+    10% {
+      bottom: calc($dropUpIndicatorBottomPosition + 5px);
+    }
+    20% {
+      bottom: $dropUpIndicatorBottomPosition;
+    }
+    100% {
+      bottom: $dropUpIndicatorBottomPosition;
+    }
+  }
+
+  @keyframes bump {
+    0% {
+      bottom: $dropUpIndicatorBottomPosition;
+    }
+    50% {
+      bottom: calc($dropUpIndicatorBottomPosition + 5px);
+    }
+    100% {
+      bottom: $dropUpIndicatorBottomPosition;
+    }
+  }
 
 }
