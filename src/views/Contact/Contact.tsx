@@ -4,7 +4,7 @@ import {ImageLink} from "../../components/ImageLink/ImageLink";
 import githubLogo from "../../assets/images/github.svg"
 import emailLogo from "../../assets/images/emailLink.svg"
 import language from "../../assets/language/language";
-import {SectionHeader} from "../../components/sectionHeader/SectionHeader";
+import {SectionHeader} from "../../components/SectionHeader/SectionHeader";
 import {DropUpSection} from "../../components/DropUpSection/DropUpSection";
 import {ContentSection} from "../../components/ContentSection/ContentSection";
 

@@ -1,7 +1,29 @@
 @import "src/assets/globalVariables.module";
+
 .About {
 
   .content {
     padding: $globalHomeContentContainerPadding;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .image {
+      position: fixed;
+      left: 20%;
+    }
+    .titles {
+      padding: initial;
+      padding-top: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .mainTitle {
+      font-size: $globalFontSize * 3;
+    }
+    .subTitle {
+      font-size: $globalFontSize * 2;
+    }
   }
 }

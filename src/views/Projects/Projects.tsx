@@ -6,7 +6,7 @@ import githubLogo from "../../assets/images/github.svg";
 import deploymentLogo from "../../assets/images/buttons/home2.svg"
 import {LoadingAnimation} from "../../components/LoadingAnimation/LoadingAnimation";
 import {ContentSection} from "../../components/ContentSection/ContentSection";
-import {SectionHeader} from "../../components/sectionHeader/SectionHeader";
+import {SectionHeader} from "../../components/SectionHeader/SectionHeader";
 
 export default function Projects() {
     return (

@@ -15,6 +15,7 @@ const language = {
     ROUTE_ABOUT: 'About',
     ROUTE_PROJECTS: 'Projects',
     ROUTE_CONTACT: 'Contact',
+    SECTION_ABOUT: 'About',
     SKILLS_IOS: 'iOS',
     SKILLS_REACT: 'React',
     THEME_BUTTON: 'Theme',
