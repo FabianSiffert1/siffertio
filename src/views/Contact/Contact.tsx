@@ -11,7 +11,6 @@ import {ContentSection} from "../../components/ContentSection/ContentSection";
 export default function Contact() {
     return (
         <div className={styles.Contact}>
-            <SectionHeader title={"Contact"}/>
             <div className={styles.content}>
                 <DropUpSection sectionTitle={"Get in Touch"}>
                     <ContentSection>

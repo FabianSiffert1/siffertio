@@ -1,0 +1,35 @@
+@import "src/assets/globalVariables.module";
+
+.SkillBanner {
+  padding: 0.5vh;
+  $fadeInTime: 1s !default;
+
+
+  .container {
+    height: 15vh;
+    width: 15vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $globalBorderRadius * 10;
+    //border: solid black;
+    //transform: skew(50deg);
+  }
+  .container:hover {
+    animation: fill-color $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+  }
+  .text {
+    //transform: skew(-50deg);
+    padding: 1vh;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+}
+@keyframes fill-color {
+  to {
+    box-shadow: inset 0 -10vh 0 0 $colorsReact;
+  }
+}

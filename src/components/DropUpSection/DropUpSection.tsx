@@ -7,7 +7,7 @@ import language from "../../assets/language/language";
 export interface DropUpSectionProps {
     children?: any;
     sectionTitle?: any;
-    isOpened?: boolean;
+    isOpenable?: boolean;
 }
 
 export function DropUpSection(props: DropUpSectionProps) {

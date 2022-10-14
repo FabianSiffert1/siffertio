@@ -26,4 +26,16 @@
       font-size: $globalFontSize * 2;
     }
   }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skillsRow {
+    display: flex;
+    flex-direction: row;
+  }
 }
