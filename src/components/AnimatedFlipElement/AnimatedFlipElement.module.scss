@@ -1,4 +1,4 @@
-.ImageShape {
+.AnimatedFlipElement {
 
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
     width: auto;
     max-height: 30vh;
     max-width: 30vh;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh grey);
-    mix-blend-mode: difference;
   }
+
+
 }

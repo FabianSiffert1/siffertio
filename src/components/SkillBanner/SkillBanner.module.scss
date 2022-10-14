@@ -2,34 +2,57 @@
 
 .SkillBanner {
   padding: 0.5vh;
-  $fadeInTime: 1s !default;
+  $fadeInTime: 2.5s !default;
 
 
   .container {
-    height: 15vh;
+    padding-top: 10vh;
+    height: 5vh;
     width: 15vh;
-    min-height: 10vh;
+    min-height: 5vh;
     min-width: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: $globalBorderRadius * 10;
-    //border: solid black;
-    //transform: skew(50deg);
+    //border-radius: $globalBorderRadius * 10;
+    //border-bottom: solid $globalDarkColor;
+    transform: skew(20deg);
+    animation: fill-color $fadeInTime cubic-bezier(.1, .06, .4, .92) both;
   }
   .container:hover {
-    animation: fill-color $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+    //animation: fill-color $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+    //animation: fill-color $fadeInTime cubic-bezier(.1, .06, .4, .92) forwards;
   }
   .text {
-    //transform: skew(-50deg);
+    transform: skew(-20deg);
     padding: 1vh;
     overflow: hidden;
     white-space: nowrap;
+    animation: fadeIn $fadeInTime cubic-bezier(.1, .06, .4, .92) forwards;
   }
 
 }
 @keyframes fill-color {
-  to {
-    box-shadow: inset 0 -10vh 0 0 $colorsReact;
+  0% {
+
   }
+  50% {
+    box-shadow: inset 0 -6vh 0 0  $globalHighlightColor;
+  }
+  100% {
+
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+
 }
