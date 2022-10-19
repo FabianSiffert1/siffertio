@@ -11,7 +11,7 @@
   padding-left: 0.2vw;
 
   $dotBounceAnimationDuration: 4s;
-  $dotBounceStartingHeight: 1vh;
+  $dotBounceStartingHeight: 1.1vh;
 
   .dotContainer {
     display: flex;
@@ -19,8 +19,8 @@
   }
 
   .dot {
-    height: 0.7vh;
-    width: 0.7vh;
+    height: 0.5vh;
+    width: 0.5vh;
     background-color: $globalHighlightColor;
     border-radius: 50%;
     animation: bounce $dotBounceAnimationDuration infinite ease-in-out;
@@ -41,7 +41,7 @@
     }
 
     5% {
-      transform: translateY(-1.5vh);
+      transform: translateY(-0.5vh);
     }
 
     10% {

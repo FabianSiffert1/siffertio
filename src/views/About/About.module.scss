@@ -3,35 +3,61 @@
 .About {
 
   .content {
+
     padding: $globalHomeContentContainerPadding;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    .titles {
-      padding: initial;
-      padding-top: 10vh;
+
+    .aboutMe {
+      display: flex;
+      flex-direction: row;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
+      padding-left: $globalHomeContentContainerPadding;
+    }
+
+    .skills {
+      padding-top: 1vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skillsRow {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .darkTheme {
+      @include darkThemeContentContainer;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      border-radius: $globalBorderRadius;
     }
-    .mainTitle {
-      font-size: $globalFontSize * 3;
+
+    .lightTheme {
+      @include lightThemeContentContainer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: $globalBorderRadius;
     }
-    .subTitle {
-      font-size: $globalFontSize * 2;
+
+    .colorfulTheme {
+      @include colorfulThemeContentContainer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: $globalBorderRadius;
     }
   }
 
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .skillsRow {
-    display: flex;
-    flex-direction: row;
-  }
 }

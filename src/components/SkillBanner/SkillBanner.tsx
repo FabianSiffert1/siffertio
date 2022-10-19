@@ -1,7 +1,5 @@
 import styles from './SkillBanner.module.scss';
 import React from "react";
-import {ThemeComponent} from "../ThemeComponent/ThemeComponent";
-import {useSelector} from "react-redux";
 
 
 export interface SkillBannerProps {
