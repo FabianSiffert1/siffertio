@@ -14,7 +14,7 @@ export interface NavigationBarProps {
 let routesInNavigationBar: { route: string, routeKey: string }[] = [
     {'route': '/', 'routeKey': language.ROUTE_ABOUT},
     {'route': '/projects', 'routeKey': language.ROUTE_PROJECTS},
-    {'route': '/contact', 'routeKey': language.ROUTE_CONTACT}
+    //{'route': '/contact', 'routeKey': language.ROUTE_CONTACT}
 ];
 
 

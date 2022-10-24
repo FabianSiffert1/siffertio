@@ -1,5 +1,5 @@
 import styles from "./Contact.module.scss";
-import {ImageLink} from "../../components/ImageLink/ImageLink";
+import ImageLink from "../../components/ImageLink/ImageLink";
 
 import githubLogo from "../../assets/images/github.svg"
 import emailLogo from "../../assets/images/emailLink.svg"

@@ -4,7 +4,7 @@
 
   $dropDownButtonPadding: 0.4vw;
 
-  .dropdownButtonDarkTheme {
+  @mixin dropdownButtonStyling {
     display: flex;
     width: 100%;
     cursor: pointer;
@@ -12,41 +12,24 @@
     font-family: $globalFontFamily;
     font-size: $globalFontSize*0.8;
     padding: $dropDownButtonPadding;
-    mix-blend-mode: inherit;
-    border-bottom: solid $globalLightColor;
-    border-top: solid transparent;
     border-top: solid transparent;
     border-right: solid transparent;
     border-left: solid transparent;
     border-radius: $globalBorderRadius;
+    &:hover {
+      border: solid $globalHighlightColor;
+    }
   }
 
-  .dropdownButtonDarkTheme:hover {
-    border: solid $globalHighlightColor;
-    border-radius: $globalBorderRadius;
+  .dropdownButtonDarkTheme {
+    @include dropdownButtonStyling;
+    border-bottom: solid $globalLightColor;
   }
 
   .dropdownButtonLightTheme {
-    display: flex;
-    width: 100%;
-    cursor: pointer;
-    justify-content: center;
-    font-family: $globalFontFamily;
-    font-size: $globalFontSize*0.8;
-    padding: $dropDownButtonPadding;
-    mix-blend-mode: inherit;
+    @include dropdownButtonStyling;
     border-bottom: solid $globalDarkColor;
-    border-top: solid transparent;
-    border-right: solid transparent;
-    border-left: solid transparent;
-    border-radius: $globalBorderRadius;
   }
-
-  .dropdownButtonLightTheme:hover {
-    border: solid $globalHighlightColor;
-    border-radius: $globalBorderRadius;
-  }
-
 
   .dropdownElements {
     position: absolute;
@@ -56,12 +39,7 @@
     $elementPadding: 0.3vh;
     $elementMarginTop: 0.8vh;
 
-    .elementDarkTheme {
-      width: 100%;
-      border: solid transparent;
-      border-radius: $globalBorderRadius;
-      background: $globalLightColor;
-      color: $globalDarkColor;
+    @mixin dropdownElementStyling {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -69,29 +47,24 @@
       margin-top:  $elementMarginTop;
       font-size: $globalFontSize*0.8;
       cursor: pointer;
+      width: 100%;
+      border: solid transparent;
+      border-radius: $globalBorderRadius;
+      &:hover {
+        border: solid $globalHighlightColor;
+      }
     }
 
-    .elementDarkTheme:hover {
-      border: solid $globalHighlightColor;
+    .elementDarkTheme {
+      @include dropdownElementStyling;
+      background: $globalLightColor;
+      color: $globalDarkColor;
     }
 
     .elementLightTheme {
-      width: 100%;
-      border: solid transparent;
-      border-radius: $globalBorderRadius;
+      @include dropdownElementStyling;
       background: $globalDarkColor;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: $elementPadding;
-      margin-top:  $elementMarginTop;
-      font-size: $globalFontSize*0.8;
-      cursor: pointer;
-    }
-
-    .elementLightTheme:hover {
-      border: solid $globalHighlightColor;
+      color: $globalLightColor;
     }
   }
 }

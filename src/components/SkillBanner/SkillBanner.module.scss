@@ -1,56 +1,66 @@
 @import "src/assets/globalVariables.module";
 
 .SkillBanner {
-  padding: 0.5vh;
-  $fadeInTime: 5s !default;
-  $animationDelay: 0s;
+  padding: 1vh;
 
-  .container {
-    padding: $globalHomeContentContainerPadding / 2;
-    height: 5vh;
-    width: 5vh;
-    min-height: 5vh;
-    min-width: 10vh;
+
+  .imageContainer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageContainer img {
+    height: 2.7vw;
+    width: 2.7vw;
+  }
+
+  .textContainer {
+    display: none;
+    position: absolute;
+    margin-top: -1vh;
+    bottom: 0vh;
+  }
+
+  @mixin contentStyling {
+    padding: 1vh 1vh 1vh 1vh;
+    min-width: 8vw;
+    min-height: 8vh;
+    //filter: grayscale(1);
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    border: solid transparent;
     border-radius: $globalBorderRadius * 10;
-    //border-bottom: solid black;
-    //transform: skew(20deg);
-    //animation: fill-color $fadeInTime cubic-bezier(.1, .06, .4, .92) forwards;
-    //animation-delay: $animationDelay;
-  }
-  .container:hover {
-    //animation: fill-color $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
-    animation: fill-color $fadeInTime forwards;
-  }
-  .text {
-    //transform: skew(-20deg);
-    padding: 1vh;
-    //animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    //-webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    //-moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    //-o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    //-ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-    //animation-delay: $animationDelay + 0.75s;
+    &:hover {
+      //border: solid $globalHighlightColor;
+      //filter: none;
+    }
+    &:hover .textContainer{
+      display: block;
+    }
   }
 
-}
-@keyframes fill-color {
-  0% {
 
+  .darkTheme {
+    @include darkThemeContentContainer;
+    @include contentStyling;
   }
-  100% {
-    box-shadow: inset 10vh 10vh 10vh 10vh  $globalHighlightColor;
-  }
-}
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0%;
+  .lightTheme {
+    @include lightThemeContentContainer;
+    @include contentStyling;
   }
-  100% {
-    opacity: 1;
+
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+    @include contentStyling;
   }
+
 
 }

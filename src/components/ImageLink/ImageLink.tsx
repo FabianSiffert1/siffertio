@@ -11,7 +11,7 @@ export interface ImageLinkProps {
     imageLink: string;
 }
 
-export function ImageLink(props: ImageLinkProps) {
+export default function ImageLink(props: ImageLinkProps) {
     const currentTheme = useSelector((state: any) => state.theme.value)
 
     return (
@@ -19,9 +19,9 @@ export function ImageLink(props: ImageLinkProps) {
             <div
                 className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
                 <a href={props.imageLink} target="_blank" rel="noreferrer">
-                    <img className={styles.image} src={props.imageSource}
+                    <img className={styles.imageContainer} src={props.imageSource}
                          alt={props.imageAltText ? props.imageAltText : "Logo.png"}/>
-                    {props.imageSubtitle && <div className={styles.imageSubtitle}>{props.imageSubtitle}</div>}
+                    <div className={styles.imageSubtitle}>{props.imageSubtitle}</div>
                 </a>
             </div>
         </div>
