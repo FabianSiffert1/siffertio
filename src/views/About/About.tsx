@@ -6,18 +6,19 @@ import ImageLink from "../../components/ImageLink/ImageLink";
 import RoundImage from "../../components/ProfilePicture/ProfilePictureProps";
 
 import profilePicture from '../../assets/images/profileTeacher.jpg';
-import reactLogo from '../../assets/images/reactLogo.svg';
-import swiftLogo from '../../assets/images/swiftLogo.svg';
-import swiftUILogo from '../../assets/images/swiftUiLogo.svg';
-import typescriptLogo from '../../assets/images/typescriptLogo.svg';
-import pythonLogo from '../../assets/images/pythonLogo.svg';
-import javascriptLogo from '../../assets/images/javascriptLogo.svg';
-import dockerLogo from '../../assets/images/dockerLogo.svg';
-import mysqlLogo from '../../assets/images/mysqlLogo.svg';
-import kotlinLogo from '../../assets/images/kotlinLogo.svg';
-import javaLogo from '../../assets/images/javaLogo.svg';
+import reactLogo from '../../assets/images/logos/reactLogo.svg';
+import swiftLogo from '../../assets/images/logos/swiftLogo.svg';
+import swiftUILogo from '../../assets/images/logos/swiftUiLogo.svg';
+import typescriptLogo from '../../assets/images/logos/typescriptLogo.svg';
+import pythonLogo from '../../assets/images/logos/pythonLogo.svg';
+import javascriptLogo from '../../assets/images/logos/javascriptLogo2.svg';
+import dockerLogo from '../../assets/images/logos/dockerLogo.svg';
+import mysqlLogo from '../../assets/images/logos/mysqlLogo.svg';
+import kotlinLogo from '../../assets/images/logos/kotlinLogo.svg';
+import javaLogo from '../../assets/images/logos/javaLogo.svg';
 import githubLogo from "../../assets/images/github.svg";
 import emailLogo from "../../assets/images/emailLink.svg";
+import {SectionHeader} from "../../components/SectionHeader/SectionHeader";
 
 
 export default function About() {
@@ -35,8 +36,8 @@ export default function About() {
                         <div className={styles.skillsRow}>
                             <SkillBanner text="React" image={reactLogo}/>
                             <SkillBanner text="Python" image={pythonLogo}/>
-                            <SkillBanner text="Typescript" image={typescriptLogo}/>
-                            <SkillBanner text="Javascript" image={javascriptLogo}/>
+                            <SkillBanner text="TypeScript" image={typescriptLogo}/>
+                            <SkillBanner text="JavaScript" image={javascriptLogo}/>
                             <SkillBanner text="Java" image={javaLogo}/>
                         </div>
                         <div className={styles.skillsRow}>
@@ -47,7 +48,7 @@ export default function About() {
                             <SkillBanner text="Kotlin" image={kotlinLogo}/>
                         </div>
                     </div>
-
+                    <SectionHeader title={"Get in touch"}/>
                     <div className={styles.contact}>
                                 <ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
                                            imageAltText={"Github"}

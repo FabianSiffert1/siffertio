@@ -2,10 +2,11 @@ import styles from "./Projects.module.scss";
 import language from "../../assets/language/language";
 import {DropUpSection} from "../../components/DropUpSection/DropUpSection";
 import ImageLink from "../../components/ImageLink/ImageLink";
-import githubLogo from "../../assets/images/github.svg";
-import deploymentLogo from "../../assets/images/buttons/home2.svg"
 import {LoadingAnimation} from "../../components/LoadingAnimation/LoadingAnimation";
 import {ContentSection} from "../../components/ContentSection/ContentSection";
+
+import githubLogo from "../../assets/images/github.svg";
+import deploymentLogo from "../../assets/images/home2.svg"
 
 export default function Projects() {
     return (

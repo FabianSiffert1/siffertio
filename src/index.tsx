@@ -12,7 +12,6 @@ import store from './utils/reduxStore/reduxStore'
 
 import Home from './views/Home/Home';
 import About from './views/About/About';
-import Contact from './views/Contact/Contact';
 
 import PageNotFound from "./views/PageNotFound/PageNotFound";
 import Projects from "./views/Projects/Projects";
@@ -29,7 +28,6 @@ root.render(<React.StrictMode>
                 <Route path="/" element={<Home/>} >
                     <Route path="/" element={<About/>}/>
                     <Route path="projects" element={<Projects/>}/>
-                    <Route path="contact" element={<Contact/>}/>
                     <Route
                         path="*"
                         element={
