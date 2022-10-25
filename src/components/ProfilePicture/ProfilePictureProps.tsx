@@ -1,5 +1,5 @@
-import styles from './ProfilePicture.module.scss';
-import React from "react";
+import styles from "./ProfilePicture.module.scss"
+import React from "react"
 
 export interface ProfilePictureProps {
     subtitle?: string;
@@ -9,12 +9,12 @@ export interface ProfilePictureProps {
 
 
 export default function ProfilePicture(props: ProfilePictureProps) {
-    return (
-        <div className={styles.RoundImage}>
-            <div className={styles.roundImage}>
-                <img className={styles.image} src={props.source}
-                     alt={props.altText ? props.altText : "Logo.png"}/>
-            </div>
-        </div>
-    );
+	return (
+		<div className={styles.RoundImage}>
+			<div className={styles.roundImage}>
+				<img className={styles.image} src={props.source}
+					alt={props.altText ? props.altText : "Logo.png"}/>
+			</div>
+		</div>
+	)
 }

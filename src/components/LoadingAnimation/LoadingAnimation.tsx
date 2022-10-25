@@ -1,17 +1,14 @@
-import React from "react";
-import styles from "./LoadingAnimation.module.scss";
+import React from "react"
+import styles from "./LoadingAnimation.module.scss"
 
-export interface LoadingAnimationProps {
-}
-
-export function LoadingAnimation(props: LoadingAnimationProps) {
-    return (
-        <div className={styles.LoadingAnimation}>
-            <div className={styles.dotContainer}>
-                <div className={styles.dot}></div>
-                <div className={styles.dot}></div>
-                <div className={styles.dot}></div>
-            </div>
-        </div>
-    );
+export function LoadingAnimation() {
+	return (
+		<div className={styles.LoadingAnimation}>
+			<div className={styles.dotContainer}>
+				<div className={styles.dot}></div>
+				<div className={styles.dot}></div>
+				<div className={styles.dot}></div>
+			</div>
+		</div>
+	)
 }
