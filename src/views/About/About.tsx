@@ -31,7 +31,8 @@ export default function About() {
 				<div
 					className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
 					<div className={styles.aboutMe}>
-						<RoundImage source={profilePicture} altText={"Fabian Siffert"} subtitle={"Fabian Siffert"}/>
+						<img className={styles.profilePicture} src={profilePicture}
+							 alt={"Fabian Siffert"}/>
 					</div>
 					<div className={styles.skills}>
 						<SectionHeader title={"Skills"}/>

@@ -1,6 +1,7 @@
 @import "src/assets/globalVariables.module";
 
 .About {
+  --pulse-color-profile: #DD608A;
   --pulse-color-skills: #61dafb;
   --pulse-color-contact: #61dafb;
 
@@ -9,6 +10,26 @@
     margin-bottom: 5vh;
 
     .aboutMe {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover .profilePicture {
+        animation: pulseProfilePicture 2s forwards;
+      }
+
+    }
+
+    .profilePicture {
+      border-radius: 50vw;
+      height: auto;
+      width: auto;
+      max-height: 30vh;
+      max-width: 30vh;
+      border: solid transparent;
+      
+
     }
 
     .skills {
@@ -42,7 +63,7 @@
       align-items: center;
       flex-direction: column;
 
-      &:hover .contactLinks{
+      &:hover .contactLinks {
         animation: pulseContact 2s forwards;
       }
     }
@@ -64,13 +85,17 @@
     .darkTheme {
       @include darkThemeContentContainer;
       @include contentStyling;
-      --pulse-color: #61dafb;
+      --pulse-color-skills: #61dafb;
+      --pulse-color-profile: #DD608A;
+      --pulse-color-contact: #ff6f69;
     }
 
     .lightTheme {
       @include lightThemeContentContainer;
       @include contentStyling;
-      --pulse-color: #212121;
+      --pulse-color-skills: #212121;
+      --pulse-color-profile: #DD608A;
+      --pulse-color-contact: #ff6f69;
     }
 
     .colorfulTheme {
@@ -79,6 +104,19 @@
     }
   }
 
+  @keyframes pulseProfilePicture {
+    0% {
+      box-shadow: 0 0 0 0 var(--pulse-color-profile);
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
 
   @keyframes pulseSkills {
     0% {
