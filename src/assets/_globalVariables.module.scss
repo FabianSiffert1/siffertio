@@ -6,12 +6,12 @@ $globalHomeContentContainerPadding: 2vw;
 
 $globalDarkColor: #212121;
 $globalLightColor: #fafafa;
+$globalUnderlayRGBAColorDark: rgba(255, 255, 255, 0.05);
+$globalUnderlayRGBAColorLight: rgba(0, 0, 0, 0.15);
 $globalHighlightColor: #ff6f69;
 $globalSecondaryHighlightColor: #DD608A;
 $globalHighlightColorRgba: rgba(255, 111, 105, 0.2);
 $globalSecondaryHighlightColorRgba: rgba(221, 96, 138, 0.7);
-$globalUnderlayRGBAColorDark: rgba(255, 255, 255, 0.05);
-$globalUnderlayRGBAColorLight: rgba(0, 0, 0, 0.05);
 $globalBackgroundColorNavigationBar: #fff;
 
 $colorsReact: #61dafb;
@@ -39,6 +39,16 @@ $colorsReactRgba: rgba(97, 218, 251, 0.2);
   }
 }
 
+@mixin colorfulTheme {
+  font-family: $globalFontFamily;
+  font-size: $globalFontSize;
+  background-color: rgba(145, 248, 139, 0.74);
+  color: $globalDarkColor;
+  a {
+    color: $globalDarkColor;
+  }
+}
+
 @mixin darkThemeContentContainer {
   padding: inherit;
   border-radius: inherit;
@@ -55,14 +65,4 @@ $colorsReactRgba: rgba(97, 218, 251, 0.2);
   padding: inherit;
   border-radius: inherit;
   background-color: $globalUnderlayRGBAColorLight;
-}
-
-@mixin colorfulTheme {
-  font-family: $globalFontFamily;
-  font-size: $globalFontSize;
-  background-color: rgba(145, 248, 139, 0.74);
-  color: $globalDarkColor;
-  a {
-    color: $globalDarkColor;
-  }
 }

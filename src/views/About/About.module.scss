@@ -1,9 +1,10 @@
 @import "src/assets/globalVariables.module";
 
 .About {
+  --pulse-color-skills: #61dafb;
+  --pulse-color-contact: #61dafb;
 
   .content {
-
     padding: $globalHomeContentContainerPadding;
     margin-bottom: 5vh;
 
@@ -12,9 +13,24 @@
 
     .skills {
       padding-top: $globalHomeContentContainerPadding;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:hover .skillsRows {
+        animation: pulseSkills 2s forwards;
+      }
+    }
+
+
+    .skillsRows {
+      border-radius: $globalBorderRadius;
     }
 
     .skillsRow {
+
       display: flex;
       flex-direction: row;
     }
@@ -22,9 +38,19 @@
     .contact {
       margin-top: $globalHomeContentContainerPadding;
       display: flex;
-      flex-direction: row;
-      border-radius: $globalBorderRadius;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
+      &:hover .contactLinks{
+        animation: pulseContact 2s forwards;
+      }
+    }
+
+    .contactLinks {
+      border-radius: $globalBorderRadius;
+      display: flex;
+      flex-direction: row;
     }
 
     @mixin contentStyling {
@@ -38,11 +64,13 @@
     .darkTheme {
       @include darkThemeContentContainer;
       @include contentStyling;
+      --pulse-color: #61dafb;
     }
 
     .lightTheme {
       @include lightThemeContentContainer;
       @include contentStyling;
+      --pulse-color: #212121;
     }
 
     .colorfulTheme {
@@ -50,5 +78,26 @@
       @include contentStyling;
     }
   }
+
+
+  @keyframes pulseSkills {
+    0% {
+      box-shadow: 0 0 0 0 var(--pulse-color-skills);
+    }
+
+    100% {
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  }
+  @keyframes pulseContact {
+    0% {
+      box-shadow: 0 0 0 0 var(--pulse-color-contact);
+    }
+
+    100% {
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  }
+
 
 }

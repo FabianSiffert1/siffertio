@@ -38,7 +38,6 @@
 
   @mixin contentStyling {
     cursor: pointer;
-
     border: solid transparent;
     border-radius: $globalBorderRadius * 10;
      &:hover {

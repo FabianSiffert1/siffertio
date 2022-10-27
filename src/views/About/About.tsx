@@ -4,7 +4,7 @@ import language from "../../assets/language/language"
 import {useSelector} from "react-redux"
 import SkillBanner from "../../components/SkillBanner/SkillBanner"
 import ImageLink from "../../components/ImageLink/ImageLink"
-import RoundImage from "../../components/ProfilePicture/ProfilePictureProps"
+import RoundImage from "../../components/ProfilePicture/ProfilePicture"
 
 import profilePicture from "../../assets/images/profileTeacher.jpg"
 import reactLogo from "../../assets/images/logos/reactLogo.svg"
@@ -25,7 +25,6 @@ import {RootState} from "../../utils/reduxStore/reduxStore"
 
 export default function About() {
 	const currentTheme = useSelector((state: RootState) => state.theme.value)
-
 	return (
 		<div className={styles.About}>
 			<div className={styles.content}>
@@ -35,29 +34,34 @@ export default function About() {
 						<RoundImage source={profilePicture} altText={"Fabian Siffert"} subtitle={"Fabian Siffert"}/>
 					</div>
 					<div className={styles.skills}>
-						<div className={styles.skillsRow}>
-							<SkillBanner text="React" image={reactLogo}/>
-							<SkillBanner text="Python" image={pythonLogo}/>
-							<SkillBanner text="TypeScript" image={typescriptLogo}/>
-							<SkillBanner text="JavaScript" image={javascriptLogo}/>
-							<SkillBanner text="Java" image={javaLogo}/>
-						</div>
-						<div className={styles.skillsRow}>
-							<SkillBanner text="mySQL" image={mysqlLogo}/>
-							<SkillBanner text="Swift" image={swiftLogo}/>
-							<SkillBanner text="SwiftUI" image={swiftUILogo}/>
-							<SkillBanner text="Docker" image={dockerLogo}/>
-							<SkillBanner text="Kotlin" image={kotlinLogo}/>
+						<SectionHeader title={"Skills"}/>
+						<div className={styles.skillsRows}>
+							<div className={styles.skillsRow}>
+								<SkillBanner text="React" image={reactLogo}/>
+								<SkillBanner text="Python" image={pythonLogo}/>
+								<SkillBanner text="TypeScript" image={typescriptLogo}/>
+								<SkillBanner text="JavaScript" image={javascriptLogo}/>
+								<SkillBanner text="Java" image={javaLogo}/>
+							</div>
+							<div className={styles.skillsRow}>
+								<SkillBanner text="mySQL" image={mysqlLogo}/>
+								<SkillBanner text="Swift" image={swiftLogo}/>
+								<SkillBanner text="SwiftUI" image={swiftUILogo}/>
+								<SkillBanner text="Docker" image={dockerLogo}/>
+								<SkillBanner text="Kotlin" image={kotlinLogo}/>
+							</div>
 						</div>
 					</div>
-					<SectionHeader title={"Get in touch"}/>
 					<div className={styles.contact}>
-						<ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
-							imageAltText={"Github"}
-							imageLink={language.LINK_GITHUB}/>
-						<ImageLink imageSource={emailLogo} imageSubtitle={"E-Mail"}
-							imageAltText={"E-Mail"}
-							imageLink={language.LINK_EMAIL}/>
+						<SectionHeader title={"Get in touch"}/>
+						<div className={styles.contactLinks}>
+							<ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
+									   imageAltText={"Github"}
+									   imageLink={language.LINK_GITHUB}/>
+							<ImageLink imageSource={emailLogo} imageSubtitle={"E-Mail"}
+									   imageAltText={"E-Mail"}
+									   imageLink={language.LINK_EMAIL}/>
+						</div>
 					</div>
 				</div>
 			</div>
