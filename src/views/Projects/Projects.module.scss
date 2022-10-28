@@ -1,5 +1,33 @@
 @import "src/assets/globalVariables.module";
 
 .Projects {
-  padding-bottom: 10vh;
+  //padding-bottom: 10vh;
+  .content {
+    padding: $globalHomeContentContainerPadding;
+    margin-bottom: 5vh;
+  }
+
+  @mixin contentStyling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: $globalBorderRadius;
+  }
+
+  .darkTheme {
+    @include darkThemeContentContainer;
+    @include contentStyling;
+  }
+
+  .lightTheme {
+    @include lightThemeContentContainer;
+    @include contentStyling;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+    @include contentStyling;
+  }
+
 }

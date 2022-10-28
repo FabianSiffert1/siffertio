@@ -33,7 +33,7 @@ export default function About() {
 					</div>
 					<div className={styles.skills}>
 						<div className={styles.sectionHeader}>
-							Skills
+							{language.SKILLS_TITLE}
 						</div>
 						<div className={styles.skillsRows}>
 							<div className={styles.skillsRow}>
@@ -54,7 +54,7 @@ export default function About() {
 					</div>
 					<div className={styles.contact}>
 						<div className={styles.sectionHeader}>
-							Get in touch
+							{language.CONTACT_TITlE}
 						</div>
 						<div className={styles.contactLinks}>
 							<div className={styles.contactLinksRow}>

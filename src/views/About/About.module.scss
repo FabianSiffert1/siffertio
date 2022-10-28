@@ -7,135 +7,135 @@
   --pulse-color-contact: #61dafb;
   --box-shadow-color: #000000;
   @mixin boxShadow{
-    box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color);
+	box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color);
   }
 
   $pulseAnimationDuration: 2s;
 
   .content {
-    padding: $globalHomeContentContainerPadding;
-    margin-bottom: 5vh;
+	padding: $globalHomeContentContainerPadding;
+	margin-bottom: 5vh;
 
-    .aboutMe {
-      border-radius: 50vw;
-      padding: 0.5vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @include boxShadow;
-      &:hover {
-        --pulse-color: var(--pulse-color-profile);
-        animation: pulseAnimation $pulseAnimationDuration linear forwards;
-      }
-    }
+	.aboutMe {
+	  border-radius: 50vw;
+	  padding: 0.5vw;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  @include boxShadow;
+	  &:hover {
+		--pulse-color: var(--pulse-color-profile);
+		animation: pulseAnimation $pulseAnimationDuration linear forwards;
+	  }
+	}
 
-    .sectionHeader {
-      padding: 2vh;
-      font-size: calc( $globalFontSize * 2 );
-    }
+	.sectionHeader {
+	  padding: 2vh;
+	  font-size: calc( $globalFontSize * 2 );
+	}
 
-    .profilePicture {
-      z-index: 1;
-      border-radius: 50vw;
-      height: 100%;
-      width: 100%;
-      max-height: 30vh;
-      max-width: 30vh;
-      border: solid transparent;
-    }
+	.profilePicture {
+	  z-index: 1;
+	  border-radius: 50vw;
+	  height: 100%;
+	  width: 100%;
+	  max-height: 30vh;
+	  max-width: 30vh;
+	  border: solid transparent;
+	}
 
-    .skills {
-      padding-top: $globalHomeContentContainerPadding;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+	.skills {
+	  padding-top: $globalHomeContentContainerPadding;
+	  position: relative;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
 
 
-    .skillsRows {
-      border-radius: $globalBorderRadius;
-      @include boxShadow;
-      &:hover{
-        --pulse-color: var(--pulse-color-skills);
-        animation: pulseAnimation $pulseAnimationDuration linear forwards;
-      }
-    }
+	.skillsRows {
+	  border-radius: $globalBorderRadius;
+	  @include boxShadow;
+	  &:hover{
+		--pulse-color: var(--pulse-color-skills);
+		animation: pulseAnimation $pulseAnimationDuration linear forwards;
+	  }
+	}
 
-    .skillsRow {
-      margin: 2vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
+	.skillsRow {
+	  margin: 2vh;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: center;
+	  align-items: center;
+	}
 
-    .contact {
-      margin-top: $globalHomeContentContainerPadding;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+	.contact {
+	  margin-top: $globalHomeContentContainerPadding;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+	}
 
-    .contactLinksRow {
-      display: inherit;
-      flex-direction: row;
-      margin: 2vh;
-    }
+	.contactLinksRow {
+	  display: inherit;
+	  flex-direction: row;
+	  margin: 2vh;
+	}
 
-    .contactLinks {
-      border-radius: $globalBorderRadius;
-      @include boxShadow;
-      display: flex;
-      &:hover {
-        --pulse-color: var(--pulse-color-contact);
-        animation: pulseAnimation $pulseAnimationDuration linear forwards;
-      }
-    }
+	.contactLinks {
+	  border-radius: $globalBorderRadius;
+	  @include boxShadow;
+	  display: flex;
+	  &:hover {
+		--pulse-color: var(--pulse-color-contact);
+		animation: pulseAnimation $pulseAnimationDuration linear forwards;
+	  }
+	}
 
-    @mixin contentStyling {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: $globalBorderRadius;
-    }
+	@mixin contentStyling {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  border-radius: $globalBorderRadius;
+	}
 
-    .darkTheme {
-      @include darkThemeContentContainer;
-      @include contentStyling;
-      --pulse-color-profile: #845EC2;
-      --pulse-color-skills: #D65DB1;
-      --pulse-color-contact: #ff6f69;
-      --box-shadow-color: black;
-    }
+	.darkTheme {
+	  @include darkThemeContentContainer;
+	  @include contentStyling;
+	  --pulse-color-profile: #845EC2;
+	  --pulse-color-skills: #D65DB1;
+	  --pulse-color-contact: #ff6f69;
+	  --box-shadow-color: black;
+	}
 
-    .lightTheme {
-      @include lightThemeContentContainer;
-      @include contentStyling;
-      --pulse-color-profile: #845EC2;
-      --pulse-color-skills: #D65DB1;
-      --pulse-color-contact:  #D65DB1;
-      --box-shadow-color: #212121;
-    }
+	.lightTheme {
+	  @include lightThemeContentContainer;
+	  @include contentStyling;
+	  --pulse-color-profile: #845EC2;
+	  --pulse-color-skills: #D65DB1;
+	  --pulse-color-contact:  #D65DB1;
+	  --box-shadow-color: #212121;
+	}
 
-    .colorfulTheme {
-      @include colorfulThemeContentContainer;
-      @include contentStyling;
-    }
+	.colorfulTheme {
+	  @include colorfulThemeContentContainer;
+	  @include contentStyling;
+	}
   }
 
   @keyframes pulseAnimation {
-    0% {
-      box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color), 0 0 0 0 var(--pulse-color);
-    }
-    60% {
-      box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color), 0.1vw 0.1vw 0.1vw 0.5vw rgba(0, 0, 0, 0);
-    }
-    100% {
-      box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color), 0 0 0 0 rgba(0, 0, 0, 0);
-    }
+	0% {
+	  box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color), 0 0 0 0 var(--pulse-color);
+	}
+	60% {
+	  box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color), 0.1vw 0.1vw 0.1vw 0.5vw rgba(0, 0, 0, 0);
+	}
+	100% {
+	  box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color), 0 0 0 0 rgba(0, 0, 0, 0);
+	}
   }
 }

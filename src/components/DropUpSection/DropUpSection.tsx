@@ -14,11 +14,9 @@ export interface DropUpSectionProps {
 export function DropUpSection(props: DropUpSectionProps) {
 	const [visible, setVisible] = useState(true)
 	const currentTheme = useSelector((state: RootState) => state.theme.value)
-
 	function handleClick() {
 		setVisible(!visible)
 	}
-
 	return (
 		<div className={styles.DropUpSection}>
 			<div

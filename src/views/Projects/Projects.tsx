@@ -1,38 +1,22 @@
 import React from "react"
 import styles from "./Projects.module.scss"
 import language from "../../assets/language/language"
-import {DropUpSection} from "../../components/DropUpSection/DropUpSection"
-import ImageLink from "../../components/ImageLink/ImageLink"
-import {LoadingAnimation} from "../../components/LoadingAnimation/LoadingAnimation"
-import {ContentSection} from "../../components/ContentSection/ContentSection"
-
-import githubLogo from "../../assets/images/github.svg"
-import deploymentLogo from "../../assets/images/home2.svg"
+import Project from "../../components/Project/Project"
+import {useSelector} from "react-redux"
+import {RootState} from "../../utils/reduxStore/reduxStore"
 
 export default function Projects() {
+	const currentTheme = useSelector((state: RootState) => state.theme.value)
 	return (
 		<div className={styles.Projects}>
-			<DropUpSection sectionTitle={language.PROJECTS_SIFFERTIO}>
-				<ContentSection sectionText={"My personal portfolio - you're here"}>
-					<ImageLink imageSource={githubLogo} imagePopUpText={"Github"}
-						imageAltText={"Github"}
-						imageLink={language.LINK_GITHUB}
-					/>
-					<ImageLink imageSource={deploymentLogo} imagePopUpText={"Deployment"}
-						imageAltText={"Deployment"}
-						imageLink={""}/>
-				</ContentSection>
-			</DropUpSection>
-			<DropUpSection sectionTitle={language.SKILLS_ANDROID}>
-				<div style={{padding: "1vw", display: "flex" , flexDirection: "row"}}>
-                    Soon<LoadingAnimation/>
+			<div className={styles.content}>
+				<div
+					className={currentTheme === language.THEME_DARK_VAR ? styles.darkTheme : currentTheme === language.THEME_LIGHT_VAR ? styles.lightTheme : styles.colorfulTheme}>
+					<Project projectTitle={language.PROJECT_SIFFERTIO}>
+						PLACEHOLDER
+					</Project>
 				</div>
-			</DropUpSection>
-			<DropUpSection sectionTitle={language.SKILLS_IOS}>
-				<div style={{padding: "1vw", display: "flex" , flexDirection: "row"}}>
-                    Soon<LoadingAnimation/>
-				</div>
-			</DropUpSection>
+			</div>
 		</div>
 	)
 }
