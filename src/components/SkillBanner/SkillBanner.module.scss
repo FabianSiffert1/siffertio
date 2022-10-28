@@ -3,7 +3,6 @@
 .SkillBanner {
   padding: 1vh;
 
-
   .imageContainer {
     display: flex;
     justify-content: center;
@@ -17,34 +16,37 @@
 
   .textContainer {
     display: none;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
     margin-top: -1vh;
-    bottom: 0vh;
+    border-radius: 50vw;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
   }
 
   @mixin contentStyling {
     padding: 1vh 1vh 1vh 1vh;
     min-width: 8vw;
     min-height: 8vh;
-    //filter: grayscale(1);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-
     border: solid transparent;
     border-radius: $globalBorderRadius * 10;
-    &:hover {
-      //border: solid $globalHighlightColor;
-      //filter: none;
+
+    &:hover .textContainer {
+      display: flex;
     }
-    &:hover .textContainer{
-      display: block;
+    &:hover img {
+      opacity: 0.1;
+      filter: grayscale(1);
     }
   }
-
 
   .darkTheme {
     @include darkThemeContentContainer;
@@ -56,11 +58,8 @@
     @include contentStyling;
   }
 
-
   .colorfulTheme {
     @include colorfulThemeContentContainer;
     @include contentStyling;
   }
-
-
 }

@@ -5,12 +5,12 @@
   --pulse-color-profile: #DD608A;
   --pulse-color-skills: #61dafb;
   --pulse-color-contact: #61dafb;
-  --box-shadow-color: "";
-  $pulseAnimationDuration: 2s;
-
+  --box-shadow-color: #000000;
   @mixin boxShadow{
     box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color);
   }
+
+  $pulseAnimationDuration: 2s;
 
   .content {
     padding: $globalHomeContentContainerPadding;
@@ -18,8 +18,7 @@
 
     .aboutMe {
       border-radius: 50vw;
-      width: 18vw;
-      height: 18vw;
+      padding: 0.5vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -62,6 +61,8 @@
     .skillsRow {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
 
     .contact {
