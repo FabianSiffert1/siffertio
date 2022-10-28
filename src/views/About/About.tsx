@@ -57,12 +57,14 @@ export default function About() {
 							Get in touch
 						</div>
 						<div className={styles.contactLinks}>
-							<ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
+							<div className={styles.contactLinksRow}>
+							<ImageLink imageSource={githubLogo} imagePopUpText={"Github"}
 									   imageAltText={"Github"}
 									   imageLink={language.LINK_GITHUB}/>
-							<ImageLink imageSource={emailLogo} imageSubtitle={"E-Mail"}
+							<ImageLink imageSource={emailLogo} imagePopUpText={"E-Mail"}
 									   imageAltText={"E-Mail"}
 									   imageLink={language.LINK_EMAIL}/>
+							</div>
 						</div>
 					</div>
 				</div>

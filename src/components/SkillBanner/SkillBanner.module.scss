@@ -1,7 +1,7 @@
 @import "src/assets/globalVariables.module";
 
 .SkillBanner {
-  padding: 1vh;
+  padding: 0.5vw;
 
   .imageContainer {
     display: flex;
@@ -15,20 +15,19 @@
   }
 
   .textContainer {
+    position: absolute;
     display: none;
     justify-content: center;
     align-items: center;
     padding: 0.5vw;
     margin-top: -1vh;
     border-radius: 50vw;
-    position: absolute;
     left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
+    bottom: 0;
+    transform: translate(-50%, 30%);
   }
 
   @mixin contentStyling {
-    padding: 1vh 1vh 1vh 1vh;
     min-width: 8vw;
     min-height: 8vh;
     display: flex;
@@ -38,13 +37,12 @@
     position: relative;
     border: solid transparent;
     border-radius: $globalBorderRadius * 10;
-
     &:hover .textContainer {
       display: flex;
     }
     &:hover img {
-      opacity: 0.1;
-      filter: grayscale(1);
+      //opacity: 0.1;
+      //filter: grayscale(1);
     }
   }
 

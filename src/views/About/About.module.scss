@@ -64,6 +64,7 @@
     }
 
     .skillsRow {
+      margin: 2vh;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -76,6 +77,12 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+
+    .contactLinksRow {
+      display: inherit;
+      flex-direction: row;
+      margin: 2vh;
     }
 
     .contactLinks {
@@ -101,7 +108,7 @@
       @include contentStyling;
       --pulse-color-profile: #845EC2;
       --pulse-color-skills: #D65DB1;
-      --pulse-color-contact: #FF9671;
+      --pulse-color-contact: #ff6f69;
       --box-shadow-color: black;
     }
 

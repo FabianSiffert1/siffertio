@@ -14,11 +14,11 @@ export default function Projects() {
 		<div className={styles.Projects}>
 			<DropUpSection sectionTitle={language.PROJECTS_SIFFERTIO}>
 				<ContentSection sectionText={"My personal portfolio - you're here"}>
-					<ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
+					<ImageLink imageSource={githubLogo} imagePopUpText={"Github"}
 						imageAltText={"Github"}
 						imageLink={language.LINK_GITHUB}
 					/>
-					<ImageLink imageSource={deploymentLogo} imageSubtitle={"Deployment"}
+					<ImageLink imageSource={deploymentLogo} imagePopUpText={"Deployment"}
 						imageAltText={"Deployment"}
 						imageLink={""}/>
 				</ContentSection>

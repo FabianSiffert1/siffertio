@@ -1,22 +1,16 @@
 @import "src/assets/globalVariables.module";
 
 .ImageLink {
-
-  margin: 1vw;
+  padding: 0.5vw;
 
   a {
-    text-decoration: none;
-    padding: 1vh 1vh 1vh 1vh;
-    min-width: 8vw;
-    min-height: 8vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: inherit;
+    min-width: inherit;
     position: relative;
-
-    border: solid transparent;
     border-radius: $globalBorderRadius * 10;
   }
 
@@ -28,22 +22,37 @@
     width: 2.7vw;
   }
 
-  .imageSubtitle {
-    display: none;
+  .imagePopUpText {
     position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0.5vw;
+    margin-top: -1vh;
+    border-radius: 50vw;
     left: 50%;
-    top: 87%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    transform: translate(-50%, 30%);
+    //background-image: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   }
-
   @mixin contentStyling {
-    cursor: pointer;
+    min-width: 8vw;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     border: solid transparent;
     border-radius: $globalBorderRadius * 10;
-     &:hover {
-       border: solid $globalHighlightColor;
-     }
-    &:hover .imageSubtitle {
+    &:hover {
+      border: solid $globalHighlightColor;
+    }
+    &:hover img {
+      //opacity: 0.1;
+    }
+    &:hover .imagePopUpText {
       display: flex;
     }
   }
@@ -51,10 +60,10 @@
   .darkTheme {
     @include darkThemeContentContainer;
     @include contentStyling;
-      .imageContainer {
-        filter: invert(1) ;
-      }
+    .imageContainer {
+      filter: invert(1) ;
     }
+  }
 
   .lightTheme {
     @include lightThemeContentContainer;

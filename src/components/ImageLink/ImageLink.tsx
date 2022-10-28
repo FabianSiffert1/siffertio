@@ -6,7 +6,7 @@ import language from "../../assets/language/language"
 import {RootState} from "../../utils/reduxStore/reduxStore"
 
 export interface ImageLinkProps {
-    imageSubtitle?: string;
+    imagePopUpText?: string;
     imageSource: string;
     imageAltText?: string;
     imageLink: string;
@@ -22,7 +22,7 @@ export default function ImageLink(props: ImageLinkProps) {
 				<a href={props.imageLink} target="_blank" rel="noreferrer">
 					<img className={styles.imageContainer} src={props.imageSource}
 						alt={props.imageAltText ? props.imageAltText : "Logo.png"}/>
-					<div className={styles.imageSubtitle}>{props.imageSubtitle}</div>
+					<div className={styles.imagePopUpText}>{props.imagePopUpText}</div>
 				</a>
 			</div>
 		</div>
