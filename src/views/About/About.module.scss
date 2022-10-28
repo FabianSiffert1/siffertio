@@ -29,6 +29,11 @@
       }
     }
 
+    .sectionHeader {
+      padding: 2vh;
+      font-size: calc( $globalFontSize * 2 );
+    }
+
     .profilePicture {
       z-index: 1;
       border-radius: 50vw;

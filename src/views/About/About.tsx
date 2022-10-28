@@ -17,7 +17,6 @@ import kotlinLogo from "../../assets/images/logos/kotlinLogo.svg"
 import javaLogo from "../../assets/images/logos/javaLogo.svg"
 import githubLogo from "../../assets/images/github.svg"
 import emailLogo from "../../assets/images/emailLink.svg"
-import {SectionHeader} from "../../components/SectionHeader/SectionHeader"
 import {RootState} from "../../utils/reduxStore/reduxStore"
 
 
@@ -33,7 +32,9 @@ export default function About() {
 							 alt={"Fabian Siffert"}/>
 					</div>
 					<div className={styles.skills}>
-						<SectionHeader title={"Skills"}/>
+						<div className={styles.sectionHeader}>
+							Skills
+						</div>
 						<div className={styles.skillsRows}>
 							<div className={styles.skillsRow}>
 								<SkillBanner text="React" image={reactLogo}/>
@@ -52,7 +53,9 @@ export default function About() {
 						</div>
 					</div>
 					<div className={styles.contact}>
-						<SectionHeader title={"Get in touch"}/>
+						<div className={styles.sectionHeader}>
+							Get in touch
+						</div>
 						<div className={styles.contactLinks}>
 							<ImageLink imageSource={githubLogo} imageSubtitle={"Github"}
 									   imageAltText={"Github"}
