@@ -1,4 +1,4 @@
-@import "src/assets/globalVariables.module";
+@import "src/assets/globalStyleElements.module";
 
 .About {
   --pulse-color: $globalDarkColor;
@@ -124,6 +124,10 @@
 	.colorfulTheme {
 	  @include colorfulThemeContentContainer;
 	  @include contentStyling;
+      --pulse-color-profile: #845EC2;
+      --pulse-color-skills: #D65DB1;
+      --pulse-color-contact:  #D65DB1;
+      --box-shadow-color: #212121;
 	}
   }
 

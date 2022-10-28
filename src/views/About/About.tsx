@@ -4,6 +4,8 @@ import language from "../../assets/language/language"
 import {useSelector} from "react-redux"
 import SkillBanner from "../../components/SkillBanner/SkillBanner"
 import ImageLink from "../../components/ImageLink/ImageLink"
+import {RootState} from "../../utils/reduxStore/reduxStore"
+
 import profilePicture from "../../assets/images/profileTeacher.jpg"
 import reactLogo from "../../assets/images/logos/reactLogo.svg"
 import swiftLogo from "../../assets/images/logos/swiftLogo.svg"
@@ -17,7 +19,7 @@ import kotlinLogo from "../../assets/images/logos/kotlinLogo.svg"
 import javaLogo from "../../assets/images/logos/javaLogo.svg"
 import githubLogo from "../../assets/images/github.svg"
 import emailLogo from "../../assets/images/emailLink.svg"
-import {RootState} from "../../utils/reduxStore/reduxStore"
+import sassLogo from "../../assets/images/logos/sassLogoColor.svg"
 
 
 export default function About() {
@@ -39,6 +41,7 @@ export default function About() {
 							<div className={styles.skillsRow}>
 								<SkillBanner text="TypeScript" image={typescriptLogo}/>
 								<SkillBanner text="React" image={reactLogo}/>
+								<SkillBanner text="Sass" image={sassLogo}/>
 								{/*<SkillBanner text="JavaScript" image={javascriptLogo}/>*/}
 							</div>
 							<div className={styles.skillsRow}>
@@ -50,7 +53,7 @@ export default function About() {
 								<SkillBanner text="Swift" image={swiftLogo}/>
 								<SkillBanner text="SwiftUI" image={swiftUILogo}/>
 								<SkillBanner text="Java" image={javaLogo}/>
-								<SkillBanner text="Kotlin" image={kotlinLogo}/>
+								{/*<SkillBanner text="Kotlin" image={kotlinLogo}/>*/}
 							</div>
 						</div>
 					</div>

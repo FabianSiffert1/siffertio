@@ -1,4 +1,4 @@
-@import "src/assets/globalVariables.module";
+@import "src/assets/globalStyleElements.module";
 .NavigationBar {
   display: flex;
   position: absolute;
@@ -20,6 +20,3 @@
 .colorfulTheme * {
   @include colorfulTheme;
 }
-
-
-

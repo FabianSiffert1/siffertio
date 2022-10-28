@@ -1,13 +1,14 @@
-@import "src/assets/globalVariables.module";
+@import "src/assets/globalStyleElements.module";
 
 .Project {
   --box-shadow-color: #000000;
+
   @mixin boxShadow{
     box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color);
   }
   display: flex;
   flex-direction: column;;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   $contentSectionPadding: $globalHomeContentContainerPadding;
 
@@ -20,6 +21,11 @@
   }
   .projectContent {
     @include boxShadow;
+    border-radius: $globalBorderRadius;
+    &:hover{
+      --pulse-color: pink;
+      @include pulseAnimationMixin;
+    }
     width: 80%;
     display: inherit;
     padding-top: $contentSectionPadding;
