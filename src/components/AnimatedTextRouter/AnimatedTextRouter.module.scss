@@ -5,56 +5,39 @@ $fontSize: 6vh;
 
 .AnimatedTextRouter {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  * {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: $globalBorderRadius;
+    text-transform: uppercase;
+    font-size: $fontSize;
+    border: solid transparent;
+  }
 
   a {
     text-decoration: none;
   }
-
-
   .inActiveLink {
-    font-size: $fontSize;
-    text-transform: uppercase;
     padding: 0.8vw;
     margin: 0.4vw;
-    border: solid transparent;
-    border-radius: $globalBorderRadius;
-  }
 
+  }
   .inActiveLink:hover {
     border: solid $globalHighlightColor;
-    border-radius: $globalBorderRadius;
   }
 
-  .activeLinkLightTheme {
-    font-size: $fontSize;
-    text-transform: uppercase;
-    border-radius: $globalBorderRadius;
-    padding: 0.8vw;
+  @mixin activeLinkStyling {
     margin: 0.4vw;
-    background-image: linear-gradient(
-                    -225deg,
-                    #000000 0%,
-                    #000000 29%,
-                    #d91683 67%,
-                    #000000 100%
-    );
+    padding: 0.8vw;
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip $animationSpeed linear infinite;
     display: inline-block;
-    border: solid $globalDarkColor;
   }
 
   .activeLinkDarkTheme{
-    font-size: 6vh;
-    text-transform: uppercase;
-    border-radius: $globalBorderRadius;
-    margin: 0.4vw;
-    padding: 0.8vw;
+    @include activeLinkStyling;
     background-image: linear-gradient(
                     -225deg,
                     #ffffff 0%,
@@ -62,20 +45,23 @@ $fontSize: 6vh;
                     #d91683 67%,
                     #ffffff 100%
     );
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip $animationSpeed linear infinite;
-    display: inline-block;
     border: solid $globalLightColor;
   }
 
+  .activeLinkLightTheme {
+    @include activeLinkStyling;
+    background-image: linear-gradient(
+                    -225deg,
+                    #000000 0%,
+                    #000000 29%,
+                    #d91683 67%,
+                    #000000 100%
+    );
+    border: solid $globalDarkColor;
+  }
+
   .activeLinkColorfulTheme{
-    font-size: $fontSize;
-    text-transform: uppercase;
-    border-radius: $globalBorderRadius;
-    padding: 0.8vw;
-    margin: 0.4vw;
+    @include activeLinkStyling;
     background-image: linear-gradient(
                     -225deg,
                     #000000 0%,
@@ -83,11 +69,6 @@ $fontSize: 6vh;
                     #d91683 67%,
                     black 100%
     );
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip $animationSpeed linear infinite;
-    display: inline-block;
     border: solid $globalDarkColor;
   }
 
