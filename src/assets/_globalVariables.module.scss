@@ -17,14 +17,18 @@ $globalBackgroundColorNavigationBar: #fff;
 $colorsReact: #61dafb;
 $colorsReactRgba: rgba(97, 218, 251, 0.2);
 
-
+$gradientColor1: #845EC2;
+$gradientColor1: #D65DB1;
+$gradientColor1: #FF9671;
+$gradientColor1: #FFC75F;
+$gradientColor1: #F9F871;
 
 @mixin darkTheme {
   font-family: $globalFontFamily;
   font-size: $globalFontSize;
   background-color: $globalDarkColor;
   color: $globalLightColor;
-  a  {
+  a {
     color: white;
   }
 }

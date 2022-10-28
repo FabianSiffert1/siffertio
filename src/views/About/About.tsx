@@ -4,8 +4,6 @@ import language from "../../assets/language/language"
 import {useSelector} from "react-redux"
 import SkillBanner from "../../components/SkillBanner/SkillBanner"
 import ImageLink from "../../components/ImageLink/ImageLink"
-import RoundImage from "../../components/ProfilePicture/ProfilePicture"
-
 import profilePicture from "../../assets/images/profileTeacher.jpg"
 import reactLogo from "../../assets/images/logos/reactLogo.svg"
 import swiftLogo from "../../assets/images/logos/swiftLogo.svg"
