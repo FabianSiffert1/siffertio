@@ -1,11 +1,16 @@
 @import "src/assets/globalVariables.module";
 
 .Projects {
-  //padding-bottom: 10vh;
   .content {
     padding: $globalHomeContentContainerPadding;
     margin-bottom: 5vh;
   }
+
+  .projectsColumn {
+    padding: $globalHomeContentContainerPadding;
+    width: 80%;
+  }
+
 
   @mixin contentStyling {
     display: flex;

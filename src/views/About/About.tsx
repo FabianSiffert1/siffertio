@@ -37,17 +37,19 @@ export default function About() {
 						</div>
 						<div className={styles.skillsRows}>
 							<div className={styles.skillsRow}>
-								<SkillBanner text="React" image={reactLogo}/>
-								<SkillBanner text="Python" image={pythonLogo}/>
 								<SkillBanner text="TypeScript" image={typescriptLogo}/>
-								<SkillBanner text="JavaScript" image={javascriptLogo}/>
-								<SkillBanner text="Java" image={javaLogo}/>
+								<SkillBanner text="React" image={reactLogo}/>
+								{/*<SkillBanner text="JavaScript" image={javascriptLogo}/>*/}
 							</div>
 							<div className={styles.skillsRow}>
+								<SkillBanner text="Docker" image={dockerLogo}/>
+								<SkillBanner text="Python" image={pythonLogo}/>
 								<SkillBanner text="mySQL" image={mysqlLogo}/>
+							</div>
+							<div className={styles.skillsRow}>
 								<SkillBanner text="Swift" image={swiftLogo}/>
 								<SkillBanner text="SwiftUI" image={swiftUILogo}/>
-								<SkillBanner text="Docker" image={dockerLogo}/>
+								<SkillBanner text="Java" image={javaLogo}/>
 								<SkillBanner text="Kotlin" image={kotlinLogo}/>
 							</div>
 						</div>
