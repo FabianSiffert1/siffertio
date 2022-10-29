@@ -7,8 +7,11 @@
   }
 
   .projectsColumn {
-    padding: $globalHomeContentContainerPadding;
-    width: 80%;
+    width:  100%;
+    // HACK
+     * + * :first-child {
+       padding-top: 1vw;
+     }
   }
 
 

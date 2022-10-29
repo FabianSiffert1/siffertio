@@ -1,36 +1,32 @@
 @import "src/assets/globalStyleElements.module";
 
 .Project {
+  --pulse-color: #ff6f69ff;
+  --pulse-color-siffertIo: #f9f871;
+  --pulse-color-roshambo: #ffc75f;
   --box-shadow-color: #000000;
 
-  @mixin boxShadow{
-    box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color);
-  }
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  $contentSectionPadding: $globalHomeContentContainerPadding;
 
   .projectHeader {
-    padding: 0.5vh;
   }
   .projectTitle {
-    padding: 2vh;
-    font-size: calc( $globalFontSize * 2 );
+    font-size: calc($globalFontSize * 2);
   }
   .projectContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include boxShadow;
     border-radius: $globalBorderRadius;
-    &:hover{
+    &:hover {
       --pulse-color: pink;
-      @include pulseAnimationMixin;
+      @include globalPulseAnimationMixin;
     }
-    width: 80%;
+    width: 100%;
     display: inherit;
-    padding-top: $contentSectionPadding;
-    gap: $contentSectionPadding;
   }
-
-
 }
