@@ -11,8 +11,8 @@ export interface ThemeDropdownMenuProps {
 }
 
 export function DropdownMenuTheme(props: ThemeDropdownMenuProps) {
-  const [display, setDisplay] = useState("none");
   const currentTheme = useSelector((state: RootState) => state.theme.value);
+  const [display, setDisplay] = useState("none");
   const dispatch = useDispatch();
 
   function handleClick() {
@@ -52,13 +52,13 @@ export function DropdownMenuTheme(props: ThemeDropdownMenuProps) {
             }
             key={element.elementName}
             style={{
-              border:
+              display:
                 currentTheme === language.THEME_DARK_VAR &&
                 element.elementName == language.THEME_DARK
-                  ? "0.2vw solid #ff6f69"
+                  ? "none"
                   : currentTheme === language.THEME_LIGHT_VAR &&
                     element.elementName == language.THEME_LIGHT
-                  ? "solid #ff6f69"
+                  ? "none"
                   : "",
             }}
             onClick={() => changeTheme(element.elementFunction)}

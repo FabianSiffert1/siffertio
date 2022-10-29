@@ -5,7 +5,6 @@
   border-radius: $globalBorderRadius;
   width: 5vw;
   height: 4vh;
-
   @mixin dropdownButtonStyling {
     display: flex;
     width: inherit;
@@ -40,14 +39,12 @@
     width: inherit;
     height: inherit;
 
-    $elementPadding: 0.3vh;
-    $elementMarginTop: 0.8vh;
 
     @mixin dropdownElementStyling {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top:  $elementMarginTop;
+      margin-top:  0.8vh;
       cursor: pointer;
       width: inherit;
       height: inherit;

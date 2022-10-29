@@ -33,12 +33,12 @@ export default function ProjectsView() {
               : styles.colorfulTheme
           }
         >
-          <div className={styles.projectsColumn}>
+          <div className={styles.projectsContainer}>
             <Project projectTitle={language.PROJECT_SIFFERTIO} pulseColor={pulseColorSiffertIO}>
-              PLACEHOLDER
+              SIFFERTIO
             </Project>
             <Project projectTitle={language.PROJECT_ROSHAMBO} pulseColor={pulseColorRoshambo}>
-              PLACEHOLDER
+              Roshambo
             </Project>
           </div>
         </div>
