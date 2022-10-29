@@ -7,7 +7,7 @@ $globalHomeContentContainerPadding: 2vw;
 $globalDarkColor: #212121;
 $globalLightColor: #fafafa;
 $globalUnderlayRGBAColorDark: rgba(255, 255, 255, 0.05);
-$globalUnderlayRGBAColorLight: rgba(0, 0, 0, 0.15);
+$globalUnderlayRGBAColorLight: rgba(0, 0, 0, 0.1);
 $globalHighlightColor: #ff6f69;
 $globalSecondaryHighlightColor: #dd608a;
 $globalHighlightColorRgba: rgba(255, 111, 105, 0.2);
@@ -15,6 +15,7 @@ $globalSecondaryHighlightColorRgba: rgba(221, 96, 138, 0.7);
 $globalBackgroundColorNavigationBar: #fff;
 
 $colorsReact: #61dafb;
+$colorsKotlin: #7F52FF;
 $colorsReactRgba: rgba(97, 218, 251, 0.2);
 
 $gradientColor1: #845ec2;
@@ -83,20 +84,16 @@ $gradientColor1: #f9f871;
 @mixin globalPulseAnimationMixin() {
   //declare --box-shadow-color: #DesiredColorHex; in the file you import this mixin.
   //declare --pulse-color: #DesiredColorHex; in the file you import this mixin.
-  //see About.module.scss for an exemplary implementation
-  animation: pulseAnimation 2s ease-out forwards;
+  animation: pulseAnimation 1s linear forwards;
   @keyframes pulseAnimation {
     0% {
-      box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color),
-        0 0 0 0 var(--pulse-color);
+      box-shadow: 0 0 0 0 var(--pulse-color);
     }
-    60% {
-      box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color),
-        0.1vw 0.1vw 0.1vw 0.5vw rgba(0, 0, 0, 0);
+    80% {
+      box-shadow: 0vw 0vw 0vw 0.5vw rgba(0, 0, 0, 0);
     }
     100% {
-      box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color),
-        0 0 0 0 rgba(0, 0, 0, 0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
   }
 }

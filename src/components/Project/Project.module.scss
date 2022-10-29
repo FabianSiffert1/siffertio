@@ -5,22 +5,26 @@
   --pulse-color-siffertIo: #f9f871;
   --pulse-color-roshambo: #ffc75f;
   --box-shadow-color: #000000;
-
+  margin: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .projectHeader {
+    padding: 2vh;
+    font-size: calc( $globalFontSize * 2 );
   }
   .projectTitle {
     font-size: calc($globalFontSize * 2);
   }
   .projectContent {
+
+    padding: 0.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include boxShadow;
+    //@include boxShadow;
     border-radius: $globalBorderRadius;
     &:hover {
       @include globalPulseAnimationMixin;

@@ -7,122 +7,120 @@
   --pulse-color-contact: #61dafb;
   --box-shadow-color: #212121;
 
-  $pulseAnimationDuration: 2s;
-
   .content {
-	padding: $globalHomeContentContainerPadding;
-	margin-bottom: 5vh;
+    padding: $globalHomeContentContainerPadding;
+    margin-bottom: 5vh;
 
-	.aboutMe {
-	  border-radius: 50vw;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  @include boxShadow;
-	  &:hover {
-		--pulse-color: var(--pulse-color-profile);
+    .aboutMe {
+      border-radius: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //@include boxShadow;
+      &:hover {
+        --pulse-color: var(--pulse-color-profile);
         @include globalPulseAnimationMixin;
-	  }
-	}
+      }
+    }
 
-	.sectionHeader {
-	  padding: 2vh;
-	  font-size: calc( $globalFontSize * 2 );
-	}
+    .sectionHeader {
+      padding: 2vh;
+      font-size: calc($globalFontSize * 2);
+    }
 
-	.profilePicture {
-	  border-radius: 50vw;
-	  min-height: 10vh;
-	  min-width: 10vh;
-	  max-height: 30vh;
-	  max-width: 30vh;
-	  border: solid transparent;
-	}
+    .profilePicture {
+      border-radius: 50vw;
+      min-height: 10vh;
+      min-width: 10vh;
+      max-height: 30vh;
+      max-width: 30vh;
+    }
 
-	.skills {
-	  padding-top: $globalHomeContentContainerPadding;
-	  position: relative;
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  align-items: center;
-	}
+    .skills {
+      padding-top: $globalHomeContentContainerPadding;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
 
-	.skillsRows {
-	  border-radius: $globalBorderRadius;
-	  @include boxShadow;
-	  &:hover{
-		--pulse-color: var(--pulse-color-skills);
+      .skillsRows {
+        border-radius: $globalBorderRadius;
+        //@include boxShadow;
+        &:hover {
+          --pulse-color: var(--pulse-color-skills);
+          @include globalPulseAnimationMixin;
+        }
+      }
+
+      .skillsRow {
+        margin: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .contact {
+      margin-top: $globalHomeContentContainerPadding;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contactLinksRow {
+      display: inherit;
+      flex-direction: row;
+      margin: 2vh;
+    }
+
+    .contactLinks {
+      border-radius: $globalBorderRadius;
+      //@include boxShadow;
+      display: flex;
+
+      &:hover {
+        --pulse-color: var(--pulse-color-contact);
         @include globalPulseAnimationMixin;
-	  }
-	}
+      }
+    }
 
-	.skillsRow {
-	  margin: 2vh;
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: center;
-	  align-items: center;
-	}
+    @mixin contentStyling {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: $globalBorderRadius;
+    }
 
-	.contact {
-	  margin-top: $globalHomeContentContainerPadding;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  flex-direction: column;
-	}
+    .darkTheme {
+      @include darkThemeContentContainer;
+      @include contentStyling;
+      --pulse-color-profile: #845EC2;
+      --pulse-color-skills: #61dafb;
+      --pulse-color-contact: #ff6f69;
+      --box-shadow-color: black;
+    }
 
-	.contactLinksRow {
-	  display: inherit;
-	  flex-direction: row;
-	  margin: 2vh;
-	}
-
-	.contactLinks {
-	  border-radius: $globalBorderRadius;
-	  @include boxShadow;
-	  display: flex;
-	  &:hover {
-		--pulse-color: var(--pulse-color-contact);
-        @include globalPulseAnimationMixin;
-	  }
-	}
-
-	@mixin contentStyling {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  align-items: center;
-	  border-radius: $globalBorderRadius;
-	}
-
-	.darkTheme {
-	  @include darkThemeContentContainer;
-	  @include contentStyling;
-	  --pulse-color-profile: #845EC2;
-	  --pulse-color-skills: #D65DB1;
-	  --pulse-color-contact: #ff6f69;
-	  --box-shadow-color: black;
-	}
-
-	.lightTheme {
-	  @include lightThemeContentContainer;
-	  @include contentStyling;
-	  --pulse-color-profile: #845EC2;
-	  --pulse-color-skills: #D65DB1;
-	  --pulse-color-contact:  #D65DB1;
-	  --box-shadow-color: #212121;
-	}
-
-	.colorfulTheme {
-	  @include colorfulThemeContentContainer;
-	  @include contentStyling;
+    .lightTheme {
+      @include lightThemeContentContainer;
+      @include contentStyling;
       --pulse-color-profile: #845EC2;
       --pulse-color-skills: #D65DB1;
-      --pulse-color-contact:  #D65DB1;
+      --pulse-color-contact: #D65DB1;
       --box-shadow-color: #212121;
-	}
+    }
+
+    .colorfulTheme {
+      @include colorfulThemeContentContainer;
+      @include contentStyling;
+      --pulse-color-profile: #845EC2;
+      --pulse-color-skills: #D65DB1;
+      --pulse-color-contact: #D65DB1;
+      --box-shadow-color: #212121;
+    }
   }
 }
