@@ -23,7 +23,6 @@
     @include boxShadow;
     border-radius: $globalBorderRadius;
     &:hover {
-      --pulse-color: pink;
       @include globalPulseAnimationMixin;
     }
     width: 100%;

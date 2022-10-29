@@ -20,10 +20,10 @@ export default function Projects() {
           }
         >
           <div className={styles.projectsColumn}>
-            <Project projectTitle={language.PROJECT_SIFFERTIO}>
+            <Project projectTitle={language.PROJECT_SIFFERTIO} pulseColor={"#FFFFFF"}>
               PLACEHOLDER
             </Project>
-            <Project projectTitle={language.PROJECT_ROSHAMBO}>
+            <Project projectTitle={language.PROJECT_ROSHAMBO} pulseColor={"yellow"}>
               PLACEHOLDER
             </Project>
           </div>
