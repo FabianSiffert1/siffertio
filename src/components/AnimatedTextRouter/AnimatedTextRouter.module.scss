@@ -1,82 +1,93 @@
 @import "src/assets/globalStyleElements.module";
 
 $animationSpeed: 20s;
-$fontSize: 6vh;
 
 .AnimatedTextRouter {
-  height: 100%;
-  * {
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: $globalBorderRadius;
-    text-transform: uppercase;
-    font-size: $fontSize;
-    border: solid transparent;
-  }
-
+  display: flex;
+  justify-content: space-evenly;
   a {
     text-decoration: none;
   }
-  .inActiveLink {
-    padding: 0.8vw;
-    margin: 0.4vw;
 
-  }
-  .inActiveLink:hover {
-    border: solid $globalHighlightColor;
+  @mixin generalLinkStyling {
+    border-radius: $globalBorderRadius;
+    border: solid transparent;
+    margin: 0.5vw;
+    padding: 1vw;
+    text-transform: uppercase;
+    font-size: 6vh;
   }
 
+  @mixin inactiveLinkStyling {
+    @include generalLinkStyling;
+    &:hover {
+      border: solid $globalHighlightColor;
+    }
+  }
+
+  .inactiveLinkDarkTheme {
+    @include inactiveLinkStyling;
+    --box-shadow-color: black;
+    @include boxShadowSmall
+  }
+
+  .inactiveLinkLightTheme {
+    @include inactiveLinkStyling;
+    --box-shadow-color: rgba(0,0,0, 0.3);
+    @include boxShadowSmall;
+  }
+
+  .inactiveLinkColorfulTheme {
+    @include inactiveLinkStyling;
+    --box-shadow-color: #212121;
+    @include boxShadowSmall;
+  }
   @mixin activeLinkStyling {
-    margin: 0.4vw;
-    padding: 0.8vw;
+    @include generalLinkStyling;
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip $animationSpeed linear infinite;
     display: inline-block;
   }
-
-  .activeLinkDarkTheme{
+  .activeLinkDarkTheme {
     @include activeLinkStyling;
     background-image: linear-gradient(
-                    -225deg,
-                    #ffffff 0%,
-                    #ffffff 29%,
-                    #d91683 67%,
-                    #ffffff 100%
+      -225deg,
+      #ffffff 0%,
+      #ffffff 29%,
+      #d91683 67%,
+      #ffffff 100%
     );
     border: solid $globalLightColor;
   }
-
   .activeLinkLightTheme {
     @include activeLinkStyling;
     background-image: linear-gradient(
-                    -225deg,
-                    #000000 0%,
-                    #000000 29%,
-                    #d91683 67%,
-                    #000000 100%
+      -225deg,
+      #000000 0%,
+      #000000 29%,
+      #d91683 67%,
+      #000000 100%
     );
     border: solid $globalDarkColor;
   }
 
-  .activeLinkColorfulTheme{
+  .activeLinkColorfulTheme {
     @include activeLinkStyling;
     background-image: linear-gradient(
-                    -225deg,
-                    #000000 0%,
-                    #000000 29%,
-                    #d91683 67%,
-                    black 100%
+      -225deg,
+      #000000 0%,
+      #000000 29%,
+      #d91683 67%,
+      black 100%
     );
     border: solid $globalDarkColor;
   }
-
 
   @keyframes textclip {
     to {
       background-position: 200% center;
     }
   }
-
 }

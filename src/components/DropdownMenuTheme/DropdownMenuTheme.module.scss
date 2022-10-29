@@ -2,39 +2,43 @@
 
 .DropdownMenu {
 
-  $dropDownButtonPadding: 0.4vw;
+  border-radius: $globalBorderRadius;
+  width: 5vw;
+  height: 4vh;
 
   @mixin dropdownButtonStyling {
     display: flex;
-    width: 100%;
+    width: inherit;
+    height: inherit;
     cursor: pointer;
     justify-content: center;
-    font-family: $globalFontFamily;
-    font-size: $globalFontSize*0.8;
-    padding: $dropDownButtonPadding;
-    border-top: solid transparent;
-    border-right: solid transparent;
-    border-left: solid transparent;
-    border-radius: $globalBorderRadius;
+    align-items: center;
+
+    border: solid transparent;
     &:hover {
       border: solid $globalHighlightColor;
     }
   }
 
   .dropdownButtonDarkTheme {
+    --box-shadow-color: black;
+    @include boxShadowSmall;
     @include dropdownButtonStyling;
-    border-bottom: solid $globalLightColor;
+    @include darkThemeContentContainer;
   }
 
   .dropdownButtonLightTheme {
+    --box-shadow-color: #212121;
+    @include boxShadowSmall;
     @include dropdownButtonStyling;
-    border-bottom: solid $globalDarkColor;
+    @include lightThemeContentContainer;
   }
 
   .dropdownElements {
     position: absolute;
     z-index: 1000;
-    left: 1.4vw;
+    width: inherit;
+    height: inherit;
 
     $elementPadding: 0.3vh;
     $elementMarginTop: 0.8vh;
@@ -43,11 +47,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: $elementPadding;
       margin-top:  $elementMarginTop;
-      font-size: $globalFontSize*0.8;
       cursor: pointer;
-      width: 100%;
+      width: inherit;
+      height: inherit;
       border: solid transparent;
       border-radius: $globalBorderRadius;
       &:hover {
@@ -56,12 +59,16 @@
     }
 
     .elementDarkTheme {
+      --box-shadow-color: black;
+      @include boxShadowSmall;
       @include dropdownElementStyling;
       background: $globalLightColor;
       color: $globalDarkColor;
     }
 
     .elementLightTheme {
+      --box-shadow-color: #212121;
+      @include boxShadowSmall;
       @include dropdownElementStyling;
       background: $globalDarkColor;
       color: $globalLightColor;

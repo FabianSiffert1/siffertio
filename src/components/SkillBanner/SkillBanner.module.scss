@@ -28,6 +28,7 @@
   }
 
   @mixin contentStyling {
+    @include boxShadowSmall;
     min-width: 8vw;
     min-height: 8vh;
     display: flex;

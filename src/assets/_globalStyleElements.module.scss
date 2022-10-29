@@ -71,6 +71,16 @@ $gradientColor1: #F9F871;
   background-color: $globalUnderlayRGBAColorLight;
 }
 
+
+@mixin boxShadow{
+  //declare --box-shadow-color: #DesiredColorHex; in the file you import this mixin.
+  box-shadow: 0.1vw 0.1vw 0.5vw var(--box-shadow-color);
+}
+
+@mixin boxShadowSmall{
+  box-shadow: 0.1vw 0.1vw 0.2vw var(--box-shadow-color);
+}
+
 @mixin pulseAnimationMixin() {
   animation: pulseAnimation 2s linear forwards;
 }
