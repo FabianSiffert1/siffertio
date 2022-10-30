@@ -7,8 +7,9 @@ import { RootState } from "../../utils/reduxStore/reduxStore";
 import SkillBanner from "../../components/SkillBanner/SkillBanner";
 import ImageLink from "../../components/ImageLink/ImageLink";
 import {
-	fsLogo, fsLogoBW,
-	githubLogo,
+	fsLogo,
+	fsLogoBW,
+	githubLogo, javaLogo, kotlinLogo,
 	reactLogo,
 	sassLogo,
 	typescriptLogo,
@@ -48,8 +49,8 @@ export default function Projects() {
             >
               <div className={styles.projectContent}>
                 <div className={styles.textSection}>
-                  You are here. A react-based attract screen, aka personal portfolio,
-					with a focus on simplistic design.
+                  You are here. A react-based attract screen, aka personal
+                  portfolio, with a focus on simplistic design.
                 </div>
                 <div className={styles.skillSection}>
                   <div className={styles.skillSectionHeader}>Components</div>
@@ -61,16 +62,20 @@ export default function Projects() {
                 </div>
                 <div className={styles.linkSection}>
                   <div className={styles.linkSectionHeader}>Links</div>
-					<div className={styles.linkContainer}>
-                  <ImageLink image={fsLogoBW} imageLink={"http://siffert.io"} imagePopUpText={"Deployment"}/>
-                  <ImageLink
-					 imagePopUpText={"Github"}
-                    image={githubLogo}
-                    imageLink={
-                      "https://github.com/FabianSiffert1/siffertio-flex"
-                    }
-                  />
-					</div>
+                  <div className={styles.linkContainer}>
+                    <ImageLink
+                      image={fsLogoBW}
+                      imageLink={"http://siffert.io"}
+                      imagePopUpText={"Deployment"}
+                    />
+                    <ImageLink
+                      imagePopUpText={"Github"}
+                      image={githubLogo}
+                      imageLink={
+                        "https://github.com/FabianSiffert1/siffertio-flex"
+                      }
+                    />
+                  </div>
                 </div>
               </div>
             </FoldableSection>
@@ -78,7 +83,25 @@ export default function Projects() {
               sectionTitle={language.PROJECT_ROSHAMBO}
               pulseColor={pulseColorRoshambo}
             >
-              Roshambo
+              <div className={styles.projectContent}>
+                <div className={styles.textSection}>
+                  A soon™️ to be work-in-progress Android app.
+                </div>
+                <div className={styles.skillSection}>
+                  <div className={styles.skillSectionHeader}>Components</div>
+                  <div className={styles.skillContainer}>
+                    <SkillBanner text={"Kotlin"} image={kotlinLogo} />
+					  <SkillBanner text={"Java"} image={javaLogo} />
+					  (Also: Spring Boot)
+                  </div>
+                </div>
+				  {/*<div className={styles.linkSection}>
+                  <div className={styles.linkSectionHeader}>Links</div>
+                  <div className={styles.linkContainer}>
+					  LINKS PLACEHOLDER
+                  </div>
+                </div> */}
+              </div>
             </FoldableSection>
           </div>
         </div>

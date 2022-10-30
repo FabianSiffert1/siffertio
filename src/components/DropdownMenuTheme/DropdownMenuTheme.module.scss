@@ -33,6 +33,13 @@
     @include lightThemeContentContainer;
   }
 
+  .dropdownButtonColorfulTheme {
+    --box-shadow-color: #212121;
+    @include boxShadowSmall;
+    @include dropdownButtonStyling;
+    @include colorfulThemeContentContainer;
+  }
+
   .dropdownElements {
     position: absolute;
     z-index: 1000;
@@ -64,6 +71,14 @@
     }
 
     .elementLightTheme {
+      --box-shadow-color: #212121;
+      @include boxShadowSmall;
+      @include dropdownElementStyling;
+      background: $globalDarkColor;
+      color: $globalLightColor;
+    }
+
+    .elementColorfulTheme {
       --box-shadow-color: #212121;
       @include boxShadowSmall;
       @include dropdownElementStyling;

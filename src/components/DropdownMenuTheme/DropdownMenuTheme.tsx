@@ -59,6 +59,9 @@ export function DropdownMenuTheme(props: ThemeDropdownMenuProps) {
                   : currentTheme === language.THEME_LIGHT_VAR &&
                     element.elementName == language.THEME_LIGHT
                   ? "none"
+                  : currentTheme === language.THEME_COLORFUL_VAR &&
+                    element.elementName === language.THEME_COLORFUL
+                  ? "none"
                   : "",
             }}
             onClick={() => changeTheme(element.elementFunction)}
