@@ -1,0 +1,89 @@
+@import "src/assets/globalStyleElements.module";
+
+.Projects {
+  --box-shadow-color: black;
+
+  @mixin contentStyling {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: $globalBorderRadius;
+  }
+
+  .content {
+    padding: $globalHomeContentContainerPadding;
+    margin-bottom: 5vh;
+  }
+
+  .projectsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectContent {
+    width: 100%;
+    @include contentStyling;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .textSection {
+      width: 40%;
+      padding: $globalHomeContentContainerPadding;
+    }
+    .skillSection {
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .skillSectionHeader {
+      }
+      .skillContainer {
+        &:hover {
+          @include globalPulseAnimationMixin;
+        }
+        border-radius: $globalBorderRadius;
+        display: flex;
+        flex-direction: row;
+        transform: scale(0.8);
+      }
+    }
+
+    .linkSection {
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .linkSectionHeader {
+      }
+      .linkContainer {
+        &:hover {
+          --pulse-color: #ff6f69;
+          @include globalPulseAnimationMixin;
+        }
+        border-radius: $globalBorderRadius;
+        display: flex;
+        flex-direction: row;
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  .darkTheme {
+    @include darkThemeContentContainer;
+    @include contentStyling;
+  }
+
+  .lightTheme {
+    @include lightThemeContentContainer;
+    @include contentStyling;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContentContainer;
+    @include contentStyling;
+  }
+}

@@ -1,8 +1,8 @@
 @import "src/assets/globalStyleElements.module";
 
 .About {
-  --pulse-color: #FF6F69FF;
-  --pulse-color-profile: #DD608A;
+  --pulse-color: #ff6f69ff;
+  --pulse-color-profile: #dd608a;
   --pulse-color-skills: #61dafb;
   --pulse-color-contact: #61dafb;
   --box-shadow-color: #212121;
@@ -23,11 +23,6 @@
       }
     }
 
-    .sectionHeader {
-      padding: 2vh;
-      font-size: calc($globalFontSize * 2);
-    }
-
     .profilePicture {
       border-radius: 50vw;
       min-height: 10vh;
@@ -36,17 +31,21 @@
       max-width: 30vh;
     }
 
-    .skills {
+    .skillsContainer {
       padding-top: $globalHomeContentContainerPadding;
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      .skillsHeader {
+        font-size: calc($globalFontSize * 2);
+      }
 
-
-      .skillsRows {
+      .skillsRowContainer {
         border-radius: $globalBorderRadius;
+        display: flex;
+        flex-direction: column;
         //@include boxShadow;
         &:hover {
           --pulse-color: var(--pulse-color-skills);
@@ -63,28 +62,32 @@
       }
     }
 
-    .contact {
+    .contactContainer {
       margin-top: $globalHomeContentContainerPadding;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-    }
 
-    .contactLinksRow {
-      display: inherit;
-      flex-direction: row;
-      margin: 2vh;
-    }
+      .contactHeader {
+        font-size: calc($globalFontSize * 2);
+      }
 
-    .contactLinks {
-      border-radius: $globalBorderRadius;
-      //@include boxShadow;
-      display: flex;
+      .contactLinksRow {
+        display: inherit;
+        flex-direction: row;
+        margin: 2vh;
+      }
 
-      &:hover {
-        --pulse-color: var(--pulse-color-contact);
-        @include globalPulseAnimationMixin;
+      .contactLinks {
+        border-radius: $globalBorderRadius;
+        //@include boxShadow;
+        display: flex;
+
+        &:hover {
+          --pulse-color: var(--pulse-color-contact);
+          @include globalPulseAnimationMixin;
+        }
       }
     }
 
@@ -99,7 +102,7 @@
     .darkTheme {
       @include darkThemeContentContainer;
       @include contentStyling;
-      --pulse-color-profile: #845EC2;
+      --pulse-color-profile: #845ec2;
       --pulse-color-skills: #61dafb;
       --pulse-color-contact: #ff6f69;
       --box-shadow-color: black;
@@ -108,18 +111,18 @@
     .lightTheme {
       @include lightThemeContentContainer;
       @include contentStyling;
-      --pulse-color-profile: #845EC2;
-      --pulse-color-skills: #D65DB1;
-      --pulse-color-contact: #D65DB1;
+      --pulse-color-profile: #845ec2;
+      --pulse-color-skills: #d65db1;
+      --pulse-color-contact: #d65db1;
       --box-shadow-color: #212121;
     }
 
     .colorfulTheme {
       @include colorfulThemeContentContainer;
       @include contentStyling;
-      --pulse-color-profile: #845EC2;
-      --pulse-color-skills: #D65DB1;
-      --pulse-color-contact: #D65DB1;
+      --pulse-color-profile: #845ec2;
+      --pulse-color-skills: #d65db1;
+      --pulse-color-contact: #d65db1;
       --box-shadow-color: #212121;
     }
   }

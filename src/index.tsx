@@ -14,7 +14,7 @@ import Home from "./views/Home/Home"
 import About from "./views/About/About"
 
 import PageNotFound from "./views/PageNotFound/PageNotFound"
-import ProjectsView from "./views/ProjectsView/ProjectsView"
+import Projects from "./views/Projects/Projects"
 
 
 const container = document.getElementById("root")
@@ -28,7 +28,7 @@ root.render(<React.StrictMode>
 			<Routes>
 				<Route path="/" element={<Home/>} >
 					<Route path="/" element={<About/>}/>
-					<Route path="projects" element={<ProjectsView/>}/>
+					<Route path="projects" element={<Projects/>}/>
 					<Route
 						path="*"
 						element={

@@ -11,7 +11,7 @@ const language = {
 	PAGE_NOT_FOUND_TITLE: "404",
 	PROJECTS_TITLE: "Projects",
 	PROJECT_SIFFERTIO: "siffert.io",
-	PROJECT_ROSHAMBO: "roshambo",
+	PROJECT_ROSHAMBO: "Roshambo",
 	PROJECT_SIFFERTIOS: "siffert.ios",
 	ROUTE_ABOUT: "About",
 	ROUTE_CONTACT: "Contact",
