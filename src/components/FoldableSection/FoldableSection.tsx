@@ -7,7 +7,10 @@ export interface FoldableSectionProps {
   pulseColor?: string;
 }
 
-export default function FoldableSection(this: any, props: FoldableSectionProps) {
+export default function FoldableSection(
+  this: any,
+  props: FoldableSectionProps
+) {
   const [hidden, setHidden] = useState(false);
   function handleClick() {
     setHidden(!hidden);
@@ -18,13 +21,20 @@ export default function FoldableSection(this: any, props: FoldableSectionProps) 
   } as React.CSSProperties;
 
   return (
-    <div className={styles.FoldableSection} style={foldableSectionPulseColorStyle}>
+    <div
+      className={styles.FoldableSection}
+      style={foldableSectionPulseColorStyle}
+    >
       <div className={styles.sectionHeader} onClick={handleClick}>
         {props.sectionTitle && (
           <div className={styles.sectionTitle}>{props.sectionTitle}</div>
         )}
       </div>
-      <div className={`${styles.sectionContent} ${hidden && styles.hidden}  ${!hidden && styles.visible} `}>
+      <div
+        className={`${styles.sectionContent} ${hidden && styles.hidden}  ${
+          !hidden && styles.visible
+        } `}
+      >
         {props.children}
       </div>
     </div>

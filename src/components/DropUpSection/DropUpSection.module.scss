@@ -15,7 +15,7 @@
   $dropdownSectionDefaultFontSize: $globalFontSize;
 
   $dropUpIndicatorBorderRadius: 100vw;
-  $dropUpIndicatorBottomPosition: inherit ;
+  $dropUpIndicatorBottomPosition: inherit;
   $dropUpIndicatorHorizontalPosition: 10vw;
   $dropUpColoredBarColor: $globalHighlightColor;
 
@@ -53,21 +53,31 @@
     border: solid;
     font-size: 2vh;
     border-radius: $dropUpIndicatorBorderRadius;
-    animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -webkit-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -moz-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -o-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -ms-animation: slowBump $slowBumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    animation: slowBump $slowBumpAnimationTime
+      cubic-bezier(0.74, 0.06, 0.4, 0.92) infinite;
+    -webkit-animation: slowBump $slowBumpAnimationTime
+      cubic-bezier(0.74, 0.06, 0.4, 0.92) infinite;
+    -moz-animation: slowBump $slowBumpAnimationTime
+      cubic-bezier(0.74, 0.06, 0.4, 0.92) infinite;
+    -o-animation: slowBump $slowBumpAnimationTime
+      cubic-bezier(0.74, 0.06, 0.4, 0.92) infinite;
+    -ms-animation: slowBump $slowBumpAnimationTime
+      cubic-bezier(0.74, 0.06, 0.4, 0.92) infinite;
   }
 
   .dropUpIndicator:hover {
     border: solid $globalHighlightColor;
     border-radius: $dropUpIndicatorBorderRadius;
-    animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -webkit-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -moz-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -o-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
-    -ms-animation: bump $bumpAnimationTime cubic-bezier(.74, .06, .4, .92) infinite;
+    animation: bump $bumpAnimationTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+      infinite;
+    -webkit-animation: bump $bumpAnimationTime
+      cubic-bezier(0.74, 0.06, 0.4, 0.92) infinite;
+    -moz-animation: bump $bumpAnimationTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+      infinite;
+    -o-animation: bump $bumpAnimationTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+      infinite;
+    -ms-animation: bump $bumpAnimationTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+      infinite;
   }
 
   .darkTheme {
@@ -123,5 +133,4 @@
       bottom: $dropUpIndicatorBottomPosition;
     }
   }
-
 }

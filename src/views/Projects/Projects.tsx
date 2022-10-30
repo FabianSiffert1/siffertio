@@ -7,12 +7,14 @@ import { RootState } from "../../utils/reduxStore/reduxStore";
 import SkillBanner from "../../components/SkillBanner/SkillBanner";
 import ImageLink from "../../components/ImageLink/ImageLink";
 import {
-	fsLogo,
-	fsLogoBW,
-	githubLogo, javaLogo, kotlinLogo,
-	reactLogo,
-	sassLogo,
-	typescriptLogo,
+  fsLogo,
+  fsLogoBW,
+  githubLogo,
+  javaLogo,
+  kotlinLogo,
+  reactLogo,
+  sassLogo,
+  typescriptLogo,
 } from "../../assets/_globalAssetImports";
 
 let pulseColorSiffertIO = "#61dafb";
@@ -91,11 +93,11 @@ export default function Projects() {
                   <div className={styles.skillSectionHeader}>Components</div>
                   <div className={styles.skillContainer}>
                     <SkillBanner text={"Kotlin"} image={kotlinLogo} />
-					  <SkillBanner text={"Java"} image={javaLogo} />
-					  (Also: Spring Boot)
+                    <SkillBanner text={"Java"} image={javaLogo} />
+                    (Also: Spring Boot)
                   </div>
                 </div>
-				  {/*<div className={styles.linkSection}>
+                {/*<div className={styles.linkSection}>
                   <div className={styles.linkSectionHeader}>Links</div>
                   <div className={styles.linkContainer}>
 					  LINKS PLACEHOLDER

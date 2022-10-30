@@ -1,11 +1,11 @@
 @import "src/assets/globalStyleElements.module";
 
-.darkTheme{
+.darkTheme {
   @include darkTheme;
 }
-.lightTheme{
+.lightTheme {
   @include lightTheme;
 }
-.colorfulTheme{
+.colorfulTheme {
   @include colorfulTheme;
 }

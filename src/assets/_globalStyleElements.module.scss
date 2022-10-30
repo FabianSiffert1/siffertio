@@ -15,7 +15,7 @@ $globalSecondaryHighlightColorRgba: rgba(221, 96, 138, 0.7);
 $globalBackgroundColorNavigationBar: #fff;
 
 $colorsReact: #61dafb;
-$colorsKotlin: #7F52FF;
+$colorsKotlin: #7f52ff;
 $colorsReactRgba: rgba(97, 218, 251, 0.2);
 
 $gradientColor1: #845ec2;
@@ -47,7 +47,7 @@ $gradientColor1: #f9f871;
 @mixin colorfulTheme {
   font-family: $globalFontFamily;
   font-size: $globalFontSize;
-  background-color: #91F88B;
+  background-color: #91f88b;
   color: $globalDarkColor;
   a {
     color: $globalDarkColor;

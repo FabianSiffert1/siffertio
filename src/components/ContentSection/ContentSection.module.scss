@@ -2,7 +2,7 @@
 
 .ContentSection {
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   $contentSectionPadding: $globalHomeContentContainerPadding;
@@ -11,6 +11,4 @@
     padding-top: $contentSectionPadding;
     gap: $contentSectionPadding;
   }
-
-
 }

@@ -1,7 +1,6 @@
 @import "src/assets/globalStyleElements.module";
 
 .DropdownMenu {
-
   border-radius: $globalBorderRadius;
   width: 5vw;
   height: 4vh;
@@ -46,12 +45,11 @@
     width: inherit;
     height: inherit;
 
-
     @mixin dropdownElementStyling {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top:  0.8vh;
+      margin-top: 0.8vh;
       cursor: pointer;
       width: inherit;
       height: inherit;

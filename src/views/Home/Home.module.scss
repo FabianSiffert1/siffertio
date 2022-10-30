@@ -15,13 +15,13 @@
     overflow: auto;
   }
 
-  .darkTheme{
+  .darkTheme {
     @include darkTheme;
   }
-  .lightTheme{
+  .lightTheme {
     @include lightTheme;
   }
-  .colorfulTheme{
+  .colorfulTheme {
     @include colorfulTheme;
   }
 }

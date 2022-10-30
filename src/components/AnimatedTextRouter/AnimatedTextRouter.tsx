@@ -29,7 +29,7 @@ function AnimatedTextRouter(props: AnimatedTextRouterProps) {
                     ? styles.activeLinkLightTheme
                     : styles.activeLinkColorfulTheme
                   : currentTheme === language.THEME_DARK_VAR
-                  	? styles.inactiveLinkDarkTheme
+                  ? styles.inactiveLinkDarkTheme
                   : currentTheme === language.THEME_LIGHT_VAR
                   ? styles.inactiveLinkLightTheme
                   : styles.inactiveLinkColorfulTheme

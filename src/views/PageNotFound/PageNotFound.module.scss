@@ -1,5 +1,4 @@
-.PageNotFound{
-
+.PageNotFound {
   background: black;
   font-style: italic;
   height: 100vh;
@@ -28,7 +27,8 @@
     background: black;
     overflow: hidden;
     top: 0;
-    animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+    animation: noise-1 3s linear infinite alternate-reverse,
+      glitch 5s 5.05s infinite;
   }
 
   .glitch::after {
@@ -39,7 +39,8 @@
     background: black;
     overflow: hidden;
     top: 0;
-    animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+    animation: noise-2 3s linear infinite alternate-reverse,
+      glitch 5s 5s infinite;
   }
 
   @keyframes glitch {
@@ -87,15 +88,14 @@
     left: 0;
 
     background: repeating-linear-gradient(
-                    to bottom,
-                    transparent 0%,
-                    rgba(255, 255, 255, 0.05) .5%,
-                    transparent 1%
+      to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) 0.5%,
+      transparent 1%
     );
 
     animation: fudge 7s ease-in-out alternate infinite;
   }
-
 
   @keyframes fudge {
     from {
@@ -114,8 +114,8 @@
   .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: .8vw;
-    color: rgba(165, 141, 141, .4);
+    font-size: 0.8vw;
+    color: rgba(165, 141, 141, 0.4);
     text-transform: uppercase;
     letter-spacing: 1em;
     text-align: center;

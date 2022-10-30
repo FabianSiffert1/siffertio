@@ -1,7 +1,6 @@
 @import "src/assets/globalStyleElements.module";
 
 .FadeInTextContainer {
-
   * {
     margin: 0;
     padding: 0;
@@ -11,13 +10,12 @@
     text-decoration: none;
   }
 
-  body, html {
+  body,
+  html {
     overflow: hidden;
   }
 
-
   .fadeInTitleContainer {
-
     $mainFontSize: 5vh !default;
     $mainBlockWidth: 30vw !default;
     $mainBlockHeight: 5vh !default;
@@ -52,12 +50,16 @@
           align-items: baseline;
           opacity: 0;
           font-size: $mainFontSize;
-          animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-          -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-          -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-          -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-          -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-          animation-delay: $fadeInTime*0.9;
+          animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
+          -webkit-animation: fadeIn $fadeInTime
+            cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
+          -moz-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+            both;
+          -o-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+            both;
+          -ms-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+            both;
+          animation-delay: $fadeInTime * 0.9;
         }
 
         .coloredBlockLeftToRight {
@@ -66,7 +68,8 @@
           width: 0;
           height: inherit;
           background: $globalHighlightColor;
-          animation: leftToRight $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: leftToRight $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+            forwards;
           animation-delay: 0s;
         }
 
@@ -76,7 +79,8 @@
           width: 0;
           height: inherit;
           background: $globalHighlightColor;
-          animation: rightToLeft $fadeInTime cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: rightToLeft $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+            forwards;
           animation-delay: 0s;
         }
       }
@@ -88,11 +92,13 @@
       align-items: center;
       font-weight: bold;
       font-size: $secondaryFontSize;
-      animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -webkit-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -moz-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -o-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
-      -ms-animation: fadeIn $fadeInTime cubic-bezier(.74, .06, .4, .92) both;
+      animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
+      -webkit-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+        both;
+      -moz-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
+        both;
+      -o-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
+      -ms-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
       animation-delay: 1s;
     }
 
@@ -105,7 +111,6 @@
         opacity: 1;
       }
     }
-
 
     @keyframes leftToRight {
       0% {
@@ -136,7 +141,5 @@
         right: 100%;
       }
     }
-
   }
-
 }
