@@ -1,7 +1,7 @@
 import React from "react";
 import * as ReactDOMClient from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Provider } from "react-redux";
 import store from "./utils/reduxStore/reduxStore";

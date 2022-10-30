@@ -7,7 +7,6 @@ import { RootState } from "../../utils/reduxStore/reduxStore";
 import SkillBanner from "../../components/SkillBanner/SkillBanner";
 import ImageLink from "../../components/ImageLink/ImageLink";
 import {
-  fsLogo,
   fsLogoBW,
   githubLogo,
   javaLogo,
