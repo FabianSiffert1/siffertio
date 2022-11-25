@@ -10,9 +10,11 @@ import {
   fsLogoBW,
   githubLogo,
   javaLogo,
+  jetpackComposeLogo,
   kotlinLogo,
   reactLogo,
   sassLogo,
+  springLogo,
   typescriptLogo,
 } from "../../assets/_globalAssetImports";
 
@@ -86,22 +88,33 @@ export default function Projects() {
             >
               <div className={styles.projectContent}>
                 <div className={styles.textSection}>
-                  A soon™️ to be work-in-progress Android app.
+                  A work-in-progress Android App, with a Jetpack Compose UI and
+                  a SpringBoot backend.
                 </div>
                 <div className={styles.skillSection}>
                   <div className={styles.skillSectionHeader}>Components</div>
                   <div className={styles.skillContainer}>
                     <SkillBanner text={"Kotlin"} image={kotlinLogo} />
-                    <SkillBanner text={"Java"} image={javaLogo} />
-                    (Also: Spring Boot)
+					  <SkillBanner
+						  text="Compose"
+						  image={jetpackComposeLogo}
+					  />
+					  <SkillBanner text={"Java"} image={javaLogo} />
+                    <SkillBanner text={"SpringBoot"} image={springLogo} />
                   </div>
                 </div>
-                {/*<div className={styles.linkSection}>
+                <div className={styles.linkSection}>
                   <div className={styles.linkSectionHeader}>Links</div>
-                  <div className={styles.linkContainer}>
-					  LINKS PLACEHOLDER
-                  </div>
-                </div> */}
+				  <div className={styles.linkContainer}>
+					  <ImageLink
+						  imagePopUpText={"Github"}
+						  image={githubLogo}
+						  imageLink={
+							  "https://github.com/FabianSiffert1/roshambo-android-app"
+						  }
+					  />
+				  </div>
+                </div>
               </div>
             </FoldableSection>
           </div>

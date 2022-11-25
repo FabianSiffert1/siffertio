@@ -10,11 +10,15 @@ import {
   emailLogo,
   githubLogo,
   javaLogo,
+  javascriptLogo,
+  jetpackComposeLogo,
+  kotlinLogo,
   mysqlLogo,
   profilePicture,
   pythonLogo,
   reactLogo,
   sassLogo,
+  springLogo,
   swiftLogo,
   swiftUILogo,
   typescriptLogo,
@@ -48,18 +52,23 @@ export default function About() {
                 <SkillBanner text="TypeScript" image={typescriptLogo} />
                 <SkillBanner text="React" image={reactLogo} />
                 <SkillBanner text="Sass" image={sassLogo} />
-                {/*<SkillBanner text="JavaScript" image={javascriptLogo}/>*/}
+                <SkillBanner text="JavaScript" image={javascriptLogo} />
               </div>
               <div className={styles.skillsRow}>
                 <SkillBanner text="Docker" image={dockerLogo} />
                 <SkillBanner text="Python" image={pythonLogo} />
                 <SkillBanner text="mySQL" image={mysqlLogo} />
+                <SkillBanner text="Java" image={javaLogo} />
+                <SkillBanner text="SpringBoot" image={springLogo} />
               </div>
               <div className={styles.skillsRow}>
                 <SkillBanner text="Swift" image={swiftLogo} />
                 <SkillBanner text="SwiftUI" image={swiftUILogo} />
-                <SkillBanner text="Java" image={javaLogo} />
-                {/*<SkillBanner text="Kotlin" image={kotlinLogo}/>*/}
+                <SkillBanner text="Kotlin" image={kotlinLogo} />
+                <SkillBanner
+                  text={"Compose"}
+                  image={jetpackComposeLogo}
+                />
               </div>
             </div>
           </div>
