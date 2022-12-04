@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Projects.module.scss";
 import language from "../../assets/language/language";
-import FoldableSection from "../../components/FoldableSection/FoldableSection";
 import { useSelector } from "react-redux";
 import { RootState } from "../../utils/reduxStore/reduxStore";
 import SkillBanner from "../../components/SkillBanner/SkillBanner";
@@ -46,77 +45,65 @@ export default function Projects() {
           }
         >
           <div className={styles.projectsContainer}>
-            <FoldableSection
-              sectionTitle={language.PROJECT_SIFFERTIO}
-              pulseColor={pulseColorSiffertIO}
-            >
-              <div className={styles.projectContent}>
-                <div className={styles.textSection}>
-                  You are here. A react-based attract screen, aka personal
-                  portfolio, with a focus on simplistic design.
-                </div>
-                <div className={styles.skillSection}>
-                  <div className={styles.skillSectionHeader}>Components</div>
-                  <div className={styles.skillContainer}>
-                    <SkillBanner text={"React"} image={reactLogo} />
-                    <SkillBanner text={"Sass"} image={sassLogo} />
-                    <SkillBanner text={"TypeScript"} image={typescriptLogo} />
-                  </div>
-                </div>
-                <div className={styles.linkSection}>
-                  <div className={styles.linkSectionHeader}>Links</div>
-                  <div className={styles.linkContainer}>
-                    <ImageLink
-                      image={fsLogoBW}
-                      imageLink={"http://siffert.io"}
-                      imagePopUpText={"Deployment"}
-                    />
-                    <ImageLink
-                      imagePopUpText={"Github"}
-                      image={githubLogo}
-                      imageLink={
-                        "https://github.com/FabianSiffert1/siffertio-flex"
-                      }
-                    />
-                  </div>
+            <div className={styles.projectContent}>
+              <div className={styles.projectTitle}>siffert.io</div>
+              <div className={styles.textSection}>
+                You are here. An attract screen, aka personal
+                portfolio, with a focus on simplistic design.
+              </div>
+              <div className={styles.skillSection}>
+                <div className={styles.skillSectionHeader}>Components</div>
+                <div className={styles.skillContainer}>
+                  <SkillBanner text={"React"} image={reactLogo} />
+                  <SkillBanner text={"Sass"} image={sassLogo} />
+                  <SkillBanner text={"TypeScript"} image={typescriptLogo} />
                 </div>
               </div>
-            </FoldableSection>
-            <FoldableSection
-              sectionTitle={language.PROJECT_ROSHAMBO}
-              pulseColor={pulseColorRoshambo}
-            >
-              <div className={styles.projectContent}>
-                <div className={styles.textSection}>
-                  A work-in-progress Android App, with a Jetpack Compose UI and
-                  a SpringBoot backend.
-                </div>
-                <div className={styles.skillSection}>
-                  <div className={styles.skillSectionHeader}>Components</div>
-                  <div className={styles.skillContainer}>
-                    <SkillBanner text={"Kotlin"} image={kotlinLogo} />
-					  <SkillBanner
-						  text="Compose"
-						  image={jetpackComposeLogo}
-					  />
-					  <SkillBanner text={"Java"} image={javaLogo} />
-                    <SkillBanner text={"SpringBoot"} image={springLogo} />
-                  </div>
-                </div>
-                <div className={styles.linkSection}>
-                  <div className={styles.linkSectionHeader}>Links</div>
-				  <div className={styles.linkContainer}>
-					  <ImageLink
-						  imagePopUpText={"Github"}
-						  image={githubLogo}
-						  imageLink={
-							  "https://github.com/FabianSiffert1/roshambo-android-app"
-						  }
-					  />
-				  </div>
+              <div className={styles.linkSection}>
+                <div className={styles.linkSectionHeader}>Links</div>
+                <div className={styles.linkContainer}>
+                  <ImageLink
+                    image={fsLogoBW}
+                    imageLink={"http://siffert.io"}
+                    imagePopUpText={"Deployment"}
+                  />
+                  <ImageLink
+                    imagePopUpText={"Github"}
+                    image={githubLogo}
+                    imageLink={
+                      "https://github.com/FabianSiffert1/siffertio-flex"
+                    }
+                  />
                 </div>
               </div>
-            </FoldableSection>
+            </div>
+            <div className={styles.projectContent}>
+              <div className={styles.projectTitle}>Roshambo</div>
+              <div className={styles.textSection}>
+                A work-in-progress Android-App. My way of learning mobile development.
+              </div>
+              <div className={styles.skillSection}>
+                <div className={styles.skillSectionHeader}>Components</div>
+                <div className={styles.skillContainer}>
+                  <SkillBanner text={"Kotlin"} image={kotlinLogo} />
+                  <SkillBanner text="Compose" image={jetpackComposeLogo} />
+                  <SkillBanner text={"Java"} image={javaLogo} />
+                  <SkillBanner text={"SpringBoot"} image={springLogo} />
+                </div>
+              </div>
+              <div className={styles.linkSection}>
+                <div className={styles.linkSectionHeader}>Links</div>
+                <div className={styles.linkContainer}>
+                  <ImageLink
+                    imagePopUpText={"Github"}
+                    image={githubLogo}
+                    imageLink={
+                      "https://github.com/FabianSiffert1/roshambo-android-app"
+                    }
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

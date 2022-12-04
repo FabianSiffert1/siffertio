@@ -30,6 +30,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 4rem;
+    .projectTitle{
+      font-size: $globalFontSize * 2;
+    }
     .textSection {
       display: flex;
       justify-content: center;
@@ -46,6 +50,7 @@
       }
       .skillContainer {
         &:hover {
+          --pulse-color: #61dafb;
           @include globalPulseAnimationMixin;
         }
         border-radius: $globalBorderRadius;
