@@ -88,7 +88,7 @@ export default function Projects() {
                   <SkillBanner text={"Kotlin"} image={kotlinLogo} />
                   <SkillBanner text="Compose" image={jetpackComposeLogo} />
                   <SkillBanner text={"Java"} image={javaLogo} />
-                  <SkillBanner text={"SpringBoot"} image={springLogo} />
+                  <SkillBanner text={"Spring"} image={springLogo} />
                 </div>
               </div>
               <div className={styles.linkSection}>
