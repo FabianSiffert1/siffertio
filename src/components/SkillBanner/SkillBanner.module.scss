@@ -12,11 +12,12 @@
   .imageContainer img {
     height: 2.7vw;
     width: 2.7vw;
+    transition: all 0.55s ease-in-out;
   }
 
   .textContainer {
     position: absolute;
-    display: none;
+    //display: none;
     justify-content: center;
     align-items: center;
     padding: 0.5vw;
@@ -24,7 +25,9 @@
     border-radius: 50vw;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, 30%);
+    opacity: 0;
+    transition: all 0.55s ease-in-out;
+    transform: translate(-50%, 0%);
   }
 
   @mixin contentStyling {
@@ -39,11 +42,13 @@
     border: solid transparent;
     border-radius: $globalBorderRadius * 10;
     &:hover .textContainer {
-      display: flex;
+      //display: flex;
+      opacity: 1;
+      transform: translate(-50%, -50%);
     }
 
     &:hover img {
-      //opacity: 0.1;
+      opacity: 0.1;
       //filter: grayscale(1);
     }
   }
