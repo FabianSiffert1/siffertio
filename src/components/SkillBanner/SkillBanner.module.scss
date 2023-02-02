@@ -18,10 +18,10 @@
   .textContainer {
     position: absolute;
     //display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5vw;
-    margin-top: -1vh;
+    //justify-content: center;
+    //align-items: center;
+    //padding: 0.5vw;
+    //margin-top: -1vh;
     border-radius: 50vw;
     left: 50%;
     bottom: 0;
@@ -44,11 +44,11 @@
     &:hover .textContainer {
       //display: flex;
       opacity: 1;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -40%);
     }
 
     &:hover img {
-      opacity: 0.1;
+      opacity: 0.3;
       //filter: grayscale(1);
     }
   }
