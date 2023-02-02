@@ -12,7 +12,7 @@
   .imageContainer img {
     height: 2.7vw;
     width: 2.7vw;
-    transition: all 0.55s ease-in-out;
+    transition: transform 0.55s ease-in-out;
   }
 
   .textContainer {
@@ -26,7 +26,7 @@
     font-size: $globalFontSize * 0.8;
     border-radius: 50vw;
     opacity: 0;
-    transition: all 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
   }
 
   @mixin contentStyling {
