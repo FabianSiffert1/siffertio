@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useReducer} from "react";
 import styles from "./About.module.scss";
 import language from "../../assets/language/language";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import SkillBanner from "../../components/SkillBanner/SkillBanner";
 import ImageLink from "../../components/ImageLink/ImageLink";
 import {RootState} from "../../utils/reduxStore/reduxStore";
@@ -23,9 +23,14 @@ import {
     typescriptLogo,
 } from "../../assets/_globalAssetImports";
 import ProfilePicture from "../../components/ProfilePicture/ProfilePicture";
+import ToggleSlider from "../../components/ToggleSlider/ToggleSlider";
+import {toggle} from "../../utils/reduxStore/experienceToggle/experienceToggleSlice";
 
 export default function About() {
+
     const currentTheme = useSelector((state: RootState) => state.theme.value);
+    let showExperience = useSelector((state: RootState) => state.experienceToggle.value);
+    const dispatch = useDispatch();
     return (
         <div className={styles.About}>
             <div className={styles.content}>
@@ -63,6 +68,9 @@ export default function About() {
                                 <SkillBanner text="mySQL" image={mysqlLogo}/>
                                 <SkillBanner text="Java" image={javaLogo}/>
                                 <SkillBanner text="Spring" image={springLogo}/>
+                            </div>
+                            <div className={styles.experienceIndicatorContainer}>
+                                <ToggleSlider checked={showExperience} id={"experienceToggle"} onChange={()=>{dispatch(toggle())} }/>
                             </div>
                         </div>
                     </div>

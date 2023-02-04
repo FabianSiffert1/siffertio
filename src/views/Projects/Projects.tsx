@@ -71,7 +71,7 @@ export default function Projects() {
                     imagePopUpText={"Github"}
                     image={githubLogo}
                     imageLink={
-                      "https://github.com/FabianSiffert1/siffertio-flex"
+                      "https://github.com/FabianSiffert1/siffertio"
                     }
                   />
                 </div>
@@ -86,7 +86,7 @@ export default function Projects() {
                 <div className={styles.skillSectionHeader}>Components</div>
                 <div className={styles.skillContainer}>
                   <SkillBanner text={"Kotlin"} image={kotlinLogo} />
-                  <SkillBanner text="Compose" image={jetpackComposeLogo} />
+                  <SkillBanner text="Jetpack Compose" image={jetpackComposeLogo} />
                   <SkillBanner text={"Java"} image={javaLogo} />
                   <SkillBanner text={"Spring"} image={springLogo} />
                 </div>
@@ -98,7 +98,7 @@ export default function Projects() {
                     imagePopUpText={"Github"}
                     image={githubLogo}
                     imageLink={
-                      "https://github.com/FabianSiffert1/roshambo-android-app"
+                      "https://github.com/FabianSiffert1/roshambo-android-kotlin"
                     }
                   />
                 </div>

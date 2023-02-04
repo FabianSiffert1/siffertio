@@ -1,0 +1,18 @@
+@import "src/assets/globalStyleElements.module";
+.ToggleSlider {
+  --checked-color: #1877c1;
+  --unchecked-color: #888;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+    .checkbox {
+      position: absolute;
+      left:0;
+      right:0;
+
+    }
+  .label {
+    position: relative;
+    right: -2rem;
+  }
+}
