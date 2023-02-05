@@ -46,6 +46,9 @@ export default function About() {
                     <ProfilePicture name="Fabian Siffert" title="Software Developer" image={profilePicture}/>
                     <div className={styles.skillsContainer}>
                         <div className={styles.skillsHeader}>{language.SKILLS_TITLE}</div>
+                        <div className={styles.experienceIndicatorContainer}>
+                            <ToggleSlider checked={showExperience} id={"experienceToggle"} onChange={()=>{dispatch(toggle())}} optionLabels={["", "Show Skills"]}/>
+                        </div>
                         <div className={styles.skillsRowContainer}>
                             <div className={styles.skillsRow}>
                                 <SkillBanner text="TypeScript" image={typescriptLogo}/>
@@ -61,16 +64,12 @@ export default function About() {
                                     image={jetpackComposeLogo}
                                 />
                                 <SkillBanner text="Docker" image={dockerLogo}/>
-                                {/*<SkillBanner text={"Javascript"} image={javascriptLogo} /> */}
                             </div>
                             <div className={styles.skillsRow}>
                                 <SkillBanner text="Python" image={pythonLogo}/>
                                 <SkillBanner text="mySQL" image={mysqlLogo}/>
                                 <SkillBanner text="Java" image={javaLogo}/>
                                 <SkillBanner text="Spring" image={springLogo}/>
-                            </div>
-                            <div className={styles.experienceIndicatorContainer}>
-                                <ToggleSlider checked={showExperience} id={"experienceToggle"} onChange={()=>{dispatch(toggle())} }/>
                             </div>
                         </div>
                     </div>
@@ -80,14 +79,14 @@ export default function About() {
                             <div className={styles.contactLinksRow}>
                                 <ImageLink
                                     image={githubLogo}
-                                    imagePopUpText={"Github"}
-                                    imageAltText={"Github"}
+                                    imagePopUpText={language.GITHUB}
+                                    imageAltText={language.GITHUB}
                                     imageLink={language.LINK_GITHUB}
                                 />
                                 <ImageLink
                                     image={emailLogo}
-                                    imagePopUpText={"E-Mail"}
-                                    imageAltText={"E-Mail"}
+                                    imagePopUpText={language.EMAIL}
+                                    imageAltText={language.EMAIL}
                                     imageLink={language.LINK_EMAIL}
                                 />
                             </div>

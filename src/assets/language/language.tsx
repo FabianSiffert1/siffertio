@@ -1,6 +1,7 @@
 const language = {
   CONTACT_TITlE: "Get in touch",
-  GITHUB: "GITHUB_LOGO",
+  GITHUB: "Github",
+  EMAIL: "E-Mail",
   HEADER_SUBTITLE: "a work in progress",
   HEADER_TITLE: "siffert[.io]",
   LINK_EMAIL: "mailto:siffert.dev+io@gmail.com",

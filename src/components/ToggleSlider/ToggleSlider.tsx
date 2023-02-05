@@ -14,7 +14,7 @@ export default function ToggleSlider(props: ToggleSwitchProps) {
     return (
                 <div className={styles.ToggleSlider}>
                     <input type="checkbox" id={props.id} name={props.name} checked={props.checked} onChange={props.onChange} className={styles.checkbox}/>
-                    <label className={styles.label} htmlFor={props.id}>{props.checked? props.optionLabels[0] : props.optionLabels[1]}</label>
+                    <label className={styles.label} htmlFor={props.id}>{ props.optionLabels[1]}</label>
                 </div>
     );
 }
