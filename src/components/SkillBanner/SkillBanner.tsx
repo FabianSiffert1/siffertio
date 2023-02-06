@@ -41,8 +41,8 @@ export default function SkillBanner(props: SkillBannerProps) {
           currentTheme === language.THEME_DARK_VAR
             ? `${styles.darkTheme} ${showExperience && experienceLevelClassName} `
             : currentTheme === language.THEME_LIGHT_VAR
-            ? styles.lightTheme
-            : styles.colorfulTheme
+            ? `${styles.lightTheme} ${showExperience && experienceLevelClassName} `
+            : `${styles.colorfulTheme} ${showExperience && experienceLevelClassName} `
         }
       >
         <div className={styles.imageContainer}>
