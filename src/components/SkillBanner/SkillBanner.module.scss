@@ -52,19 +52,17 @@
   }
 
   .beginner {
-    background-color: red;
-    border: solid red;
+    border: solid lightpink !important;
   }
 
 
   .moderate {
-    background-color: red;
-    border: solid red;
+    border: solid lightyellow !important;
   }
 
 
   .experienced {
-    border: solid purple !important;
+    border: solid lightgreen !important;
   }
   .darkTheme {
     @include darkThemeContent;

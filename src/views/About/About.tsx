@@ -53,7 +53,8 @@ export default function About() {
                             <Tooltip toggle={showExperience}
                                      text={["Hide experience indicators.", "Show experience indicators."]}>
                                 <ToggleButton checked={showExperience} id={"experienceToggle"} onChange={() => {
-                                    dispatch(toggle())}}>
+                                    dispatch(toggle())
+                                }}>
                                     <div className={styles.skillsExperienceContainerImages}>
                                         <img src={starFilled} alt="SkillIndicatorFilled"/>
                                         <img src={starFilled} alt="SkillIndicatorFilled"/>
@@ -64,25 +65,34 @@ export default function About() {
                         </div>
                         <div className={styles.skillsRowContainer}>
                             <div className={styles.skillsRow}>
-                                <SkillBanner text="TypeScript" image={typescriptLogo} experienceLevel={experienceLevel.experienced}/>
-                                <SkillBanner text="React" image={reactLogo}/>
-                                <SkillBanner text="Sass" image={sassLogo}/>
+                                <SkillBanner text="TypeScript" image={typescriptLogo}
+                                             experienceLevel={experienceLevel.experienced}/>
+                                <SkillBanner text="React" image={reactLogo}
+                                             experienceLevel={experienceLevel.experienced}/>
+                                <SkillBanner text="Sass" image={sassLogo} experienceLevel={experienceLevel.experienced}/>
                             </div>
                             <div className={styles.skillsRow}>
-                                <SkillBanner text="Swift" image={swiftLogo}/>
-                                <SkillBanner text="SwiftUI" image={swiftUILogo}/>
-                                <SkillBanner text="Kotlin" image={kotlinLogo}/>
+                                <SkillBanner text="Swift" image={swiftLogo} experienceLevel={experienceLevel.beginner}/>
+                                <SkillBanner text="SwiftUI" image={swiftUILogo}
+                                             experienceLevel={experienceLevel.beginner}/>
+                                <SkillBanner text="Kotlin" image={kotlinLogo}
+                                             experienceLevel={experienceLevel.moderate}/>
                                 <SkillBanner
                                     text={"Jetpack Compose"}
                                     image={jetpackComposeLogo}
+                                    experienceLevel={experienceLevel.moderate}
                                 />
-                                <SkillBanner text="Docker" image={dockerLogo}/>
+                                <SkillBanner text="Docker" image={dockerLogo}
+                                             experienceLevel={experienceLevel.beginner}/>
                             </div>
                             <div className={styles.skillsRow}>
-                                <SkillBanner text="Python" image={pythonLogo}/>
-                                <SkillBanner text="mySQL" image={mysqlLogo}/>
-                                <SkillBanner text="Java" image={javaLogo}/>
-                                <SkillBanner text="Spring" image={springLogo}/>
+                                <SkillBanner text="Python" image={pythonLogo}
+                                             experienceLevel={experienceLevel.beginner}/>
+                                <SkillBanner text="mySQL" image={mysqlLogo}
+                                             experienceLevel={experienceLevel.experienced}/>
+                                <SkillBanner text="Java" image={javaLogo} experienceLevel={experienceLevel.moderate}/>
+                                <SkillBanner text="Spring" image={springLogo}
+                                             experienceLevel={experienceLevel.beginner}/>
                             </div>
                         </div>
                     </div>
