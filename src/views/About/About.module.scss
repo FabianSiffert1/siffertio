@@ -45,6 +45,18 @@
         justify-content: center;
         align-items: center;
       }
+
+      .skillsExperienceContainer {
+        position: absolute;
+        transform: translate(15vw, -15vh);
+      }
+      .skillsExperienceContainerImages {
+        display: flex;
+         img{
+           width: 1rem;
+           height: 1rem;
+         }
+      }
     }
 
     .contactContainer {

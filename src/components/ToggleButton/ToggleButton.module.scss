@@ -2,20 +2,24 @@
 
 .ToggleButton {
   --background-color: #7f52ff;
-  display: flex;
-  justify-content: center;
-  align-content: center;
   border-radius: $globalBorderRadius;
   .checkbox {
     display: none;
     &:checked + .toggleStateIndicator {
-      background-color: var(--background-color);
+      background-color: $globalHighlightColor;
     }
   }
   .toggleStateIndicator {
-    padding: 0.5rem;
-    background-color: transparent;
-    border-radius: 2rem;
+    @include boxShadowSmall;
+    display: flex;
+    width: max-content;
+    &:hover {
+      border: solid $globalHighlightColor;
+    }
+    border: solid transparent;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: $globalBorderRadius;
     transition: background-color 0.55s;
   }
 }

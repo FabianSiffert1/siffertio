@@ -9,14 +9,13 @@ export interface TooltipProps {
 
 
 export default function Tooltip(props: TooltipProps) {
-    const [show, setShow] = React.useState(false);
     return (
         <div className={styles.Tooltip}>
-            <div className={styles.tooltipContainer} style={show ? { visibility: "visible" } : {} }>
+            <div className={styles.tooltipContainer}>
                 {typeof props.toggle != undefined && props.toggle ? props.text[0] : props.text[1]}
                 {typeof props.toggle == undefined && props.text[0]}
             </div>
-            <div className={styles.childrenContainer}  onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+            <div className={styles.childrenContainer}>
                 {props.children}
             </div>
         </div>

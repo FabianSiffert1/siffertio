@@ -18,6 +18,8 @@ import {
     reactLogo,
     sassLogo,
     springLogo,
+    starFilled,
+    starOutline,
     swiftLogo,
     swiftUILogo,
     typescriptLogo,
@@ -47,13 +49,19 @@ export default function About() {
                     <ProfilePicture name={language.NAME} title={language.JOB} image={profilePicture}/>
                     <div className={styles.skillsContainer}>
                         <div className={styles.skillsHeader}>{language.SKILLS_TITLE}</div>
-                        <div className={styles.experienceIndicatorContainer}>
-                            <Tooltip toggle={showExperience} text={["Hide experience indicators.", "Show experience indicators."] }>
-                            <ToggleButton checked={showExperience} id={"experienceToggle"} onChange={()=>{dispatch(toggle())}}>
-                                XP
-                            </ToggleButton>
+                        <div className={styles.skillsExperienceContainer}>
+                            <Tooltip toggle={showExperience}
+                                     text={["Hide experience indicators.", "Show experience indicators."]}>
+                                <ToggleButton checked={showExperience} id={"experienceToggle"} onChange={() => {
+                                    dispatch(toggle())}}>
+                                    <div className={styles.skillsExperienceContainerImages}>
+                                        <img src={starFilled} alt="SkillIndicatorFilled"/>
+                                        <img src={starFilled} alt="SkillIndicatorFilled"/>
+                                        <img src={starOutline} alt="SkillIndicatorOutline"/>
+                                    </div>
+                                </ToggleButton>
                             </Tooltip>
-                            </div>
+                        </div>
                         <div className={styles.skillsRowContainer}>
                             <div className={styles.skillsRow}>
                                 <SkillBanner text="TypeScript" image={typescriptLogo}/>
