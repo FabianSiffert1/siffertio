@@ -28,7 +28,6 @@ function getTheme(currentTheme: String, contentTheme?: boolean) {
         stylesString = styles.darkTheme
         if (contentTheme) {
             stylesString = styles.darkThemeContent
-            console.log("content" + stylesString)
         }
     } else if (currentTheme === language.THEME_LIGHT_VAR) {
         stylesString = styles.lightTheme
@@ -41,7 +40,5 @@ function getTheme(currentTheme: String, contentTheme?: boolean) {
             stylesString = styles.colorfulThemeContent
         }
     }
-
-    console.log(stylesString.toString())
     return stylesString
 }

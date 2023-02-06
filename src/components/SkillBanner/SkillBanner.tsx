@@ -4,11 +4,10 @@ import language from "../../assets/language/language";
 import { useSelector } from "react-redux";
 import { RootState } from "../../utils/reduxStore/reduxStore";
 
-enum experienceLevel {
+export enum experienceLevel {
     beginner,
     moderate,
-    good,
-    expert
+    experienced,
 }
 
 export interface SkillBannerProps {
@@ -20,12 +19,27 @@ export interface SkillBannerProps {
 export default function SkillBanner(props: SkillBannerProps) {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
   let showExperience = useSelector((state: RootState) => state.experienceToggle.value);
+    let experienceLevelClassName;
+    switch (props.experienceLevel) {
+        case experienceLevel.beginner:
+            experienceLevelClassName = styles.beginner;
+            break;
+        case experienceLevel.moderate:
+            experienceLevelClassName = styles.moderate;
+            break;
+        case experienceLevel.experienced:
+            experienceLevelClassName = styles.experienced;
+            break;
+        default:
+            experienceLevelClassName = styles.beginner;
+    }
+    console.log(experienceLevelClassName)
   return (
     <div className={styles.SkillBanner}>
       <div
         className={
           currentTheme === language.THEME_DARK_VAR
-            ? styles.darkTheme
+            ? `${styles.darkTheme} ${showExperience && experienceLevelClassName} `
             : currentTheme === language.THEME_LIGHT_VAR
             ? styles.lightTheme
             : styles.colorfulTheme

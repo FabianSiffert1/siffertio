@@ -1,8 +1,8 @@
-import React, {useReducer} from "react";
+import React from "react";
 import styles from "./About.module.scss";
 import language from "../../assets/language/language";
 import {useDispatch, useSelector} from "react-redux";
-import SkillBanner from "../../components/SkillBanner/SkillBanner";
+import SkillBanner, {experienceLevel} from "../../components/SkillBanner/SkillBanner";
 import ImageLink from "../../components/ImageLink/ImageLink";
 import {RootState} from "../../utils/reduxStore/reduxStore";
 import {
@@ -64,7 +64,7 @@ export default function About() {
                         </div>
                         <div className={styles.skillsRowContainer}>
                             <div className={styles.skillsRow}>
-                                <SkillBanner text="TypeScript" image={typescriptLogo}/>
+                                <SkillBanner text="TypeScript" image={typescriptLogo} experienceLevel={experienceLevel.experienced}/>
                                 <SkillBanner text="React" image={reactLogo}/>
                                 <SkillBanner text="Sass" image={sassLogo}/>
                             </div>

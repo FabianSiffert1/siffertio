@@ -51,6 +51,21 @@
     }
   }
 
+  .beginner {
+    background-color: red;
+    border: solid red;
+  }
+
+
+  .moderate {
+    background-color: red;
+    border: solid red;
+  }
+
+
+  .experienced {
+    border: solid purple !important;
+  }
   .darkTheme {
     @include darkThemeContent;
     @include contentStyling;
