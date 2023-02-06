@@ -59,7 +59,7 @@
   }
 
   .darkTheme {
-    @include darkThemeContentContainer;
+    @include darkThemeContent;
     @include contentStyling;
     .imageContainer {
       filter: invert(1);
@@ -67,12 +67,12 @@
   }
 
   .lightTheme {
-    @include lightThemeContentContainer;
+    @include lightThemeContent;
     @include contentStyling;
   }
 
   .colorfulTheme {
-    @include colorfulThemeContentContainer;
+    @include colorfulThemeContent;
     @include contentStyling;
   }
 }

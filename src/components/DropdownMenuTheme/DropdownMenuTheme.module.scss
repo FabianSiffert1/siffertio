@@ -22,21 +22,21 @@
     --box-shadow-color: black;
     @include boxShadowSmall;
     @include dropdownButtonStyling;
-    @include darkThemeContentContainer;
+    @include darkThemeContent;
   }
 
   .dropdownButtonLightTheme {
     --box-shadow-color: #212121;
     @include boxShadowSmall;
     @include dropdownButtonStyling;
-    @include lightThemeContentContainer;
+    @include lightThemeContent;
   }
 
   .dropdownButtonColorfulTheme {
     --box-shadow-color: #212121;
     @include boxShadowSmall;
     @include dropdownButtonStyling;
-    @include colorfulThemeContentContainer;
+    @include colorfulThemeContent;
   }
 
   .dropdownElements {

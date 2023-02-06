@@ -12,7 +12,7 @@ const Home = () => {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
   return (
     <div className={styles.Home}>
-      <ThemeComponent currentTheme={currentTheme}>
+      <ThemeComponent>
         <Header />
         <div className={styles.contentContainer}>
           <Outlet />

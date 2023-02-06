@@ -1,0 +1,9 @@
+@import "src/assets/globalStyleElements.module";
+.Tooltip {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .tooltipContainer {
+    visibility: hidden;
+  }
+}

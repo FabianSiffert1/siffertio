@@ -81,7 +81,7 @@
   }
 
   .darkTheme {
-    @include darkThemeContentContainer;
+    @include darkThemeContent;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@
   }
 
   .lightTheme {
-    @include lightThemeContentContainer;
+    @include lightThemeContent;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@
   }
 
   .colorfulTheme {
-    @include colorfulThemeContentContainer;
+    @include colorfulThemeContent;
     width: 100%;
     display: flex;
     flex-direction: column;

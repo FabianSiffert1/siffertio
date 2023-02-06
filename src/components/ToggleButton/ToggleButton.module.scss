@@ -1,0 +1,21 @@
+@import "src/assets/globalStyleElements.module";
+
+.ToggleButton {
+  --background-color: #7f52ff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: $globalBorderRadius;
+  .checkbox {
+    display: none;
+    &:checked + .toggleStateIndicator {
+      background-color: var(--background-color);
+    }
+  }
+  .toggleStateIndicator {
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    transition: background-color 0.55s;
+  }
+}

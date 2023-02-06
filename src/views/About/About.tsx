@@ -23,8 +23,9 @@ import {
     typescriptLogo,
 } from "../../assets/_globalAssetImports";
 import ProfilePicture from "../../components/ProfilePicture/ProfilePicture";
-import ToggleSlider from "../../components/ToggleSlider/ToggleSlider";
+import ToggleButton from "../../components/ToggleButton/ToggleButton";
 import {toggle} from "../../utils/reduxStore/experienceToggle/experienceToggleSlice";
+import Tooltip from "../../components/Tooltip/Tooltip";
 
 export default function About() {
 
@@ -43,12 +44,16 @@ export default function About() {
                                 : styles.colorfulTheme
                     }
                 >
-                    <ProfilePicture name="Fabian Siffert" title="Software Developer" image={profilePicture}/>
+                    <ProfilePicture name={language.NAME} title={language.JOB} image={profilePicture}/>
                     <div className={styles.skillsContainer}>
                         <div className={styles.skillsHeader}>{language.SKILLS_TITLE}</div>
                         <div className={styles.experienceIndicatorContainer}>
-                            <ToggleSlider checked={showExperience} id={"experienceToggle"} onChange={()=>{dispatch(toggle())}} optionLabels={["", "Show Skills"]}/>
-                        </div>
+                            <Tooltip toggle={showExperience} text={["Hide experience indicators.", "Show experience indicators."] }>
+                            <ToggleButton checked={showExperience} id={"experienceToggle"} onChange={()=>{dispatch(toggle())}}>
+                                XP
+                            </ToggleButton>
+                            </Tooltip>
+                            </div>
                         <div className={styles.skillsRowContainer}>
                             <div className={styles.skillsRow}>
                                 <SkillBanner text="TypeScript" image={typescriptLogo}/>

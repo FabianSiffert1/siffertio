@@ -84,7 +84,7 @@
     }
 
     .darkTheme {
-      @include darkThemeContentContainer;
+      @include darkThemeContent;
       @include contentStyling;
       --pulse-color-skills: #61dafb;
       --pulse-color-contact: #ff6f69;
@@ -92,7 +92,7 @@
     }
 
     .lightTheme {
-      @include lightThemeContentContainer;
+      @include lightThemeContent;
       @include contentStyling;
       --pulse-color-skills: #61dafb;
       --pulse-color-contact: #ff6f69ff;
@@ -100,7 +100,7 @@
     }
 
     .colorfulTheme {
-      @include colorfulThemeContentContainer;
+      @include colorfulThemeContent;
       @include contentStyling;
       --pulse-color-skills: #d65db1;
       --pulse-color-contact: #d65db1;

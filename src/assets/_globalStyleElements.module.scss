@@ -54,19 +54,19 @@ $gradientColor1: #f9f871;
   }
 }
 
-@mixin darkThemeContentContainer {
+@mixin darkThemeContent {
   padding: inherit;
   border-radius: inherit;
   background-color: $globalUnderlayRGBAColorDark;
 }
 
-@mixin lightThemeContentContainer {
+@mixin lightThemeContent {
   padding: inherit;
   border-radius: inherit;
   background-color: $globalUnderlayRGBAColorLight;
 }
 
-@mixin colorfulThemeContentContainer {
+@mixin colorfulThemeContent {
   padding: inherit;
   border-radius: inherit;
   background-color: $globalUnderlayRGBAColorLight;
