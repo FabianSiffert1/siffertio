@@ -2,6 +2,7 @@
 
 .SkillBanner {
   padding: 0.5vw;
+  transition: all 0.55s ease-in-out;
 
   .imageContainer {
     display: flex;
@@ -52,15 +53,51 @@
   }
 
   .beginner {
-    border: solid lightpink !important;
+    height: 0;
+    overflow: hidden;
+    background-color: #ddd;
+    position: relative;
+  }
+  .beginner::before {
+    content: "";
+    height: 20%;
+    width: 100%;
+    background-color: $globalHighlightColorRgba;
+    position: absolute;
+    bottom: 0;
+    animation: fadeIn 0.55s ease-in-out both;
   }
 
   .moderate {
-    border: solid lightyellow !important;
+    height: 0;
+    overflow: hidden;
+    background-color: #ddd;
+    position: relative;
+  }
+  .moderate::before {
+    content: "";
+    height: 60%;
+    width: 100%;
+    background-color: $globalHighlightColorRgba;
+    position: absolute;
+    bottom: 0;
+    animation: fadeIn 0.55s ease-in-out both;
   }
 
   .experienced {
-    border: solid lightgreen !important;
+    height: 0;
+    overflow: hidden;
+    background-color: #ddd;
+    position: relative;
+  }
+  .experienced::before {
+    content: "";
+    height: 80%;
+    width: 100%;
+    background-color: $globalHighlightColorRgba;
+    position: absolute;
+    bottom: 0;
+    animation: fadeIn 0.55s ease-in-out both;
   }
   .darkTheme {
     @include darkThemeContent;
@@ -75,5 +112,15 @@
   .colorfulTheme {
     @include colorfulThemeContent;
     @include contentStyling;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    right: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

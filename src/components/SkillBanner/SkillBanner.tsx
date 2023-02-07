@@ -22,6 +22,7 @@ export default function SkillBanner(props: SkillBannerProps) {
   const showExperience = useSelector(
     (state: RootState) => state.experienceToggle.value,
   );
+
   let experienceLevelClassName;
   switch (props.experienceLevel) {
     case EXPERIENCE_LEVEL.beginner:
@@ -36,6 +37,7 @@ export default function SkillBanner(props: SkillBannerProps) {
     default:
       experienceLevelClassName = styles.beginner;
   }
+
   return (
     <div className={styles.SkillBanner}>
       <div
