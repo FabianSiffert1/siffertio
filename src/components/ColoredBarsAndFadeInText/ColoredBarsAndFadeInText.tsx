@@ -1,5 +1,5 @@
-import styles from "./ColoredBarsAndFadeInText.module.scss";
-import React from "react";
+import React from 'react';
+import styles from './ColoredBarsAndFadeInText.module.scss';
 
 export interface FadeInTextProps {
   textToDisplay?: string;

@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./ContentSection.module.scss";
+import React from 'react';
+import styles from './ContentSection.module.scss';
 
 export interface ContentSectionProps {
   sectionText?: string;

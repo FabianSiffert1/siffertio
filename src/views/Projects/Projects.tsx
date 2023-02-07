@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./Projects.module.scss";
-import language from "../../assets/language/language";
-import { useSelector } from "react-redux";
-import { RootState } from "../../utils/reduxStore/reduxStore";
-import SkillBanner from "../../components/SkillBanner/SkillBanner";
-import ImageLink from "../../components/ImageLink/ImageLink";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import styles from './Projects.module.scss';
+import language from '../../assets/language/language';
+import { RootState } from '../../utils/reduxStore/reduxStore';
+import SkillBanner from '../../components/SkillBanner/SkillBanner';
+import ImageLink from '../../components/ImageLink/ImageLink';
 import {
   fsLogoBW,
   githubLogo,
@@ -15,23 +15,10 @@ import {
   sassLogo,
   springLogo,
   typescriptLogo,
-} from "../../assets/_globalAssetImports";
-
-let pulseColorSiffertIO = "#61dafb";
-let pulseColorRoshambo = "#7F52FF";
+} from '../../assets/_globalAssetImports';
 
 export default function Projects() {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
-  if (currentTheme === language.THEME_DARK_VAR) {
-    pulseColorSiffertIO = "#61dafb";
-    pulseColorRoshambo = "#7F52FF";
-  } else if (currentTheme === language.THEME_LIGHT_VAR) {
-    pulseColorSiffertIO = "#51AAC7";
-    pulseColorRoshambo = "#7F52FF";
-  } else if (currentTheme === language.THEME_COLORFUL_VAR) {
-    pulseColorSiffertIO = "";
-    pulseColorRoshambo = "";
-  }
   return (
     <div className={styles.Projects}>
       <div className={styles.content}>
@@ -48,15 +35,15 @@ export default function Projects() {
             <div className={styles.projectContent}>
               <div className={styles.projectTitle}>siffert.io</div>
               <div className={styles.textSection}>
-                You are here. An attract screen, aka personal
-                portfolio, with a focus on simplistic design.
+                You are here. An attract screen, aka personal portfolio, with a
+                focus on simplistic design.
               </div>
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
                 <div className={styles.skillContainer}>
-                  <SkillBanner text={"React"} image={reactLogo} />
-                  <SkillBanner text={"Sass"} image={sassLogo} />
-                  <SkillBanner text={"TypeScript"} image={typescriptLogo} />
+                  <SkillBanner text={'React'} image={reactLogo} />
+                  <SkillBanner text={'Sass'} image={sassLogo} />
+                  <SkillBanner text={'TypeScript'} image={typescriptLogo} />
                 </div>
               </div>
               <div className={styles.linkSection}>
@@ -64,15 +51,13 @@ export default function Projects() {
                 <div className={styles.linkContainer}>
                   <ImageLink
                     image={fsLogoBW}
-                    imageLink={"http://siffert.io"}
-                    imagePopUpText={"Deployment"}
+                    imageLink={'http://siffert.io'}
+                    imagePopUpText={'Deployment'}
                   />
                   <ImageLink
-                    imagePopUpText={"Github"}
+                    imagePopUpText={'Github'}
                     image={githubLogo}
-                    imageLink={
-                      "https://github.com/FabianSiffert1/siffertio"
-                    }
+                    imageLink={'https://github.com/FabianSiffert1/siffertio'}
                   />
                 </div>
               </div>
@@ -80,25 +65,29 @@ export default function Projects() {
             <div className={styles.projectContent}>
               <div className={styles.projectTitle}>Roshambo</div>
               <div className={styles.textSection}>
-                A work-in-progress Android-App. My way of learning mobile development.
+                A work-in-progress Android-App. My way of learning mobile
+                development.
               </div>
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
                 <div className={styles.skillContainer}>
-                  <SkillBanner text={"Kotlin"} image={kotlinLogo} />
-                  <SkillBanner text="Jetpack Compose" image={jetpackComposeLogo} />
-                  <SkillBanner text={"Java"} image={javaLogo} />
-                  <SkillBanner text={"Spring"} image={springLogo} />
+                  <SkillBanner text={'Kotlin'} image={kotlinLogo} />
+                  <SkillBanner
+                    text="Jetpack Compose"
+                    image={jetpackComposeLogo}
+                  />
+                  <SkillBanner text={'Java'} image={javaLogo} />
+                  <SkillBanner text={'Spring'} image={springLogo} />
                 </div>
               </div>
               <div className={styles.linkSection}>
                 <div className={styles.linkSectionHeader}>Links</div>
                 <div className={styles.linkContainer}>
                   <ImageLink
-                    imagePopUpText={"Github"}
+                    imagePopUpText={'Github'}
                     image={githubLogo}
                     imageLink={
-                      "https://github.com/FabianSiffert1/roshambo-android-kotlin"
+                      'https://github.com/FabianSiffert1/roshambo-android-kotlin'
                     }
                   />
                 </div>

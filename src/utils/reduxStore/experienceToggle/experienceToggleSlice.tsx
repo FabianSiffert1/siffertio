@@ -1,15 +1,15 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export const experienceToggleSlice = createSlice({
-    name: "experienceToggle",
-    initialState: {
-        value: false,
+  name: 'experienceToggle',
+  initialState: {
+    value: false,
+  },
+  reducers: {
+    toggle: (state) => {
+      state.value = !state.value;
     },
-    reducers: {
-        toggle: (state) => {
-            state.value = !state.value
-        }
-    },
+  },
 });
 
 // Action creators are generated for each case reducer function

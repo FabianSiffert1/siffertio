@@ -1,4 +1,4 @@
-@import "src/assets/globalStyleElements.module";
+@import 'src/assets/globalStyleElements.module';
 
 .ProfilePicture {
   --box-shadow-color: #212121;
@@ -9,21 +9,21 @@
   }
 
   .profilePicture img {
-      border-radius: 50rem;
-      min-height: 10vh;
-      min-width: 10vh;
-      max-height: 30vh;
-      max-width: 30vh;
+    border-radius: 50rem;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-height: 30vh;
+    max-width: 30vh;
   }
 
   .textContainerName {
     position: absolute;
     padding: $globalHomeContentContainerPadding/5;
-    left:0;
+    left: 0;
     right: 0;
     bottom: 12vh;
     text-align: center;
-    font-size: $globalFontSize*1.5;
+    font-size: $globalFontSize * 1.5;
     border-radius: 50vw;
     opacity: 0;
     transform: translateX(14vw);
@@ -33,7 +33,7 @@
     position: absolute;
     padding: $globalHomeContentContainerPadding/5;
     bottom: 10vh;
-    font-size: $globalFontSize*0.8;
+    font-size: $globalFontSize * 0.8;
     border-radius: 50vw;
     opacity: 0;
     transform: translateX(14vw);
@@ -61,8 +61,8 @@
     }
 
     &:hover img {
-        --pulse-color: var(--pulse-color-profile);
-        @include globalPulseAnimationMixin;
+      --pulse-color: var(--pulse-color-profile);
+      @include globalPulseAnimationMixin;
     }
   }
 

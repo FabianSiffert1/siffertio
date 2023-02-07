@@ -1,4 +1,4 @@
-@import "src/assets/globalStyleElements.module";
+@import 'src/assets/globalStyleElements.module';
 
 .SkillBanner {
   padding: 0.5vw;
@@ -55,11 +55,9 @@
     border: solid lightpink !important;
   }
 
-
   .moderate {
     border: solid lightyellow !important;
   }
-
 
   .experienced {
     border: solid lightgreen !important;

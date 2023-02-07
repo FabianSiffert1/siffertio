@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import styles from "./DropUpSection.module.scss";
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import styles from './DropUpSection.module.scss';
 
-import { useSelector } from "react-redux";
-import language from "../../assets/language/language";
-import { RootState } from "../../utils/reduxStore/reduxStore";
+import language from '../../assets/language/language';
+import { RootState } from '../../utils/reduxStore/reduxStore';
 
 export interface DropUpSectionProps {
   children?: React.ReactNode;

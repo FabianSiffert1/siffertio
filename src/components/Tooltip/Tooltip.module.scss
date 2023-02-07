@@ -1,4 +1,4 @@
-@import "src/assets/globalStyleElements.module";
+@import 'src/assets/globalStyleElements.module';
 .Tooltip {
   display: flex;
   width: max-content;
@@ -10,7 +10,7 @@
   &:hover .childrenContainer {
   }
   .tooltipContainer {
-    font-size: $globalFontSize*0.9;
+    font-size: $globalFontSize * 0.9;
     opacity: 0;
     width: fit-content;
     transition: opacity 0.55s ease-in-out;

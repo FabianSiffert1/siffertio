@@ -1,9 +1,9 @@
-import React from "react";
-import styles from "./ImageLink.module.scss";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import styles from './ImageLink.module.scss';
 
-import { useSelector } from "react-redux";
-import language from "../../assets/language/language";
-import { RootState } from "../../utils/reduxStore/reduxStore";
+import language from '../../assets/language/language';
+import { RootState } from '../../utils/reduxStore/reduxStore';
 
 export interface ImageLinkProps {
   imagePopUpText?: string;
@@ -30,7 +30,7 @@ export default function ImageLink(props: ImageLinkProps) {
           <img
             className={styles.imageContainer}
             src={props.image}
-            alt={props.imageAltText ? props.imageAltText : "Logo.png"}
+            alt={props.imageAltText ? props.imageAltText : 'Logo.png'}
           />
           <div className={styles.imagePopUpText}>{props.imagePopUpText}</div>
         </a>

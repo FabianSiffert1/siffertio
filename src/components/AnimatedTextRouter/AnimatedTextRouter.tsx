@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./AnimatedTextRouter.module.scss";
+import React from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import styles from './AnimatedTextRouter.module.scss';
 
-import { NavLink, useLocation } from "react-router-dom";
-import language from "../../assets/language/language";
-import { useSelector } from "react-redux";
-import { RootState } from "../../utils/reduxStore/reduxStore";
+import language from '../../assets/language/language';
+import { RootState } from '../../utils/reduxStore/reduxStore';
 
 export interface AnimatedTextRouterProps {
   routesArray: { route: string; routeKey: string }[];

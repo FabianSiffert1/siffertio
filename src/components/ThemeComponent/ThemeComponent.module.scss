@@ -1,26 +1,25 @@
-@import "src/assets/globalStyleElements.module";
+@import 'src/assets/globalStyleElements.module';
 
+.darkTheme {
+  @include darkTheme;
+}
 
-  .darkTheme {
-    @include darkTheme;
-  }
+.lightTheme {
+  @include lightTheme;
+}
 
-  .lightTheme {
-    @include lightTheme;
-  }
+.colorfulTheme {
+  @include colorfulTheme;
+}
 
-  .colorfulTheme {
-    @include colorfulTheme;
-  }
+.darkThemeContent {
+  @include darkThemeContent;
+}
 
-  .darkThemeContent {
-    @include darkThemeContent
-  }
+.lightThemeContent {
+  @include lightThemeContent;
+}
 
-  .lightThemeContent {
-    @include lightThemeContent
-  }
-
-  .colorfulThemeContent {
-    @include colorfulThemeContent
-  }
+.colorfulThemeContent {
+  @include colorfulThemeContent;
+}

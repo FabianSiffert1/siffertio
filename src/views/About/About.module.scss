@@ -1,4 +1,4 @@
-@import "src/assets/globalStyleElements.module";
+@import 'src/assets/globalStyleElements.module';
 
 .About {
   --pulse-color: #ff6f69ff;
@@ -52,10 +52,10 @@
       }
       .skillsExperienceContainerImages {
         display: flex;
-         img{
-           width: 1rem;
-           height: 1rem;
-         }
+        img {
+          width: 1rem;
+          height: 1rem;
+        }
       }
     }
 

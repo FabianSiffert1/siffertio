@@ -1,13 +1,12 @@
-import React from "react";
-import styles from "./PageNotFound.module.scss";
-import language from "../../assets/language/language";
-
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styles from './PageNotFound.module.scss';
+import language from '../../assets/language/language';
 
 export default function PageNotFound() {
   return (
     <main className={styles.PageNotFound}>
-      <NavLink to={"/"} key={"About"}>
+      <NavLink to={'/'} key={'About'}>
         <div className={styles.container}>
           <div
             className={styles.glitch}

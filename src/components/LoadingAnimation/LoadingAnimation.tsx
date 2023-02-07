@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./LoadingAnimation.module.scss";
+import React from 'react';
+import styles from './LoadingAnimation.module.scss';
 
 export function LoadingAnimation() {
   return (
