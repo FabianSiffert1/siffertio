@@ -7,7 +7,7 @@ export const experienceToggleSlice = createSlice({
   },
   reducers: {
     toggle: (state) => {
-      state.value = !state.value;
+      state.value = !state.value; // eslint-disable-line
     },
   },
 });

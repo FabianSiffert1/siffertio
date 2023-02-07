@@ -7,7 +7,7 @@ export const themeSlice = createSlice({
   },
   reducers: {
     changeToTheme: (state, action) => {
-      state.value = action.payload;
+      state.value = action.payload; // eslint-disable-line
     },
   },
 });

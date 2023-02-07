@@ -18,7 +18,7 @@
 
   .textContainerName {
     position: absolute;
-    padding: $globalHomeContentContainerPadding/5;
+    padding: calc($globalHomeContentContainerPadding/5);
     left: 0;
     right: 0;
     bottom: 12vh;

@@ -13,7 +13,7 @@ export interface ToggleButtonProps {
 export default function ToggleButton(props: ToggleButtonProps) {
   return (
     <div className={styles.ToggleButton}>
-      <ThemeComponent contentTheme={true}>
+      <ThemeComponent contentThemeEnabled={true}>
         <input
           type="checkbox"
           id={props.id}

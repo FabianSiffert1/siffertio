@@ -4,6 +4,7 @@ import styles from './SkillBanner.module.scss';
 import language from '../../assets/language/language';
 import { RootState } from '../../utils/reduxStore/reduxStore';
 
+// eslint-disable-next-line
 export enum EXPERIENCE_LEVEL {
   beginner,
   moderate,
@@ -13,7 +14,7 @@ export enum EXPERIENCE_LEVEL {
 export interface SkillBannerProps {
   text: string;
   image: string;
-  experienceLevel?: EXPERIENCE_LEVEL;
+  experienceLevel?: EXPERIENCE_LEVEL
 }
 
 export default function SkillBanner(props: SkillBannerProps) {
