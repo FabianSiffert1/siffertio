@@ -52,52 +52,45 @@
     }
   }
 
-  .beginner {
+  @mixin experienceIndicatorMixin {
     height: 0;
     overflow: hidden;
     background-color: #ddd;
     position: relative;
   }
-  .beginner::before {
+
+  @mixin experienceIndicatorAnimationContainerMixin {
     content: "";
-    height: 20%;
     width: 100%;
     background-color: $globalHighlightColorRgba;
     position: absolute;
     bottom: 0;
-    animation: fadeIn 0.55s ease-in-out both;
+    animation: fadeIn 0.55s ease-in-out both,  bottomToTop 0.55s cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
+  }
+
+  .beginner {
+    @include experienceIndicatorMixin;
+  }
+  .beginner::before {
+    height: 20%;
+    @include experienceIndicatorAnimationContainerMixin;
   }
 
   .moderate {
-    height: 0;
-    overflow: hidden;
-    background-color: #ddd;
-    position: relative;
+    @include experienceIndicatorMixin
   }
   .moderate::before {
-    content: "";
     height: 60%;
-    width: 100%;
+    @include experienceIndicatorAnimationContainerMixin;
     background-color: $globalHighlightColorRgba;
-    position: absolute;
-    bottom: 0;
-    animation: fadeIn 0.55s ease-in-out both;
   }
 
   .experienced {
-    height: 0;
-    overflow: hidden;
-    background-color: #ddd;
-    position: relative;
+    @include experienceIndicatorMixin
   }
   .experienced::before {
-    content: "";
-    height: 80%;
-    width: 100%;
-    background-color: $globalHighlightColorRgba;
-    position: absolute;
-    bottom: 0;
-    animation: fadeIn 0.55s ease-in-out both;
+    height: 90%;
+    @include experienceIndicatorAnimationContainerMixin;
   }
   .darkTheme {
     @include darkThemeContent;
@@ -122,5 +115,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes bottomToTop {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
   }
 }
