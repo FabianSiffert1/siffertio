@@ -7,10 +7,9 @@ import { RootState } from '../../utils/reduxStore/reduxStore';
 export interface ThemeComponentProps {
   children: React.ReactNode;
   contentThemeEnabled?: boolean;
-  additionalClassNames?: string
 }
 
-function getTheme(currentTheme: string, contentTheme?: boolean, additionalCSS?: string) {
+function getTheme(currentTheme: string, contentTheme?: boolean) {
   let stylesString = '';
   if (currentTheme === language.THEME_DARK_VAR) {
     stylesString = styles.darkTheme;
@@ -28,16 +27,13 @@ function getTheme(currentTheme: string, contentTheme?: boolean, additionalCSS?: 
       stylesString = styles.colorfulThemeContent;
     }
   }
-  if(additionalCSS !== undefined) {
-    stylesString = stylesString + " " + additionalCSS // eslint-disable-line
-  }
   return stylesString;
 }
 
 export function ThemeComponent(props: ThemeComponentProps) {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
   return (
-    <div className={getTheme(currentTheme, props.contentThemeEnabled, props.additionalClassNames)}>
+    <div className={getTheme(currentTheme, props.contentThemeEnabled)}>
       {props.children}
     </div>
   );

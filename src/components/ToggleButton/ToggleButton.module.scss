@@ -1,12 +1,11 @@
 @import 'src/assets/globalStyleElements.module';
 
 .ToggleButton {
-  --background-color: #7f52ff;
   border-radius: $globalBorderRadius;
   .checkbox {
     display: none;
     &:checked + .toggleStateIndicator {
-      background-color: $globalHighlightColor;
+      background-color: rgba(255, 111, 105, 0.5);
     }
   }
   .toggleStateIndicator {

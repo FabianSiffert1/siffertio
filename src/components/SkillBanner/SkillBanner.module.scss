@@ -104,7 +104,7 @@
 
   .lightTheme {
     @include lightThemeContent;
-    --experience-animation-color: rgba(221, 96, 138, 0.4);
+    --experience-animation-color: rgba(-221, -96, -138, 0.2);
     @include contentStyling;
   }
 
