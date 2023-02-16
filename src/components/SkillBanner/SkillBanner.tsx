@@ -24,19 +24,19 @@ export default function SkillBanner(props: SkillBannerProps) {
     );
 
     let experienceLevelClassName;
-        switch (props.experienceLevel) {
-            case EXPERIENCE_LEVEL.beginner:
-                experienceLevelClassName = styles.beginner;
-                break;
-            case EXPERIENCE_LEVEL.moderate:
-                experienceLevelClassName = styles.moderate;
-                break;
-            case EXPERIENCE_LEVEL.experienced:
-                experienceLevelClassName = styles.experienced;
-                break;
-            default:
-                experienceLevelClassName = null;
-        }
+    switch (props.experienceLevel) {
+        case EXPERIENCE_LEVEL.beginner:
+            experienceLevelClassName = styles.beginner;
+            break;
+        case EXPERIENCE_LEVEL.moderate:
+            experienceLevelClassName = styles.moderate;
+            break;
+        case EXPERIENCE_LEVEL.experienced:
+            experienceLevelClassName = styles.experienced;
+            break;
+        default:
+            experienceLevelClassName = null;
+    }
     return (
         <div className={styles.SkillBanner}>
             <div

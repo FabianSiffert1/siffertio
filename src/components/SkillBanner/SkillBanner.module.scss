@@ -14,6 +14,7 @@
     height: 2.7vw;
     width: 2.7vw;
     transition: transform 0.55s ease-in-out;
+    position: absolute;
   }
 
   .textContainer {
@@ -53,7 +54,6 @@
   }
 
   @mixin experienceIndicatorMixin {
-    height: 0;
     overflow: hidden;
     background-color: #ddd;
     position: relative;
@@ -65,12 +65,13 @@
     background-color: $globalHighlightColorRgba;
     position: absolute;
     bottom: 0;
-    animation: fadeIn 0.55s ease-in-out both,  bottomToTop 0.55s cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
+    animation: fadeIn 0.55s ease-in-out both, bottomToTop 0.55s cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
   }
 
   .beginner {
     @include experienceIndicatorMixin;
   }
+
   .beginner::before {
     height: 20%;
     @include experienceIndicatorAnimationContainerMixin;
@@ -79,6 +80,7 @@
   .moderate {
     @include experienceIndicatorMixin
   }
+
   .moderate::before {
     height: 60%;
     @include experienceIndicatorAnimationContainerMixin;
@@ -88,10 +90,12 @@
   .experienced {
     @include experienceIndicatorMixin
   }
+
   .experienced::before {
     height: 90%;
     @include experienceIndicatorAnimationContainerMixin;
   }
+
   .darkTheme {
     @include darkThemeContent;
     @include contentStyling;
