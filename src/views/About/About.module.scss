@@ -24,6 +24,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       .skillsHeader {
         font-size: calc($globalFontSize * 2);
       }
@@ -32,6 +33,7 @@
         border-radius: $globalBorderRadius;
         display: flex;
         flex-direction: column;
+
         &:hover {
           --pulse-color: var(--pulse-color-skills);
           @include globalPulseAnimationMixin;
@@ -50,8 +52,10 @@
         position: absolute;
         transform: translate(15.9vw, -18.3vh);
       }
+
       .skillsExperienceContainerImages {
         display: flex;
+
         img {
           width: 1rem;
           height: 1rem;

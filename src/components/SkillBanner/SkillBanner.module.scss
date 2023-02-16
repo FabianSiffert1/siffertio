@@ -3,6 +3,7 @@
 .SkillBanner {
   padding: 0.5vw;
   transition: all 0.55s ease-in-out;
+  --experience-animation-color: rgba(255, 111, 105, 0.2);
 
   .imageContainer {
     display: flex;
@@ -62,7 +63,7 @@
   @mixin experienceIndicatorAnimationContainerMixin {
     content: "";
     width: 100%;
-    background-color: $globalHighlightColorRgba;
+    background-color: var(--experience-animation-color);
     position: absolute;
     bottom: 0;
     animation: fadeIn 0.55s ease-in-out both, bottomToTop 0.55s cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
@@ -84,7 +85,6 @@
   .moderate::before {
     height: 60%;
     @include experienceIndicatorAnimationContainerMixin;
-    background-color: $globalHighlightColorRgba;
   }
 
   .experienced {
@@ -98,11 +98,13 @@
 
   .darkTheme {
     @include darkThemeContent;
+    --experience-animation-color: rgba(255, 111, 105, 0.3);
     @include contentStyling;
   }
 
   .lightTheme {
     @include lightThemeContent;
+    --experience-animation-color: rgba(221, 96, 138, 0.4);
     @include contentStyling;
   }
 
