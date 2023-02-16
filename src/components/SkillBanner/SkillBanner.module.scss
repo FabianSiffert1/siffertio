@@ -2,7 +2,6 @@
 
 .SkillBanner {
   padding: 0.5vw;
-  transition: all 0.55s ease-in-out;
   --experience-animation-color: rgba(255, 111, 105, 0.2);
 
   .imageContainer {
@@ -104,7 +103,7 @@
 
   .lightTheme {
     @include lightThemeContent;
-    --experience-animation-color: rgba(-221, -96, -138, 0.2);
+    --experience-animation-color: rgba(255, 111, 105, 0.5);
     @include contentStyling;
   }
 
