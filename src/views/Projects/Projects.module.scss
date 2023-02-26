@@ -2,7 +2,6 @@
 
 .Projects {
   --box-shadow-color: black;
-
   @mixin contentStyling {
     display: flex;
     justify-content: center;
@@ -30,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
+    padding-bottom: 8vh;
     .projectTitle {
       font-size: $globalFontSize * 2;
     }
@@ -50,8 +49,8 @@
       }
       .skillContainer {
         &:hover {
-          --pulse-color: #61dafb;
-          @include globalPulseAnimationMixin;
+          //--pulse-color: #61dafb;
+         // @include globalPulseAnimationMixin;
         }
         border-radius: $globalBorderRadius;
         display: flex;
@@ -71,8 +70,8 @@
       }
       .linkContainer {
         &:hover {
-          --pulse-color: #ff6f69;
-          @include globalPulseAnimationMixin;
+         // --pulse-color: #ff6f69;
+         // @include globalPulseAnimationMixin;
         }
         border-radius: $globalBorderRadius;
         display: flex;
