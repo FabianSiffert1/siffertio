@@ -5,7 +5,7 @@ import language from '../../assets/language/language';
 import SkillBanner, {
   EXPERIENCE_LEVEL,
 } from '../../components/SkillBanner/SkillBanner';
-import ImageLink from '../../components/ImageLink/ImageLink';
+import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import { RootState } from '../../utils/reduxStore/reduxStore';
 import {
   dockerLogo,
@@ -152,17 +152,17 @@ export default function About() {
             <div className={styles.contactHeader}>{language.CONTACT_TITlE}</div>
             <div className={styles.contactLinks}>
               <div className={styles.contactLinksRow}>
-                <ImageLink
+                <LinkBanner
                   image={githubLogo}
-                  imagePopUpText={language.GITHUB}
+                  text={language.GITHUB}
                   imageAltText={language.GITHUB}
-                  imageLink={language.LINK_GITHUB}
+                  url={language.LINK_GITHUB}
                 />
-                <ImageLink
+                <LinkBanner
                   image={emailLogo}
-                  imagePopUpText={language.EMAIL}
+                  text={language.EMAIL}
                   imageAltText={language.EMAIL}
-                  imageLink={language.LINK_EMAIL}
+                  url={language.LINK_EMAIL}
                 />
               </div>
             </div>

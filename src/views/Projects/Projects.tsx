@@ -4,7 +4,7 @@ import styles from './Projects.module.scss';
 import language from '../../assets/language/language';
 import { RootState } from '../../utils/reduxStore/reduxStore';
 import SkillBanner from '../../components/SkillBanner/SkillBanner';
-import ImageLink from '../../components/ImageLink/ImageLink';
+import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
   fsLogoBW,
   githubLogo,
@@ -49,15 +49,15 @@ export default function Projects() {
               <div className={styles.linkSection}>
                 <div className={styles.linkSectionHeader}>Links</div>
                 <div className={styles.linkContainer}>
-                  <ImageLink
+                  <LinkBanner
                     image={fsLogoBW}
-                    imageLink={'http://siffert.io'}
-                    imagePopUpText={'Deployment'}
+                    url={'http://siffert.io'}
+                    text={'Deployment'}
                   />
-                  <ImageLink
-                    imagePopUpText={'Github'}
+                  <LinkBanner
+                    text={'Github'}
                     image={githubLogo}
-                    imageLink={'https://github.com/FabianSiffert1/siffertio'}
+                    url={'https://github.com/FabianSiffert1/siffertio'}
                   />
                 </div>
               </div>
@@ -83,10 +83,10 @@ export default function Projects() {
               <div className={styles.linkSection}>
                 <div className={styles.linkSectionHeader}>Links</div>
                 <div className={styles.linkContainer}>
-                  <ImageLink
-                    imagePopUpText={'Github'}
+                  <LinkBanner
+                    text={'Github'}
                     image={githubLogo}
-                    imageLink={
+                    url={
                       'https://github.com/FabianSiffert1/roshambo-android-kotlin'
                     }
                   />

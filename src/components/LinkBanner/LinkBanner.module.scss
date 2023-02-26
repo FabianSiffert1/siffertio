@@ -1,11 +1,10 @@
 @import 'src/assets/globalStyleElements.module';
 
-.ImageLink {
+.LinkBanner {
   padding: 0.5vw;
 
   a {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: inherit;
@@ -22,20 +21,30 @@
     width: 2.7vw;
   }
 
-  .imagePopUpText {
+  img {
+    transition: transform 0.55s ease-in-out;
     position: absolute;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 0.5vw;
-    margin-top: -1vh;
-    border-radius: 50vw;
-    left: 50%;
+
+  }
+
+  &:hover img {
+    transform: translate(0%, -20%);
+  }
+
+  .textContainer {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     bottom: 0;
-    transform: translate(-50%, 30%);
+    opacity: 0;
+    border-radius: 50vw;
+    transition: opacity 0.25s ease-in-out;
     //background-image: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   }
+
   @mixin contentStyling {
     @include boxShadowSmall;
     min-width: 8vw;
@@ -53,14 +62,15 @@
     &:hover img {
       //opacity: 0.1;
     }
-    &:hover .imagePopUpText {
-      display: flex;
+    &:hover .textContainer {
+      opacity: 1;
     }
   }
 
   .darkTheme {
     @include darkThemeContent;
     @include contentStyling;
+
     .imageContainer {
       filter: invert(1);
     }
