@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LoadingAnimation.module.scss';
 
-export function LoadingAnimation() {
+export default function LoadingAnimation() {
   return (
     <div className={styles.LoadingAnimation}>
       <div className={styles.dotContainer}>

@@ -50,7 +50,7 @@
       .skillContainer {
         &:hover {
           //--pulse-color: #61dafb;
-         // @include globalPulseAnimationMixin;
+          // @include globalPulseAnimationMixin;
         }
         border-radius: $globalBorderRadius;
         display: flex;
@@ -70,8 +70,8 @@
       }
       .linkContainer {
         &:hover {
-         // --pulse-color: #ff6f69;
-         // @include globalPulseAnimationMixin;
+          // --pulse-color: #ff6f69;
+          // @include globalPulseAnimationMixin;
         }
         border-radius: $globalBorderRadius;
         display: flex;
