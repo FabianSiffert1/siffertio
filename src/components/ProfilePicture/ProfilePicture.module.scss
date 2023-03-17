@@ -4,11 +4,12 @@
   --box-shadow-color: #212121;
   --pulse-color-profile: #845ec2;
 
-  .profilePicture {
+  .contentContainer {
     display: flex;
+    position: relative;
   }
 
-  .profilePicture img {
+  .contentContainer img {
     border-radius: 50rem;
     min-height: 10vh;
     min-width: 10vh;
@@ -16,27 +17,32 @@
     max-width: 30vh;
   }
 
-  .textContainerName {
+  .textContainer {
     position: absolute;
-    padding: calc($globalHomeContentContainerPadding/5);
-    left: 0;
-    right: 0;
-    bottom: 12vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(20vw, 7vw);
+  }
+
+
+  .textContainerName {
+    width: auto;
     text-align: center;
     font-size: $globalFontSize * 1.5;
     border-radius: 50vw;
     opacity: 0;
-    transform: translateX(14vw);
     transition: transform 0.55s ease-in-out, opacity 0.55s ease-in-out 0.15s;
   }
-  .textContainerTitle {
+
+  .textContainerJobDescription {
     position: absolute;
-    padding: $globalHomeContentContainerPadding/5;
-    bottom: 10vh;
+    bottom: -2vh;
     font-size: $globalFontSize * 0.8;
     border-radius: 50vw;
     opacity: 0;
-    transform: translateX(14vw);
     transition: transform 0.55s ease-in-out, opacity 0.55s ease-in-out 0.15s;
   }
 
@@ -53,11 +59,9 @@
     border-radius: $globalBorderRadius * 10;
     &:hover .textContainerName {
       opacity: 1;
-      transform: translateX(16vw);
     }
-    &:hover .textContainerTitle {
+    &:hover .textContainerJobDescription {
       opacity: 1;
-      transform: translateX(16vw);
     }
 
     &:hover img {

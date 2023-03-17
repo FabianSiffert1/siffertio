@@ -3,21 +3,21 @@ import {useSelector} from 'react-redux';
 import {NavLink, useLocation} from 'react-router-dom';
 import {RootState} from '../../utils/reduxStore/reduxStore';
 
-import styles from './AnimatedTextRouter.module.scss';
+import styles from './NavigationBar.module.scss';
 import language from '../../assets/language/language';
 
-export interface AnimatedTextRouterProps {
+export interface NavigationBarProps {
     routesArray: { route: string; routeKey: string }[];
     style?: string;
 }
 
-function AnimatedTextRouter(props: AnimatedTextRouterProps) {
+function NavigationBar(props: NavigationBarProps) {
     const currentTheme = useSelector((state: RootState) => state.theme.value);
     const currentLocation = useLocation().pathname;
     return (
         <>
             {props.routesArray.map((element) => (
-                <div className={styles.AnimatedTextRouter} key={element.routeKey}>
+                <div className={styles.Navigation} key={element.routeKey}>
                     <NavLink to={element.route} key={element.routeKey}>
                         <div
                             className={
@@ -43,4 +43,4 @@ function AnimatedTextRouter(props: AnimatedTextRouterProps) {
     );
 }
 
-export default AnimatedTextRouter;
+export default NavigationBar;

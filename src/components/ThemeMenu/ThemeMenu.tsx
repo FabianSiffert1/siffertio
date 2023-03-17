@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import styles from './DropdownMenuTheme.module.scss';
+import styles from './ThemeMenu.module.scss';
 import { changeToTheme } from '../../utils/reduxStore/theme/themeSlice';
 import language from '../../assets/language/language';
 import { RootState } from '../../utils/reduxStore/reduxStore';
@@ -10,7 +10,7 @@ export interface ThemeDropdownMenuProps {
   menuElements: { elementName: string; elementFunction: string }[];
 }
 
-export function DropdownMenuTheme(props: ThemeDropdownMenuProps) {
+export function ThemeMenu(props: ThemeDropdownMenuProps) {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
   const [display, setDisplay] = useState('none');
   const dispatch = useDispatch();
@@ -27,20 +27,20 @@ export function DropdownMenuTheme(props: ThemeDropdownMenuProps) {
   }
 
   return (
-    <div className={styles.DropdownMenu}>
+    <div className={styles.ThemeMenu}>
       <div
         onClick={handleClick}
         className={
           currentTheme === language.THEME_DARK_VAR
-            ? styles.dropdownButtonDarkTheme
+            ? styles.themeMenuButtonDarkTheme
             : currentTheme === language.THEME_LIGHT_VAR
-            ? styles.dropdownButtonLightTheme
-            : styles.dropdownButtonColorfulTheme
+            ? styles.themeMenuButtonLightTheme
+            : styles.themeMenuButtonColorfulTheme
         }
       >
         {props.menuTitle}
       </div>
-      <div className={styles.dropdownElements} style={{ display }}>
+      <div className={styles.themeMenuElements} style={{ display }}>
         {props.menuElements.map((element) => (
           <div
             className={

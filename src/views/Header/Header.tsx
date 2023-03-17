@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './Header.module.scss';
 import ColoredBarsAndFadeInText from '../../components/ColoredBarsAndFadeInText/ColoredBarsAndFadeInText';
 import language from '../../assets/language/language';
-import { DropdownMenuTheme } from '../../components/DropdownMenuTheme/DropdownMenuTheme';
+import { ThemeMenu } from '../../components/ThemeMenu/ThemeMenu';
 
 const settingsMenuItems: { elementName: string; elementFunction: string }[] = [
   {
@@ -33,7 +33,7 @@ export default function Header() {
           />
         </NavLink>
         <div className={styles.buttonContainer}>
-          <DropdownMenuTheme
+          <ThemeMenu
             menuTitle={language.THEME_BUTTON}
             menuElements={settingsMenuItems}
           />

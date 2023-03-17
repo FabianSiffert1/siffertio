@@ -1,6 +1,6 @@
 @import 'src/assets/globalStyleElements.module';
 
-.DropdownMenu {
+.ThemeMenu {
   border-radius: $globalBorderRadius;
   width: 5vw;
   height: 4vh;
@@ -18,34 +18,34 @@
     }
   }
 
-  .dropdownButtonDarkTheme {
+  .themeMenuButtonDarkTheme {
     --box-shadow-color: black;
     @include boxShadowSmall;
     @include dropdownButtonStyling;
     @include darkThemeContent;
   }
 
-  .dropdownButtonLightTheme {
+  .themeMenuButtonLightTheme {
     --box-shadow-color: #212121;
     @include boxShadowSmall;
     @include dropdownButtonStyling;
     @include lightThemeContent;
   }
 
-  .dropdownButtonColorfulTheme {
+  .themeMenuButtonColorfulTheme {
     --box-shadow-color: #212121;
     @include boxShadowSmall;
     @include dropdownButtonStyling;
     @include colorfulThemeContent;
   }
 
-  .dropdownElements {
+  .themeMenuElements {
     position: absolute;
     z-index: 1000;
     width: inherit;
     height: inherit;
 
-    @mixin dropdownElementStyling {
+    @mixin themeMenuElementStyling {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -63,7 +63,7 @@
     .elementDarkTheme {
       --box-shadow-color: black;
       @include boxShadowSmall;
-      @include dropdownElementStyling;
+      @include themeMenuElementStyling;
       background: $globalLightColor;
       color: $globalDarkColor;
     }
@@ -71,7 +71,7 @@
     .elementLightTheme {
       --box-shadow-color: #212121;
       @include boxShadowSmall;
-      @include dropdownElementStyling;
+      @include themeMenuElementStyling;
       background: $globalDarkColor;
       color: $globalLightColor;
     }
@@ -79,7 +79,7 @@
     .elementColorfulTheme {
       --box-shadow-color: #212121;
       @include boxShadowSmall;
-      @include dropdownElementStyling;
+      @include themeMenuElementStyling;
       background: $globalDarkColor;
       color: $globalLightColor;
     }

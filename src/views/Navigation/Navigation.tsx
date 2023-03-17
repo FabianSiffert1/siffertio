@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './NavigationBar.module.scss';
+import styles from './Navigation.module.scss';
 import language from '../../assets/language/language';
 
-import AnimatedTextRouter from '../../components/AnimatedTextRouter/AnimatedTextRouter';
+import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import {ThemeComponent} from "../../components/ThemeComponent/ThemeComponent";
 
 
@@ -12,12 +12,12 @@ const routesInNavigationBar: { route: string; routeKey: string }[] = [
     {route: '/projects', routeKey: language.ROUTE_PROJECTS},
 ];
 
-function NavigationBar() {
+function Navigation() {
     return (
-        <div className={styles.NavigationBar}>
+        <div className={styles.Navigation}>
             <ThemeComponent>
                 <div className={styles.navigationLinks}>
-                    <AnimatedTextRouter
+                    <NavigationBar
                         routesArray={routesInNavigationBar}
                     />
                 </div>
@@ -26,4 +26,4 @@ function NavigationBar() {
     );
 }
 
-export default NavigationBar;
+export default Navigation;
