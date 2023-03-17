@@ -2,23 +2,27 @@
 
 .ToggleButton {
   border-radius: $globalBorderRadius;
+
   .checkbox {
     display: none;
+
     &:checked + .toggleStateIndicator {
       background-color: rgba(255, 111, 105, 0.5);
     }
   }
+
   .toggleStateIndicator {
     @include boxShadowSmall;
     display: flex;
     width: max-content;
-    &:hover {
-      border: solid $globalHighlightColor;
-    }
     border: solid transparent;
     cursor: pointer;
     padding: 0.3vw;
     border-radius: $globalBorderRadius;
     transition: background-color 0.55s;
+
+    &:hover {
+      border: solid $globalHighlightColor;
+    }
   }
 }
