@@ -1,12 +1,13 @@
 @import 'src/assets/globalStyleElements.module';
 .Navigation {
   .navigationLinks {
+padding: $globalHomeContentContainerPadding;
     all: inherit;
     display: flex;
     position: absolute;
     flex-direction: row;
     bottom: 0;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     width: 100vw;
   }
