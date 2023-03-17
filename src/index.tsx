@@ -11,6 +11,7 @@ import About from './views/About/About';
 
 import PageNotFound from './views/PageNotFound/PageNotFound';
 import Projects from './views/Projects/Projects';
+import Biography from "./views/Biography/Biography";
 
 const container = document.getElementById('root');
 // value! -> TS checks that value is never null
@@ -25,6 +26,7 @@ root.render(
           <Route path="/" element={<Home />}>
             <Route path="/" element={<About />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="bio" element={<Biography />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
