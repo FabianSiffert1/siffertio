@@ -27,11 +27,8 @@ const language = {
   SKILLS_TITLE: 'Skills',
   THEME_BUTTON: 'Theme',
   THEME_COLORFUL: 'Colorful',
-  THEME_COLORFUL_VAR: 'colorfulTheme',
   THEME_DARK: 'Dark',
-  THEME_DARK_VAR: 'darkTheme',
   THEME_LIGHT: 'Light',
-  THEME_LIGHT_VAR: 'lightTheme',
   WELCOME_SUBTITLE: 'a work in progress',
   WELCOME_TITLE: 'siffert.io',
 };

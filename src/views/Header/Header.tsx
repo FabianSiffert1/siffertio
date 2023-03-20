@@ -3,18 +3,18 @@ import { NavLink } from 'react-router-dom';
 import styles from './Header.module.scss';
 import ColoredBarsAndFadeInText from '../../components/ColoredBarsAndFadeInText/ColoredBarsAndFadeInText';
 import language from '../../assets/language/language';
-import { ThemeMenu } from '../../components/ThemeMenu/ThemeMenu';
+import {ThemeMenu, Themes} from '../../components/ThemeMenu/ThemeMenu';
 
-const settingsMenuItems: { elementName: string; elementFunction: string }[] = [
+const settingsMenuItems: { elementName: string; elementFunction: Themes }[] = [
   {
     elementName: language.THEME_DARK,
-    elementFunction: language.THEME_DARK_VAR,
+    elementFunction: Themes.DARK,
   },
   {
     elementName: language.THEME_LIGHT,
-    elementFunction: language.THEME_LIGHT_VAR,
+    elementFunction: Themes.LIGHT,
   },
-  // {'elementName': language.THEME_COLORFUL, 'elementFunction': language.THEME_COLORFUL_VAR},
+  // {'elementName': language.THEME_COLORFUL, 'elementFunction': Themes.Colorful},
 ];
 
 export default function Header() {

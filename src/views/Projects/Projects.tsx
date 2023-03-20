@@ -1,8 +1,7 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 import styles from './Projects.module.scss';
-import language from '../../assets/language/language';
-import { RootState } from '../../utils/reduxStore/reduxStore';
+import {RootState} from '../../utils/reduxStore/reduxStore';
 import SkillBanner from '../../components/SkillBanner/SkillBanner';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
@@ -16,6 +15,7 @@ import {
   springLogo,
   typescriptLogo,
 } from '../../assets/_globalAssetImports';
+import {Themes} from "../../components/ThemeMenu/ThemeMenu";
 
 export default function Projects() {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
@@ -23,13 +23,13 @@ export default function Projects() {
     <div className={styles.Projects}>
       <div className={styles.content}>
         <div
-          className={
-            currentTheme === language.THEME_DARK_VAR
-              ? styles.darkTheme
-              : currentTheme === language.THEME_LIGHT_VAR
-              ? styles.lightTheme
-              : styles.colorfulTheme
-          }
+            className={
+              currentTheme === Themes.DARK
+                  ? styles.darkTheme
+                  : currentTheme === Themes.LIGHT
+                      ? styles.lightTheme
+                      : styles.colorfulTheme
+            }
         >
           <div className={styles.projectsContainer}>
             <div className={styles.projectContent}>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 import styles from './ThemeComponent.module.scss';
-import language from '../../assets/language/language';
-import { RootState } from '../../utils/reduxStore/reduxStore';
+import {RootState} from '../../utils/reduxStore/reduxStore';
+import {Themes} from "../ThemeMenu/ThemeMenu";
 
 export interface ThemeComponentProps {
   children: React.ReactNode;
@@ -11,17 +11,17 @@ export interface ThemeComponentProps {
 
 function getTheme(currentTheme: string, contentTheme?: boolean) {
   let stylesString = '';
-  if (currentTheme === language.THEME_DARK_VAR) {
+  if (currentTheme === Themes.DARK) {
     stylesString = styles.darkTheme;
     if (contentTheme) {
       stylesString = styles.darkThemeContent;
     }
-  } else if (currentTheme === language.THEME_LIGHT_VAR) {
+  } else if (currentTheme === Themes.LIGHT) {
     stylesString = styles.lightTheme;
     if (contentTheme) {
       stylesString = styles.lightThemeContent;
     }
-  } else if (currentTheme === language.THEME_COLORFUL_VAR) {
+  } else if (currentTheme === Themes.COLORFUL) {
     stylesString = styles.colorfulTheme;
     if (contentTheme) {
       stylesString = styles.colorfulThemeContent;

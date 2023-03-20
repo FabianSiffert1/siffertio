@@ -6,6 +6,7 @@ import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {RootState} from '../../utils/reduxStore/reduxStore';
 import {emailLogo, githubLogo, profilePicture,} from '../../assets/_globalAssetImports';
 import ProfilePicture from '../../components/ProfilePicture/ProfilePicture';
+import {Themes} from "../../components/ThemeMenu/ThemeMenu";
 
 export default function About() {
     const currentTheme = useSelector((state: RootState) => state.theme.value);
@@ -14,9 +15,9 @@ export default function About() {
             <div className={styles.content}>
                 <div
                     className={
-                        currentTheme === language.THEME_DARK_VAR
+                        currentTheme === Themes.DARK
                             ? styles.darkTheme
-                            : currentTheme === language.THEME_LIGHT_VAR
+                            : currentTheme === Themes.LIGHT
                                 ? styles.lightTheme
                                 : styles.colorfulTheme
                     }

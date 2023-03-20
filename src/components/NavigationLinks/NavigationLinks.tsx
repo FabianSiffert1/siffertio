@@ -4,7 +4,7 @@ import {NavLink, useLocation} from 'react-router-dom';
 import {RootState} from '../../utils/reduxStore/reduxStore';
 
 import styles from './NavigationLinks.module.scss';
-import language from '../../assets/language/language';
+import {Themes} from "../ThemeMenu/ThemeMenu";
 
 export interface NavigationLinkProps {
     routesArray: { route: string; routeKey: string }[];
@@ -22,14 +22,14 @@ function NavigationLinks(props: NavigationLinkProps) {
                         <div
                             className={
                                 currentLocation === element.route
-                                    ? currentTheme === language.THEME_DARK_VAR
+                                    ? currentTheme === Themes.DARK
                                         ? styles.activeLinkDarkTheme
-                                        : currentTheme === language.THEME_LIGHT_VAR
+                                        : currentTheme === Themes.LIGHT
                                             ? styles.activeLinkLightTheme
                                             : styles.activeLinkColorfulTheme
-                                    : currentTheme === language.THEME_DARK_VAR
+                                    : currentTheme === Themes.DARK
                                         ? styles.inactiveLinkDarkTheme
-                                        : currentTheme === language.THEME_LIGHT_VAR
+                                        : currentTheme === Themes.LIGHT
                                             ? styles.inactiveLinkLightTheme
                                             : styles.inactiveLinkColorfulTheme
                             }

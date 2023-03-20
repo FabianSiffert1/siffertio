@@ -1,8 +1,8 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
 import styles from './ProfilePicture.module.scss';
-import language from '../../assets/language/language';
 import {RootState} from '../../utils/reduxStore/reduxStore';
+import {Themes} from "../ThemeMenu/ThemeMenu";
 
 export interface ProfilePictureProps {
     name: string;
@@ -16,9 +16,9 @@ export default function ProfilePicture(props: ProfilePictureProps) {
         <div className={styles.ProfilePicture}>
             <div
                 className={
-                    currentTheme === language.THEME_DARK_VAR
+                    currentTheme === Themes.DARK
                         ? styles.darkTheme
-                        : currentTheme === language.THEME_LIGHT_VAR
+                        : currentTheme === Themes.LIGHT
                             ? styles.lightTheme
                             : styles.colorfulTheme
                 }

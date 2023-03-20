@@ -1,8 +1,8 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
 import styles from './SkillBanner.module.scss';
-import language from '../../assets/language/language';
 import {RootState} from '../../utils/reduxStore/reduxStore';
+import {Themes} from "../ThemeMenu/ThemeMenu";
 
 // eslint-disable-next-line
 export enum EXPERIENCE_LEVEL {
@@ -41,11 +41,11 @@ export default function SkillBanner(props: SkillBannerProps) {
         <div className={styles.SkillBanner}>
             <div
                 className={
-                    currentTheme === language.THEME_DARK_VAR
+                    currentTheme === Themes.DARK
                         ? `${styles.darkTheme} ${
                             showExperience && experienceLevelClassName
                         } `
-                        : currentTheme === language.THEME_LIGHT_VAR
+                        : currentTheme === Themes.LIGHT
                             ? `${styles.lightTheme} ${
                                 showExperience && experienceLevelClassName
                             } `

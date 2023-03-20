@@ -1,9 +1,8 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 import styles from './LinkBanner.module.scss';
-
-import language from '../../assets/language/language';
-import { RootState } from '../../utils/reduxStore/reduxStore';
+import {RootState} from '../../utils/reduxStore/reduxStore';
+import {Themes} from "../ThemeMenu/ThemeMenu";
 
 export interface LinkBannerProps {
   text?: string;
@@ -19,9 +18,9 @@ export default function LinkBanner(props: LinkBannerProps) {
     <div className={styles.LinkBanner}>
       <div
         className={
-          currentTheme === language.THEME_DARK_VAR
+          currentTheme === Themes.DARK
             ? styles.darkTheme
-            : currentTheme === language.THEME_LIGHT_VAR
+            : currentTheme === Themes.LIGHT
             ? styles.lightTheme
             : styles.colorfulTheme
         }

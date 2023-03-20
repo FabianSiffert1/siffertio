@@ -8,17 +8,23 @@ import Tooltip from "../../components/Tooltip/Tooltip";
 import ToggleButton from "../../components/ToggleButton/ToggleButton";
 import {toggle} from "../../utils/reduxStore/experienceToggle/experienceToggleSlice";
 import {
-    dockerLogo, javaLogo,
+    dockerLogo,
+    javaLogo,
     jetpackComposeLogo,
-    kotlinLogo, mysqlLogo, pythonLogo,
+    kotlinLogo,
+    mysqlLogo,
+    pythonLogo,
     reactLogo,
-    sassLogo, springLogo,
+    sassLogo,
+    springLogo,
     starFilled,
     starOutline,
-    swiftLogo, swiftUILogo,
+    swiftLogo,
+    swiftUILogo,
     typescriptLogo
 } from "../../assets/_globalAssetImports";
 import SkillBanner, {EXPERIENCE_LEVEL} from "../../components/SkillBanner/SkillBanner";
+import {Themes} from "../../components/ThemeMenu/ThemeMenu";
 
 export default function Skills() {
     const currentTheme = useSelector((state: RootState) => state.theme.value);
@@ -30,9 +36,9 @@ export default function Skills() {
         <div className={styles.Skills}>
             <div
                 className={
-                    currentTheme === language.THEME_DARK_VAR
+                    currentTheme === Themes.DARK
                         ? styles.darkTheme
-                        : currentTheme === language.THEME_LIGHT_VAR
+                        : currentTheme === Themes.LIGHT
                             ? styles.lightTheme
                             : styles.colorfulTheme
                 }

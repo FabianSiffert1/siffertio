@@ -11,7 +11,7 @@ import About from './views/About/About';
 
 import PageNotFound from './views/PageNotFound/PageNotFound';
 import Projects from './views/Projects/Projects';
-import Skills from "./views/Experience/Skills";
+import Skills from "./views/Skills/Skills";
 
 const container = document.getElementById('root');
 // value! -> TS checks that value is never null

@@ -5,9 +5,15 @@ import { changeToTheme } from '../../utils/reduxStore/theme/themeSlice';
 import language from '../../assets/language/language';
 import { RootState } from '../../utils/reduxStore/reduxStore';
 
+export enum Themes {
+    LIGHT = "lightTheme",
+    DARK = "darkTheme",
+    COLORFUL = "colorfulTheme"
+}
+
 export interface ThemeDropdownMenuProps {
   menuTitle: string;
-  menuElements: { elementName: string; elementFunction: string }[];
+  menuElements: { elementName: string; elementFunction: Themes }[];
 }
 
 export function ThemeMenu(props: ThemeDropdownMenuProps) {
@@ -31,9 +37,9 @@ export function ThemeMenu(props: ThemeDropdownMenuProps) {
       <div
         onClick={handleClick}
         className={
-          currentTheme === language.THEME_DARK_VAR
+          currentTheme === Themes.DARK
             ? styles.themeMenuButtonDarkTheme
-            : currentTheme === language.THEME_LIGHT_VAR
+            : currentTheme === Themes.LIGHT
             ? styles.themeMenuButtonLightTheme
             : styles.themeMenuButtonColorfulTheme
         }
@@ -44,22 +50,22 @@ export function ThemeMenu(props: ThemeDropdownMenuProps) {
         {props.menuElements.map((element) => (
           <div
             className={
-              currentTheme === language.THEME_DARK_VAR
+              currentTheme === Themes.DARK
                 ? styles.elementDarkTheme
-                : currentTheme === language.THEME_LIGHT_VAR
+                : currentTheme === Themes.LIGHT
                 ? styles.elementLightTheme
                 : styles.elementColorfulTheme
             }
             key={element.elementName}
             style={{
               display:
-                currentTheme === language.THEME_DARK_VAR &&
+                currentTheme === Themes.DARK &&
                 element.elementName === language.THEME_DARK
                   ? 'none'
-                  : currentTheme === language.THEME_LIGHT_VAR &&
+                  : currentTheme === Themes.LIGHT &&
                     element.elementName === language.THEME_LIGHT
                   ? 'none'
-                  : currentTheme === language.THEME_COLORFUL_VAR &&
+                  : currentTheme === Themes.COLORFUL &&
                     element.elementName === language.THEME_COLORFUL
                   ? 'none'
                   : '',
