@@ -94,12 +94,12 @@ export default function Skills() {
                             <SkillBanner
                                 text="Kotlin"
                                 image={kotlinLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.moderate}
+                                experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                             <SkillBanner
                                 text={'Jetpack Compose'}
                                 image={jetpackComposeLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.moderate}
+                                experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                             <SkillBanner
                                 text="Docker"
@@ -116,7 +116,7 @@ export default function Skills() {
                             <SkillBanner
                                 text="mySQL"
                                 image={mysqlLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.experienced}
+                                experienceLevel={EXPERIENCE_LEVEL.moderate}
                             />
                             <SkillBanner
                                 text="Java"

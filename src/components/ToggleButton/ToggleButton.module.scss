@@ -2,12 +2,13 @@
 
 .ToggleButton {
   border-radius: $globalBorderRadius;
+  --experience-animation-color: rgba(255, 111, 105, 0.2);
 
   .checkbox {
     display: none;
 
     &:checked + .toggleStateIndicator {
-      background-color: rgba(255, 111, 105, 0.5);
+      background-color: var(--experience-animation-color);
     }
   }
 
@@ -24,5 +25,20 @@
     &:hover {
       border: solid $globalHighlightColor;
     }
+  }
+
+  .darkTheme {
+    @include darkThemeContent;
+    --experience-animation-color: rgba(131, 133, 138, 0.2);;
+  }
+
+  .lightTheme {
+    @include lightThemeContent;
+    --experience-animation-color: rgba(105, 140, 255, 0.3);
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContent;
+    --experience-animation-color: rgba(105, 140, 255, 0.3);
   }
 }
