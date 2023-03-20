@@ -1,0 +1,77 @@
+@import 'src/assets/globalStyleElements.module';
+
+.Skills {
+  padding: $globalHomeContentContainerPadding;
+  margin-bottom: 5vh;
+
+  .skillsContainer {
+    padding-top: $globalHomeContentContainerPadding;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .skillsHeader {
+      font-size: calc($globalFontSize * 2);
+    }
+
+    .skillsRowContainer {
+      border-radius: $globalBorderRadius;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        //--pulse-color: var(--pulse-color-skills);
+        //@include globalPulseAnimationMixin;
+      }
+    }
+
+    .skillsRow {
+      margin: 2vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .skillsExperienceContainer {
+      position: absolute;
+      transform: translate(15.9vw, -18.3vh);
+    }
+
+    .skillsExperienceContainerImages {
+      display: flex;
+
+      img {
+        width: 1vw;
+        height: 1vw;
+      }
+    }
+  }
+
+  @mixin contentStyling {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: $globalBorderRadius;
+  }
+
+  .darkTheme {
+    @include darkThemeContent;
+    @include contentStyling;
+    --box-shadow-color: black;
+  }
+
+  .lightTheme {
+    @include lightThemeContent;
+    @include contentStyling;
+    --box-shadow-color: #212121;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContent;
+    @include contentStyling;
+    --box-shadow-color: #212121;
+  }
+}

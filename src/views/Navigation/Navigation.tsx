@@ -8,7 +8,7 @@ import {ThemeComponent} from "../../components/ThemeComponent/ThemeComponent";
 
 const routesInNavigationBar: { route: string; routeKey: string }[] = [
     {route: '/', routeKey: language.ROUTE_ABOUT},
-    {route: '/bio', routeKey: language.ROUTE_BIOGRAPHY},
+    {route: '/skills', routeKey: language.ROUTES_SKILLS},
     {route: '/projects', routeKey: language.ROUTE_PROJECTS},
 ];
 

@@ -18,7 +18,7 @@ const language = {
   PROJECT_ROSHAMBO: 'Roshambo',
   PROJECT_SIFFERTIOS: 'siffert.ios',
   ROUTE_ABOUT: 'Home',
-  ROUTE_BIOGRAPHY: 'Biography',
+  ROUTES_SKILLS: 'Skills',
   ROUTE_PROJECTS: 'Projects',
   SECTION_ABOUT: 'About',
   SKILLS_ANDROID: 'Android',

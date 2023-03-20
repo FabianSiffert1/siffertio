@@ -17,50 +17,6 @@
       align-items: center;
     }
 
-    .skillsContainer {
-      padding-top: $globalHomeContentContainerPadding;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .skillsHeader {
-        font-size: calc($globalFontSize * 2);
-      }
-
-      .skillsRowContainer {
-        border-radius: $globalBorderRadius;
-        display: flex;
-        flex-direction: column;
-        &:hover {
-          //--pulse-color: var(--pulse-color-skills);
-          //@include globalPulseAnimationMixin;
-        }
-      }
-
-      .skillsRow {
-        margin: 2vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .skillsExperienceContainer {
-        position: absolute;
-        transform: translate(15.9vw, -18.3vh);
-      }
-
-      .skillsExperienceContainerImages {
-        display: flex;
-
-        img {
-          width: 1vw;
-          height: 1vw;
-        }
-      }
-    }
 
     .contactContainer {
       margin-top: $globalHomeContentContainerPadding;
