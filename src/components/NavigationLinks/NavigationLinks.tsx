@@ -3,21 +3,21 @@ import {useSelector} from 'react-redux';
 import {NavLink, useLocation} from 'react-router-dom';
 import {RootState} from '../../utils/reduxStore/reduxStore';
 
-import styles from './NavigationBar.module.scss';
+import styles from './NavigationLinks.module.scss';
 import language from '../../assets/language/language';
 
-export interface NavigationBarProps {
+export interface NavigationLinkProps {
     routesArray: { route: string; routeKey: string }[];
     style?: string;
 }
 
-function NavigationBar(props: NavigationBarProps) {
+function NavigationLinks(props: NavigationLinkProps) {
     const currentTheme = useSelector((state: RootState) => state.theme.value);
     const currentLocation = useLocation().pathname;
     return (
         <>
             {props.routesArray.map((element) => (
-                <div className={styles.Navigation} key={element.routeKey}>
+                <div className={styles.NavigationLinks} key={element.routeKey}>
                     <NavLink to={element.route} key={element.routeKey}>
                         <div
                             className={
@@ -43,4 +43,4 @@ function NavigationBar(props: NavigationBarProps) {
     );
 }
 
-export default NavigationBar;
+export default NavigationLinks;

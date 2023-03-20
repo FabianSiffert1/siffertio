@@ -2,9 +2,7 @@
 
 $animationSpeed: 20s;
 
-.Navigation {
-  display: flex;
-  justify-content: center;
+.NavigationLinks {
   a {
     text-decoration: none;
   }
@@ -12,10 +10,14 @@ $animationSpeed: 20s;
   @mixin generalLinkStyling {
     border-radius: $globalBorderRadius;
     border: solid transparent;
-    margin: 0.5vw;
     padding: 1vw;
+    margin: 1vw;
+    width: 15vw;
     text-transform: uppercase;
     font-size: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @mixin inactiveLinkStyling {
@@ -42,33 +44,35 @@ $animationSpeed: 20s;
     --box-shadow-color: #212121;
     @include boxShadowSmall;
   }
+
   @mixin activeLinkStyling {
     @include generalLinkStyling;
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip $animationSpeed linear infinite;
-    display: inline-block;
   }
+
   .activeLinkDarkTheme {
     @include activeLinkStyling;
     background-image: linear-gradient(
-      -225deg,
-      #ffffff 0%,
-      #ffffff 29%,
-      #d91683 67%,
-      #ffffff 100%
+                    -225deg,
+                    #ffffff 0%,
+                    #ffffff 29%,
+                    #d91683 67%,
+                    #ffffff 100%
     );
     border: solid $globalLightColor;
   }
+
   .activeLinkLightTheme {
     @include activeLinkStyling;
     background-image: linear-gradient(
-      -225deg,
-      #000000 0%,
-      #000000 29%,
-      #d91683 67%,
-      #000000 100%
+                    -225deg,
+                    #000000 0%,
+                    #000000 29%,
+                    #d91683 67%,
+                    #000000 100%
     );
     border: solid $globalDarkColor;
   }
@@ -76,11 +80,11 @@ $animationSpeed: 20s;
   .activeLinkColorfulTheme {
     @include activeLinkStyling;
     background-image: linear-gradient(
-      -225deg,
-      #000000 0%,
-      #000000 29%,
-      #d91683 67%,
-      black 100%
+                    -225deg,
+                    #000000 0%,
+                    #000000 29%,
+                    #d91683 67%,
+                    black 100%
     );
     border: solid $globalDarkColor;
   }
