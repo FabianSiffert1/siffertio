@@ -1,0 +1,81 @@
+@import 'src/assets/globalStyleElements.module';
+
+.CollapsibleSection {
+  padding: 2vw;
+  border-radius: 20vw;
+
+  @mixin sectionHeader {
+    @include boxShadowSmall;
+    border-radius: $globalBorderRadius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: calc($globalFontSize * 1.5);
+    margin-bottom: calc($globalHomeContentContainerPadding / 2);
+    border: solid transparent;
+    &:hover {
+      border: solid $globalHighlightColor;
+    }
+  }
+
+  .collapsibleSectionHeaderDark {
+    @include darkThemeContent;
+    @include sectionHeader;
+  }
+
+  .collapsibleSectionHeaderLight {
+    @include lightThemeContent;
+    @include sectionHeader;
+  }
+
+  .collapsibleSectionHeaderColorful {
+    @include sectionHeader;
+    @include colorfulThemeContent;
+  }
+
+  @mixin collapsibleContent {
+    @include boxShadowSmall;
+    border-radius: $globalBorderRadius;
+    padding: $globalHomeContentContainerPadding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .collapsibleSectionContent {
+  }
+
+  .collapsibleSectionFooter {
+
+  }
+
+  .collapsibleSectionContentDark {
+    @include darkThemeContent;
+    @include collapsibleContent;
+  }
+
+  .collapsibleSectionContentLight {
+    @include lightThemeContent;
+    @include collapsibleContent;
+  }
+
+  .collapsibleSectionContentColorful {
+    @include sectionHeader;
+    @include collapsibleContent;
+  }
+
+
+  .darkTheme {
+    @include darkThemeContent;
+  }
+
+  .lightTheme {
+    @include lightThemeContent;
+  }
+
+  .colorfulTheme {
+    @include colorfulThemeContent;
+  }
+}
+

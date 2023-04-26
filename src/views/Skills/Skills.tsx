@@ -25,6 +25,7 @@ import {
 } from "../../assets/_globalAssetImports";
 import SkillBanner, {EXPERIENCE_LEVEL} from "../../components/SkillBanner/SkillBanner";
 import {Themes} from "../../components/ThemeMenu/ThemeMenu";
+import CollapsibleSection from "../../components/CollapsibleSection/CollapsibleSection";
 
 export default function Skills() {
     const currentTheme = useSelector((state: RootState) => state.theme.value);
@@ -43,9 +44,9 @@ export default function Skills() {
                             : styles.colorfulTheme
                 }
             >
-                <div className={styles.skillsContainer}>
-                    <div className={styles.skillsHeader}>{language.SKILLS_TITLE}</div>
-                    <div className={styles.skillsExperienceContainer}>
+                <div className={styles.programmingSkillsContainer}>
+                    <div className={styles.programmingSkillsHeader}>{language.SKILLS_TITLE}</div>
+                    <div className={styles.programmingSkillsToggleContainer}>
                         <Tooltip
                             toggle={showExperience}
                             text={[
@@ -60,7 +61,7 @@ export default function Skills() {
                                     dispatch(toggle());
                                 }}
                             >
-                                <div className={styles.skillsExperienceContainerImages}>
+                                <div className={styles.programmingSkillsToggleImages}>
                                     <img src={starFilled} alt="SkillIndicatorFilled"/>
                                     <img src={starFilled} alt="SkillIndicatorFilled"/>
                                     <img src={starOutline} alt="SkillIndicatorOutline"/>
@@ -68,8 +69,8 @@ export default function Skills() {
                             </ToggleButton>
                         </Tooltip>
                     </div>
-                    <div className={styles.skillsRowContainer}>
-                        <div className={styles.skillsRow}>
+                    <div className={styles.programmingSkillsRowContainer}>
+                        <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="TypeScript"
                                 image={typescriptLogo}
@@ -86,7 +87,7 @@ export default function Skills() {
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                         </div>
-                        <div className={styles.skillsRow}>
+                        <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Swift"
                                 image={swiftLogo}
@@ -113,7 +114,7 @@ export default function Skills() {
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                         </div>
-                        <div className={styles.skillsRow}>
+                        <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Python"
                                 image={pythonLogo}
@@ -137,6 +138,14 @@ export default function Skills() {
                         </div>
                     </div>
                 </div>
+                <div className={styles.otherSkillsContainer}>
+                    <div className={styles.otherSkillsHeader}>{language.OTHER_SKILLS_TITLE}</div>
+                    <div className={styles.otherSkillsContent}>
+                        <CollapsibleSection header={language.ENGLISH_STUDIES_TITLE} sectionContent={language.LOREM}/>
+                        <CollapsibleSection header={"PlaceHolder"} sectionContent={language.LOREM}/>
+                    </div>
+                </div>
+
             </div>
         </div>
     );
