@@ -141,8 +141,8 @@ export default function Skills() {
                 <div className={styles.otherSkillsContainer}>
                     <div className={styles.otherSkillsHeader}>{language.OTHER_SKILLS_TITLE}</div>
                     <div className={styles.otherSkillsContent}>
-                        <CollapsibleSection header={language.ENGLISH_STUDIES_TITLE} sectionContent={language.LOREM}/>
-                        <CollapsibleSection header={"PlaceHolder"} sectionContent={language.LOREM}/>
+                        <CollapsibleSection header={language.ENGLISH_STUDIES_TITLE} sectionContent={language.ENGLISH_STUDIES_DESCRIPTION}/>
+                        <CollapsibleSection header={language.QUALIFICATIONS_TITLE} sectionContent={language.LOREM}/>
                     </div>
                 </div>
 
