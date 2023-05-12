@@ -1,4 +1,4 @@
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import React, {useState} from 'react';
 import {
     useTransition,
@@ -36,7 +36,7 @@ export default function CollapsibleSection(props: CollapsibleSectionProps) {
     const transApi = useSpringRef();
     const transition = useTransition(open ? props.sectionContent : [], {
         ref: transApi,
-        trail: 2 ,
+        trail: 2,
         from: {opacity: 0, scale: 0},
         enter: {opacity: 1, scale: 1},
         leave: {opacity: 0, scale: 0}
@@ -61,7 +61,7 @@ export default function CollapsibleSection(props: CollapsibleSectionProps) {
                 style={{...rest, width: size, height: size}}
                 onClick={() => setOpen(!open)}
             >
-                {transition((style, item) => (
+                {transition((style) => (
                     <animated.div
                         className={styles.item}
                         style={{...style,}}

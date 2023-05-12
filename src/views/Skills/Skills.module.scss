@@ -65,8 +65,8 @@
 
     .otherSkillsContent {
       display: flex;
-      flex-direction: column;
-      align-content: start;
+      flex-direction: row;
+      align-content: flex-start;
     }
   }
 

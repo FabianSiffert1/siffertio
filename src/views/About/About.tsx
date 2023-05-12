@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import { useSelector} from 'react-redux';
 import styles from './About.module.scss';
 import language from '../../assets/language/language';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
