@@ -20,7 +20,7 @@ const language = {
     PROJECT_SIFFERTIO: 'siffert.io',
     PROJECT_SIFFERTIOS: 'siffert.ios',
     QUALIFICATIONS_TITLE: 'Various',
-    QUALIFICATIONS_DESCRIPTION: 'I am currently an apprentice Software Engineer at sipgate in Duesseldorf, with my apprenticeship ending in January 2021. sipgate is widely recognized for its innovative work culture and leadership in Scrum and agile methodologies. Additionally, I had the privilege of completing a product owner training and obtaining certification as a Scrum Product Owner until December 2024.',
+    QUALIFICATIONS_DESCRIPTION: 'I am currently an apprentice Software Engineer at sipgate in Duesseldorf, with my apprenticeship ending in January 2024. sipgate is widely recognized for its innovative work culture and leadership in Scrum and agile methodologies. Additionally, I had the privilege of completing a product owner training and obtaining certification as a Scrum Product Owner until December 2024.',
     ROUTES_SKILLS: 'Skills',
     ROUTE_ABOUT: 'Home',
     ROUTE_PROJECTS: 'Projects',

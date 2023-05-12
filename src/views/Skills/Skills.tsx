@@ -108,7 +108,7 @@ export default function Skills() {
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                             <SkillBanner text={'Android'} image={androidLogo}
-                                         experienceLevel={EXPERIENCE_LEVEL.moderate}/>
+                                         experienceLevel={EXPERIENCE_LEVEL.beginner}/>
                         </div>
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
