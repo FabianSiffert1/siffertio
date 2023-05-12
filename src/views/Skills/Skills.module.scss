@@ -36,7 +36,7 @@
 
     .programmingSkillsToggleContainer {
       position: absolute;
-      transform: translate(15.9vw, -18.3vh);
+      transform: translate(15.9vw, -25.3vh);
     }
 
     .programmingSkillsToggleImages {
@@ -65,6 +65,8 @@
 
     .otherSkillsContent {
       display: flex;
+      flex-direction: column;
+      align-content: start;
     }
   }
 

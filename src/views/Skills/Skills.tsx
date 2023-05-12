@@ -8,6 +8,8 @@ import Tooltip from "../../components/Tooltip/Tooltip";
 import ToggleButton from "../../components/ToggleButton/ToggleButton";
 import {toggle} from "../../utils/reduxStore/experienceToggle/experienceToggleSlice";
 import {
+    androidLogo,
+    certificateLogo,
     dockerLogo,
     javaLogo,
     jetpackComposeLogo,
@@ -15,10 +17,12 @@ import {
     mysqlLogo,
     pythonLogo,
     reactLogo,
+    reactSpringLogo,
     sassLogo,
     springLogo,
     starFilled,
     starOutline,
+    studyCap,
     swiftLogo,
     swiftUILogo,
     typescriptLogo
@@ -81,11 +85,6 @@ export default function Skills() {
                                 image={reactLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
-                            <SkillBanner
-                                text="Sass"
-                                image={sassLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.experienced}
-                            />
                         </div>
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
@@ -108,13 +107,15 @@ export default function Skills() {
                                 image={jetpackComposeLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
+                            <SkillBanner text={'Android'} image={androidLogo}
+                                         experienceLevel={EXPERIENCE_LEVEL.moderate}/>
+                        </div>
+                        <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Docker"
                                 image={dockerLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
-                        </div>
-                        <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Python"
                                 image={pythonLogo}
@@ -136,13 +137,27 @@ export default function Skills() {
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                         </div>
+                        <div className={styles.programmingSkillsRow}>
+                            <SkillBanner
+                                text="Sass"
+                                image={sassLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.experienced}
+                            />
+                            <SkillBanner
+                                text="React Spring"
+                                image={reactSpringLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.beginner}
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className={styles.otherSkillsContainer}>
                     <div className={styles.otherSkillsHeader}>{language.OTHER_SKILLS_TITLE}</div>
                     <div className={styles.otherSkillsContent}>
-                        <CollapsibleSection header={language.ENGLISH_STUDIES_TITLE} sectionContent={language.ENGLISH_STUDIES_DESCRIPTION}/>
-                        <CollapsibleSection header={language.QUALIFICATIONS_TITLE} sectionContent={language.LOREM}/>
+                        <CollapsibleSection headerImage={studyCap} popUpText={language.ENGLISH_STUDIES_TITLE}
+                                            sectionContent={language.ENGLISH_STUDIES_DESCRIPTION}/>
+                        <CollapsibleSection headerImage={certificateLogo} popUpText={language.QUALIFICATIONS_TITLE}
+                                            sectionContent={language.QUALIFICATIONS_DESCRIPTION}/>
                     </div>
                 </div>
 

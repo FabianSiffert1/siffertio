@@ -1,3 +1,5 @@
+import androidLogo from './images/logos/androidLogo.svg';
+import certificateLogo from './images/logos/certificateLogo.svg';
 import dockerLogo from './images/logos/dockerLogo.svg';
 import emailLogo from './images/emailLink.svg';
 import fsLogo from './images/logos/logoFSWhite2.svg';
@@ -11,35 +13,41 @@ import mysqlLogo from './images/logos/mysqlLogo.svg';
 import profilePicture from './images/profileTeacher.jpg';
 import pythonLogo from './images/logos/pythonLogo.svg';
 import reactLogo from './images/logos/reactLogo.svg';
+import reactSpringLogo from './images/logos/reactSpringLogo.svg'
 import sassLogo from './images/logos/sassLogoColor.svg';
 import scholar from './images/scholar.svg';
 import springLogo from './images/logos/springLogo.svg';
 import starFilled from './images/starFilled.svg';
 import starOutline from './images/starOutline.svg';
+import studyCap from './images/logos/studyLogo.svg';
 import swiftLogo from './images/logos/swiftLogo.svg';
 import swiftUILogo from './images/logos/swiftUiLogo.svg';
 import typescriptLogo from './images/logos/typescriptLogo.svg';
 
 export {
-  dockerLogo,
-  emailLogo,
-  fsLogo,
-  fsLogoBW,
-  githubLogo,
-  javaLogo,
-  javascriptLogo,
-  jetpackComposeLogo,
-  kotlinLogo,
-  mysqlLogo,
-  profilePicture,
-  pythonLogo,
-  reactLogo,
-  sassLogo,
-  scholar,
-  springLogo,
-  starFilled,
-  starOutline,
-  swiftLogo,
-  swiftUILogo,
-  typescriptLogo,
+    androidLogo,
+    certificateLogo,
+    dockerLogo,
+    emailLogo,
+    fsLogo,
+    fsLogoBW,
+    githubLogo,
+    javaLogo,
+    javascriptLogo,
+    jetpackComposeLogo,
+    kotlinLogo,
+    mysqlLogo,
+    profilePicture,
+    pythonLogo,
+    reactLogo,
+    reactSpringLogo,
+    sassLogo,
+    scholar,
+    springLogo,
+    starFilled,
+    starOutline,
+    studyCap,
+    swiftLogo,
+    swiftUILogo,
+    typescriptLogo,
 };

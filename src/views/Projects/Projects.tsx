@@ -10,7 +10,7 @@ import {
   javaLogo,
   jetpackComposeLogo,
   kotlinLogo,
-  reactLogo,
+  reactLogo, reactSpringLogo,
   sassLogo,
   springLogo,
   typescriptLogo,
@@ -35,7 +35,7 @@ export default function Projects() {
             <div className={styles.projectContent}>
               <div className={styles.projectTitle}>siffert.io</div>
               <div className={styles.textSection}>
-                You are here. An attract screen, aka personal portfolio, with a
+                You are here. A personal portfolio with a
                 focus on simplistic design.
               </div>
               <div className={styles.skillSection}>
@@ -44,6 +44,7 @@ export default function Projects() {
                   <SkillBanner text={'React'} image={reactLogo} />
                   <SkillBanner text={'Sass'} image={sassLogo} />
                   <SkillBanner text={'TypeScript'} image={typescriptLogo} />
+                  <SkillBanner text={'React Spring'} image={reactSpringLogo} />
                 </div>
               </div>
               <div className={styles.linkSection}>

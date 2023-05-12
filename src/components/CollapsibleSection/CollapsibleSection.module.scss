@@ -3,6 +3,11 @@
 .CollapsibleSection {
   padding: 2vw;
   border-radius: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 
   @mixin sectionHeader {
     @include boxShadowSmall;
@@ -11,8 +16,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: calc($globalFontSize * 1.5);
-    margin-bottom: calc($globalHomeContentContainerPadding / 2);
     border: solid transparent;
     &:hover {
       border: solid $globalHighlightColor;
@@ -22,6 +25,9 @@
   .collapsibleSectionHeaderDark {
     @include darkThemeContent;
     @include sectionHeader;
+    img {
+      filter: invert(1);
+    }
   }
 
   .collapsibleSectionHeaderLight {
@@ -34,9 +40,16 @@
     @include colorfulThemeContent;
   }
 
+  .headerImage {
+    width: 3vw;
+    height: 3vw;
+    padding: 1vw;
+  }
+
   @mixin collapsibleContent {
     @include boxShadowSmall;
     border-radius: $globalBorderRadius;
+    font-size: $globalFontSize;
     padding: $globalHomeContentContainerPadding;
     display: flex;
     justify-content: center;
