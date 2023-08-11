@@ -7,12 +7,9 @@ import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
   fsLogoBW,
   githubLogo,
-  javaLogo,
-  jetpackComposeLogo,
-  kotlinLogo,
-  reactLogo, reactSpringLogo,
+  reactLogo,
+  reactSpringLogo,
   sassLogo,
-  springLogo,
   typescriptLogo,
 } from '../../assets/_globalAssetImports';
 import {Themes} from "../../components/ThemeMenu/ThemeMenu";
@@ -59,37 +56,6 @@ export default function Projects() {
                     text={'Github'}
                     image={githubLogo}
                     url={'https://github.com/FabianSiffert1/siffertio'}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectContent}>
-              <div className={styles.projectTitle}>Roshambo</div>
-              <div className={styles.textSection}>
-                A work-in-progress Android-App. My way of learning mobile
-                development.
-              </div>
-              <div className={styles.skillSection}>
-                <div className={styles.skillSectionHeader}>Components</div>
-                <div className={styles.skillContainer}>
-                  <SkillBanner text={'Kotlin'} image={kotlinLogo} />
-                  <SkillBanner
-                    text="Jetpack Compose"
-                    image={jetpackComposeLogo}
-                  />
-                  <SkillBanner text={'Java'} image={javaLogo} />
-                  <SkillBanner text={'Spring'} image={springLogo} />
-                </div>
-              </div>
-              <div className={styles.linkSection}>
-                <div className={styles.linkSectionHeader}>Links</div>
-                <div className={styles.linkContainer}>
-                  <LinkBanner
-                    text={'Github'}
-                    image={githubLogo}
-                    url={
-                      'https://github.com/FabianSiffert1/roshambo-android-kotlin'
-                    }
                   />
                 </div>
               </div>

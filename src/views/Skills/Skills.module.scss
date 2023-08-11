@@ -60,13 +60,11 @@
     .otherSkillsHeader {
       font-size: calc($globalFontSize * 2);
       padding-bottom: calc($globalHomeContentContainerPadding / 2);
-      padding-bottom: calc($globalHomeContentContainerPadding / 2);
     }
 
     .otherSkillsContent {
       display: flex;
       flex-direction: row;
-      align-content: flex-start;
     }
   }
 

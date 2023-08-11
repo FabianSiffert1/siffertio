@@ -76,28 +76,6 @@ export default function Skills() {
                     <div className={styles.programmingSkillsRowContainer}>
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
-                                text="TypeScript"
-                                image={typescriptLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.experienced}
-                            />
-                            <SkillBanner
-                                text="React"
-                                image={reactLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.experienced}
-                            />
-                        </div>
-                        <div className={styles.programmingSkillsRow}>
-                            <SkillBanner
-                                text="Swift"
-                                image={swiftLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.beginner}
-                            />
-                            <SkillBanner
-                                text="SwiftUI"
-                                image={swiftUILogo}
-                                experienceLevel={EXPERIENCE_LEVEL.beginner}
-                            />
-                            <SkillBanner
                                 text="Kotlin"
                                 image={kotlinLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
@@ -108,9 +86,38 @@ export default function Skills() {
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                             <SkillBanner text={'Android'} image={androidLogo}
-                                         experienceLevel={EXPERIENCE_LEVEL.beginner}/>
+                                         experienceLevel={EXPERIENCE_LEVEL.experienced}/>
+
                         </div>
                         <div className={styles.programmingSkillsRow}>
+                            <SkillBanner
+                                text="TypeScript"
+                                image={typescriptLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.experienced}
+                            />
+                            <SkillBanner
+                                text="React"
+                                image={reactLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.experienced}
+                            />
+                            <SkillBanner
+                                text="Sass"
+                                image={sassLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.experienced}
+                            />
+
+                        </div>
+                        <div className={styles.programmingSkillsRow}>
+                            <SkillBanner
+                            text="mySQL"
+                            image={mysqlLogo}
+                            experienceLevel={EXPERIENCE_LEVEL.moderate}
+                        />
+                            <SkillBanner
+                                text="Java"
+                                image={javaLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.moderate}
+                            />
                             <SkillBanner
                                 text="Docker"
                                 image={dockerLogo}
@@ -121,31 +128,26 @@ export default function Skills() {
                                 image={pythonLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
-                            <SkillBanner
-                                text="mySQL"
-                                image={mysqlLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.moderate}
-                            />
-                            <SkillBanner
-                                text="Java"
-                                image={javaLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.moderate}
-                            />
+                        </div>
+                        <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Spring"
                                 image={springLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
-                        </div>
-                        <div className={styles.programmingSkillsRow}>
-                            <SkillBanner
-                                text="Sass"
-                                image={sassLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.experienced}
-                            />
                             <SkillBanner
                                 text="React Spring"
                                 image={reactSpringLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.beginner}
+                            />
+                            <SkillBanner
+                                text="Swift"
+                                image={swiftLogo}
+                                experienceLevel={EXPERIENCE_LEVEL.beginner}
+                            />
+                            <SkillBanner
+                                text="SwiftUI"
+                                image={swiftUILogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                         </div>
