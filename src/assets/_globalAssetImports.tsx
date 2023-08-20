@@ -1,4 +1,4 @@
-import androidLogo from './images/logos/androidLogo.svg';
+import androidLogo from './images/logos/logoAndroid.svg';
 import certificateLogo from './images/logos/certificateLogo.svg';
 import dockerLogo from './images/logos/dockerLogo.svg';
 import emailLogo from './images/emailLink.svg';
@@ -11,9 +11,7 @@ import jetpackComposeLogo from './images/logos/jetpackComposeLogo.png';
 import kotlinLogo from './images/logos/kotlinLogo.svg';
 import mysqlLogo from './images/logos/mysqlLogo.svg';
 import profilePicture from './images/profileTeacher.jpg';
-import pythonLogo from './images/logos/pythonLogo.svg';
 import reactLogo from './images/logos/reactLogo.svg';
-import reactSpringLogo from './images/logos/reactSpringLogo.svg'
 import sassLogo from './images/logos/sassLogoColor.svg';
 import scholar from './images/scholar.svg';
 import springLogo from './images/logos/springLogo.svg';
@@ -38,9 +36,7 @@ export {
     kotlinLogo,
     mysqlLogo,
     profilePicture,
-    pythonLogo,
     reactLogo,
-    reactSpringLogo,
     sassLogo,
     scholar,
     springLogo,

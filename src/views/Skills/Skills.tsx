@@ -15,9 +15,7 @@ import {
     jetpackComposeLogo,
     kotlinLogo,
     mysqlLogo,
-    pythonLogo,
     reactLogo,
-    reactSpringLogo,
     sassLogo,
     springLogo,
     starFilled,
@@ -123,21 +121,11 @@ export default function Skills() {
                                 image={dockerLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
-                            <SkillBanner
-                                text="Python"
-                                image={pythonLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.beginner}
-                            />
                         </div>
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Spring"
                                 image={springLogo}
-                                experienceLevel={EXPERIENCE_LEVEL.beginner}
-                            />
-                            <SkillBanner
-                                text="React Spring"
-                                image={reactSpringLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                             <SkillBanner

@@ -13,7 +13,7 @@
   .imageContainer img {
     height: 2.7vw;
     width: 2.7vw;
-    transition: transform 0.55s ease-in-out;
+    transition: transform 0.15s ease-in-out;
     position: absolute;
   }
 
@@ -23,7 +23,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 1vh;
+    bottom: 1.5vh;
     text-align: center;
     font-size: $globalFontSize * 0.8;
     border-radius: 50vw;

@@ -3,8 +3,7 @@
 .CollapsibleSection {
   padding: 2vw;
   border-radius: 20vw;
-  display: flex;
-  width: 100%;
+  width: 50%;
 
 
 
@@ -12,6 +11,7 @@
     @include boxShadowSmall;
     border-radius: $globalBorderRadius;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -37,7 +37,7 @@
   .headerImage {
     width: 3vw;
     height: 3vw;
-    padding-right: 1vw;
+    padding-bottom: 2.5vh;
   }
 
   .darkTheme {

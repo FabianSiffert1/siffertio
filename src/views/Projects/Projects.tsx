@@ -5,10 +5,10 @@ import {RootState} from '../../utils/reduxStore/reduxStore';
 import SkillBanner from '../../components/SkillBanner/SkillBanner';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
+  androidLogo,
   fsLogoBW,
-  githubLogo,
+  githubLogo, jetpackComposeLogo, kotlinLogo,
   reactLogo,
-  reactSpringLogo,
   sassLogo,
   typescriptLogo,
 } from '../../assets/_globalAssetImports';
@@ -41,7 +41,6 @@ export default function Projects() {
                   <SkillBanner text={'React'} image={reactLogo} />
                   <SkillBanner text={'Sass'} image={sassLogo} />
                   <SkillBanner text={'TypeScript'} image={typescriptLogo} />
-                  <SkillBanner text={'React Spring'} image={reactSpringLogo} />
                 </div>
               </div>
               <div className={styles.linkSection}>
@@ -56,6 +55,35 @@ export default function Projects() {
                     text={'Github'}
                     image={githubLogo}
                     url={'https://github.com/FabianSiffert1/siffertio'}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={styles.projectContent}>
+              <div className={styles.projectTitle}>satellite</div>
+              <div className={styles.textSection}>
+                A telephony app with more than 100.000 monthly users.
+              </div>
+              <div className={styles.skillSection}>
+                <div className={styles.skillSectionHeader}>Components</div>
+                <div className={styles.skillContainer}>
+                  <SkillBanner text={'Kotlin'} image={kotlinLogo} />
+                  <SkillBanner text={'Jetpack Compose'} image={jetpackComposeLogo} />
+                  <SkillBanner text={'Android'} image={androidLogo} />
+                </div>
+              </div>
+              <div className={styles.linkSection}>
+                <div className={styles.linkSectionHeader}>Links</div>
+                <div className={styles.linkContainer}>
+                  <LinkBanner
+                      image={fsLogoBW}
+                      url={'http://siffert.io'}
+                      text={'App Store'}
+                  />
+                  <LinkBanner
+                      text={'Website'}
+                      image={githubLogo}
+                      url={'https://satellite.me'}
                   />
                 </div>
               </div>
