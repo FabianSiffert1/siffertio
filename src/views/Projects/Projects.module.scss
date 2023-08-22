@@ -1,7 +1,6 @@
 @import 'src/assets/globalStyleElements.module';
 
 .Projects {
-  --box-shadow-color: black;
   @mixin contentStyling {
     display: flex;
     justify-content: center;

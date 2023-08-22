@@ -10,9 +10,11 @@ import javascriptLogo from './images/logos/javascriptLogo2.svg';
 import jetpackComposeLogo from './images/logos/jetpackComposeLogo.png';
 import kotlinLogo from './images/logos/kotlinLogo.svg';
 import mysqlLogo from './images/logos/mysqlLogo.svg';
+import logoPlaystore from './images/logos/logoPlayStore.svg';
 import profilePicture from './images/profileTeacher.jpg';
 import reactLogo from './images/logos/reactLogo.svg';
 import sassLogo from './images/logos/sassLogoColor.svg';
+import logoSatellite from './images/logos/logoSatellite.svg';
 import scholar from './images/scholar.svg';
 import springLogo from './images/logos/springLogo.svg';
 import starFilled from './images/starFilled.svg';
@@ -34,6 +36,8 @@ export {
     javascriptLogo,
     jetpackComposeLogo,
     kotlinLogo,
+    logoPlaystore,
+    logoSatellite,
     mysqlLogo,
     profilePicture,
     reactLogo,

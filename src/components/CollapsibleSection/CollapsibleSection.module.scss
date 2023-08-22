@@ -8,7 +8,6 @@
 
 
   @mixin sectionHeader {
-    @include boxShadowSmall;
     border-radius: $globalBorderRadius;
     display: flex;
     flex-direction: column;

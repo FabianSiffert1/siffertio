@@ -29,20 +29,14 @@ $animationSpeed: 20s;
 
   .inactiveLinkDarkTheme {
     @include inactiveLinkStyling;
-    --box-shadow-color: black;
-    @include boxShadowSmall;
   }
 
   .inactiveLinkLightTheme {
     @include inactiveLinkStyling;
-    --box-shadow-color: rgba(0, 0, 0, 0.3);
-    @include boxShadowSmall;
   }
 
   .inactiveLinkColorfulTheme {
     @include inactiveLinkStyling;
-    --box-shadow-color: #212121;
-    @include boxShadowSmall;
   }
 
   @mixin activeLinkStyling {

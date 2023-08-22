@@ -4,7 +4,6 @@
   --pulse-color: #ff6f69ff;
   --pulse-color-skills: #61dafb;
   --pulse-color-contact: #61dafb;
-  --box-shadow-color: #212121;
 
   .content {
     padding: $globalHomeContentContainerPadding;
@@ -59,7 +58,6 @@
       @include contentStyling;
       --pulse-color-skills: #61dafb;
       --pulse-color-contact: #ff6f69;
-      --box-shadow-color: black;
     }
 
     .lightTheme {
@@ -67,7 +65,6 @@
       @include contentStyling;
       --pulse-color-skills: #61dafb;
       --pulse-color-contact: #ff6f69ff;
-      --box-shadow-color: #212121;
     }
 
     .colorfulTheme {
@@ -75,7 +72,6 @@
       @include contentStyling;
       --pulse-color-skills: #d65db1;
       --pulse-color-contact: #d65db1;
-      --box-shadow-color: #212121;
     }
   }
 }

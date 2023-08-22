@@ -19,22 +19,16 @@
   }
 
   .themeMenuButtonDarkTheme {
-    --box-shadow-color: black;
-    @include boxShadowSmall;
     @include dropdownButtonStyling;
     @include darkThemeContent;
   }
 
   .themeMenuButtonLightTheme {
-    --box-shadow-color: #212121;
-    @include boxShadowSmall;
     @include dropdownButtonStyling;
     @include lightThemeContent;
   }
 
   .themeMenuButtonColorfulTheme {
-    --box-shadow-color: #212121;
-    @include boxShadowSmall;
     @include dropdownButtonStyling;
     @include colorfulThemeContent;
   }
@@ -61,24 +55,18 @@
     }
 
     .elementDarkTheme {
-      --box-shadow-color: black;
-      @include boxShadowSmall;
       @include themeMenuElementStyling;
       background: $globalLightColor;
       color: $globalDarkColor;
     }
 
     .elementLightTheme {
-      --box-shadow-color: #212121;
-      @include boxShadowSmall;
       @include themeMenuElementStyling;
       background: $globalDarkColor;
       color: $globalLightColor;
     }
 
     .elementColorfulTheme {
-      --box-shadow-color: #212121;
-      @include boxShadowSmall;
       @include themeMenuElementStyling;
       background: $globalDarkColor;
       color: $globalLightColor;

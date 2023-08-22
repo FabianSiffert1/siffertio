@@ -1,7 +1,6 @@
 @import 'src/assets/globalStyleElements.module';
 
 .ProfilePicture {
-  --box-shadow-color: #212121;
   --pulse-color-profile: #845ec2;
 
   .contentContainer {
@@ -47,7 +46,6 @@
   }
 
   @mixin contentStyling {
-    @include boxShadowSmall;
     min-width: 8vw;
     min-height: 8vh;
     display: flex;
@@ -71,7 +69,6 @@
   }
 
   .darkTheme {
-    --box-shadow-color: black;
     @include darkThemeContent;
     @include contentStyling;
   }

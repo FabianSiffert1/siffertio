@@ -79,18 +79,15 @@
   .darkTheme {
     @include darkThemeContent;
     @include contentStyling;
-    --box-shadow-color: black;
   }
 
   .lightTheme {
     @include lightThemeContent;
     @include contentStyling;
-    --box-shadow-color: #212121;
   }
 
   .colorfulTheme {
     @include colorfulThemeContent;
     @include contentStyling;
-    --box-shadow-color: #212121;
   }
 }

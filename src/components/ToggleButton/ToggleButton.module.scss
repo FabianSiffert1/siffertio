@@ -13,7 +13,6 @@
   }
 
   .toggleStateIndicator {
-    @include boxShadowSmall;
     display: flex;
     width: max-content;
     border: solid transparent;

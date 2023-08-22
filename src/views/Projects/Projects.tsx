@@ -7,7 +7,7 @@ import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
   androidLogo,
   fsLogoBW,
-  githubLogo, jetpackComposeLogo, kotlinLogo,
+  githubLogo, jetpackComposeLogo, kotlinLogo, logoPlaystore, logoSatellite,
   reactLogo,
   sassLogo,
   typescriptLogo,
@@ -76,13 +76,13 @@ export default function Projects() {
                 <div className={styles.linkSectionHeader}>Links</div>
                 <div className={styles.linkContainer}>
                   <LinkBanner
-                      image={fsLogoBW}
-                      url={'http://siffert.io'}
-                      text={'App Store'}
+                      image={logoPlaystore}
+                      url={'https://play.google.com/store/apps/details?id=de.sipgate.app.satellite&hl=en&gl=US&pli=1'}
+                      text={'Playstore'}
                   />
                   <LinkBanner
                       text={'Website'}
-                      image={githubLogo}
+                      image={logoSatellite}
                       url={'https://satellite.me'}
                   />
                 </div>
