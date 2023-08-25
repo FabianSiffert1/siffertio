@@ -7,6 +7,7 @@ $animationSpeed: 20s;
 
   a {
     text-decoration: none;
+    border-radius: $globalBorderRadius;
   }
 
   @mixin generalLinkStyling {

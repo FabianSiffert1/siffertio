@@ -57,6 +57,8 @@
     border-radius: $globalBorderRadius * 10;
     &:hover {
       border: solid var(--highlight-color);
+      //box-shadow: 0 0.05vw 0.1vw var(--highlight-color);
+      //background-color: $globalUnderlayRGBAColorDark;
     }
     &:hover .textContainer {
       opacity: 1;
