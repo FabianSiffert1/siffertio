@@ -85,6 +85,7 @@ export default function Projects() {
                       text={'Website'}
                       image={logoSatellite}
                       url={'https://satellite.me'}
+                      invertColorsInDarkMode={false}
                   />
                 </div>
               </div>

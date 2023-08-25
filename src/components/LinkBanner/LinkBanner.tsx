@@ -9,17 +9,14 @@ export interface LinkBannerProps {
   image: string;
   imageAltText?: string;
   url: string;
-  invertColorsInDarkMode?: boolean;
+  invertColorsInDarkMode: boolean;
 }
 
 
 export default function LinkBanner(props: LinkBannerProps) {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
-  let invertColorsInDarkMode =  true
-  if(props.invertColorsInDarkMode === false){
-    invertColorsInDarkMode = false
-  }
-  const imageFilter : React.CSSProperties = (currentTheme === Themes.DARK && invertColorsInDarkMode) ? {filter: 'invert(1)'} : {filter: 'invert(0)'}
+
+  const imageFilter : React.CSSProperties = (currentTheme === Themes.DARK && props.invertColorsInDarkMode) ? {filter: 'invert(1)'} : {filter: 'invert(0)'}
 
 
   return (
@@ -45,4 +42,8 @@ export default function LinkBanner(props: LinkBannerProps) {
       </div>
     </div>
   );
+}
+
+LinkBanner.defaultProps = {
+  invertColorsInDarkMode : true
 }
