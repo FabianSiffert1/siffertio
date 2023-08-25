@@ -33,7 +33,10 @@ export default function Projects() {
               <div className={styles.projectTitle}>siffert.io</div>
               <div className={styles.textSection}>
                 You are here. A personal portfolio with a
-                focus on simplistic design.
+                focus on simplistic design. <br/>
+                A pet project written over the course of
+                apprenticeship. <br/>
+                Be aware: Code quality may vary.
               </div>
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>

@@ -2,6 +2,7 @@
 
 .LinkBanner {
   padding: 0.5vw;
+  --highlight-color : $globalHighlightColor;
 
   a {
     display: flex;
@@ -11,6 +12,9 @@
     min-width: inherit;
     position: relative;
     border-radius: $globalBorderRadius * 10;
+    &:hover img {
+      transform: translate(0%, -20%);
+    }
   }
 
   .imageContainer {
@@ -26,9 +30,7 @@
     position: absolute;
   }
 
-  &:hover img {
-    transform: translate(0%, -20%);
-  }
+
 
   .textContainer {
     position: absolute;
@@ -54,7 +56,7 @@
     border: solid transparent;
     border-radius: $globalBorderRadius * 10;
     &:hover {
-      border: solid $globalHighlightColor;
+      border: solid var(--highlight-color);
     }
     &:hover .textContainer {
       opacity: 1;
@@ -64,6 +66,8 @@
   .darkTheme {
     @include darkThemeContent;
     @include contentStyling;
+    --highlight-color: #{$globalHighlightColorDark};
+    cursor: pointer;
 
     .imageContainer {
       filter: invert(1);
@@ -73,10 +77,14 @@
   .lightTheme {
     @include lightThemeContent;
     @include contentStyling;
+    --highlight-color: #{$globalHighlightColorLight};
+    cursor: pointer;
   }
 
   .colorfulTheme {
     @include colorfulThemeContent;
     @include contentStyling;
+    --highlight-color: #{$globalHighlightColorDark};
+    cursor: pointer;
   }
 }

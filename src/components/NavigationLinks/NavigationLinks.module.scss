@@ -3,6 +3,8 @@
 $animationSpeed: 20s;
 
 .NavigationLinks {
+  --highlight-color : $globalHighlightColor;
+
   a {
     text-decoration: none;
   }
@@ -22,21 +24,31 @@ $animationSpeed: 20s;
 
   @mixin inactiveLinkStyling {
     @include generalLinkStyling;
-    &:hover {
-      border: solid $globalHighlightColor;
-    }
+
   }
 
   .inactiveLinkDarkTheme {
     @include inactiveLinkStyling;
+    --highlight-color: #{$globalHighlightColorDark};
+    &:hover {
+    border: solid var(--highlight-color);
+  }
   }
 
   .inactiveLinkLightTheme {
+    --highlight-color: #{$globalDarkColor};
     @include inactiveLinkStyling;
+    &:hover {
+      border: solid var(--highlight-color);
+    }
   }
 
   .inactiveLinkColorfulTheme {
+    --highlight-color: #{$globalHighlightColorLight};
     @include inactiveLinkStyling;
+    &:hover {
+      border: solid var(--highlight-color);
+    }
   }
 
   @mixin activeLinkStyling {
