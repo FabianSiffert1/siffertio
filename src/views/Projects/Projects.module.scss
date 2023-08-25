@@ -47,10 +47,6 @@
       .skillSectionHeader {
       }
       .skillContainer {
-        &:hover {
-          //--pulse-color: #61dafb;
-          // @include globalPulseAnimationMixin;
-        }
         border-radius: $globalBorderRadius;
         display: flex;
         justify-content: center;

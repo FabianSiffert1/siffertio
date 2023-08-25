@@ -79,6 +79,7 @@ export default function Projects() {
                       image={logoPlaystore}
                       url={'https://play.google.com/store/apps/details?id=de.sipgate.app.satellite&hl=en&gl=US&pli=1'}
                       text={'Playstore'}
+                      invertColorsInDarkMode={false}
                   />
                   <LinkBanner
                       text={'Website'}

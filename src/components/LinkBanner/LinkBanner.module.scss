@@ -41,7 +41,6 @@
     opacity: 0;
     border-radius: 50vw;
     transition: opacity 0.25s ease-in-out;
-    //background-image: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   }
 
   @mixin contentStyling {
@@ -56,9 +55,6 @@
     border-radius: $globalBorderRadius * 10;
     &:hover {
       border: solid $globalHighlightColor;
-    }
-    &:hover img {
-      //opacity: 0.1;
     }
     &:hover .textContainer {
       opacity: 1;
