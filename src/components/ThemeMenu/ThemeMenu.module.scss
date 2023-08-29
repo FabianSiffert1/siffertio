@@ -1,6 +1,10 @@
 @import 'src/assets/globalStyleElements.module';
 
 .ThemeMenu {
+  --highlight-color : $globalHighlightColor;
+  --inverted-highlight-color : $globalHighlightColor;
+
+
   border-radius: $globalBorderRadius;
   width: 5vw;
   height: 4vh;
@@ -14,23 +18,27 @@
 
     border: solid transparent;
     &:hover {
-      border: solid $globalHighlightColor;
+      border: solid var(--highlight-color);
     }
   }
 
   .themeMenuButtonDarkTheme {
     @include dropdownButtonStyling;
     @include darkThemeContent;
+    --highlight-color: #{$globalHighlightColorDark};
+    --inverted-highlight-color: #{$globalHighlightColorLight};
   }
 
   .themeMenuButtonLightTheme {
     @include dropdownButtonStyling;
     @include lightThemeContent;
+    --highlight-color: #{$globalHighlightColorLight};
   }
 
   .themeMenuButtonColorfulTheme {
     @include dropdownButtonStyling;
     @include colorfulThemeContent;
+    --highlight-color: #{$globalHighlightColorLight};
   }
 
   .themeMenuElements {
@@ -50,7 +58,7 @@
       border: solid transparent;
       border-radius: $globalBorderRadius;
       &:hover {
-        border: solid $globalHighlightColor;
+        border: solid var(--inverted-highlight-color);
       }
     }
 
@@ -58,12 +66,14 @@
       @include themeMenuElementStyling;
       background: $globalLightColor;
       color: $globalDarkColor;
+      --inverted-highlight-color:  #{$globalHighlightColor};
     }
 
     .elementLightTheme {
       @include themeMenuElementStyling;
       background: $globalDarkColor;
       color: $globalLightColor;
+      --inverted-highlight-color: #{$globalHighlightColor};
     }
 
     .elementColorfulTheme {
