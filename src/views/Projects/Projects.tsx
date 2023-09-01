@@ -50,11 +50,6 @@ export default function Projects() {
                 <div className={styles.linkSectionHeader}>Links</div>
                 <div className={styles.linkContainer}>
                   <LinkBanner
-                    image={fsLogoBW}
-                    url={'http://siffert.io'}
-                    text={'Deployment'}
-                  />
-                  <LinkBanner
                     text={'Github'}
                     image={githubLogo}
                     url={'https://github.com/FabianSiffert1/siffertio'}

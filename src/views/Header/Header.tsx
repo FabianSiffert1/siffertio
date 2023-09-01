@@ -14,7 +14,7 @@ const settingsMenuItems: { elementName: string; elementFunction: Themes }[] = [
     elementName: language.THEME_LIGHT,
     elementFunction: Themes.LIGHT
   },
-  // {'elementName': language.THEME_COLORFUL, 'elementFunction': Themes.Colorful},
+  // {'elementName': language.THEME_COLORFUL, 'elementFunction': Themes.COLORFUL},
 ];
 
 export default function Header() {
@@ -32,7 +32,7 @@ export default function Header() {
             leftToRightAnimation={false}
           />
         </NavLink>
-        <div className={styles.buttonContainer}>
+        <div className={styles.themeButton}>
           <ThemeMenu
             menuTitle={language.THEME_BUTTON}
             menuElements={settingsMenuItems}
