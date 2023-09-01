@@ -31,6 +31,9 @@
     @include darkThemeContent;
     --experience-animation-color: rgba(131, 133, 138, 0.2);;
     --highlight-color: #{$globalHighlightColorDark};
+    img {
+      filter: invert(1);
+    }
   }
 
   .lightTheme {

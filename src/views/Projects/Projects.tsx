@@ -6,7 +6,6 @@ import SkillBanner from '../../components/SkillBanner/SkillBanner';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
   androidLogo,
-  fsLogoBW,
   githubLogo, jetpackComposeLogo, kotlinLogo, logoPlaystore, logoSatellite,
   reactLogo,
   sassLogo,
