@@ -75,32 +75,32 @@ export default function Skills() {
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Kotlin"
-                                image={kotlinLogo}
+                                imagePath={kotlinLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                             <SkillBanner
                                 text={'Jetpack Compose'}
-                                image={jetpackComposeLogo}
+                                imagePath={jetpackComposeLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
-                            <SkillBanner text={'Android'} image={androidLogo}
+                            <SkillBanner text={'Android'} imagePath={androidLogo}
                                          experienceLevel={EXPERIENCE_LEVEL.experienced}/>
 
                         </div>
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="TypeScript"
-                                image={typescriptLogo}
+                                imagePath={typescriptLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                             <SkillBanner
                                 text="React"
-                                image={reactLogo}
+                                imagePath={reactLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
                             <SkillBanner
                                 text="Sass"
-                                image={sassLogo}
+                                imagePath={sassLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
 
@@ -108,34 +108,34 @@ export default function Skills() {
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                             text="mySQL"
-                            image={mysqlLogo}
+                            imagePath={mysqlLogo}
                             experienceLevel={EXPERIENCE_LEVEL.moderate}
                         />
                             <SkillBanner
                                 text="Java"
-                                image={javaLogo}
+                                imagePath={javaLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.moderate}
                             />
                             <SkillBanner
                                 text="Docker"
-                                image={dockerLogo}
+                                imagePath={dockerLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                         </div>
                         <div className={styles.programmingSkillsRow}>
                             <SkillBanner
                                 text="Spring"
-                                image={springLogo}
+                                imagePath={springLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                             <SkillBanner
                                 text="Swift"
-                                image={swiftLogo}
+                                imagePath={swiftLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                             <SkillBanner
                                 text="SwiftUI"
-                                image={swiftUILogo}
+                                imagePath={swiftUILogo}
                                 experienceLevel={EXPERIENCE_LEVEL.beginner}
                             />
                         </div>

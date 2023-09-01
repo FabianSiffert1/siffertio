@@ -12,7 +12,7 @@ const settingsMenuItems: { elementName: string; elementFunction: Themes }[] = [
   },
   {
     elementName: language.THEME_LIGHT,
-    elementFunction: Themes.LIGHT,
+    elementFunction: Themes.LIGHT
   },
   // {'elementName': language.THEME_COLORFUL, 'elementFunction': Themes.Colorful},
 ];

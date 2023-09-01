@@ -13,7 +13,7 @@ export enum EXPERIENCE_LEVEL {
 
 export interface SkillBannerProps {
     text: string;
-    image: string;
+    imagePath: string;
     experienceLevel?: EXPERIENCE_LEVEL;
 }
 
@@ -55,7 +55,7 @@ export default function SkillBanner(props: SkillBannerProps) {
                 }
             >
                 <div className={styles.imageContainer}>
-                    <img src={props.image} alt="SkillBanner"/>
+                    <img src={props.imagePath} alt="SkillBanner"/>
                 </div>
                 <div className={styles.textContainer}>{props.text}</div>
             </div>

@@ -5,6 +5,8 @@ import emailLogo from './images/emailLink.svg';
 import fsLogo from './images/logos/logoFSWhite2.svg';
 import fsLogoBW from './images/logos/logoFSBlack.svg';
 import githubLogo from './images/github.svg';
+import iconMoon from './images/iconMoon.svg';
+import iconSun from './images/iconSun.svg';
 import javaLogo from './images/logos/javaLogo2.svg';
 import javascriptLogo from './images/logos/javascriptLogo2.svg';
 import jetpackComposeLogo from './images/logos/jetpackComposeLogo.png';
@@ -32,6 +34,8 @@ export {
     fsLogo,
     fsLogoBW,
     githubLogo,
+    iconMoon,
+    iconSun,
     javaLogo,
     javascriptLogo,
     jetpackComposeLogo,

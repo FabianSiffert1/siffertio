@@ -41,9 +41,9 @@ export default function Projects() {
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
                 <div className={styles.skillContainer}>
-                  <SkillBanner text={'React'} image={reactLogo} />
-                  <SkillBanner text={'Sass'} image={sassLogo} />
-                  <SkillBanner text={'TypeScript'} image={typescriptLogo} />
+                  <SkillBanner text={'React'} imagePath={reactLogo} />
+                  <SkillBanner text={'Sass'} imagePath={sassLogo} />
+                  <SkillBanner text={'TypeScript'} imagePath={typescriptLogo} />
                 </div>
               </div>
               <div className={styles.linkSection}>
@@ -70,9 +70,9 @@ export default function Projects() {
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
                 <div className={styles.skillContainer}>
-                  <SkillBanner text={'Kotlin'} image={kotlinLogo} />
-                  <SkillBanner text={'Jetpack Compose'} image={jetpackComposeLogo} />
-                  <SkillBanner text={'Android'} image={androidLogo} />
+                  <SkillBanner text={'Kotlin'} imagePath={kotlinLogo} />
+                  <SkillBanner text={'Jetpack Compose'} imagePath={jetpackComposeLogo} />
+                  <SkillBanner text={'Android'} imagePath={androidLogo} />
                 </div>
               </div>
               <div className={styles.linkSection}>
