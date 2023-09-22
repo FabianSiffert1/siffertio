@@ -66,7 +66,7 @@ $animationSpeed: 20s;
                     -225deg,
                     #ffffff 0%,
                     #ffffff 29%,
-                    #d91683 67%,
+                    rgba(208, 209, 255) 67%,
                     #ffffff 100%
     );
     border: solid $globalLightColor;
@@ -78,7 +78,7 @@ $animationSpeed: 20s;
                     -225deg,
                     #000000 0%,
                     #000000 29%,
-                    #d91683 67%,
+                    rgba(208, 209, 255) 67%,
                     #000000 100%
     );
     border: solid $globalDarkColor;
@@ -90,7 +90,7 @@ $animationSpeed: 20s;
                     -225deg,
                     #000000 0%,
                     #000000 29%,
-                    #d91683 67%,
+                    #845ec2 67%,
                     black 100%
     );
     border: solid $globalDarkColor;

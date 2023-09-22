@@ -4,6 +4,7 @@
   padding: 0.5vw;
   --highlight-color : $globalHighlightColor;
 
+
   a {
     display: flex;
     align-items: center;
@@ -12,9 +13,7 @@
     min-width: inherit;
     position: relative;
     border-radius: $globalBorderRadius * 10;
-    &:hover img {
-      transform: translate(0%, -20%);
-    }
+
   }
 
   .imageContainer {
@@ -26,7 +25,7 @@
   }
 
   img {
-    transition: transform 0.55s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     position: absolute;
   }
 
@@ -42,7 +41,8 @@
     bottom: 0;
     opacity: 0;
     border-radius: 50vw;
-    transition: opacity 0.25s ease-in-out;
+    font-size: $globalFontSize * 0.8;
+    transition: opacity 0.1s ease-in-out;
   }
 
   @mixin contentStyling {
@@ -63,6 +63,9 @@
     &:hover .textContainer {
       opacity: 1;
     }
+    &:hover img {
+      transform: translate(0%, -20%);
+    }
   }
 
   .darkTheme {
@@ -74,6 +77,7 @@
     .imageContainer {
       filter: invert(1);
     }
+
   }
 
   .lightTheme {

@@ -33,7 +33,7 @@ export default function Projects() {
               <div className={styles.textSection}>
                 You are here. A personal portfolio with a
                 focus on simplistic design. <br/>
-                A pet project written over the course of
+                A pet project written over the course of my
                 apprenticeship. <br/>
                 Be aware: Code quality may vary.
               </div>
