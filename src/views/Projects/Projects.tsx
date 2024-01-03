@@ -6,7 +6,7 @@ import SkillBanner from '../../components/SkillBanner/SkillBanner';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
   androidLogo,
-  githubLogo, jetpackComposeLogo, kotlinLogo, logoPlaystore, logoSatellite,
+  githubLogo,   jetpackComposeLogo, kotlinLogo, logoPlaystore, logoSatellite,
   reactLogo,
   sassLogo,
   typescriptLogo,
@@ -59,7 +59,7 @@ export default function Projects() {
             <div className={styles.projectContent}>
               <div className={styles.projectTitle}>satellite</div>
               <div className={styles.textSection}>
-                A telephony app with more than 100.000 monthly users.
+                I contribute to the development of a professional mobile telephone system app with a significant monthly user base in my current workplace.
               </div>
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
