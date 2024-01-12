@@ -5,76 +5,46 @@
 
   .contentContainer {
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .contentContainer img {
     border-radius: 50rem;
-    min-height: 10vh;
-    min-width: 10vh;
-    max-height: 30vh;
-    max-width: 30vh;
+    max-height: 12rem;
+    max-width: 12rem;
   }
 
   .textContainer {
-    position: absolute;
-    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(20vw, 7vw);
+    padding-top: 2rem;
   }
 
 
   .textContainerName {
-    width: auto;
     text-align: center;
-    font-size: $globalFontSize * 1.5;
-    border-radius: 50vw;
-    opacity: 0;
-    transition: transform 0.55s ease-in-out, opacity 0.55s ease-in-out 0.15s;
+    font-size: $globalFontSize * 2;
   }
 
   .textContainerJobDescription {
-    position: absolute;
-    bottom: -2vh;
     font-size: $globalFontSize * 0.8;
-    border-radius: 50vw;
-    opacity: 0;
-    transition: transform 0.55s ease-in-out, opacity 0.55s ease-in-out 0.15s;
+    font-style: oblique;
   }
 
   @mixin contentStyling {
-    min-width: 8vw;
-    min-height: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border: solid transparent;
-    border-radius: $globalBorderRadius * 10;
-    &:hover .textContainerName {
-      opacity: 1;
-    }
-    &:hover .textContainerJobDescription {
-      opacity: 1;
-    }
-
-    &:hover img {
-      --pulse-color: var(--pulse-color-profile);
-      @include globalPulseAnimationMixin;
-    }
+    border-radius: $globalBorderRadius;
   }
 
   .darkTheme {
-    @include darkThemeContent;
     @include contentStyling;
   }
 
   .lightTheme {
-    @include lightThemeContent;
+
     @include contentStyling;
   }
 

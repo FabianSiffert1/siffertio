@@ -28,7 +28,6 @@ export default function About() {
                         image={profilePicture}
                     />
                     <div className={styles.contactContainer}>
-                        <div className={styles.contactHeader}>{language.CONTACT_TITlE}</div>
                         <div className={styles.contactLinks}>
                             <div className={styles.contactLinksRow}>
                                 <LinkBanner
