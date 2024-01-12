@@ -39,7 +39,6 @@
   }
 
   .themeMenuButtonColorfulTheme {
-    @include themeMenuButtonStyling;
     @include colorfulThemeContent;
     --highlight-color: #{$globalHighlightColorLight};
   }
