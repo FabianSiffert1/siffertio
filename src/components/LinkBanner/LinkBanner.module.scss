@@ -20,8 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.7rem;
-    width: 2.7rem;
+    width: 8rem;
+    height: 4rem;
   }
 
   img {
@@ -34,10 +34,6 @@
   .textContainer {
     position: absolute;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     bottom: 0;
     opacity: 0;
     border-radius: 50vw;
@@ -46,8 +42,6 @@
   }
 
   @mixin contentStyling {
-    min-width: 8vw;
-    min-height: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
