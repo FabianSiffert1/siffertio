@@ -27,7 +27,6 @@
     }
 
     .programmingSkillsRow {
-      margin: 2vh;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -36,15 +35,15 @@
 
     .programmingSkillsToggleContainer {
       position: absolute;
-      transform: translate(15.9vw, -25.3vh);
+      transform: translate(15.9rem, -15.3rem);
     }
 
     .programmingSkillsToggleImages {
       display: flex;
 
       img {
-        width: 1vw;
-        height: 1vw;
+        width: 1rem;
+        height: 1rem;
       }
     }
   }
@@ -58,21 +57,18 @@
     align-items: center;
 
     .otherSkillsHeader {
-      font-size: calc($globalFontSize * 2);
+      text-align: center;
+      font-size: $globalFontSize * 1.5;
       padding-bottom: calc($globalHomeContentContainerPadding / 2);
     }
 
     .otherSkillsContent {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
     }
   }
 
   @mixin contentStyling {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: $globalBorderRadius;
   }
 

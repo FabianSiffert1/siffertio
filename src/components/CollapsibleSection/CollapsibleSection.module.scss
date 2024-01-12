@@ -1,9 +1,7 @@
 @import 'src/assets/globalStyleElements.module';
 
 .CollapsibleSection {
-  padding: 2vw;
-  border-radius: 20vw;
-  width: 50%;
+  padding: 1rem;
 
 
 
@@ -34,9 +32,9 @@
   }
 
   .headerImage {
-    width: 3vw;
-    height: 3vw;
-    padding-bottom: 2.5vh;
+    width: 3rem;
+    height: 3rem;
+    padding-bottom: 0.5rem;
   }
 
   .darkTheme {
