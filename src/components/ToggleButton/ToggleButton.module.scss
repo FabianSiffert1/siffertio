@@ -1,6 +1,7 @@
 @import 'src/assets/globalStyleElements.module';
 
 .ToggleButton {
+  width: fit-content;
   border-radius: $globalBorderRadius;
   --experience-animation-color: rgba(255, 111, 105, 0.2);
   --highlight-color: $globalHighlightColor;
@@ -18,7 +19,7 @@
     width: max-content;
     border: solid transparent;
     cursor: pointer;
-    padding: 0.3vw;
+    padding: 0.3rem;
     border-radius: $globalBorderRadius;
     transition: background-color 0.55s;
 

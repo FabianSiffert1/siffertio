@@ -5,7 +5,6 @@
   margin-bottom: 5vh;
 
   .programmingSkillsContainer {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,8 +35,10 @@
     }
 
     .programmingSkillsToggleContainer {
-      position: absolute;
-      transform: translate(15.9rem, -15.3rem);
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
     }
 
     .programmingSkillsToggleImages {
