@@ -7,6 +7,7 @@ import {Themes} from "../ThemeMenu/ThemeMenu";
 export interface ProfilePictureProps {
     name: string;
     title: string;
+    basedIn: string;
     image: string;
 }
 
@@ -28,6 +29,7 @@ export default function ProfilePicture(props: ProfilePictureProps) {
                     <div className={styles.textContainer}>
                         <div className={styles.textContainerName}>{props.name}</div>
                         <div className={styles.textContainerJobDescription}>{props.title}</div>
+                        <div className={styles.textContainerBasedIn}>{props.basedIn}</div>
                     </div>
                 </div>
             </div>

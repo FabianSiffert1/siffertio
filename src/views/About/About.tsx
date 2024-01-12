@@ -25,6 +25,7 @@ export default function About() {
                     <ProfilePicture
                         name={language.NAME}
                         title={language.JOB}
+                        basedIn={language.BASED_IN}
                         image={profilePicture}
                     />
                     <div className={styles.contactContainer}>

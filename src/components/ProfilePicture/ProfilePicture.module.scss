@@ -27,12 +27,16 @@
 
   .textContainerName {
     text-align: center;
-    font-size: $globalFontSize * 2;
+    font-size: $globalFontSize * 2.5;
   }
 
   .textContainerJobDescription {
+    padding-top: 0.5rem;
+    font-size: $globalFontSize * 1.2;
+  }
+  .textContainerBasedIn {
+    padding-top: 0.5rem;
     font-size: $globalFontSize * 0.8;
-    font-style: oblique;
   }
 
   @mixin contentStyling {

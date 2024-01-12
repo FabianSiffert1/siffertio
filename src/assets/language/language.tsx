@@ -1,4 +1,5 @@
 const language = {
+    BASED_IN: 'Duesseldorf, Germany ',
     CONTACT_TITlE: 'Get in touch',
     EMAIL: 'E-Mail',
     GITHUB: 'Github',
