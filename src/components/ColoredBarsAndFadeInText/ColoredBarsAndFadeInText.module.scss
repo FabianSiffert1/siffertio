@@ -18,11 +18,9 @@
   }
 
   .fadeInTitleContainer {
-    $mainFontSize: ($globalFontSize * 2) ;
     $mainBlockWidth: 30vw !default;
     $mainBlockHeight: 5vh !default;
     $fadeInTime: 2s !default;
-    $secondaryFontSize: ($globalFontSize * 1.3) !default;
 
     width: 100%;
     display: flex;
@@ -51,7 +49,7 @@
           position: relative;
           align-items: baseline;
           opacity: 0;
-          font-size: $mainFontSize;
+          font-size: ($globalFontSize * 3);
           animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
           -webkit-animation: fadeIn $fadeInTime
             cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
@@ -92,6 +90,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: ($globalFontSize * 0.3);
+
       animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92) both;
       -webkit-animation: fadeIn $fadeInTime cubic-bezier(0.74, 0.06, 0.4, 0.92)
         both;

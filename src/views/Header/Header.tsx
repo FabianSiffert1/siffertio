@@ -24,11 +24,10 @@ export default function Header() {
         <NavLink to={'/'}>
           <ColoredBarsAndFadeInText
             textToDisplay={language.HEADER_TITLE}
-            mainFontSize={'7vh'}
           />
           <ColoredBarsAndFadeInText
             textToDisplay={language.HEADER_SUBTITLE}
-            mainFontSize={'2vh'}
+            mainFontSize={'1.5rem'}
             leftToRightAnimation={false}
           />
         </NavLink>
