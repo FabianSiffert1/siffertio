@@ -19,7 +19,7 @@ const language = {
     PROJECTS_TITLE: 'Projects',
     PROJECT_SATELLITE_DESCRIPTION: 'I contribute to the development of a professional mobile telephone system app with a significant monthly user base in my current workplace.',
     PROJECT_SIFFERTIO: 'siffert.io',
-    PROJECT_SIFFERTIO_DESCRIPTION: 'You are here. A personal portfolio with a focus on simplistic design. A pet project written over the course of my apprenticeship. Be wary: Code quality may vary.',
+    PROJECT_SIFFERTIO_DESCRIPTION: 'You are here. A personal portfolio with a focus on simplistic design. A pet project written over the course of my apprenticeship. Be wary: Code quality may vary. Please note that responsiveness is not a priority, and the page is best viewed in a web browser rather than a mobile phone.',
     PROJECT_SIFFERTIOS: 'siffert.ios',
     QUALIFICATIONS_TITLE: 'Various',
     QUALIFICATIONS_DESCRIPTION: 'I am currently an apprentice Software Engineer at sipgate in Duesseldorf, with my apprenticeship ending in January 2024. sipgate is widely recognized for its innovative work culture and leadership in Scrum and agile methodologies. Additionally, I had the privilege of completing a product owner training and obtaining certification as a Scrum Product Owner until December 2024.',
