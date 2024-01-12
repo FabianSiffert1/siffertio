@@ -21,22 +21,22 @@ export default function Header() {
   return (
     <div className={styles.Header}>
       <div className={styles.headerElements}>
-        <NavLink to={'/'}>
-          <ColoredBarsAndFadeInText
-            textToDisplay={language.HEADER_TITLE}
-          />
-          <ColoredBarsAndFadeInText
-            textToDisplay={language.HEADER_SUBTITLE}
-            mainFontSize={'1.3rem'}
-            leftToRightAnimation={false}
-          />
-        </NavLink>
         <div className={styles.themeButton}>
           <ThemeMenu
-            menuTitle={language.THEME_BUTTON}
-            menuElements={settingsMenuItems}
+              menuTitle={language.THEME_BUTTON}
+              menuElements={settingsMenuItems}
           />
         </div>
+        <NavLink to={'/'}>
+          <ColoredBarsAndFadeInText
+              textToDisplay={language.HEADER_TITLE}
+          />
+          <ColoredBarsAndFadeInText
+              textToDisplay={language.HEADER_SUBTITLE}
+              mainFontSize={'1.3rem'}
+              leftToRightAnimation={false}
+          />
+        </NavLink>
       </div>
     </div>
   );

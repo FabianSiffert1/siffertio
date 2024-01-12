@@ -1,14 +1,18 @@
 @import 'src/assets/globalStyleElements.module';
 
 .Header {
-  $topPadding: 2rem;
+  $topPadding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
 
   .headerElements {
-    padding: $topPadding*1.5 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $topPadding 0 0 0;
   }
 
   a {
@@ -16,9 +20,8 @@
     text-decoration: none;
   }
   .themeButton {
-    position: fixed;
-    right: 0;
-    top: 0.3rem;
-    align-items: baseline;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
   }
 }
