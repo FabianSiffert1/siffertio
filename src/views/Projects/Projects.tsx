@@ -12,6 +12,7 @@ import {
   typescriptLogo,
 } from '../../assets/_globalAssetImports';
 import {Themes} from "../../components/ThemeMenu/ThemeMenu";
+import language from '../../assets/language/language';
 
 export default function Projects() {
   const currentTheme = useSelector((state: RootState) => state.theme.value);
@@ -31,11 +32,7 @@ export default function Projects() {
             <div className={styles.projectContent}>
               <div className={styles.projectTitle}>siffert.io</div>
               <div className={styles.textSection}>
-                You are here. A personal portfolio with a
-                focus on simplistic design. <br/>
-                A pet project written over the course of my
-                apprenticeship. <br/>
-                Be aware: Code quality may vary.
+                {language.PROJECT_SIFFERTIO_DESCRIPTION}
               </div>
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
@@ -59,7 +56,7 @@ export default function Projects() {
             <div className={styles.projectContent}>
               <div className={styles.projectTitle}>satellite</div>
               <div className={styles.textSection}>
-                I contribute to the development of a professional mobile telephone system app with a significant monthly user base in my current workplace.
+                {language.PROJECT_SATELLITE_DESCRIPTION}
               </div>
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
