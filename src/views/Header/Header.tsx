@@ -27,7 +27,7 @@ export default function Header() {
           />
           <ColoredBarsAndFadeInText
             textToDisplay={language.HEADER_SUBTITLE}
-            mainFontSize={'1.5rem'}
+            mainFontSize={'1.3rem'}
             leftToRightAnimation={false}
           />
         </NavLink>

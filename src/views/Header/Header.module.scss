@@ -8,7 +8,7 @@
   width: 100vw;
 
   .headerElements {
-    padding: $topPadding 0 1vh 0;
+    padding: $topPadding*1.5 0 0 0;
   }
 
   a {
@@ -17,8 +17,8 @@
   }
   .themeButton {
     position: fixed;
-    right: 2.5rem;
-    top: $topPadding;
+    right: 0;
+    top: 0.3rem;
     align-items: baseline;
   }
 }
