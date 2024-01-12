@@ -14,7 +14,6 @@
   }
 
   .collapsibleSectionHeaderDark {
-    @include darkThemeContent;
     @include sectionHeader;
     img {
       filter: invert(1);
@@ -22,13 +21,11 @@
   }
 
   .collapsibleSectionHeaderLight {
-    @include lightThemeContent;
     @include sectionHeader;
   }
 
   .collapsibleSectionHeaderColorful {
     @include sectionHeader;
-    @include colorfulThemeContent;
   }
 
   .headerImage {
