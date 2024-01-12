@@ -16,8 +16,8 @@
     text-decoration: none;
   }
   .themeButton {
-    position: absolute;
-    right: 2vw;
+    position: fixed;
+    right: 2.5rem;
     top: $topPadding;
     align-items: baseline;
   }
