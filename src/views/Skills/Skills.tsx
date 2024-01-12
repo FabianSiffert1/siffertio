@@ -78,11 +78,13 @@ export default function Skills() {
                                 imagePath={kotlinLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
+                            <div className="break"></div>
                             <SkillBanner
                                 text={'Jetpack Compose'}
                                 imagePath={jetpackComposeLogo}
                                 experienceLevel={EXPERIENCE_LEVEL.experienced}
                             />
+                            <div className="break"></div>
                             <SkillBanner text={'Android'} imagePath={androidLogo}
                                          experienceLevel={EXPERIENCE_LEVEL.experienced}/>
 
