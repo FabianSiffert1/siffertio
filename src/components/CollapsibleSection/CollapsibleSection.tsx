@@ -28,8 +28,10 @@ export default function CollapsibleSection(props: CollapsibleSectionProps) {
                 }
             >
                 <img className={styles.headerImage} src={props.headerImage} alt={props.popUpText}/>
+                <div className={styles.sectionContent}>
                         {props.sectionContent && props.sectionContent}
-            </div>
+                </div>
+                </div>
         </div>
     )
 }

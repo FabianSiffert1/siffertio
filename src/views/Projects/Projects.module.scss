@@ -30,7 +30,11 @@
     align-items: center;
     padding-bottom: 8vh;
     .projectTitle {
-      font-size: $globalFontSize * 2;
+      text-decoration: underline;
+      font-size: $globalFontSize * 1.5;
+      @media only screen and (max-width: 950px) {
+        font-size: $globalFontSize;
+      }
     }
     .textSection {
       display: flex;

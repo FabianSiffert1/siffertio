@@ -30,7 +30,7 @@ export default function Projects() {
         >
           <div className={styles.projectsContainer}>
             <div className={styles.projectContent}>
-              <div className={styles.projectTitle}>siffert.io</div>
+              <div className={styles.projectTitle}>{language.PROJECT_SIFFERTIO}</div>
               <div className={styles.textSection}>
                 {language.PROJECT_SIFFERTIO_DESCRIPTION}
               </div>

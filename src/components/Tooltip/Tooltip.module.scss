@@ -8,6 +8,9 @@
   .tooltipContainer {
     text-align: center;
     font-size: $globalFontSize * 0.9;
+    @media only screen and (max-width: 950px) {
+      font-size: $globalFontSize * 0.7;
+    }
     opacity: 0;
     width: fit-content;
     transition: opacity 0.55s ease-in-out;
