@@ -13,7 +13,7 @@ import jetpackComposeLogo from './images/logos/jetpackComposeLogo.png';
 import kotlinLogo from './images/logos/kotlinLogo.svg';
 import mysqlLogo from './images/logos/mysqlLogo.svg';
 import logoPlaystore from './images/logos/logoPlayStore.svg';
-import profilePicture from './images/profileTeacher.jpg';
+import profilePicture from './images/siffert_profile_small.png';
 import reactLogo from './images/logos/reactLogo.svg';
 import sassLogo from './images/logos/sassLogoColor.svg';
 import logoSatellite from './images/logos/logoSatellite.svg';

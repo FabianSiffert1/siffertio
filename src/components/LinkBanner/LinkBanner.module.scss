@@ -50,18 +50,23 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border: solid transparent;
     border-radius: $globalBorderRadius * 10;
-    &:hover {
+    @media only screen and (max-width: 950px) {
       border: solid var(--highlight-color);
-      //box-shadow: 0 0.05vw 0.1vw var(--highlight-color);
-      //background-color: $globalUnderlayRGBAColorDark;
     }
-    &:hover .textContainer {
-      opacity: 1;
-    }
-    &:hover img {
-      transform: translate(0%, -20%);
+
+    @media only screen and (min-width: 950px) {
+      border: solid transparent;
+      &:hover {
+        border: solid var(--highlight-color);
+      }
+      &:hover .textContainer {
+        opacity: 1;
+      }
+      &:hover img {
+        transform: translate(0%, -20%);
+      }
+
     }
   }
 
