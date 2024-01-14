@@ -71,20 +71,3 @@ $gradientColor1: #f9f871;
   border-radius: inherit;
   background-color: $globalUnderlayRGBAColorLight;
 }
-
-@mixin globalPulseAnimationMixin() {
-  //declare --box-shadow-color: #DesiredColorHex; in the file you import this mixin.
-  //declare --pulse-color: #DesiredColorHex; in the file you import this mixin.
-  animation: pulseAnimation 1s linear forwards;
-  @keyframes pulseAnimation {
-    0% {
-      box-shadow: 0 0 0 0 var(--pulse-color);
-    }
-    80% {
-      box-shadow: 0 0 0 0.5vw rgba(0, 0, 0, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-  }
-}

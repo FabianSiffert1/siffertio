@@ -1,9 +1,6 @@
 @import 'src/assets/globalStyleElements.module';
 
 .About {
-  --pulse-color: #ff6f69ff;
-  --pulse-color-skills: #61dafb;
-  --pulse-color-contact: #61dafb;
 
   .content {
     padding: $globalHomeContentContainerPadding;
@@ -36,11 +33,6 @@
       .contactLinks {
         border-radius: $globalBorderRadius;
         display: flex;
-
-        &:hover {
-          //--pulse-color: var(--pulse-color-contact);
-          //@include globalPulseAnimationMixin;
-        }
       }
     }
 
@@ -55,22 +47,16 @@
     .darkTheme {
       @include darkThemeContent;
       @include contentStyling;
-      --pulse-color-skills: #61dafb;
-      --pulse-color-contact: #ff6f69;
     }
 
     .lightTheme {
       @include lightThemeContent;
       @include contentStyling;
-      --pulse-color-skills: #61dafb;
-      --pulse-color-contact: #ff6f69ff;
     }
 
     .colorfulTheme {
       @include colorfulThemeContent;
       @include contentStyling;
-      --pulse-color-skills: #d65db1;
-      --pulse-color-contact: #d65db1;
     }
   }
 }
