@@ -2,6 +2,9 @@
 
 .NavigationLinks {
   --highlight-color : $globalHighlightColor;
+  display: flex;
+ justify-content: center;
+  flex: 1;
 
   a {
     text-decoration: none;
