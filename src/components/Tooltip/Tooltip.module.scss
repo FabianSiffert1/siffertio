@@ -8,7 +8,7 @@
   .tooltipContainer {
     text-align: center;
     font-size: $globalFontSize * 0.9;
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 768px) {
       font-size: $globalFontSize * 0.7;
     }
     opacity: 0;

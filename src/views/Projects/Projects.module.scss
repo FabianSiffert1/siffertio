@@ -32,7 +32,7 @@
     .projectTitle {
       text-decoration: underline;
       font-size: $globalFontSize * 1.5;
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 768px) {
         font-size: $globalFontSize;
       }
     }
@@ -44,7 +44,7 @@
       font-size: $globalFontSize;
       text-align: center;
       white-space: pre-line;
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 768px) {
         font-size: 1rem;
       }
       padding: $globalHomeContentContainerPadding;

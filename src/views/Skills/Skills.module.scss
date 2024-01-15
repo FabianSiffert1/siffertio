@@ -13,7 +13,7 @@
     .programmingSkillsHeader {
       font-size: $globalFontSize * 1.5;
       text-decoration: underline;
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 768px) {
         font-size: $globalFontSize;
 
       }
@@ -68,7 +68,7 @@
       text-align: center;
       text-decoration: underline;
       font-size: $globalFontSize * 1.5;
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 768px) {
         font-size: $globalFontSize;
       }
       padding-bottom: calc($globalHomeContentContainerPadding / 2);
