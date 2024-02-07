@@ -4,7 +4,7 @@ import styles from './About.module.scss';
 import language from '../../assets/language/language';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {RootState} from '../../utils/reduxStore/reduxStore';
-import {emailLogo, githubLogo, profilePicture,} from '../../assets/_globalAssetImports';
+import {emailLogo, githubLogo, linkedIn, profilePicture,} from '../../assets/_globalAssetImports';
 import ProfilePicture from '../../components/ProfilePicture/ProfilePicture';
 import {Themes} from "../../components/ThemeMenu/ThemeMenu";
 
@@ -42,6 +42,12 @@ export default function About() {
                                     text={language.EMAIL}
                                     imageAltText={language.EMAIL}
                                     url={language.LINK_EMAIL}
+                                />
+                                <LinkBanner
+                                    image={linkedIn}
+                                    text={language.LINKEDIN}
+                                    imageAltText={language.LINKEDIN}
+                                    url={language.LINK_LINKEDIN}
                                 />
                             </div>
                         </div>
