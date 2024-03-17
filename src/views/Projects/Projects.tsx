@@ -5,8 +5,8 @@ import {RootState} from '../../utils/reduxStore/reduxStore';
 import SkillBanner from '../../components/SkillBanner/SkillBanner';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
-  androidLogo,
-  githubLogo,   jetpackComposeLogo, kotlinLogo, logoPlaystore, logoSatellite,
+  androidLogo, fsLogo,
+  githubLogo, jetpackComposeLogo, kotlinLogo, logoPlaystore, logoSatellite,
   reactLogo,
   sassLogo,
   typescriptLogo,
@@ -37,18 +37,18 @@ export default function Projects() {
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
                 <div className={styles.skillContainer}>
-                  <SkillBanner text={'React'} imagePath={reactLogo} />
-                  <SkillBanner text={'Sass'} imagePath={sassLogo} />
-                  <SkillBanner text={'TypeScript'} imagePath={typescriptLogo} />
+                  <SkillBanner text={'React'} imagePath={reactLogo}/>
+                  <SkillBanner text={'Sass'} imagePath={sassLogo}/>
+                  <SkillBanner text={'TypeScript'} imagePath={typescriptLogo}/>
                 </div>
               </div>
               <div className={styles.linkSection}>
                 <div className={styles.linkSectionHeader}>Links</div>
                 <div className={styles.linkContainer}>
                   <LinkBanner
-                    text={'Github'}
-                    image={githubLogo}
-                    url={'https://github.com/FabianSiffert1/siffertio'}
+                      text={'Github'}
+                      image={githubLogo}
+                      url={'https://github.com/FabianSiffert1/siffertio'}
                   />
                 </div>
               </div>
@@ -61,9 +61,9 @@ export default function Projects() {
               <div className={styles.skillSection}>
                 <div className={styles.skillSectionHeader}>Components</div>
                 <div className={styles.skillContainer}>
-                  <SkillBanner text={'Kotlin'} imagePath={kotlinLogo} />
-                  <SkillBanner text={'Jetpack Compose'} imagePath={jetpackComposeLogo} />
-                  <SkillBanner text={'Android'} imagePath={androidLogo} />
+                  <SkillBanner text={'React'} imagePath={reactLogo}/>
+                  <SkillBanner text={'Sass'} imagePath={sassLogo}/>
+                  <SkillBanner text={'TypeScript'} imagePath={typescriptLogo}/>
                 </div>
               </div>
               <div className={styles.linkSection}>
@@ -81,6 +81,38 @@ export default function Projects() {
                       url={'https://satellite.me'}
                       invertColorsInDarkMode={false}
                   />
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.projectContent}>
+              <div className={styles.projectTitle}>inv</div>
+              <div className={styles.textSection}>
+                {language.PROJECT_INV_DESCRIPTION}
+              </div>
+              <div className={styles.skillSection}>
+                <div className={styles.skillSectionHeader}>Components</div>
+                <div className={styles.skillContainer}>
+                  <SkillBanner text={'React'} imagePath={reactLogo}/>
+                  <SkillBanner text={'Sass'} imagePath={sassLogo}/>
+                  <SkillBanner text={'TypeScript'} imagePath={typescriptLogo}/>
+                </div>
+              </div>
+              <div className={styles.linkSection}>
+                <div className={styles.linkSectionHeader}>Links</div>
+                <div className={styles.linkContainer}>
+                  <div className={styles.linkContainer}>
+                    <LinkBanner
+                        text={'Deployment'}
+                        image={fsLogo}
+                        url={'http://siffert.io:3030/'}
+                    />
+                    <LinkBanner
+                        text={'Github'}
+                        image={githubLogo}
+                        url={'https://github.com/FabianSiffert1/inv'}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

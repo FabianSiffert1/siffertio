@@ -19,6 +19,7 @@ const language = {
     PAGE_NOT_FOUND_SUBTITLE: 'page not found (please leave)',
     PAGE_NOT_FOUND_TITLE: '404',
     PROJECTS_TITLE: 'Projects',
+    PROJECT_INV_DESCRIPTION: 'A WIP mobile first website that was supposed to replace my portfolio, but changed into a Pokemon Trading Card Game Website to help me sell my childhood cards for a reasonable price.',
     PROJECT_SATELLITE_DESCRIPTION: 'I contribute to the development of a professional mobile telephone system app with a significant monthly user base in my current workplace.',
     PROJECT_SIFFERTIO: 'siffert.io',
     PROJECT_SIFFERTIO_DESCRIPTION: 'A personal portfolio with a focus on simplistic design. A pet project written over the course of my apprenticeship. Be wary: Code quality may vary. \n\nPlease note that responsiveness is not a priority, and the page is best viewed in a web browser rather than a mobile phone.',
