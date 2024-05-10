@@ -103,11 +103,6 @@ export default function Projects() {
                 <div className={styles.linkContainer}>
                   <div className={styles.linkContainer}>
                     <LinkBanner
-                        text={'Deployment'}
-                        image={fsLogo}
-                        url={'http://siffert.io:3030/'}
-                    />
-                    <LinkBanner
                         text={'Github'}
                         image={githubLogo}
                         url={'https://github.com/FabianSiffert1/inv'}
