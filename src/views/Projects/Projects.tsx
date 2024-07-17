@@ -105,7 +105,7 @@ export default function Projects() {
                     <LinkBanner
                         text={'Deployment'}
                         image={fsLogo}
-                        url={'http://siffert.io:3030/'}
+                        url={'http://inv.siffert.io:/'}
                     />
                     <LinkBanner
                         text={'Github'}
