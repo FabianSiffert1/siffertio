@@ -1,8 +1,9 @@
 # siffert[.io]
 
 My personal portfolio, written over the course of my apprenticeship
-as software developer. A work-in-progress with many flaws and made with
-learning in mind.
+as software developer. I am currently in the progress of writing my new portfolio, 
+which has a stronger focus on responsiveness.
+
 
 ## Setup
 
