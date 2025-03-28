@@ -14,4 +14,5 @@ which has a stronger focus on responsiveness.
 
 ## Run
 
-1. After the setup run `npm run start` to start the website locally on port 3000
+1. After the setup run `npm run start` to start the website locally
+npm 
