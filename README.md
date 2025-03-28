@@ -1,6 +1,6 @@
 # siffert[.io]
 
-My personal portfolio, written over the course of my apprenticeship
+My deprecated personal portfolio, written over the course of my apprenticeship
 as software developer. I am currently in the progress of writing my new portfolio, 
 which has a stronger focus on responsiveness.
 

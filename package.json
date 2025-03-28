@@ -1,6 +1,6 @@
 {
   "name": "siffert-flex",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
     "@testing-library/jest-dom": "^5.16.4",
@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3060 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
