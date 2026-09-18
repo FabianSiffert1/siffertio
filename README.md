@@ -53,3 +53,8 @@ only during development, and are not part of the deployed bundle.
 Create React App is no longer maintained, which is the underlying cause of those
 advisories. Clearing them properly means migrating the project to a maintained build
 tool such as Vite.
+
+ESLint is held at version 8 because `eslint-config-airbnb-base` does not support
+ESLint 9 or later, and `@typescript-eslint` is held at version 7 because version 8
+drops support for the `.eslintrc.json` configuration format. Raising either one means
+migrating the lint setup to flat config and replacing the Airbnb ruleset.
