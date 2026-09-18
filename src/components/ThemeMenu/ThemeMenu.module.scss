@@ -10,6 +10,10 @@
   @mixin themeMenuButtonStyling {
     display: flex;
     cursor: pointer;
+    width: 100%;
+    background: none;
+    font: inherit;
+    color: inherit;
     justify-content: center;
     align-items: center;
     border: solid transparent;
@@ -55,6 +59,8 @@
       align-items: center;
       margin-top: 0.8vh;
       cursor: pointer;
+      font: inherit;
+      padding: 0;
       width: inherit;
       height: inherit;
       border: solid transparent;

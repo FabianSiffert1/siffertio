@@ -40,22 +40,19 @@ export default function SkillBanner(props: SkillBannerProps) {
     return (
         <div className={styles.SkillBanner}>
             <div
-                className={
+                className={[
                     currentTheme === Themes.DARK
-                        ? `${styles.darkTheme} ${
-                            showExperience && experienceLevelClassName
-                        } `
+                        ? styles.darkTheme
                         : currentTheme === Themes.LIGHT
-                            ? `${styles.lightTheme} ${
-                                showExperience && experienceLevelClassName
-                            } `
-                            : `${styles.colorfulTheme} ${
-                                showExperience && experienceLevelClassName
-                            } `
-                }
+                            ? styles.lightTheme
+                            : styles.colorfulTheme,
+                    showExperience ? experienceLevelClassName : null,
+                ]
+                    .filter(Boolean)
+                    .join(' ')}
             >
                 <div className={styles.imageContainer}>
-                    <img src={props.imagePath} alt="SkillBanner"/>
+                    <img src={props.imagePath} alt=""/>
                 </div>
                 <div className={styles.textContainer}>{props.text}</div>
             </div>

@@ -25,7 +25,7 @@ export default function ProfilePicture(props: ProfilePictureProps) {
                 }
             >
                 <div className={styles.contentContainer}>
-                    <img src={props.image} alt="Profile Picture"/>
+                    <img src={props.image} alt={props.name}/>
                     <div className={styles.textContainer}>
                         <div className={styles.textContainerName}>{props.name}</div>
                         <div className={styles.textContainerJobDescription}>{props.title}</div>

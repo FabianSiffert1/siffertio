@@ -30,7 +30,7 @@ export default function LinkBanner(props: LinkBannerProps) {
             : styles.colorfulTheme
         }
       >
-        <a href={props.url} target="_blank" rel="noreferrer">
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
           <img
             className={styles.imageContainer}
             src={props.image}

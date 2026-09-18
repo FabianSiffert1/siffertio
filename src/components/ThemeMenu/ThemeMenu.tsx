@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import styles from './ThemeMenu.module.scss';
 import {changeToTheme} from '../../utils/reduxStore/theme/themeSlice';
-import language from '../../assets/language/language';
 import {RootState} from '../../utils/reduxStore/reduxStore';
 import {iconMoon, iconSun} from "../../assets/_globalAssetImports";
 
@@ -19,42 +18,27 @@ export interface ThemeDropdownMenuProps {
 
 export function ThemeMenu(props: ThemeDropdownMenuProps) {
     const currentTheme: Themes = useSelector((state: RootState) => state.theme.value);
-    const [themeIcon, setThemeIcon] = useState(iconSun)
+    const themeIcon = currentTheme === Themes.DARK ? iconMoon : iconSun;
 
-    function updateThemeIcon(themeToDisplay: string) {
-        if (themeToDisplay === Themes.DARK) {
-            setThemeIcon(iconMoon)
-            // eslint-disable-next-line no-console
-            console.log("themesDark");
-        }
-        if (themeToDisplay === Themes.LIGHT) {
-            setThemeIcon(iconSun)
-            // eslint-disable-next-line no-console
-            console.log("themesLight");
-        }
-
-    }
-
-    const [display, setDisplay] = useState('none');
+    const [isOpen, setIsOpen] = useState(false);
     const dispatch = useDispatch();
 
-
     function handleClick() {
-        if (display === 'none') {
-            setDisplay('block');
-        } else setDisplay('none');
+        setIsOpen(!isOpen);
     }
 
-    function changeTheme(themeToDisplay: string) {
+    function changeTheme(themeToDisplay: Themes) {
         dispatch(changeToTheme(themeToDisplay));
-        updateThemeIcon(themeToDisplay)
-        setDisplay('none');
+        setIsOpen(false);
     }
 
     return (
         <div className={styles.ThemeMenu}>
-            <div
+            <button
+                type="button"
                 onClick={handleClick}
+                aria-expanded={isOpen}
+                aria-label={props.menuTitle}
                 className={
                     currentTheme === Themes.DARK
                         ? styles.themeMenuButtonDarkTheme
@@ -63,11 +47,12 @@ export function ThemeMenu(props: ThemeDropdownMenuProps) {
                             : styles.themeMenuButtonColorfulTheme
                 }
             >
-                {themeIcon && <img src={themeIcon} alt="themeIcon"/> || props.menuTitle}
-            </div>
-            <div className={styles.themeMenuElements} style={{display}}>
+                <img src={themeIcon} alt=""/>
+            </button>
+            <div className={styles.themeMenuElements} style={{display: isOpen ? 'block' : 'none'}}>
                 {props.menuElements.map((element) => (
-                    <div
+                    <button
+                        type="button"
                         className={
                             currentTheme === Themes.DARK
                                 ? styles.elementDarkTheme
@@ -78,21 +63,12 @@ export function ThemeMenu(props: ThemeDropdownMenuProps) {
                         key={element.elementName}
                         style={{
                             display:
-                                currentTheme === Themes.DARK &&
-                                element.elementName === language.THEME_DARK
-                                    ? 'none'
-                                    : currentTheme === Themes.LIGHT &&
-                                    element.elementName === language.THEME_LIGHT
-                                        ? 'none'
-                                        : currentTheme === Themes.COLORFUL &&
-                                        element.elementName === language.THEME_COLORFUL
-                                            ? 'none'
-                                            : '',
+                                currentTheme === element.elementFunction ? 'none' : '',
                         }}
                         onClick={() => changeTheme(element.elementFunction)}
                     >
                         {element.elementName}
-                    </div>
+                    </button>
                 ))}
             </div>
         </div>

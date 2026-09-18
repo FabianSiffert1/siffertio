@@ -5,8 +5,10 @@ import {RootState} from '../../utils/reduxStore/reduxStore';
 import SkillBanner from '../../components/SkillBanner/SkillBanner';
 import LinkBanner from '../../components/LinkBanner/LinkBanner';
 import {
-  androidLogo, fsLogo,
-  githubLogo, jetpackComposeLogo, kotlinLogo, logoPlaystore, logoSatellite,
+  fsLogo,
+  githubLogo,
+  logoPlaystore,
+  logoSatellite,
   reactLogo,
   sassLogo,
   typescriptLogo,
@@ -105,7 +107,7 @@ export default function Projects() {
                     <LinkBanner
                         text={'Deployment'}
                         image={fsLogo}
-                        url={'http://inv.siffert.io:/'}
+                        url={'https://inv.siffert.io/'}
                     />
                     <LinkBanner
                         text={'Github'}
